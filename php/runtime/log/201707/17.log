@@ -1,0 +1,1457 @@
+[ 2017-07-17T23:58:51+08:00 ] 127.0.0.1 127.0.0.1 POST /auth/get_jobs_select?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9hcGkueXNqaWFuemh1LmNvbSIsImF1ZCI6Imh0dHA6XC9cL3poYW9waW4ueXNqaWFuemh1LmNvbSIsImlhdCI6MTUwMDMwNjU4NCwiZXhwIjoxNTAwNDI2NTg0LCJuYmYiOiIiLCJ1dWlkIjoiNTNmMmMyNGYtNDlhNS1hNDk2LTg2MzktZjgzM2MwMTJjZWQ1In0.yWugCk4BBdsKYFY3ia9x5yT-futyybOV6NE-zNmbVf0
+[ log ] api.yushan.com/auth/get_jobs_select?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9hcGkueXNqaWFuemh1LmNvbSIsImF1ZCI6Imh0dHA6XC9cL3poYW9waW4ueXNqaWFuemh1LmNvbSIsImlhdCI6MTUwMDMwNjU4NCwiZXhwIjoxNTAwNDI2NTg0LCJuYmYiOiIiLCJ1dWlkIjoiNTNmMmMyNGYtNDlhNS1hNDk2LTg2MzktZjgzM2MwMTJjZWQ1In0.yWugCk4BBdsKYFY3ia9x5yT-futyybOV6NE-zNmbVf0 [运行时间：0.123340s][吞吐率：8.11req/s] [内存消耗：2,335.95kb] [文件加载：57]
+[ info ] [ LANG ] D:\ys\api.yushan.com\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'auth',
+    2 => 'get_jobs_select',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://zhaopin.yushan.com/main.html',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.115 Safari/537.36',
+  'origin' => 'http://zhaopin.yushan.com',
+  'accept' => 'application/json, text/plain, */*',
+  'content-length' => '0',
+  'connection' => 'close',
+  'host' => 'api.yushan.com',
+)
+[ info ] [ PARAM ] array (
+  '/auth/get_jobs_select' => '',
+  'token' => 'eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9hcGkueXNqaWFuemh1LmNvbSIsImF1ZCI6Imh0dHA6XC9cL3poYW9waW4ueXNqaWFuemh1LmNvbSIsImlhdCI6MTUwMDMwNjU4NCwiZXhwIjoxNTAwNDI2NTg0LCJuYmYiOiIiLCJ1dWlkIjoiNTNmMmMyNGYtNDlhNS1hNDk2LTg2MzktZjgzM2MwMTJjZWQ1In0.yWugCk4BBdsKYFY3ia9x5yT-futyybOV6NE-zNmbVf0',
+)
+[ info ] [ CACHE ] INIT File
+[ info ] [ RUN ] app\api\controller\Auth->get_jobs_select[ D:\ys\api.yushan.com\application\api\controller\Auth.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000811s ] mysql:dbname=ysjianzhu;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ys_admin_user` [ RunTime:0.049563s ]
+[ sql ] [ SQL ] SELECT * FROM `ys_admin_user` WHERE  `uuid` = '53f2c24f-49a5-a496-8639-f833c012ced5' LIMIT 1 [ RunTime:0.000421s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ys_jobs` [ RunTime:0.015237s ]
+[ sql ] [ SQL ] SELECT `jobs_name`,`id` FROM `ys_jobs` WHERE  `uid` = 1 GROUP BY jobs_name [ RunTime:0.000580s ]
+
+---------------------------------------------------------------
+[ 2017-07-17T23:58:52+08:00 ] 127.0.0.1 127.0.0.1 POST /chat/getadminchatloglist?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9hcGkueXNqaWFuemh1LmNvbSIsImF1ZCI6Imh0dHA6XC9cL3poYW9waW4ueXNqaWFuemh1LmNvbSIsImlhdCI6MTUwMDMwNjU4NCwiZXhwIjoxNTAwNDI2NTg0LCJuYmYiOiIiLCJ1dWlkIjoiNTNmMmMyNGYtNDlhNS1hNDk2LTg2MzktZjgzM2MwMTJjZWQ1In0.yWugCk4BBdsKYFY3ia9x5yT-futyybOV6NE-zNmbVf0
+[ log ] api.yushan.com/chat/getadminchatloglist?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9hcGkueXNqaWFuemh1LmNvbSIsImF1ZCI6Imh0dHA6XC9cL3poYW9waW4ueXNqaWFuemh1LmNvbSIsImlhdCI6MTUwMDMwNjU4NCwiZXhwIjoxNTAwNDI2NTg0LCJuYmYiOiIiLCJ1dWlkIjoiNTNmMmMyNGYtNDlhNS1hNDk2LTg2MzktZjgzM2MwMTJjZWQ1In0.yWugCk4BBdsKYFY3ia9x5yT-futyybOV6NE-zNmbVf0 [运行时间：0.118655s][吞吐率：8.43req/s] [内存消耗：2,237.42kb] [文件加载：57]
+[ info ] [ LANG ] D:\ys\api.yushan.com\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'chat',
+    2 => 'getadminchatloglist',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://zhaopin.yushan.com/main.html',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.115 Safari/537.36',
+  'origin' => 'http://zhaopin.yushan.com',
+  'accept' => 'application/json, text/plain, */*',
+  'content-length' => '36',
+  'connection' => 'close',
+  'host' => 'api.yushan.com',
+)
+[ info ] [ PARAM ] array (
+  '/chat/getadminchatloglist' => '',
+  'token' => 'eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9hcGkueXNqaWFuemh1LmNvbSIsImF1ZCI6Imh0dHA6XC9cL3poYW9waW4ueXNqaWFuemh1LmNvbSIsImlhdCI6MTUwMDMwNjU4NCwiZXhwIjoxNTAwNDI2NTg0LCJuYmYiOiIiLCJ1dWlkIjoiNTNmMmMyNGYtNDlhNS1hNDk2LTg2MzktZjgzM2MwMTJjZWQ1In0.yWugCk4BBdsKYFY3ia9x5yT-futyybOV6NE-zNmbVf0',
+  'jobs_name' => '',
+  'salary' => '',
+  'experience' => '',
+  'type' => '',
+)
+[ info ] [ CACHE ] INIT File
+[ info ] [ RUN ] app\api\controller\Chat->getadminchatloglist[ D:\ys\api.yushan.com\application\api\controller\Chat.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000943s ] mysql:dbname=ysjianzhu;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ys_admin_user` [ RunTime:0.026391s ]
+[ sql ] [ SQL ] SELECT * FROM `ys_admin_user` WHERE  `uuid` = '53f2c24f-49a5-a496-8639-f833c012ced5' LIMIT 1 [ RunTime:0.000649s ]
+[ sql ] [ SQL ] SELECT A.*,(SELECT sum(need_send) from ys_chatlog where chatuser=A.chatuser and jobid=A.jobid and A.to_id=1) weidu FROM ys_chatlog A,
+        (SELECT createtime, MAX(createtime) max_time FROM ys_chatlog where from_id=1 or to_id=1 GROUP BY chatuser,jobid) B
+        WHERE  A.createtime = B.max_time
+        GROUP BY chatuser,jobid [ RunTime:0.024948s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ys_jobs` [ RunTime:0.017901s ]
+[ sql ] [ SQL ] SELECT `jobs_name` FROM `ys_jobs` WHERE  `id` = 1  AND `isdel` = 0 LIMIT 1 [ RunTime:0.000459s ]
+[ sql ] [ SQL ] SELECT `headimg`,`nickname` FROM `ys_admin_user` WHERE  `id` = 2  AND `isdel` = 0 LIMIT 1 [ RunTime:0.000420s ]
+[ sql ] [ SQL ] SELECT `jobs_name` FROM `ys_jobs` WHERE  `id` = 58  AND `isdel` = 0 LIMIT 1 [ RunTime:0.000435s ]
+[ sql ] [ SQL ] SELECT `headimg`,`nickname` FROM `ys_admin_user` WHERE  `id` = 2  AND `isdel` = 0 LIMIT 1 [ RunTime:0.000421s ]
+
+---------------------------------------------------------------
+[ 2017-07-17T23:58:52+08:00 ] 127.0.0.1 127.0.0.1 POST /auth/com_list?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9hcGkueXNqaWFuemh1LmNvbSIsImF1ZCI6Imh0dHA6XC9cL3poYW9waW4ueXNqaWFuemh1LmNvbSIsImlhdCI6MTUwMDMwNjU4NCwiZXhwIjoxNTAwNDI2NTg0LCJuYmYiOiIiLCJ1dWlkIjoiNTNmMmMyNGYtNDlhNS1hNDk2LTg2MzktZjgzM2MwMTJjZWQ1In0.yWugCk4BBdsKYFY3ia9x5yT-futyybOV6NE-zNmbVf0
+[ log ] api.yushan.com/auth/com_list?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9hcGkueXNqaWFuemh1LmNvbSIsImF1ZCI6Imh0dHA6XC9cL3poYW9waW4ueXNqaWFuemh1LmNvbSIsImlhdCI6MTUwMDMwNjU4NCwiZXhwIjoxNTAwNDI2NTg0LCJuYmYiOiIiLCJ1dWlkIjoiNTNmMmMyNGYtNDlhNS1hNDk2LTg2MzktZjgzM2MwMTJjZWQ1In0.yWugCk4BBdsKYFY3ia9x5yT-futyybOV6NE-zNmbVf0 [运行时间：0.122499s][吞吐率：8.16req/s] [内存消耗：2,317.64kb] [文件加载：57]
+[ info ] [ LANG ] D:\ys\api.yushan.com\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'auth',
+    2 => 'com_list',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://zhaopin.yushan.com/main.html',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.115 Safari/537.36',
+  'origin' => 'http://zhaopin.yushan.com',
+  'accept' => 'application/json, text/plain, */*',
+  'content-length' => '44',
+  'connection' => 'close',
+  'host' => 'api.yushan.com',
+)
+[ info ] [ PARAM ] array (
+  '/auth/com_list' => '',
+  'token' => 'eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9hcGkueXNqaWFuemh1LmNvbSIsImF1ZCI6Imh0dHA6XC9cL3poYW9waW4ueXNqaWFuemh1LmNvbSIsImlhdCI6MTUwMDMwNjU4NCwiZXhwIjoxNTAwNDI2NTg0LCJuYmYiOiIiLCJ1dWlkIjoiNTNmMmMyNGYtNDlhNS1hNDk2LTg2MzktZjgzM2MwMTJjZWQ1In0.yWugCk4BBdsKYFY3ia9x5yT-futyybOV6NE-zNmbVf0',
+  'codeid' => 'C6pTP4DUrarhlBs',
+  'c_alias' => 'QS_experience',
+)
+[ info ] [ CACHE ] INIT File
+[ info ] [ RUN ] app\api\controller\Auth->com_list[ D:\ys\api.yushan.com\application\api\controller\Auth.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.005122s ] mysql:dbname=ysjianzhu;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ys_system_conf` [ RunTime:0.028816s ]
+[ sql ] [ SQL ] SELECT * FROM `ys_system_conf` WHERE  `tbnum` = '77'  AND `isdel` = 0 LIMIT 1 [ RunTime:0.000471s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ys_dict` [ RunTime:0.025258s ]
+[ sql ] [ SQL ] SELECT * FROM `ys_dict` WHERE  `c_alias` = 'QS_experience'  AND `isdel` = 0 [ RunTime:0.000456s ]
+[ sql ] [ SQL ] SELECT * FROM `ys_system_conf` WHERE  `tbnum` = '77'  AND `isdel` = 0 LIMIT 1 [ RunTime:0.000378s ]
+
+---------------------------------------------------------------
+[ 2017-07-17T23:58:52+08:00 ] 127.0.0.1 127.0.0.1 POST /auth/com_list?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9hcGkueXNqaWFuemh1LmNvbSIsImF1ZCI6Imh0dHA6XC9cL3poYW9waW4ueXNqaWFuemh1LmNvbSIsImlhdCI6MTUwMDMwNjU4NCwiZXhwIjoxNTAwNDI2NTg0LCJuYmYiOiIiLCJ1dWlkIjoiNTNmMmMyNGYtNDlhNS1hNDk2LTg2MzktZjgzM2MwMTJjZWQ1In0.yWugCk4BBdsKYFY3ia9x5yT-futyybOV6NE-zNmbVf0
+[ log ] api.yushan.com/auth/com_list?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9hcGkueXNqaWFuemh1LmNvbSIsImF1ZCI6Imh0dHA6XC9cL3poYW9waW4ueXNqaWFuemh1LmNvbSIsImlhdCI6MTUwMDMwNjU4NCwiZXhwIjoxNTAwNDI2NTg0LCJuYmYiOiIiLCJ1dWlkIjoiNTNmMmMyNGYtNDlhNS1hNDk2LTg2MzktZjgzM2MwMTJjZWQ1In0.yWugCk4BBdsKYFY3ia9x5yT-futyybOV6NE-zNmbVf0 [运行时间：0.125627s][吞吐率：7.96req/s] [内存消耗：2,317.52kb] [文件加载：57]
+[ info ] [ LANG ] D:\ys\api.yushan.com\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'auth',
+    2 => 'com_list',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://zhaopin.yushan.com/main.html',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.115 Safari/537.36',
+  'origin' => 'http://zhaopin.yushan.com',
+  'accept' => 'application/json, text/plain, */*',
+  'content-length' => '38',
+  'connection' => 'close',
+  'host' => 'api.yushan.com',
+)
+[ info ] [ PARAM ] array (
+  '/auth/com_list' => '',
+  'token' => 'eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9hcGkueXNqaWFuemh1LmNvbSIsImF1ZCI6Imh0dHA6XC9cL3poYW9waW4ueXNqaWFuemh1LmNvbSIsImlhdCI6MTUwMDMwNjU4NCwiZXhwIjoxNTAwNDI2NTg0LCJuYmYiOiIiLCJ1dWlkIjoiNTNmMmMyNGYtNDlhNS1hNDk2LTg2MzktZjgzM2MwMTJjZWQ1In0.yWugCk4BBdsKYFY3ia9x5yT-futyybOV6NE-zNmbVf0',
+  'codeid' => 'C6pTP4DUrarhlBs',
+  'c_alias' => 'QS_wage',
+)
+[ info ] [ CACHE ] INIT File
+[ info ] [ RUN ] app\api\controller\Auth->com_list[ D:\ys\api.yushan.com\application\api\controller\Auth.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.004655s ] mysql:dbname=ysjianzhu;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ys_system_conf` [ RunTime:0.033380s ]
+[ sql ] [ SQL ] SELECT * FROM `ys_system_conf` WHERE  `tbnum` = '77'  AND `isdel` = 0 LIMIT 1 [ RunTime:0.000441s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ys_dict` [ RunTime:0.025392s ]
+[ sql ] [ SQL ] SELECT * FROM `ys_dict` WHERE  `c_alias` = 'QS_wage'  AND `isdel` = 0 [ RunTime:0.000491s ]
+[ sql ] [ SQL ] SELECT * FROM `ys_system_conf` WHERE  `tbnum` = '77'  AND `isdel` = 0 LIMIT 1 [ RunTime:0.000408s ]
+
+---------------------------------------------------------------
+[ 2017-07-17T23:58:53+08:00 ] 127.0.0.1 127.0.0.1 POST /chat/getchat?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9hcGkueXNqaWFuemh1LmNvbSIsImF1ZCI6Imh0dHA6XC9cL3poYW9waW4ueXNqaWFuemh1LmNvbSIsImlhdCI6MTUwMDMwNjU4NCwiZXhwIjoxNTAwNDI2NTg0LCJuYmYiOiIiLCJ1dWlkIjoiNTNmMmMyNGYtNDlhNS1hNDk2LTg2MzktZjgzM2MwMTJjZWQ1In0.yWugCk4BBdsKYFY3ia9x5yT-futyybOV6NE-zNmbVf0
+[ log ] api.yushan.com/chat/getchat?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9hcGkueXNqaWFuemh1LmNvbSIsImF1ZCI6Imh0dHA6XC9cL3poYW9waW4ueXNqaWFuemh1LmNvbSIsImlhdCI6MTUwMDMwNjU4NCwiZXhwIjoxNTAwNDI2NTg0LCJuYmYiOiIiLCJ1dWlkIjoiNTNmMmMyNGYtNDlhNS1hNDk2LTg2MzktZjgzM2MwMTJjZWQ1In0.yWugCk4BBdsKYFY3ia9x5yT-futyybOV6NE-zNmbVf0 [运行时间：0.107191s][吞吐率：9.33req/s] [内存消耗：2,242.20kb] [文件加载：57]
+[ info ] [ LANG ] D:\ys\api.yushan.com\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'chat',
+    2 => 'getchat',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://zhaopin.yushan.com/main.html',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.115 Safari/537.36',
+  'origin' => 'http://zhaopin.yushan.com',
+  'accept' => 'application/json, text/plain, */*',
+  'content-length' => '10',
+  'connection' => 'close',
+  'host' => 'api.yushan.com',
+)
+[ info ] [ PARAM ] array (
+  '/chat/getchat' => '',
+  'token' => 'eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9hcGkueXNqaWFuemh1LmNvbSIsImF1ZCI6Imh0dHA6XC9cL3poYW9waW4ueXNqaWFuemh1LmNvbSIsImlhdCI6MTUwMDMwNjU4NCwiZXhwIjoxNTAwNDI2NTg0LCJuYmYiOiIiLCJ1dWlkIjoiNTNmMmMyNGYtNDlhNS1hNDk2LTg2MzktZjgzM2MwMTJjZWQ1In0.yWugCk4BBdsKYFY3ia9x5yT-futyybOV6NE-zNmbVf0',
+  'touserid' => '2',
+)
+[ info ] [ CACHE ] INIT File
+[ info ] [ RUN ] app\api\controller\Chat->getchat[ D:\ys\api.yushan.com\application\api\controller\Chat.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000838s ] mysql:dbname=ysjianzhu;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ys_admin_user` [ RunTime:0.028219s ]
+[ sql ] [ SQL ] SELECT * FROM `ys_admin_user` WHERE  `uuid` = '53f2c24f-49a5-a496-8639-f833c012ced5' LIMIT 1 [ RunTime:0.000584s ]
+[ sql ] [ SQL ] SELECT * FROM `ys_admin_user` WHERE  `id` = 2 LIMIT 1 [ RunTime:0.000382s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ys_jobs_company` [ RunTime:0.017540s ]
+[ sql ] [ SQL ] SELECT `id` FROM `ys_jobs_company` WHERE  `uid` = 1  AND `isdel` = 0 LIMIT 1 [ RunTime:0.000371s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ys_prosecute` [ RunTime:0.016221s ]
+[ sql ] [ SQL ] SELECT * FROM `ys_prosecute` WHERE  `uid` = 1  AND `reportman` = '2'  AND `isdel` = 0 LIMIT 1 [ RunTime:0.000475s ]
+
+---------------------------------------------------------------
+[ 2017-07-17T23:58:53+08:00 ] 127.0.0.1 127.0.0.1 POST /chat/needSend?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9hcGkueXNqaWFuemh1LmNvbSIsImF1ZCI6Imh0dHA6XC9cL3poYW9waW4ueXNqaWFuemh1LmNvbSIsImlhdCI6MTUwMDMwNjU4NCwiZXhwIjoxNTAwNDI2NTg0LCJuYmYiOiIiLCJ1dWlkIjoiNTNmMmMyNGYtNDlhNS1hNDk2LTg2MzktZjgzM2MwMTJjZWQ1In0.yWugCk4BBdsKYFY3ia9x5yT-futyybOV6NE-zNmbVf0
+[ log ] api.yushan.com/chat/needSend?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9hcGkueXNqaWFuemh1LmNvbSIsImF1ZCI6Imh0dHA6XC9cL3poYW9waW4ueXNqaWFuemh1LmNvbSIsImlhdCI6MTUwMDMwNjU4NCwiZXhwIjoxNTAwNDI2NTg0LCJuYmYiOiIiLCJ1dWlkIjoiNTNmMmMyNGYtNDlhNS1hNDk2LTg2MzktZjgzM2MwMTJjZWQ1In0.yWugCk4BBdsKYFY3ia9x5yT-futyybOV6NE-zNmbVf0 [运行时间：0.065154s][吞吐率：15.35req/s] [内存消耗：2,208.56kb] [文件加载：57]
+[ info ] [ LANG ] D:\ys\api.yushan.com\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'chat',
+    2 => 'needSend',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://zhaopin.yushan.com/main.html',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.115 Safari/537.36',
+  'origin' => 'http://zhaopin.yushan.com',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'content-length' => '6',
+  'connection' => 'close',
+  'host' => 'api.yushan.com',
+)
+[ info ] [ PARAM ] array (
+  '/chat/needSend' => '',
+  'token' => 'eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9hcGkueXNqaWFuemh1LmNvbSIsImF1ZCI6Imh0dHA6XC9cL3poYW9waW4ueXNqaWFuemh1LmNvbSIsImlhdCI6MTUwMDMwNjU4NCwiZXhwIjoxNTAwNDI2NTg0LCJuYmYiOiIiLCJ1dWlkIjoiNTNmMmMyNGYtNDlhNS1hNDk2LTg2MzktZjgzM2MwMTJjZWQ1In0.yWugCk4BBdsKYFY3ia9x5yT-futyybOV6NE-zNmbVf0',
+  'toid' => '2',
+)
+[ info ] [ CACHE ] INIT File
+[ info ] [ RUN ] app\api\controller\Chat->needSend[ D:\ys\api.yushan.com\application\api\controller\Chat.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000730s ] mysql:dbname=ysjianzhu;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ys_chatlog` [ RunTime:0.024171s ]
+[ sql ] [ SQL ] UPDATE `ys_chatlog`  SET `need_send`=0  WHERE  `chatuser` = ',2' [ RunTime:0.000913s ]
+
+---------------------------------------------------------------
+[ 2017-07-17T23:58:53+08:00 ] 127.0.0.1 127.0.0.1 POST /chat/getadminchatlog?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9hcGkueXNqaWFuemh1LmNvbSIsImF1ZCI6Imh0dHA6XC9cL3poYW9waW4ueXNqaWFuemh1LmNvbSIsImlhdCI6MTUwMDMwNjU4NCwiZXhwIjoxNTAwNDI2NTg0LCJuYmYiOiIiLCJ1dWlkIjoiNTNmMmMyNGYtNDlhNS1hNDk2LTg2MzktZjgzM2MwMTJjZWQ1In0.yWugCk4BBdsKYFY3ia9x5yT-futyybOV6NE-zNmbVf0
+[ log ] api.yushan.com/chat/getadminchatlog?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9hcGkueXNqaWFuemh1LmNvbSIsImF1ZCI6Imh0dHA6XC9cL3poYW9waW4ueXNqaWFuemh1LmNvbSIsImlhdCI6MTUwMDMwNjU4NCwiZXhwIjoxNTAwNDI2NTg0LCJuYmYiOiIiLCJ1dWlkIjoiNTNmMmMyNGYtNDlhNS1hNDk2LTg2MzktZjgzM2MwMTJjZWQ1In0.yWugCk4BBdsKYFY3ia9x5yT-futyybOV6NE-zNmbVf0 [运行时间：0.130429s][吞吐率：7.67req/s] [内存消耗：2,264.98kb] [文件加载：57]
+[ info ] [ LANG ] D:\ys\api.yushan.com\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'chat',
+    2 => 'getadminchatlog',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://zhaopin.yushan.com/main.html',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.115 Safari/537.36',
+  'origin' => 'http://zhaopin.yushan.com',
+  'accept' => 'application/json, text/plain, */*',
+  'content-length' => '32',
+  'connection' => 'close',
+  'host' => 'api.yushan.com',
+)
+[ info ] [ PARAM ] array (
+  '/chat/getadminchatlog' => '',
+  'token' => 'eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9hcGkueXNqaWFuemh1LmNvbSIsImF1ZCI6Imh0dHA6XC9cL3poYW9waW4ueXNqaWFuemh1LmNvbSIsImlhdCI6MTUwMDMwNjU4NCwiZXhwIjoxNTAwNDI2NTg0LCJuYmYiOiIiLCJ1dWlkIjoiNTNmMmMyNGYtNDlhNS1hNDk2LTg2MzktZjgzM2MwMTJjZWQ1In0.yWugCk4BBdsKYFY3ia9x5yT-futyybOV6NE-zNmbVf0',
+  'uid' => '1',
+  'touserid' => '2',
+  'jobid' => '1',
+  'page' => '-1',
+)
+[ info ] [ CACHE ] INIT File
+[ info ] [ RUN ] app\api\controller\Chat->getadminChatLog[ D:\ys\api.yushan.com\application\api\controller\Chat.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000759s ] mysql:dbname=ysjianzhu;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ys_resume` [ RunTime:0.026248s ]
+[ sql ] [ SQL ] SELECT * FROM `ys_resume` WHERE  `id` = 2  AND `isdel` = 0 LIMIT 1 [ RunTime:0.001060s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ys_jobs` [ RunTime:0.025002s ]
+[ sql ] [ SQL ] SELECT `unfituser`,`confirm` FROM `ys_jobs` WHERE  `id` = 1  AND `isdel` = 0 LIMIT 1 [ RunTime:0.000479s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ys_chatlog` [ RunTime:0.015450s ]
+[ sql ] [ SQL ] SELECT * FROM `ys_chatlog` WHERE  (  from_id=1 AND to_id=2 AND jobid=1 ) OR (  from_id=2 AND to_id=1 AND jobid=1 ) ORDER BY `createtime`  desc LIMIT 0,8 [ RunTime:0.000756s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ys_admin_user` [ RunTime:0.014617s ]
+[ sql ] [ SQL ] SELECT id uid,headimg avatar,`nickname` FROM `ys_admin_user` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000288s ]
+[ sql ] [ SQL ] SELECT id uid,headimg avatar,`nickname` FROM `ys_admin_user` WHERE  `id` = 2 LIMIT 1 [ RunTime:0.000135s ]
+[ sql ] [ SQL ] SELECT id uid,headimg avatar,`nickname` FROM `ys_admin_user` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000127s ]
+[ sql ] [ SQL ] SELECT id uid,headimg avatar,`nickname` FROM `ys_admin_user` WHERE  `id` = 2 LIMIT 1 [ RunTime:0.000128s ]
+[ sql ] [ SQL ] SELECT id uid,headimg avatar,`nickname` FROM `ys_admin_user` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000126s ]
+[ sql ] [ SQL ] SELECT id uid,headimg avatar,`nickname` FROM `ys_admin_user` WHERE  `id` = 2 LIMIT 1 [ RunTime:0.000129s ]
+[ sql ] [ SQL ] SELECT id uid,headimg avatar,`nickname` FROM `ys_admin_user` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000124s ]
+[ sql ] [ SQL ] SELECT id uid,headimg avatar,`nickname` FROM `ys_admin_user` WHERE  `id` = 2 LIMIT 1 [ RunTime:0.000129s ]
+[ sql ] [ SQL ] SELECT id uid,headimg avatar,`nickname` FROM `ys_admin_user` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000123s ]
+[ sql ] [ SQL ] SELECT id uid,headimg avatar,`nickname` FROM `ys_admin_user` WHERE  `id` = 2 LIMIT 1 [ RunTime:0.000124s ]
+[ sql ] [ SQL ] SELECT id uid,headimg avatar,`nickname` FROM `ys_admin_user` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000132s ]
+[ sql ] [ SQL ] SELECT id uid,headimg avatar,`nickname` FROM `ys_admin_user` WHERE  `id` = 2 LIMIT 1 [ RunTime:0.000123s ]
+[ sql ] [ SQL ] SELECT id uid,headimg avatar,`nickname` FROM `ys_admin_user` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000127s ]
+[ sql ] [ SQL ] SELECT id uid,headimg avatar,`nickname` FROM `ys_admin_user` WHERE  `id` = 2 LIMIT 1 [ RunTime:0.000124s ]
+[ sql ] [ SQL ] SELECT id uid,headimg avatar,`nickname` FROM `ys_admin_user` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000123s ]
+[ sql ] [ SQL ] SELECT id uid,headimg avatar,`nickname` FROM `ys_admin_user` WHERE  `id` = 2 LIMIT 1 [ RunTime:0.000127s ]
+
+---------------------------------------------------------------
+[ 2017-07-17T23:58:59+08:00 ] 127.0.0.1 127.0.0.1 POST /chat/getadminchatlog?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9hcGkueXNqaWFuemh1LmNvbSIsImF1ZCI6Imh0dHA6XC9cL3poYW9waW4ueXNqaWFuemh1LmNvbSIsImlhdCI6MTUwMDMwNjU4NCwiZXhwIjoxNTAwNDI2NTg0LCJuYmYiOiIiLCJ1dWlkIjoiNTNmMmMyNGYtNDlhNS1hNDk2LTg2MzktZjgzM2MwMTJjZWQ1In0.yWugCk4BBdsKYFY3ia9x5yT-futyybOV6NE-zNmbVf0
+[ log ] api.yushan.com/chat/getadminchatlog?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9hcGkueXNqaWFuemh1LmNvbSIsImF1ZCI6Imh0dHA6XC9cL3poYW9waW4ueXNqaWFuemh1LmNvbSIsImlhdCI6MTUwMDMwNjU4NCwiZXhwIjoxNTAwNDI2NTg0LCJuYmYiOiIiLCJ1dWlkIjoiNTNmMmMyNGYtNDlhNS1hNDk2LTg2MzktZjgzM2MwMTJjZWQ1In0.yWugCk4BBdsKYFY3ia9x5yT-futyybOV6NE-zNmbVf0 [运行时间：0.135770s][吞吐率：7.37req/s] [内存消耗：2,265.00kb] [文件加载：57]
+[ info ] [ LANG ] D:\ys\api.yushan.com\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'chat',
+    2 => 'getadminchatlog',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://zhaopin.yushan.com/main.html',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.115 Safari/537.36',
+  'origin' => 'http://zhaopin.yushan.com',
+  'accept' => 'application/json, text/plain, */*',
+  'content-length' => '31',
+  'connection' => 'close',
+  'host' => 'api.yushan.com',
+)
+[ info ] [ PARAM ] array (
+  '/chat/getadminchatlog' => '',
+  'token' => 'eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9hcGkueXNqaWFuemh1LmNvbSIsImF1ZCI6Imh0dHA6XC9cL3poYW9waW4ueXNqaWFuemh1LmNvbSIsImlhdCI6MTUwMDMwNjU4NCwiZXhwIjoxNTAwNDI2NTg0LCJuYmYiOiIiLCJ1dWlkIjoiNTNmMmMyNGYtNDlhNS1hNDk2LTg2MzktZjgzM2MwMTJjZWQ1In0.yWugCk4BBdsKYFY3ia9x5yT-futyybOV6NE-zNmbVf0',
+  'uid' => '1',
+  'touserid' => '2',
+  'jobid' => '1',
+  'page' => '0',
+)
+[ info ] [ CACHE ] INIT File
+[ info ] [ RUN ] app\api\controller\Chat->getadminChatLog[ D:\ys\api.yushan.com\application\api\controller\Chat.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000873s ] mysql:dbname=ysjianzhu;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ys_resume` [ RunTime:0.035427s ]
+[ sql ] [ SQL ] SELECT * FROM `ys_resume` WHERE  `id` = 2  AND `isdel` = 0 LIMIT 1 [ RunTime:0.000817s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ys_jobs` [ RunTime:0.016658s ]
+[ sql ] [ SQL ] SELECT `unfituser`,`confirm` FROM `ys_jobs` WHERE  `id` = 1  AND `isdel` = 0 LIMIT 1 [ RunTime:0.000492s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ys_chatlog` [ RunTime:0.015644s ]
+[ sql ] [ SQL ] SELECT * FROM `ys_chatlog` WHERE  (  from_id=1 AND to_id=2 AND jobid=1 ) OR (  from_id=2 AND to_id=1 AND jobid=1 ) ORDER BY `createtime`  desc LIMIT 8,8 [ RunTime:0.000977s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ys_admin_user` [ RunTime:0.015526s ]
+[ sql ] [ SQL ] SELECT id uid,headimg avatar,`nickname` FROM `ys_admin_user` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000536s ]
+[ sql ] [ SQL ] SELECT id uid,headimg avatar,`nickname` FROM `ys_admin_user` WHERE  `id` = 2 LIMIT 1 [ RunTime:0.000229s ]
+[ sql ] [ SQL ] SELECT id uid,headimg avatar,`nickname` FROM `ys_admin_user` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000287s ]
+[ sql ] [ SQL ] SELECT id uid,headimg avatar,`nickname` FROM `ys_admin_user` WHERE  `id` = 2 LIMIT 1 [ RunTime:0.000236s ]
+[ sql ] [ SQL ] SELECT id uid,headimg avatar,`nickname` FROM `ys_admin_user` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000204s ]
+[ sql ] [ SQL ] SELECT id uid,headimg avatar,`nickname` FROM `ys_admin_user` WHERE  `id` = 2 LIMIT 1 [ RunTime:0.000209s ]
+[ sql ] [ SQL ] SELECT id uid,headimg avatar,`nickname` FROM `ys_admin_user` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000207s ]
+[ sql ] [ SQL ] SELECT id uid,headimg avatar,`nickname` FROM `ys_admin_user` WHERE  `id` = 2 LIMIT 1 [ RunTime:0.000193s ]
+[ sql ] [ SQL ] SELECT id uid,headimg avatar,`nickname` FROM `ys_admin_user` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000229s ]
+[ sql ] [ SQL ] SELECT id uid,headimg avatar,`nickname` FROM `ys_admin_user` WHERE  `id` = 2 LIMIT 1 [ RunTime:0.000213s ]
+[ sql ] [ SQL ] SELECT id uid,headimg avatar,`nickname` FROM `ys_admin_user` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000189s ]
+[ sql ] [ SQL ] SELECT id uid,headimg avatar,`nickname` FROM `ys_admin_user` WHERE  `id` = 2 LIMIT 1 [ RunTime:0.000193s ]
+[ sql ] [ SQL ] SELECT id uid,headimg avatar,`nickname` FROM `ys_admin_user` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000208s ]
+[ sql ] [ SQL ] SELECT id uid,headimg avatar,`nickname` FROM `ys_admin_user` WHERE  `id` = 2 LIMIT 1 [ RunTime:0.000209s ]
+[ sql ] [ SQL ] SELECT id uid,headimg avatar,`nickname` FROM `ys_admin_user` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000195s ]
+[ sql ] [ SQL ] SELECT id uid,headimg avatar,`nickname` FROM `ys_admin_user` WHERE  `id` = 2 LIMIT 1 [ RunTime:0.000193s ]
+
+---------------------------------------------------------------
+[ 2017-07-17T23:59:20+08:00 ] 127.0.0.1 127.0.0.1 GET /Base/verify?timestamp=%27+Date.parse(new%20Date())
+[ log ] api.yushan.com/Base/verify?timestamp=%27+Date.parse(new%20Date()) [运行时间：0.046446s][吞吐率：21.53req/s] [内存消耗：1,516.27kb] [文件加载：44]
+[ info ] [ LANG ] D:\ys\api.yushan.com\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'Base',
+    2 => 'verify',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=3ka4cgjhsdp096hs1cigguqnh5',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://zhaopin.yushan.com/main.html',
+  'accept' => 'image/webp,image/apng,image/*,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.115 Safari/537.36',
+  'cache-control' => 'no-cache',
+  'pragma' => 'no-cache',
+  'connection' => 'close',
+  'host' => 'api.yushan.com',
+)
+[ info ] [ PARAM ] array (
+  '/Base/verify' => '',
+  'timestamp' => '\' Date.parse(new Date())',
+)
+[ info ] [ RUN ] app\api\controller\Base->verify[ D:\ys\api.yushan.com\application\api\controller\Base.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-07-17T23:59:20+08:00 ] 127.0.0.1 127.0.0.1 POST /open/menutree_select?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9hcGkueXNqaWFuemh1LmNvbSIsImF1ZCI6Imh0dHA6XC9cL3poYW9waW4ueXNqaWFuemh1LmNvbSIsImlhdCI6MTUwMDMwNjU4NCwiZXhwIjoxNTAwNDI2NTg0LCJuYmYiOiIiLCJ1dWlkIjoiNTNmMmMyNGYtNDlhNS1hNDk2LTg2MzktZjgzM2MwMTJjZWQ1In0.yWugCk4BBdsKYFY3ia9x5yT-futyybOV6NE-zNmbVf0
+[ log ] api.yushan.com/open/menutree_select?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9hcGkueXNqaWFuemh1LmNvbSIsImF1ZCI6Imh0dHA6XC9cL3poYW9waW4ueXNqaWFuemh1LmNvbSIsImlhdCI6MTUwMDMwNjU4NCwiZXhwIjoxNTAwNDI2NTg0LCJuYmYiOiIiLCJ1dWlkIjoiNTNmMmMyNGYtNDlhNS1hNDk2LTg2MzktZjgzM2MwMTJjZWQ1In0.yWugCk4BBdsKYFY3ia9x5yT-futyybOV6NE-zNmbVf0 [运行时间：0.084829s][吞吐率：11.79req/s] [内存消耗：2,119.23kb] [文件加载：53]
+[ info ] [ LANG ] D:\ys\api.yushan.com\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'open',
+    2 => 'menutree_select',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://zhaopin.yushan.com/main.html',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.115 Safari/537.36',
+  'origin' => 'http://zhaopin.yushan.com',
+  'accept' => '*/*',
+  'cache-control' => 'no-cache',
+  'pragma' => 'no-cache',
+  'content-length' => '7',
+  'connection' => 'close',
+  'host' => 'api.yushan.com',
+)
+[ info ] [ PARAM ] array (
+  '/open/menutree_select' => '',
+  'token' => 'eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9hcGkueXNqaWFuemh1LmNvbSIsImF1ZCI6Imh0dHA6XC9cL3poYW9waW4ueXNqaWFuemh1LmNvbSIsImlhdCI6MTUwMDMwNjU4NCwiZXhwIjoxNTAwNDI2NTg0LCJuYmYiOiIiLCJ1dWlkIjoiNTNmMmMyNGYtNDlhNS1hNDk2LTg2MzktZjgzM2MwMTJjZWQ1In0.yWugCk4BBdsKYFY3ia9x5yT-futyybOV6NE-zNmbVf0',
+  'debug' => '0',
+)
+[ info ] [ RUN ] app\api\controller\Open->menutree_select[ D:\ys\api.yushan.com\application\api\controller\Open.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000822s ] mysql:dbname=ysjianzhu;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ys_system_menu` [ RunTime:0.016490s ]
+[ sql ] [ SQL ] SELECT * FROM `ys_system_menu` WHERE  `isdel` = 0 ORDER BY listorder asc [ RunTime:0.000757s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ys_system_conf` [ RunTime:0.016244s ]
+[ sql ] [ SQL ] SELECT * FROM `ys_system_conf` WHERE  `isdel` = 0 [ RunTime:0.000681s ]
+
+---------------------------------------------------------------
+[ 2017-07-17T23:59:20+08:00 ] 127.0.0.1 127.0.0.1 POST /open/islogin?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9hcGkueXNqaWFuemh1LmNvbSIsImF1ZCI6Imh0dHA6XC9cL3poYW9waW4ueXNqaWFuemh1LmNvbSIsImlhdCI6MTUwMDMwNjU4NCwiZXhwIjoxNTAwNDI2NTg0LCJuYmYiOiIiLCJ1dWlkIjoiNTNmMmMyNGYtNDlhNS1hNDk2LTg2MzktZjgzM2MwMTJjZWQ1In0.yWugCk4BBdsKYFY3ia9x5yT-futyybOV6NE-zNmbVf0
+[ log ] api.yushan.com/open/islogin?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9hcGkueXNqaWFuemh1LmNvbSIsImF1ZCI6Imh0dHA6XC9cL3poYW9waW4ueXNqaWFuemh1LmNvbSIsImlhdCI6MTUwMDMwNjU4NCwiZXhwIjoxNTAwNDI2NTg0LCJuYmYiOiIiLCJ1dWlkIjoiNTNmMmMyNGYtNDlhNS1hNDk2LTg2MzktZjgzM2MwMTJjZWQ1In0.yWugCk4BBdsKYFY3ia9x5yT-futyybOV6NE-zNmbVf0 [运行时间：0.029147s][吞吐率：34.31req/s] [内存消耗：1,606.67kb] [文件加载：50]
+[ info ] [ LANG ] D:\ys\api.yushan.com\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'open',
+    2 => 'islogin',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://zhaopin.yushan.com/main.html',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.115 Safari/537.36',
+  'origin' => 'http://zhaopin.yushan.com',
+  'accept' => '*/*',
+  'cache-control' => 'no-cache',
+  'pragma' => 'no-cache',
+  'content-length' => '0',
+  'connection' => 'close',
+  'host' => 'api.yushan.com',
+)
+[ info ] [ PARAM ] array (
+  '/open/islogin' => '',
+  'token' => 'eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9hcGkueXNqaWFuemh1LmNvbSIsImF1ZCI6Imh0dHA6XC9cL3poYW9waW4ueXNqaWFuemh1LmNvbSIsImlhdCI6MTUwMDMwNjU4NCwiZXhwIjoxNTAwNDI2NTg0LCJuYmYiOiIiLCJ1dWlkIjoiNTNmMmMyNGYtNDlhNS1hNDk2LTg2MzktZjgzM2MwMTJjZWQ1In0.yWugCk4BBdsKYFY3ia9x5yT-futyybOV6NE-zNmbVf0',
+)
+[ info ] [ RUN ] app\api\controller\Open->islogin[ D:\ys\api.yushan.com\application\api\controller\Open.php ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-07-17T23:59:20+08:00 ] 127.0.0.1 127.0.0.1 GET /Base/verify?timestamp=%27+Date.parse(new%20Date())
+[ log ] api.yushan.com/Base/verify?timestamp=%27+Date.parse(new%20Date()) [运行时间：0.058241s][吞吐率：17.17req/s] [内存消耗：1,516.27kb] [文件加载：44]
+[ info ] [ LANG ] D:\ys\api.yushan.com\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'Base',
+    2 => 'verify',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=3ka4cgjhsdp096hs1cigguqnh5',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://zhaopin.yushan.com/main.html',
+  'accept' => 'image/webp,image/apng,image/*,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.115 Safari/537.36',
+  'cache-control' => 'no-cache',
+  'pragma' => 'no-cache',
+  'connection' => 'close',
+  'host' => 'api.yushan.com',
+)
+[ info ] [ PARAM ] array (
+  '/Base/verify' => '',
+  'timestamp' => '\' Date.parse(new Date())',
+)
+[ info ] [ RUN ] app\api\controller\Base->verify[ D:\ys\api.yushan.com\application\api\controller\Base.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-07-17T23:59:20+08:00 ] 127.0.0.1 127.0.0.1 POST /auth/com_list?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9hcGkueXNqaWFuemh1LmNvbSIsImF1ZCI6Imh0dHA6XC9cL3poYW9waW4ueXNqaWFuemh1LmNvbSIsImlhdCI6MTUwMDMwNjU4NCwiZXhwIjoxNTAwNDI2NTg0LCJuYmYiOiIiLCJ1dWlkIjoiNTNmMmMyNGYtNDlhNS1hNDk2LTg2MzktZjgzM2MwMTJjZWQ1In0.yWugCk4BBdsKYFY3ia9x5yT-futyybOV6NE-zNmbVf0
+[ log ] api.yushan.com/auth/com_list?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9hcGkueXNqaWFuemh1LmNvbSIsImF1ZCI6Imh0dHA6XC9cL3poYW9waW4ueXNqaWFuemh1LmNvbSIsImlhdCI6MTUwMDMwNjU4NCwiZXhwIjoxNTAwNDI2NTg0LCJuYmYiOiIiLCJ1dWlkIjoiNTNmMmMyNGYtNDlhNS1hNDk2LTg2MzktZjgzM2MwMTJjZWQ1In0.yWugCk4BBdsKYFY3ia9x5yT-futyybOV6NE-zNmbVf0 [运行时间：0.149718s][吞吐率：6.68req/s] [内存消耗：2,317.52kb] [文件加载：57]
+[ info ] [ LANG ] D:\ys\api.yushan.com\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'auth',
+    2 => 'com_list',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://zhaopin.yushan.com/main.html',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.115 Safari/537.36',
+  'origin' => 'http://zhaopin.yushan.com',
+  'accept' => 'application/json, text/plain, */*',
+  'content-length' => '38',
+  'connection' => 'close',
+  'host' => 'api.yushan.com',
+)
+[ info ] [ PARAM ] array (
+  '/auth/com_list' => '',
+  'token' => 'eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9hcGkueXNqaWFuemh1LmNvbSIsImF1ZCI6Imh0dHA6XC9cL3poYW9waW4ueXNqaWFuemh1LmNvbSIsImlhdCI6MTUwMDMwNjU4NCwiZXhwIjoxNTAwNDI2NTg0LCJuYmYiOiIiLCJ1dWlkIjoiNTNmMmMyNGYtNDlhNS1hNDk2LTg2MzktZjgzM2MwMTJjZWQ1In0.yWugCk4BBdsKYFY3ia9x5yT-futyybOV6NE-zNmbVf0',
+  'codeid' => 'C6pTP4DUrarhlBs',
+  'c_alias' => 'QS_wage',
+)
+[ info ] [ CACHE ] INIT File
+[ info ] [ RUN ] app\api\controller\Auth->com_list[ D:\ys\api.yushan.com\application\api\controller\Auth.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000944s ] mysql:dbname=ysjianzhu;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ys_system_conf` [ RunTime:0.032901s ]
+[ sql ] [ SQL ] SELECT * FROM `ys_system_conf` WHERE  `tbnum` = '77'  AND `isdel` = 0 LIMIT 1 [ RunTime:0.000501s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ys_dict` [ RunTime:0.037812s ]
+[ sql ] [ SQL ] SELECT * FROM `ys_dict` WHERE  `c_alias` = 'QS_wage'  AND `isdel` = 0 [ RunTime:0.000617s ]
+[ sql ] [ SQL ] SELECT * FROM `ys_system_conf` WHERE  `tbnum` = '77'  AND `isdel` = 0 LIMIT 1 [ RunTime:0.000759s ]
+
+---------------------------------------------------------------
+[ 2017-07-17T23:59:20+08:00 ] 127.0.0.1 127.0.0.1 POST /auth/get_jobs_select?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9hcGkueXNqaWFuemh1LmNvbSIsImF1ZCI6Imh0dHA6XC9cL3poYW9waW4ueXNqaWFuemh1LmNvbSIsImlhdCI6MTUwMDMwNjU4NCwiZXhwIjoxNTAwNDI2NTg0LCJuYmYiOiIiLCJ1dWlkIjoiNTNmMmMyNGYtNDlhNS1hNDk2LTg2MzktZjgzM2MwMTJjZWQ1In0.yWugCk4BBdsKYFY3ia9x5yT-futyybOV6NE-zNmbVf0
+[ log ] api.yushan.com/auth/get_jobs_select?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9hcGkueXNqaWFuemh1LmNvbSIsImF1ZCI6Imh0dHA6XC9cL3poYW9waW4ueXNqaWFuemh1LmNvbSIsImlhdCI6MTUwMDMwNjU4NCwiZXhwIjoxNTAwNDI2NTg0LCJuYmYiOiIiLCJ1dWlkIjoiNTNmMmMyNGYtNDlhNS1hNDk2LTg2MzktZjgzM2MwMTJjZWQ1In0.yWugCk4BBdsKYFY3ia9x5yT-futyybOV6NE-zNmbVf0 [运行时间：0.156630s][吞吐率：6.38req/s] [内存消耗：2,336.00kb] [文件加载：57]
+[ info ] [ LANG ] D:\ys\api.yushan.com\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'auth',
+    2 => 'get_jobs_select',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://zhaopin.yushan.com/main.html',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.115 Safari/537.36',
+  'origin' => 'http://zhaopin.yushan.com',
+  'accept' => 'application/json, text/plain, */*',
+  'content-length' => '0',
+  'connection' => 'close',
+  'host' => 'api.yushan.com',
+)
+[ info ] [ PARAM ] array (
+  '/auth/get_jobs_select' => '',
+  'token' => 'eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9hcGkueXNqaWFuemh1LmNvbSIsImF1ZCI6Imh0dHA6XC9cL3poYW9waW4ueXNqaWFuemh1LmNvbSIsImlhdCI6MTUwMDMwNjU4NCwiZXhwIjoxNTAwNDI2NTg0LCJuYmYiOiIiLCJ1dWlkIjoiNTNmMmMyNGYtNDlhNS1hNDk2LTg2MzktZjgzM2MwMTJjZWQ1In0.yWugCk4BBdsKYFY3ia9x5yT-futyybOV6NE-zNmbVf0',
+)
+[ info ] [ CACHE ] INIT File
+[ info ] [ RUN ] app\api\controller\Auth->get_jobs_select[ D:\ys\api.yushan.com\application\api\controller\Auth.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.003418s ] mysql:dbname=ysjianzhu;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ys_admin_user` [ RunTime:0.058776s ]
+[ sql ] [ SQL ] SELECT * FROM `ys_admin_user` WHERE  `uuid` = '53f2c24f-49a5-a496-8639-f833c012ced5' LIMIT 1 [ RunTime:0.000553s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ys_jobs` [ RunTime:0.039491s ]
+[ sql ] [ SQL ] SELECT `jobs_name`,`id` FROM `ys_jobs` WHERE  `uid` = 1 GROUP BY jobs_name [ RunTime:0.000767s ]
+
+---------------------------------------------------------------
+[ 2017-07-17T23:59:20+08:00 ] 127.0.0.1 127.0.0.1 POST /chat/getadminchatloglist?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9hcGkueXNqaWFuemh1LmNvbSIsImF1ZCI6Imh0dHA6XC9cL3poYW9waW4ueXNqaWFuemh1LmNvbSIsImlhdCI6MTUwMDMwNjU4NCwiZXhwIjoxNTAwNDI2NTg0LCJuYmYiOiIiLCJ1dWlkIjoiNTNmMmMyNGYtNDlhNS1hNDk2LTg2MzktZjgzM2MwMTJjZWQ1In0.yWugCk4BBdsKYFY3ia9x5yT-futyybOV6NE-zNmbVf0
+[ log ] api.yushan.com/chat/getadminchatloglist?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9hcGkueXNqaWFuemh1LmNvbSIsImF1ZCI6Imh0dHA6XC9cL3poYW9waW4ueXNqaWFuemh1LmNvbSIsImlhdCI6MTUwMDMwNjU4NCwiZXhwIjoxNTAwNDI2NTg0LCJuYmYiOiIiLCJ1dWlkIjoiNTNmMmMyNGYtNDlhNS1hNDk2LTg2MzktZjgzM2MwMTJjZWQ1In0.yWugCk4BBdsKYFY3ia9x5yT-futyybOV6NE-zNmbVf0 [运行时间：0.174231s][吞吐率：5.74req/s] [内存消耗：2,237.41kb] [文件加载：57]
+[ info ] [ LANG ] D:\ys\api.yushan.com\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'chat',
+    2 => 'getadminchatloglist',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://zhaopin.yushan.com/main.html',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.115 Safari/537.36',
+  'origin' => 'http://zhaopin.yushan.com',
+  'accept' => 'application/json, text/plain, */*',
+  'content-length' => '36',
+  'connection' => 'close',
+  'host' => 'api.yushan.com',
+)
+[ info ] [ PARAM ] array (
+  '/chat/getadminchatloglist' => '',
+  'token' => 'eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9hcGkueXNqaWFuemh1LmNvbSIsImF1ZCI6Imh0dHA6XC9cL3poYW9waW4ueXNqaWFuemh1LmNvbSIsImlhdCI6MTUwMDMwNjU4NCwiZXhwIjoxNTAwNDI2NTg0LCJuYmYiOiIiLCJ1dWlkIjoiNTNmMmMyNGYtNDlhNS1hNDk2LTg2MzktZjgzM2MwMTJjZWQ1In0.yWugCk4BBdsKYFY3ia9x5yT-futyybOV6NE-zNmbVf0',
+  'jobs_name' => '',
+  'salary' => '',
+  'experience' => '',
+  'type' => '',
+)
+[ info ] [ CACHE ] INIT File
+[ info ] [ RUN ] app\api\controller\Chat->getadminchatloglist[ D:\ys\api.yushan.com\application\api\controller\Chat.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.003624s ] mysql:dbname=ysjianzhu;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ys_admin_user` [ RunTime:0.055144s ]
+[ sql ] [ SQL ] SELECT * FROM `ys_admin_user` WHERE  `uuid` = '53f2c24f-49a5-a496-8639-f833c012ced5' LIMIT 1 [ RunTime:0.000648s ]
+[ sql ] [ SQL ] SELECT A.*,(SELECT sum(need_send) from ys_chatlog where chatuser=A.chatuser and jobid=A.jobid and A.to_id=1) weidu FROM ys_chatlog A,
+        (SELECT createtime, MAX(createtime) max_time FROM ys_chatlog where from_id=1 or to_id=1 GROUP BY chatuser,jobid) B
+        WHERE  A.createtime = B.max_time
+        GROUP BY chatuser,jobid [ RunTime:0.041089s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ys_jobs` [ RunTime:0.020916s ]
+[ sql ] [ SQL ] SELECT `jobs_name` FROM `ys_jobs` WHERE  `id` = 1  AND `isdel` = 0 LIMIT 1 [ RunTime:0.000316s ]
+[ sql ] [ SQL ] SELECT `headimg`,`nickname` FROM `ys_admin_user` WHERE  `id` = 2  AND `isdel` = 0 LIMIT 1 [ RunTime:0.000230s ]
+[ sql ] [ SQL ] SELECT `jobs_name` FROM `ys_jobs` WHERE  `id` = 58  AND `isdel` = 0 LIMIT 1 [ RunTime:0.000218s ]
+[ sql ] [ SQL ] SELECT `headimg`,`nickname` FROM `ys_admin_user` WHERE  `id` = 2  AND `isdel` = 0 LIMIT 1 [ RunTime:0.000214s ]
+
+---------------------------------------------------------------
+[ 2017-07-17T23:59:21+08:00 ] 127.0.0.1 127.0.0.1 POST /auth/com_list?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9hcGkueXNqaWFuemh1LmNvbSIsImF1ZCI6Imh0dHA6XC9cL3poYW9waW4ueXNqaWFuemh1LmNvbSIsImlhdCI6MTUwMDMwNjU4NCwiZXhwIjoxNTAwNDI2NTg0LCJuYmYiOiIiLCJ1dWlkIjoiNTNmMmMyNGYtNDlhNS1hNDk2LTg2MzktZjgzM2MwMTJjZWQ1In0.yWugCk4BBdsKYFY3ia9x5yT-futyybOV6NE-zNmbVf0
+[ log ] api.yushan.com/auth/com_list?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9hcGkueXNqaWFuemh1LmNvbSIsImF1ZCI6Imh0dHA6XC9cL3poYW9waW4ueXNqaWFuemh1LmNvbSIsImlhdCI6MTUwMDMwNjU4NCwiZXhwIjoxNTAwNDI2NTg0LCJuYmYiOiIiLCJ1dWlkIjoiNTNmMmMyNGYtNDlhNS1hNDk2LTg2MzktZjgzM2MwMTJjZWQ1In0.yWugCk4BBdsKYFY3ia9x5yT-futyybOV6NE-zNmbVf0 [运行时间：0.089188s][吞吐率：11.21req/s] [内存消耗：2,317.66kb] [文件加载：57]
+[ info ] [ LANG ] D:\ys\api.yushan.com\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'auth',
+    2 => 'com_list',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://zhaopin.yushan.com/main.html',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.115 Safari/537.36',
+  'origin' => 'http://zhaopin.yushan.com',
+  'accept' => 'application/json, text/plain, */*',
+  'content-length' => '44',
+  'connection' => 'close',
+  'host' => 'api.yushan.com',
+)
+[ info ] [ PARAM ] array (
+  '/auth/com_list' => '',
+  'token' => 'eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9hcGkueXNqaWFuemh1LmNvbSIsImF1ZCI6Imh0dHA6XC9cL3poYW9waW4ueXNqaWFuemh1LmNvbSIsImlhdCI6MTUwMDMwNjU4NCwiZXhwIjoxNTAwNDI2NTg0LCJuYmYiOiIiLCJ1dWlkIjoiNTNmMmMyNGYtNDlhNS1hNDk2LTg2MzktZjgzM2MwMTJjZWQ1In0.yWugCk4BBdsKYFY3ia9x5yT-futyybOV6NE-zNmbVf0',
+  'codeid' => 'C6pTP4DUrarhlBs',
+  'c_alias' => 'QS_experience',
+)
+[ info ] [ CACHE ] INIT File
+[ info ] [ RUN ] app\api\controller\Auth->com_list[ D:\ys\api.yushan.com\application\api\controller\Auth.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000970s ] mysql:dbname=ysjianzhu;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ys_system_conf` [ RunTime:0.025586s ]
+[ sql ] [ SQL ] SELECT * FROM `ys_system_conf` WHERE  `tbnum` = '77'  AND `isdel` = 0 LIMIT 1 [ RunTime:0.000471s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ys_dict` [ RunTime:0.015945s ]
+[ sql ] [ SQL ] SELECT * FROM `ys_dict` WHERE  `c_alias` = 'QS_experience'  AND `isdel` = 0 [ RunTime:0.000445s ]
+[ sql ] [ SQL ] SELECT * FROM `ys_system_conf` WHERE  `tbnum` = '77'  AND `isdel` = 0 LIMIT 1 [ RunTime:0.000468s ]
+
+---------------------------------------------------------------
+[ 2017-07-17T23:59:21+08:00 ] 127.0.0.1 127.0.0.1 POST /chat/getchat?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9hcGkueXNqaWFuemh1LmNvbSIsImF1ZCI6Imh0dHA6XC9cL3poYW9waW4ueXNqaWFuemh1LmNvbSIsImlhdCI6MTUwMDMwNjU4NCwiZXhwIjoxNTAwNDI2NTg0LCJuYmYiOiIiLCJ1dWlkIjoiNTNmMmMyNGYtNDlhNS1hNDk2LTg2MzktZjgzM2MwMTJjZWQ1In0.yWugCk4BBdsKYFY3ia9x5yT-futyybOV6NE-zNmbVf0
+[ log ] api.yushan.com/chat/getchat?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9hcGkueXNqaWFuemh1LmNvbSIsImF1ZCI6Imh0dHA6XC9cL3poYW9waW4ueXNqaWFuemh1LmNvbSIsImlhdCI6MTUwMDMwNjU4NCwiZXhwIjoxNTAwNDI2NTg0LCJuYmYiOiIiLCJ1dWlkIjoiNTNmMmMyNGYtNDlhNS1hNDk2LTg2MzktZjgzM2MwMTJjZWQ1In0.yWugCk4BBdsKYFY3ia9x5yT-futyybOV6NE-zNmbVf0 [运行时间：0.095389s][吞吐率：10.48req/s] [内存消耗：2,242.20kb] [文件加载：57]
+[ info ] [ LANG ] D:\ys\api.yushan.com\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'chat',
+    2 => 'getchat',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://zhaopin.yushan.com/main.html',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.115 Safari/537.36',
+  'origin' => 'http://zhaopin.yushan.com',
+  'accept' => 'application/json, text/plain, */*',
+  'content-length' => '10',
+  'connection' => 'close',
+  'host' => 'api.yushan.com',
+)
+[ info ] [ PARAM ] array (
+  '/chat/getchat' => '',
+  'token' => 'eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9hcGkueXNqaWFuemh1LmNvbSIsImF1ZCI6Imh0dHA6XC9cL3poYW9waW4ueXNqaWFuemh1LmNvbSIsImlhdCI6MTUwMDMwNjU4NCwiZXhwIjoxNTAwNDI2NTg0LCJuYmYiOiIiLCJ1dWlkIjoiNTNmMmMyNGYtNDlhNS1hNDk2LTg2MzktZjgzM2MwMTJjZWQ1In0.yWugCk4BBdsKYFY3ia9x5yT-futyybOV6NE-zNmbVf0',
+  'touserid' => '2',
+)
+[ info ] [ CACHE ] INIT File
+[ info ] [ RUN ] app\api\controller\Chat->getchat[ D:\ys\api.yushan.com\application\api\controller\Chat.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000758s ] mysql:dbname=ysjianzhu;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ys_admin_user` [ RunTime:0.017389s ]
+[ sql ] [ SQL ] SELECT * FROM `ys_admin_user` WHERE  `uuid` = '53f2c24f-49a5-a496-8639-f833c012ced5' LIMIT 1 [ RunTime:0.000409s ]
+[ sql ] [ SQL ] SELECT * FROM `ys_admin_user` WHERE  `id` = 2 LIMIT 1 [ RunTime:0.000268s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ys_jobs_company` [ RunTime:0.015657s ]
+[ sql ] [ SQL ] SELECT `id` FROM `ys_jobs_company` WHERE  `uid` = 1  AND `isdel` = 0 LIMIT 1 [ RunTime:0.000300s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ys_prosecute` [ RunTime:0.016740s ]
+[ sql ] [ SQL ] SELECT * FROM `ys_prosecute` WHERE  `uid` = 1  AND `reportman` = '2'  AND `isdel` = 0 LIMIT 1 [ RunTime:0.000427s ]
+
+---------------------------------------------------------------
+[ 2017-07-17T23:59:21+08:00 ] 127.0.0.1 127.0.0.1 POST /chat/needSend?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9hcGkueXNqaWFuemh1LmNvbSIsImF1ZCI6Imh0dHA6XC9cL3poYW9waW4ueXNqaWFuemh1LmNvbSIsImlhdCI6MTUwMDMwNjU4NCwiZXhwIjoxNTAwNDI2NTg0LCJuYmYiOiIiLCJ1dWlkIjoiNTNmMmMyNGYtNDlhNS1hNDk2LTg2MzktZjgzM2MwMTJjZWQ1In0.yWugCk4BBdsKYFY3ia9x5yT-futyybOV6NE-zNmbVf0
+[ log ] api.yushan.com/chat/needSend?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9hcGkueXNqaWFuemh1LmNvbSIsImF1ZCI6Imh0dHA6XC9cL3poYW9waW4ueXNqaWFuemh1LmNvbSIsImlhdCI6MTUwMDMwNjU4NCwiZXhwIjoxNTAwNDI2NTg0LCJuYmYiOiIiLCJ1dWlkIjoiNTNmMmMyNGYtNDlhNS1hNDk2LTg2MzktZjgzM2MwMTJjZWQ1In0.yWugCk4BBdsKYFY3ia9x5yT-futyybOV6NE-zNmbVf0 [运行时间：0.066066s][吞吐率：15.14req/s] [内存消耗：2,208.56kb] [文件加载：57]
+[ info ] [ LANG ] D:\ys\api.yushan.com\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'chat',
+    2 => 'needSend',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://zhaopin.yushan.com/main.html',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.115 Safari/537.36',
+  'origin' => 'http://zhaopin.yushan.com',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'content-length' => '6',
+  'connection' => 'close',
+  'host' => 'api.yushan.com',
+)
+[ info ] [ PARAM ] array (
+  '/chat/needSend' => '',
+  'token' => 'eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9hcGkueXNqaWFuemh1LmNvbSIsImF1ZCI6Imh0dHA6XC9cL3poYW9waW4ueXNqaWFuemh1LmNvbSIsImlhdCI6MTUwMDMwNjU4NCwiZXhwIjoxNTAwNDI2NTg0LCJuYmYiOiIiLCJ1dWlkIjoiNTNmMmMyNGYtNDlhNS1hNDk2LTg2MzktZjgzM2MwMTJjZWQ1In0.yWugCk4BBdsKYFY3ia9x5yT-futyybOV6NE-zNmbVf0',
+  'toid' => '2',
+)
+[ info ] [ CACHE ] INIT File
+[ info ] [ RUN ] app\api\controller\Chat->needSend[ D:\ys\api.yushan.com\application\api\controller\Chat.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000689s ] mysql:dbname=ysjianzhu;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ys_chatlog` [ RunTime:0.025147s ]
+[ sql ] [ SQL ] UPDATE `ys_chatlog`  SET `need_send`=0  WHERE  `chatuser` = ',2' [ RunTime:0.000631s ]
+
+---------------------------------------------------------------
+[ 2017-07-17T23:59:21+08:00 ] 127.0.0.1 127.0.0.1 POST /chat/getadminchatlog?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9hcGkueXNqaWFuemh1LmNvbSIsImF1ZCI6Imh0dHA6XC9cL3poYW9waW4ueXNqaWFuemh1LmNvbSIsImlhdCI6MTUwMDMwNjU4NCwiZXhwIjoxNTAwNDI2NTg0LCJuYmYiOiIiLCJ1dWlkIjoiNTNmMmMyNGYtNDlhNS1hNDk2LTg2MzktZjgzM2MwMTJjZWQ1In0.yWugCk4BBdsKYFY3ia9x5yT-futyybOV6NE-zNmbVf0
+[ log ] api.yushan.com/chat/getadminchatlog?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9hcGkueXNqaWFuemh1LmNvbSIsImF1ZCI6Imh0dHA6XC9cL3poYW9waW4ueXNqaWFuemh1LmNvbSIsImlhdCI6MTUwMDMwNjU4NCwiZXhwIjoxNTAwNDI2NTg0LCJuYmYiOiIiLCJ1dWlkIjoiNTNmMmMyNGYtNDlhNS1hNDk2LTg2MzktZjgzM2MwMTJjZWQ1In0.yWugCk4BBdsKYFY3ia9x5yT-futyybOV6NE-zNmbVf0 [运行时间：0.129457s][吞吐率：7.72req/s] [内存消耗：2,264.98kb] [文件加载：57]
+[ info ] [ LANG ] D:\ys\api.yushan.com\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'chat',
+    2 => 'getadminchatlog',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://zhaopin.yushan.com/main.html',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.115 Safari/537.36',
+  'origin' => 'http://zhaopin.yushan.com',
+  'accept' => 'application/json, text/plain, */*',
+  'content-length' => '32',
+  'connection' => 'close',
+  'host' => 'api.yushan.com',
+)
+[ info ] [ PARAM ] array (
+  '/chat/getadminchatlog' => '',
+  'token' => 'eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9hcGkueXNqaWFuemh1LmNvbSIsImF1ZCI6Imh0dHA6XC9cL3poYW9waW4ueXNqaWFuemh1LmNvbSIsImlhdCI6MTUwMDMwNjU4NCwiZXhwIjoxNTAwNDI2NTg0LCJuYmYiOiIiLCJ1dWlkIjoiNTNmMmMyNGYtNDlhNS1hNDk2LTg2MzktZjgzM2MwMTJjZWQ1In0.yWugCk4BBdsKYFY3ia9x5yT-futyybOV6NE-zNmbVf0',
+  'uid' => '1',
+  'touserid' => '2',
+  'jobid' => '1',
+  'page' => '-1',
+)
+[ info ] [ CACHE ] INIT File
+[ info ] [ RUN ] app\api\controller\Chat->getadminChatLog[ D:\ys\api.yushan.com\application\api\controller\Chat.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000713s ] mysql:dbname=ysjianzhu;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ys_resume` [ RunTime:0.025906s ]
+[ sql ] [ SQL ] SELECT * FROM `ys_resume` WHERE  `id` = 2  AND `isdel` = 0 LIMIT 1 [ RunTime:0.000711s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ys_jobs` [ RunTime:0.017522s ]
+[ sql ] [ SQL ] SELECT `unfituser`,`confirm` FROM `ys_jobs` WHERE  `id` = 1  AND `isdel` = 0 LIMIT 1 [ RunTime:0.000314s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ys_chatlog` [ RunTime:0.015592s ]
+[ sql ] [ SQL ] SELECT * FROM `ys_chatlog` WHERE  (  from_id=1 AND to_id=2 AND jobid=1 ) OR (  from_id=2 AND to_id=1 AND jobid=1 ) ORDER BY `createtime`  desc LIMIT 0,8 [ RunTime:0.000640s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ys_admin_user` [ RunTime:0.015620s ]
+[ sql ] [ SQL ] SELECT id uid,headimg avatar,`nickname` FROM `ys_admin_user` WHERE  `id` = 2 LIMIT 1 [ RunTime:0.000403s ]
+[ sql ] [ SQL ] SELECT id uid,headimg avatar,`nickname` FROM `ys_admin_user` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000329s ]
+[ sql ] [ SQL ] SELECT id uid,headimg avatar,`nickname` FROM `ys_admin_user` WHERE  `id` = 2 LIMIT 1 [ RunTime:0.000274s ]
+[ sql ] [ SQL ] SELECT id uid,headimg avatar,`nickname` FROM `ys_admin_user` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000190s ]
+[ sql ] [ SQL ] SELECT id uid,headimg avatar,`nickname` FROM `ys_admin_user` WHERE  `id` = 2 LIMIT 1 [ RunTime:0.000258s ]
+[ sql ] [ SQL ] SELECT id uid,headimg avatar,`nickname` FROM `ys_admin_user` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000233s ]
+[ sql ] [ SQL ] SELECT id uid,headimg avatar,`nickname` FROM `ys_admin_user` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000248s ]
+[ sql ] [ SQL ] SELECT id uid,headimg avatar,`nickname` FROM `ys_admin_user` WHERE  `id` = 2 LIMIT 1 [ RunTime:0.000267s ]
+[ sql ] [ SQL ] SELECT id uid,headimg avatar,`nickname` FROM `ys_admin_user` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000279s ]
+[ sql ] [ SQL ] SELECT id uid,headimg avatar,`nickname` FROM `ys_admin_user` WHERE  `id` = 2 LIMIT 1 [ RunTime:0.000281s ]
+[ sql ] [ SQL ] SELECT id uid,headimg avatar,`nickname` FROM `ys_admin_user` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000439s ]
+[ sql ] [ SQL ] SELECT id uid,headimg avatar,`nickname` FROM `ys_admin_user` WHERE  `id` = 2 LIMIT 1 [ RunTime:0.000449s ]
+[ sql ] [ SQL ] SELECT id uid,headimg avatar,`nickname` FROM `ys_admin_user` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000330s ]
+[ sql ] [ SQL ] SELECT id uid,headimg avatar,`nickname` FROM `ys_admin_user` WHERE  `id` = 2 LIMIT 1 [ RunTime:0.000222s ]
+[ sql ] [ SQL ] SELECT id uid,headimg avatar,`nickname` FROM `ys_admin_user` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000196s ]
+[ sql ] [ SQL ] SELECT id uid,headimg avatar,`nickname` FROM `ys_admin_user` WHERE  `id` = 2 LIMIT 1 [ RunTime:0.000214s ]
+
+---------------------------------------------------------------
+[ 2017-07-17T23:59:36+08:00 ] 127.0.0.1 127.0.0.1 GET /Base/verify?timestamp=%27+Date.parse(new%20Date())
+[ log ] api.yushan.com/Base/verify?timestamp=%27+Date.parse(new%20Date()) [运行时间：0.059854s][吞吐率：16.71req/s] [内存消耗：1,516.27kb] [文件加载：44]
+[ info ] [ LANG ] D:\ys\api.yushan.com\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'Base',
+    2 => 'verify',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=3ka4cgjhsdp096hs1cigguqnh5',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://zhaopin.yushan.com/main.html',
+  'accept' => 'image/webp,image/apng,image/*,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.115 Safari/537.36',
+  'cache-control' => 'no-cache',
+  'pragma' => 'no-cache',
+  'connection' => 'close',
+  'host' => 'api.yushan.com',
+)
+[ info ] [ PARAM ] array (
+  '/Base/verify' => '',
+  'timestamp' => '\' Date.parse(new Date())',
+)
+[ info ] [ RUN ] app\api\controller\Base->verify[ D:\ys\api.yushan.com\application\api\controller\Base.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-07-17T23:59:37+08:00 ] 127.0.0.1 127.0.0.1 POST /open/menutree_select?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9hcGkueXNqaWFuemh1LmNvbSIsImF1ZCI6Imh0dHA6XC9cL3poYW9waW4ueXNqaWFuemh1LmNvbSIsImlhdCI6MTUwMDMwNjU4NCwiZXhwIjoxNTAwNDI2NTg0LCJuYmYiOiIiLCJ1dWlkIjoiNTNmMmMyNGYtNDlhNS1hNDk2LTg2MzktZjgzM2MwMTJjZWQ1In0.yWugCk4BBdsKYFY3ia9x5yT-futyybOV6NE-zNmbVf0
+[ log ] api.yushan.com/open/menutree_select?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9hcGkueXNqaWFuemh1LmNvbSIsImF1ZCI6Imh0dHA6XC9cL3poYW9waW4ueXNqaWFuemh1LmNvbSIsImlhdCI6MTUwMDMwNjU4NCwiZXhwIjoxNTAwNDI2NTg0LCJuYmYiOiIiLCJ1dWlkIjoiNTNmMmMyNGYtNDlhNS1hNDk2LTg2MzktZjgzM2MwMTJjZWQ1In0.yWugCk4BBdsKYFY3ia9x5yT-futyybOV6NE-zNmbVf0 [运行时间：0.096673s][吞吐率：10.34req/s] [内存消耗：2,119.23kb] [文件加载：53]
+[ info ] [ LANG ] D:\ys\api.yushan.com\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'open',
+    2 => 'menutree_select',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://zhaopin.yushan.com/main.html',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.115 Safari/537.36',
+  'origin' => 'http://zhaopin.yushan.com',
+  'accept' => '*/*',
+  'cache-control' => 'no-cache',
+  'pragma' => 'no-cache',
+  'content-length' => '7',
+  'connection' => 'close',
+  'host' => 'api.yushan.com',
+)
+[ info ] [ PARAM ] array (
+  '/open/menutree_select' => '',
+  'token' => 'eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9hcGkueXNqaWFuemh1LmNvbSIsImF1ZCI6Imh0dHA6XC9cL3poYW9waW4ueXNqaWFuemh1LmNvbSIsImlhdCI6MTUwMDMwNjU4NCwiZXhwIjoxNTAwNDI2NTg0LCJuYmYiOiIiLCJ1dWlkIjoiNTNmMmMyNGYtNDlhNS1hNDk2LTg2MzktZjgzM2MwMTJjZWQ1In0.yWugCk4BBdsKYFY3ia9x5yT-futyybOV6NE-zNmbVf0',
+  'debug' => '0',
+)
+[ info ] [ RUN ] app\api\controller\Open->menutree_select[ D:\ys\api.yushan.com\application\api\controller\Open.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000881s ] mysql:dbname=ysjianzhu;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ys_system_menu` [ RunTime:0.016301s ]
+[ sql ] [ SQL ] SELECT * FROM `ys_system_menu` WHERE  `isdel` = 0 ORDER BY listorder asc [ RunTime:0.001190s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ys_system_conf` [ RunTime:0.020139s ]
+[ sql ] [ SQL ] SELECT * FROM `ys_system_conf` WHERE  `isdel` = 0 [ RunTime:0.000685s ]
+
+---------------------------------------------------------------
+[ 2017-07-17T23:59:37+08:00 ] 127.0.0.1 127.0.0.1 POST /open/islogin?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9hcGkueXNqaWFuemh1LmNvbSIsImF1ZCI6Imh0dHA6XC9cL3poYW9waW4ueXNqaWFuemh1LmNvbSIsImlhdCI6MTUwMDMwNjU4NCwiZXhwIjoxNTAwNDI2NTg0LCJuYmYiOiIiLCJ1dWlkIjoiNTNmMmMyNGYtNDlhNS1hNDk2LTg2MzktZjgzM2MwMTJjZWQ1In0.yWugCk4BBdsKYFY3ia9x5yT-futyybOV6NE-zNmbVf0
+[ log ] api.yushan.com/open/islogin?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9hcGkueXNqaWFuemh1LmNvbSIsImF1ZCI6Imh0dHA6XC9cL3poYW9waW4ueXNqaWFuemh1LmNvbSIsImlhdCI6MTUwMDMwNjU4NCwiZXhwIjoxNTAwNDI2NTg0LCJuYmYiOiIiLCJ1dWlkIjoiNTNmMmMyNGYtNDlhNS1hNDk2LTg2MzktZjgzM2MwMTJjZWQ1In0.yWugCk4BBdsKYFY3ia9x5yT-futyybOV6NE-zNmbVf0 [运行时间：0.030646s][吞吐率：32.63req/s] [内存消耗：1,606.67kb] [文件加载：50]
+[ info ] [ LANG ] D:\ys\api.yushan.com\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'open',
+    2 => 'islogin',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://zhaopin.yushan.com/main.html',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.115 Safari/537.36',
+  'origin' => 'http://zhaopin.yushan.com',
+  'accept' => '*/*',
+  'cache-control' => 'no-cache',
+  'pragma' => 'no-cache',
+  'content-length' => '0',
+  'connection' => 'close',
+  'host' => 'api.yushan.com',
+)
+[ info ] [ PARAM ] array (
+  '/open/islogin' => '',
+  'token' => 'eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9hcGkueXNqaWFuemh1LmNvbSIsImF1ZCI6Imh0dHA6XC9cL3poYW9waW4ueXNqaWFuemh1LmNvbSIsImlhdCI6MTUwMDMwNjU4NCwiZXhwIjoxNTAwNDI2NTg0LCJuYmYiOiIiLCJ1dWlkIjoiNTNmMmMyNGYtNDlhNS1hNDk2LTg2MzktZjgzM2MwMTJjZWQ1In0.yWugCk4BBdsKYFY3ia9x5yT-futyybOV6NE-zNmbVf0',
+)
+[ info ] [ RUN ] app\api\controller\Open->islogin[ D:\ys\api.yushan.com\application\api\controller\Open.php ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-07-17T23:59:37+08:00 ] 127.0.0.1 127.0.0.1 GET /Base/verify?timestamp=%27+Date.parse(new%20Date())
+[ log ] api.yushan.com/Base/verify?timestamp=%27+Date.parse(new%20Date()) [运行时间：0.070772s][吞吐率：14.13req/s] [内存消耗：1,516.27kb] [文件加载：44]
+[ info ] [ LANG ] D:\ys\api.yushan.com\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'Base',
+    2 => 'verify',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=3ka4cgjhsdp096hs1cigguqnh5',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://zhaopin.yushan.com/main.html',
+  'accept' => 'image/webp,image/apng,image/*,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.115 Safari/537.36',
+  'cache-control' => 'no-cache',
+  'pragma' => 'no-cache',
+  'connection' => 'close',
+  'host' => 'api.yushan.com',
+)
+[ info ] [ PARAM ] array (
+  '/Base/verify' => '',
+  'timestamp' => '\' Date.parse(new Date())',
+)
+[ info ] [ RUN ] app\api\controller\Base->verify[ D:\ys\api.yushan.com\application\api\controller\Base.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-07-17T23:59:39+08:00 ] 127.0.0.1 127.0.0.1 POST /auth/get_jobs_select?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9hcGkueXNqaWFuemh1LmNvbSIsImF1ZCI6Imh0dHA6XC9cL3poYW9waW4ueXNqaWFuemh1LmNvbSIsImlhdCI6MTUwMDMwNjU4NCwiZXhwIjoxNTAwNDI2NTg0LCJuYmYiOiIiLCJ1dWlkIjoiNTNmMmMyNGYtNDlhNS1hNDk2LTg2MzktZjgzM2MwMTJjZWQ1In0.yWugCk4BBdsKYFY3ia9x5yT-futyybOV6NE-zNmbVf0
+[ log ] api.yushan.com/auth/get_jobs_select?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9hcGkueXNqaWFuemh1LmNvbSIsImF1ZCI6Imh0dHA6XC9cL3poYW9waW4ueXNqaWFuemh1LmNvbSIsImlhdCI6MTUwMDMwNjU4NCwiZXhwIjoxNTAwNDI2NTg0LCJuYmYiOiIiLCJ1dWlkIjoiNTNmMmMyNGYtNDlhNS1hNDk2LTg2MzktZjgzM2MwMTJjZWQ1In0.yWugCk4BBdsKYFY3ia9x5yT-futyybOV6NE-zNmbVf0 [运行时间：0.201950s][吞吐率：4.95req/s] [内存消耗：2,336.00kb] [文件加载：57]
+[ info ] [ LANG ] D:\ys\api.yushan.com\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'auth',
+    2 => 'get_jobs_select',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://zhaopin.yushan.com/main.html',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.115 Safari/537.36',
+  'origin' => 'http://zhaopin.yushan.com',
+  'accept' => 'application/json, text/plain, */*',
+  'content-length' => '0',
+  'connection' => 'close',
+  'host' => 'api.yushan.com',
+)
+[ info ] [ PARAM ] array (
+  '/auth/get_jobs_select' => '',
+  'token' => 'eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9hcGkueXNqaWFuemh1LmNvbSIsImF1ZCI6Imh0dHA6XC9cL3poYW9waW4ueXNqaWFuemh1LmNvbSIsImlhdCI6MTUwMDMwNjU4NCwiZXhwIjoxNTAwNDI2NTg0LCJuYmYiOiIiLCJ1dWlkIjoiNTNmMmMyNGYtNDlhNS1hNDk2LTg2MzktZjgzM2MwMTJjZWQ1In0.yWugCk4BBdsKYFY3ia9x5yT-futyybOV6NE-zNmbVf0',
+)
+[ info ] [ CACHE ] INIT File
+[ info ] [ RUN ] app\api\controller\Auth->get_jobs_select[ D:\ys\api.yushan.com\application\api\controller\Auth.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001006s ] mysql:dbname=ysjianzhu;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ys_admin_user` [ RunTime:0.101656s ]
+[ sql ] [ SQL ] SELECT * FROM `ys_admin_user` WHERE  `uuid` = '53f2c24f-49a5-a496-8639-f833c012ced5' LIMIT 1 [ RunTime:0.000559s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ys_jobs` [ RunTime:0.039306s ]
+[ sql ] [ SQL ] SELECT `jobs_name`,`id` FROM `ys_jobs` WHERE  `uid` = 1 GROUP BY jobs_name [ RunTime:0.000744s ]
+
+---------------------------------------------------------------
+[ 2017-07-17T23:59:39+08:00 ] 127.0.0.1 127.0.0.1 POST /auth/com_list?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9hcGkueXNqaWFuemh1LmNvbSIsImF1ZCI6Imh0dHA6XC9cL3poYW9waW4ueXNqaWFuemh1LmNvbSIsImlhdCI6MTUwMDMwNjU4NCwiZXhwIjoxNTAwNDI2NTg0LCJuYmYiOiIiLCJ1dWlkIjoiNTNmMmMyNGYtNDlhNS1hNDk2LTg2MzktZjgzM2MwMTJjZWQ1In0.yWugCk4BBdsKYFY3ia9x5yT-futyybOV6NE-zNmbVf0
+[ log ] api.yushan.com/auth/com_list?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9hcGkueXNqaWFuemh1LmNvbSIsImF1ZCI6Imh0dHA6XC9cL3poYW9waW4ueXNqaWFuemh1LmNvbSIsImlhdCI6MTUwMDMwNjU4NCwiZXhwIjoxNTAwNDI2NTg0LCJuYmYiOiIiLCJ1dWlkIjoiNTNmMmMyNGYtNDlhNS1hNDk2LTg2MzktZjgzM2MwMTJjZWQ1In0.yWugCk4BBdsKYFY3ia9x5yT-futyybOV6NE-zNmbVf0 [运行时间：0.194452s][吞吐率：5.14req/s] [内存消耗：2,317.52kb] [文件加载：57]
+[ info ] [ LANG ] D:\ys\api.yushan.com\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'auth',
+    2 => 'com_list',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://zhaopin.yushan.com/main.html',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.115 Safari/537.36',
+  'origin' => 'http://zhaopin.yushan.com',
+  'accept' => 'application/json, text/plain, */*',
+  'content-length' => '38',
+  'connection' => 'close',
+  'host' => 'api.yushan.com',
+)
+[ info ] [ PARAM ] array (
+  '/auth/com_list' => '',
+  'token' => 'eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9hcGkueXNqaWFuemh1LmNvbSIsImF1ZCI6Imh0dHA6XC9cL3poYW9waW4ueXNqaWFuemh1LmNvbSIsImlhdCI6MTUwMDMwNjU4NCwiZXhwIjoxNTAwNDI2NTg0LCJuYmYiOiIiLCJ1dWlkIjoiNTNmMmMyNGYtNDlhNS1hNDk2LTg2MzktZjgzM2MwMTJjZWQ1In0.yWugCk4BBdsKYFY3ia9x5yT-futyybOV6NE-zNmbVf0',
+  'codeid' => 'C6pTP4DUrarhlBs',
+  'c_alias' => 'QS_wage',
+)
+[ info ] [ CACHE ] INIT File
+[ info ] [ RUN ] app\api\controller\Auth->com_list[ D:\ys\api.yushan.com\application\api\controller\Auth.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000981s ] mysql:dbname=ysjianzhu;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ys_system_conf` [ RunTime:0.086007s ]
+[ sql ] [ SQL ] SELECT * FROM `ys_system_conf` WHERE  `tbnum` = '77'  AND `isdel` = 0 LIMIT 1 [ RunTime:0.000560s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ys_dict` [ RunTime:0.039163s ]
+[ sql ] [ SQL ] SELECT * FROM `ys_dict` WHERE  `c_alias` = 'QS_wage'  AND `isdel` = 0 [ RunTime:0.000553s ]
+[ sql ] [ SQL ] SELECT * FROM `ys_system_conf` WHERE  `tbnum` = '77'  AND `isdel` = 0 LIMIT 1 [ RunTime:0.000481s ]
+
+---------------------------------------------------------------
+[ 2017-07-17T23:59:39+08:00 ] 127.0.0.1 127.0.0.1 POST /chat/getadminchatloglist?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9hcGkueXNqaWFuemh1LmNvbSIsImF1ZCI6Imh0dHA6XC9cL3poYW9waW4ueXNqaWFuemh1LmNvbSIsImlhdCI6MTUwMDMwNjU4NCwiZXhwIjoxNTAwNDI2NTg0LCJuYmYiOiIiLCJ1dWlkIjoiNTNmMmMyNGYtNDlhNS1hNDk2LTg2MzktZjgzM2MwMTJjZWQ1In0.yWugCk4BBdsKYFY3ia9x5yT-futyybOV6NE-zNmbVf0
+[ log ] api.yushan.com/chat/getadminchatloglist?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9hcGkueXNqaWFuemh1LmNvbSIsImF1ZCI6Imh0dHA6XC9cL3poYW9waW4ueXNqaWFuemh1LmNvbSIsImlhdCI6MTUwMDMwNjU4NCwiZXhwIjoxNTAwNDI2NTg0LCJuYmYiOiIiLCJ1dWlkIjoiNTNmMmMyNGYtNDlhNS1hNDk2LTg2MzktZjgzM2MwMTJjZWQ1In0.yWugCk4BBdsKYFY3ia9x5yT-futyybOV6NE-zNmbVf0 [运行时间：0.218140s][吞吐率：4.58req/s] [内存消耗：2,237.41kb] [文件加载：57]
+[ info ] [ LANG ] D:\ys\api.yushan.com\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'chat',
+    2 => 'getadminchatloglist',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://zhaopin.yushan.com/main.html',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.115 Safari/537.36',
+  'origin' => 'http://zhaopin.yushan.com',
+  'accept' => 'application/json, text/plain, */*',
+  'content-length' => '36',
+  'connection' => 'close',
+  'host' => 'api.yushan.com',
+)
+[ info ] [ PARAM ] array (
+  '/chat/getadminchatloglist' => '',
+  'token' => 'eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9hcGkueXNqaWFuemh1LmNvbSIsImF1ZCI6Imh0dHA6XC9cL3poYW9waW4ueXNqaWFuemh1LmNvbSIsImlhdCI6MTUwMDMwNjU4NCwiZXhwIjoxNTAwNDI2NTg0LCJuYmYiOiIiLCJ1dWlkIjoiNTNmMmMyNGYtNDlhNS1hNDk2LTg2MzktZjgzM2MwMTJjZWQ1In0.yWugCk4BBdsKYFY3ia9x5yT-futyybOV6NE-zNmbVf0',
+  'jobs_name' => '',
+  'salary' => '',
+  'experience' => '',
+  'type' => '',
+)
+[ info ] [ CACHE ] INIT File
+[ info ] [ RUN ] app\api\controller\Chat->getadminchatloglist[ D:\ys\api.yushan.com\application\api\controller\Chat.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000992s ] mysql:dbname=ysjianzhu;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ys_admin_user` [ RunTime:0.098417s ]
+[ sql ] [ SQL ] SELECT * FROM `ys_admin_user` WHERE  `uuid` = '53f2c24f-49a5-a496-8639-f833c012ced5' LIMIT 1 [ RunTime:0.000490s ]
+[ sql ] [ SQL ] SELECT A.*,(SELECT sum(need_send) from ys_chatlog where chatuser=A.chatuser and jobid=A.jobid and A.to_id=1) weidu FROM ys_chatlog A,
+        (SELECT createtime, MAX(createtime) max_time FROM ys_chatlog where from_id=1 or to_id=1 GROUP BY chatuser,jobid) B
+        WHERE  A.createtime = B.max_time
+        GROUP BY chatuser,jobid [ RunTime:0.039636s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ys_jobs` [ RunTime:0.021074s ]
+[ sql ] [ SQL ] SELECT `jobs_name` FROM `ys_jobs` WHERE  `id` = 1  AND `isdel` = 0 LIMIT 1 [ RunTime:0.000409s ]
+[ sql ] [ SQL ] SELECT `headimg`,`nickname` FROM `ys_admin_user` WHERE  `id` = 2  AND `isdel` = 0 LIMIT 1 [ RunTime:0.000372s ]
+[ sql ] [ SQL ] SELECT `jobs_name` FROM `ys_jobs` WHERE  `id` = 58  AND `isdel` = 0 LIMIT 1 [ RunTime:0.000292s ]
+[ sql ] [ SQL ] SELECT `headimg`,`nickname` FROM `ys_admin_user` WHERE  `id` = 2  AND `isdel` = 0 LIMIT 1 [ RunTime:0.000228s ]
+
+---------------------------------------------------------------
+[ 2017-07-17T23:59:40+08:00 ] 127.0.0.1 127.0.0.1 POST /auth/com_list?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9hcGkueXNqaWFuemh1LmNvbSIsImF1ZCI6Imh0dHA6XC9cL3poYW9waW4ueXNqaWFuemh1LmNvbSIsImlhdCI6MTUwMDMwNjU4NCwiZXhwIjoxNTAwNDI2NTg0LCJuYmYiOiIiLCJ1dWlkIjoiNTNmMmMyNGYtNDlhNS1hNDk2LTg2MzktZjgzM2MwMTJjZWQ1In0.yWugCk4BBdsKYFY3ia9x5yT-futyybOV6NE-zNmbVf0
+[ log ] api.yushan.com/auth/com_list?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9hcGkueXNqaWFuemh1LmNvbSIsImF1ZCI6Imh0dHA6XC9cL3poYW9waW4ueXNqaWFuemh1LmNvbSIsImlhdCI6MTUwMDMwNjU4NCwiZXhwIjoxNTAwNDI2NTg0LCJuYmYiOiIiLCJ1dWlkIjoiNTNmMmMyNGYtNDlhNS1hNDk2LTg2MzktZjgzM2MwMTJjZWQ1In0.yWugCk4BBdsKYFY3ia9x5yT-futyybOV6NE-zNmbVf0 [运行时间：0.121359s][吞吐率：8.24req/s] [内存消耗：2,317.66kb] [文件加载：57]
+[ info ] [ LANG ] D:\ys\api.yushan.com\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'auth',
+    2 => 'com_list',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://zhaopin.yushan.com/main.html',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.115 Safari/537.36',
+  'origin' => 'http://zhaopin.yushan.com',
+  'accept' => 'application/json, text/plain, */*',
+  'content-length' => '44',
+  'connection' => 'close',
+  'host' => 'api.yushan.com',
+)
+[ info ] [ PARAM ] array (
+  '/auth/com_list' => '',
+  'token' => 'eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9hcGkueXNqaWFuemh1LmNvbSIsImF1ZCI6Imh0dHA6XC9cL3poYW9waW4ueXNqaWFuemh1LmNvbSIsImlhdCI6MTUwMDMwNjU4NCwiZXhwIjoxNTAwNDI2NTg0LCJuYmYiOiIiLCJ1dWlkIjoiNTNmMmMyNGYtNDlhNS1hNDk2LTg2MzktZjgzM2MwMTJjZWQ1In0.yWugCk4BBdsKYFY3ia9x5yT-futyybOV6NE-zNmbVf0',
+  'codeid' => 'C6pTP4DUrarhlBs',
+  'c_alias' => 'QS_experience',
+)
+[ info ] [ CACHE ] INIT File
+[ info ] [ RUN ] app\api\controller\Auth->com_list[ D:\ys\api.yushan.com\application\api\controller\Auth.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000899s ] mysql:dbname=ysjianzhu;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ys_system_conf` [ RunTime:0.049259s ]
+[ sql ] [ SQL ] SELECT * FROM `ys_system_conf` WHERE  `tbnum` = '77'  AND `isdel` = 0 LIMIT 1 [ RunTime:0.000510s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ys_dict` [ RunTime:0.026672s ]
+[ sql ] [ SQL ] SELECT * FROM `ys_dict` WHERE  `c_alias` = 'QS_experience'  AND `isdel` = 0 [ RunTime:0.000560s ]
+[ sql ] [ SQL ] SELECT * FROM `ys_system_conf` WHERE  `tbnum` = '77'  AND `isdel` = 0 LIMIT 1 [ RunTime:0.000401s ]
+
+---------------------------------------------------------------
+[ 2017-07-17T23:59:40+08:00 ] 127.0.0.1 127.0.0.1 POST /chat/getchat?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9hcGkueXNqaWFuemh1LmNvbSIsImF1ZCI6Imh0dHA6XC9cL3poYW9waW4ueXNqaWFuemh1LmNvbSIsImlhdCI6MTUwMDMwNjU4NCwiZXhwIjoxNTAwNDI2NTg0LCJuYmYiOiIiLCJ1dWlkIjoiNTNmMmMyNGYtNDlhNS1hNDk2LTg2MzktZjgzM2MwMTJjZWQ1In0.yWugCk4BBdsKYFY3ia9x5yT-futyybOV6NE-zNmbVf0
+[ log ] api.yushan.com/chat/getchat?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9hcGkueXNqaWFuemh1LmNvbSIsImF1ZCI6Imh0dHA6XC9cL3poYW9waW4ueXNqaWFuemh1LmNvbSIsImlhdCI6MTUwMDMwNjU4NCwiZXhwIjoxNTAwNDI2NTg0LCJuYmYiOiIiLCJ1dWlkIjoiNTNmMmMyNGYtNDlhNS1hNDk2LTg2MzktZjgzM2MwMTJjZWQ1In0.yWugCk4BBdsKYFY3ia9x5yT-futyybOV6NE-zNmbVf0 [运行时间：0.104330s][吞吐率：9.58req/s] [内存消耗：2,242.20kb] [文件加载：57]
+[ info ] [ LANG ] D:\ys\api.yushan.com\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'chat',
+    2 => 'getchat',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://zhaopin.yushan.com/main.html',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.115 Safari/537.36',
+  'origin' => 'http://zhaopin.yushan.com',
+  'accept' => 'application/json, text/plain, */*',
+  'content-length' => '10',
+  'connection' => 'close',
+  'host' => 'api.yushan.com',
+)
+[ info ] [ PARAM ] array (
+  '/chat/getchat' => '',
+  'token' => 'eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9hcGkueXNqaWFuemh1LmNvbSIsImF1ZCI6Imh0dHA6XC9cL3poYW9waW4ueXNqaWFuemh1LmNvbSIsImlhdCI6MTUwMDMwNjU4NCwiZXhwIjoxNTAwNDI2NTg0LCJuYmYiOiIiLCJ1dWlkIjoiNTNmMmMyNGYtNDlhNS1hNDk2LTg2MzktZjgzM2MwMTJjZWQ1In0.yWugCk4BBdsKYFY3ia9x5yT-futyybOV6NE-zNmbVf0',
+  'touserid' => '2',
+)
+[ info ] [ CACHE ] INIT File
+[ info ] [ RUN ] app\api\controller\Chat->getchat[ D:\ys\api.yushan.com\application\api\controller\Chat.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000824s ] mysql:dbname=ysjianzhu;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ys_admin_user` [ RunTime:0.023214s ]
+[ sql ] [ SQL ] SELECT * FROM `ys_admin_user` WHERE  `uuid` = '53f2c24f-49a5-a496-8639-f833c012ced5' LIMIT 1 [ RunTime:0.000465s ]
+[ sql ] [ SQL ] SELECT * FROM `ys_admin_user` WHERE  `id` = 2 LIMIT 1 [ RunTime:0.000383s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ys_jobs_company` [ RunTime:0.022152s ]
+[ sql ] [ SQL ] SELECT `id` FROM `ys_jobs_company` WHERE  `uid` = 1  AND `isdel` = 0 LIMIT 1 [ RunTime:0.000518s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ys_prosecute` [ RunTime:0.015781s ]
+[ sql ] [ SQL ] SELECT * FROM `ys_prosecute` WHERE  `uid` = 1  AND `reportman` = '2'  AND `isdel` = 0 LIMIT 1 [ RunTime:0.000635s ]
+
+---------------------------------------------------------------
+[ 2017-07-17T23:59:40+08:00 ] 127.0.0.1 127.0.0.1 POST /chat/needSend?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9hcGkueXNqaWFuemh1LmNvbSIsImF1ZCI6Imh0dHA6XC9cL3poYW9waW4ueXNqaWFuemh1LmNvbSIsImlhdCI6MTUwMDMwNjU4NCwiZXhwIjoxNTAwNDI2NTg0LCJuYmYiOiIiLCJ1dWlkIjoiNTNmMmMyNGYtNDlhNS1hNDk2LTg2MzktZjgzM2MwMTJjZWQ1In0.yWugCk4BBdsKYFY3ia9x5yT-futyybOV6NE-zNmbVf0
+[ log ] api.yushan.com/chat/needSend?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9hcGkueXNqaWFuemh1LmNvbSIsImF1ZCI6Imh0dHA6XC9cL3poYW9waW4ueXNqaWFuemh1LmNvbSIsImlhdCI6MTUwMDMwNjU4NCwiZXhwIjoxNTAwNDI2NTg0LCJuYmYiOiIiLCJ1dWlkIjoiNTNmMmMyNGYtNDlhNS1hNDk2LTg2MzktZjgzM2MwMTJjZWQ1In0.yWugCk4BBdsKYFY3ia9x5yT-futyybOV6NE-zNmbVf0 [运行时间：0.064152s][吞吐率：15.59req/s] [内存消耗：2,208.56kb] [文件加载：57]
+[ info ] [ LANG ] D:\ys\api.yushan.com\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'chat',
+    2 => 'needSend',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://zhaopin.yushan.com/main.html',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.115 Safari/537.36',
+  'origin' => 'http://zhaopin.yushan.com',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'content-length' => '6',
+  'connection' => 'close',
+  'host' => 'api.yushan.com',
+)
+[ info ] [ PARAM ] array (
+  '/chat/needSend' => '',
+  'token' => 'eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9hcGkueXNqaWFuemh1LmNvbSIsImF1ZCI6Imh0dHA6XC9cL3poYW9waW4ueXNqaWFuemh1LmNvbSIsImlhdCI6MTUwMDMwNjU4NCwiZXhwIjoxNTAwNDI2NTg0LCJuYmYiOiIiLCJ1dWlkIjoiNTNmMmMyNGYtNDlhNS1hNDk2LTg2MzktZjgzM2MwMTJjZWQ1In0.yWugCk4BBdsKYFY3ia9x5yT-futyybOV6NE-zNmbVf0',
+  'toid' => '2',
+)
+[ info ] [ CACHE ] INIT File
+[ info ] [ RUN ] app\api\controller\Chat->needSend[ D:\ys\api.yushan.com\application\api\controller\Chat.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000695s ] mysql:dbname=ysjianzhu;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ys_chatlog` [ RunTime:0.023942s ]
+[ sql ] [ SQL ] UPDATE `ys_chatlog`  SET `need_send`=0  WHERE  `chatuser` = ',2' [ RunTime:0.000640s ]
+
+---------------------------------------------------------------
+[ 2017-07-17T23:59:40+08:00 ] 127.0.0.1 127.0.0.1 POST /chat/getadminchatlog?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9hcGkueXNqaWFuemh1LmNvbSIsImF1ZCI6Imh0dHA6XC9cL3poYW9waW4ueXNqaWFuemh1LmNvbSIsImlhdCI6MTUwMDMwNjU4NCwiZXhwIjoxNTAwNDI2NTg0LCJuYmYiOiIiLCJ1dWlkIjoiNTNmMmMyNGYtNDlhNS1hNDk2LTg2MzktZjgzM2MwMTJjZWQ1In0.yWugCk4BBdsKYFY3ia9x5yT-futyybOV6NE-zNmbVf0
+[ log ] api.yushan.com/chat/getadminchatlog?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9hcGkueXNqaWFuemh1LmNvbSIsImF1ZCI6Imh0dHA6XC9cL3poYW9waW4ueXNqaWFuemh1LmNvbSIsImlhdCI6MTUwMDMwNjU4NCwiZXhwIjoxNTAwNDI2NTg0LCJuYmYiOiIiLCJ1dWlkIjoiNTNmMmMyNGYtNDlhNS1hNDk2LTg2MzktZjgzM2MwMTJjZWQ1In0.yWugCk4BBdsKYFY3ia9x5yT-futyybOV6NE-zNmbVf0 [运行时间：0.148746s][吞吐率：6.72req/s] [内存消耗：2,264.98kb] [文件加载：57]
+[ info ] [ LANG ] D:\ys\api.yushan.com\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'chat',
+    2 => 'getadminchatlog',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://zhaopin.yushan.com/main.html',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.115 Safari/537.36',
+  'origin' => 'http://zhaopin.yushan.com',
+  'accept' => 'application/json, text/plain, */*',
+  'content-length' => '32',
+  'connection' => 'close',
+  'host' => 'api.yushan.com',
+)
+[ info ] [ PARAM ] array (
+  '/chat/getadminchatlog' => '',
+  'token' => 'eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9hcGkueXNqaWFuemh1LmNvbSIsImF1ZCI6Imh0dHA6XC9cL3poYW9waW4ueXNqaWFuemh1LmNvbSIsImlhdCI6MTUwMDMwNjU4NCwiZXhwIjoxNTAwNDI2NTg0LCJuYmYiOiIiLCJ1dWlkIjoiNTNmMmMyNGYtNDlhNS1hNDk2LTg2MzktZjgzM2MwMTJjZWQ1In0.yWugCk4BBdsKYFY3ia9x5yT-futyybOV6NE-zNmbVf0',
+  'uid' => '1',
+  'touserid' => '2',
+  'jobid' => '1',
+  'page' => '-1',
+)
+[ info ] [ CACHE ] INIT File
+[ info ] [ RUN ] app\api\controller\Chat->getadminChatLog[ D:\ys\api.yushan.com\application\api\controller\Chat.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000696s ] mysql:dbname=ysjianzhu;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ys_resume` [ RunTime:0.027979s ]
+[ sql ] [ SQL ] SELECT * FROM `ys_resume` WHERE  `id` = 2  AND `isdel` = 0 LIMIT 1 [ RunTime:0.000748s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ys_jobs` [ RunTime:0.017302s ]
+[ sql ] [ SQL ] SELECT `unfituser`,`confirm` FROM `ys_jobs` WHERE  `id` = 1  AND `isdel` = 0 LIMIT 1 [ RunTime:0.000358s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ys_chatlog` [ RunTime:0.038205s ]
+[ sql ] [ SQL ] SELECT * FROM `ys_chatlog` WHERE  (  from_id=1 AND to_id=2 AND jobid=1 ) OR (  from_id=2 AND to_id=1 AND jobid=1 ) ORDER BY `createtime`  desc LIMIT 0,8 [ RunTime:0.000806s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ys_admin_user` [ RunTime:0.015587s ]
+[ sql ] [ SQL ] SELECT id uid,headimg avatar,`nickname` FROM `ys_admin_user` WHERE  `id` = 2 LIMIT 1 [ RunTime:0.000490s ]
+[ sql ] [ SQL ] SELECT id uid,headimg avatar,`nickname` FROM `ys_admin_user` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000232s ]
+[ sql ] [ SQL ] SELECT id uid,headimg avatar,`nickname` FROM `ys_admin_user` WHERE  `id` = 2 LIMIT 1 [ RunTime:0.000233s ]
+[ sql ] [ SQL ] SELECT id uid,headimg avatar,`nickname` FROM `ys_admin_user` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000236s ]
+[ sql ] [ SQL ] SELECT id uid,headimg avatar,`nickname` FROM `ys_admin_user` WHERE  `id` = 2 LIMIT 1 [ RunTime:0.000235s ]
+[ sql ] [ SQL ] SELECT id uid,headimg avatar,`nickname` FROM `ys_admin_user` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000260s ]
+[ sql ] [ SQL ] SELECT id uid,headimg avatar,`nickname` FROM `ys_admin_user` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000252s ]
+[ sql ] [ SQL ] SELECT id uid,headimg avatar,`nickname` FROM `ys_admin_user` WHERE  `id` = 2 LIMIT 1 [ RunTime:0.000230s ]
+[ sql ] [ SQL ] SELECT id uid,headimg avatar,`nickname` FROM `ys_admin_user` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000245s ]
+[ sql ] [ SQL ] SELECT id uid,headimg avatar,`nickname` FROM `ys_admin_user` WHERE  `id` = 2 LIMIT 1 [ RunTime:0.000231s ]
+[ sql ] [ SQL ] SELECT id uid,headimg avatar,`nickname` FROM `ys_admin_user` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000236s ]
+[ sql ] [ SQL ] SELECT id uid,headimg avatar,`nickname` FROM `ys_admin_user` WHERE  `id` = 2 LIMIT 1 [ RunTime:0.000259s ]
+[ sql ] [ SQL ] SELECT id uid,headimg avatar,`nickname` FROM `ys_admin_user` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000238s ]
+[ sql ] [ SQL ] SELECT id uid,headimg avatar,`nickname` FROM `ys_admin_user` WHERE  `id` = 2 LIMIT 1 [ RunTime:0.000255s ]
+[ sql ] [ SQL ] SELECT id uid,headimg avatar,`nickname` FROM `ys_admin_user` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000230s ]
+[ sql ] [ SQL ] SELECT id uid,headimg avatar,`nickname` FROM `ys_admin_user` WHERE  `id` = 2 LIMIT 1 [ RunTime:0.000264s ]
+
+---------------------------------------------------------------
+[ 2017-07-17T23:59:45+08:00 ] 127.0.0.1 127.0.0.1 POST /chat/getadminchatlog?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9hcGkueXNqaWFuemh1LmNvbSIsImF1ZCI6Imh0dHA6XC9cL3poYW9waW4ueXNqaWFuemh1LmNvbSIsImlhdCI6MTUwMDMwNjU4NCwiZXhwIjoxNTAwNDI2NTg0LCJuYmYiOiIiLCJ1dWlkIjoiNTNmMmMyNGYtNDlhNS1hNDk2LTg2MzktZjgzM2MwMTJjZWQ1In0.yWugCk4BBdsKYFY3ia9x5yT-futyybOV6NE-zNmbVf0
+[ log ] api.yushan.com/chat/getadminchatlog?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9hcGkueXNqaWFuemh1LmNvbSIsImF1ZCI6Imh0dHA6XC9cL3poYW9waW4ueXNqaWFuemh1LmNvbSIsImlhdCI6MTUwMDMwNjU4NCwiZXhwIjoxNTAwNDI2NTg0LCJuYmYiOiIiLCJ1dWlkIjoiNTNmMmMyNGYtNDlhNS1hNDk2LTg2MzktZjgzM2MwMTJjZWQ1In0.yWugCk4BBdsKYFY3ia9x5yT-futyybOV6NE-zNmbVf0 [运行时间：0.127009s][吞吐率：7.87req/s] [内存消耗：2,265.34kb] [文件加载：57]
+[ info ] [ LANG ] D:\ys\api.yushan.com\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'chat',
+    2 => 'getadminchatlog',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://zhaopin.yushan.com/main.html',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.115 Safari/537.36',
+  'origin' => 'http://zhaopin.yushan.com',
+  'accept' => 'application/json, text/plain, */*',
+  'cache-control' => 'no-cache',
+  'pragma' => 'no-cache',
+  'content-length' => '31',
+  'connection' => 'close',
+  'host' => 'api.yushan.com',
+)
+[ info ] [ PARAM ] array (
+  '/chat/getadminchatlog' => '',
+  'token' => 'eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9hcGkueXNqaWFuemh1LmNvbSIsImF1ZCI6Imh0dHA6XC9cL3poYW9waW4ueXNqaWFuemh1LmNvbSIsImlhdCI6MTUwMDMwNjU4NCwiZXhwIjoxNTAwNDI2NTg0LCJuYmYiOiIiLCJ1dWlkIjoiNTNmMmMyNGYtNDlhNS1hNDk2LTg2MzktZjgzM2MwMTJjZWQ1In0.yWugCk4BBdsKYFY3ia9x5yT-futyybOV6NE-zNmbVf0',
+  'uid' => '1',
+  'touserid' => '2',
+  'jobid' => '1',
+  'page' => '0',
+)
+[ info ] [ CACHE ] INIT File
+[ info ] [ RUN ] app\api\controller\Chat->getadminChatLog[ D:\ys\api.yushan.com\application\api\controller\Chat.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000878s ] mysql:dbname=ysjianzhu;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ys_resume` [ RunTime:0.026377s ]
+[ sql ] [ SQL ] SELECT * FROM `ys_resume` WHERE  `id` = 2  AND `isdel` = 0 LIMIT 1 [ RunTime:0.000853s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ys_jobs` [ RunTime:0.016882s ]
+[ sql ] [ SQL ] SELECT `unfituser`,`confirm` FROM `ys_jobs` WHERE  `id` = 1  AND `isdel` = 0 LIMIT 1 [ RunTime:0.000500s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ys_chatlog` [ RunTime:0.015725s ]
+[ sql ] [ SQL ] SELECT * FROM `ys_chatlog` WHERE  (  from_id=1 AND to_id=2 AND jobid=1 ) OR (  from_id=2 AND to_id=1 AND jobid=1 ) ORDER BY `createtime`  desc LIMIT 8,8 [ RunTime:0.000844s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ys_admin_user` [ RunTime:0.015837s ]
+[ sql ] [ SQL ] SELECT id uid,headimg avatar,`nickname` FROM `ys_admin_user` WHERE  `id` = 2 LIMIT 1 [ RunTime:0.000493s ]
+[ sql ] [ SQL ] SELECT id uid,headimg avatar,`nickname` FROM `ys_admin_user` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000235s ]
+[ sql ] [ SQL ] SELECT id uid,headimg avatar,`nickname` FROM `ys_admin_user` WHERE  `id` = 2 LIMIT 1 [ RunTime:0.000230s ]
+[ sql ] [ SQL ] SELECT id uid,headimg avatar,`nickname` FROM `ys_admin_user` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000236s ]
+[ sql ] [ SQL ] SELECT id uid,headimg avatar,`nickname` FROM `ys_admin_user` WHERE  `id` = 2 LIMIT 1 [ RunTime:0.000230s ]
+[ sql ] [ SQL ] SELECT id uid,headimg avatar,`nickname` FROM `ys_admin_user` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000260s ]
+[ sql ] [ SQL ] SELECT id uid,headimg avatar,`nickname` FROM `ys_admin_user` WHERE  `id` = 2 LIMIT 1 [ RunTime:0.000242s ]
+[ sql ] [ SQL ] SELECT id uid,headimg avatar,`nickname` FROM `ys_admin_user` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000238s ]
+[ sql ] [ SQL ] SELECT id uid,headimg avatar,`nickname` FROM `ys_admin_user` WHERE  `id` = 2 LIMIT 1 [ RunTime:0.000230s ]
+[ sql ] [ SQL ] SELECT id uid,headimg avatar,`nickname` FROM `ys_admin_user` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000231s ]
+[ sql ] [ SQL ] SELECT id uid,headimg avatar,`nickname` FROM `ys_admin_user` WHERE  `id` = 2 LIMIT 1 [ RunTime:0.000237s ]
+[ sql ] [ SQL ] SELECT id uid,headimg avatar,`nickname` FROM `ys_admin_user` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000230s ]
+[ sql ] [ SQL ] SELECT id uid,headimg avatar,`nickname` FROM `ys_admin_user` WHERE  `id` = 2 LIMIT 1 [ RunTime:0.000239s ]
+[ sql ] [ SQL ] SELECT id uid,headimg avatar,`nickname` FROM `ys_admin_user` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000227s ]
+[ sql ] [ SQL ] SELECT id uid,headimg avatar,`nickname` FROM `ys_admin_user` WHERE  `id` = 2 LIMIT 1 [ RunTime:0.000305s ]
+[ sql ] [ SQL ] SELECT id uid,headimg avatar,`nickname` FROM `ys_admin_user` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000241s ]
+
+---------------------------------------------------------------

@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+    <title>登录</title>
+    <link rel="shortcut icon" href="/images/favicon1.ico">
+    <link rel="stylesheet" href="/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/css/login.css">
+    <link rel="stylesheet" href="/css/layer.css">
+    <script type="text/javascript" src="/js/jquery.js"></script>
+    <script type="text/javascript" src="/js/layer.js"></script>
+</head>
+<body class="signin">
+    <div class="signinpanel">
+    <form method="get">
+        <h4 class="no-margins">登录：</h4>
+        <p class="m-t-md">登录到CX+空间主题UI框架</p>
+        <input class="form-control uname" id="username" type="text" placeholder="请输入登录账号">
+        <input class="form-control pword m-b" id="password" type="password" placeholder="请输入登录密码">
+        <input id="captcha" class="form-control ctcha" type="text" placeholder="请输入验证码">
+        <img class="code" alt="验证码" id="captchahit" src="index.php/Base/verify?timestamp='+Date.parse(new Date())" onclick="this.src='index.php/Base/verify?timestamp='+Date.parse(new Date())" style="width: 195px;">
+        <a href="register.html">注册</a>
+        <div class="btn btn-success btn-block loginBtn">登录</div>
+        <div class="signup-footer">
+            <div class="pull-left">
+                &copy; chenxi
+            </div>
+        </div>
+    </form>
+    </div>
+    <script>
+    $(function(){
+        $('.loginBtn').on('click',function() {
+             var  a=$('#username').val();
+             var  b=$('#password').val();
+             var  c=$('#captcha').val();
+            var sendData={
+                username:a,
+                password:b,
+                captcha:c
+            };
+            $.ajax({
+                url:'index.php/Base/login',
+                type:"POST",
+                 xhrFields: {
+                    withCredentials: true
+                },
+                data:sendData,
+                success:function(h){
+                if (h.code==1) {
+                    layer.msg('系统登录中…');
+                    localStorage.setItem('ystoken',h.token); 
+                    localStorage.setItem('uuid',h.uuid); 
+                    setTimeout(function () {
+                      location.href = 'main.html';
+                    }, 1000);
+                  } else {
+                    layer.msg(h.msg); 
+                  }
+                   $('#captchahit').attr('src','index.php/Base/verify?timestamp='+Date.parse(new Date()));
+                }
+            });
+        });
+    });
+    </script>
+</body>
+</html>

@@ -1,0 +1,1751 @@
+[ 2017-09-08T22:28:07+08:00 ] ::1 ::1 POST /index.php/auth/com_list?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9hcGkueXNqaWFuemh1LmNvbSIsImF1ZCI6Imh0dHA6XC9cL3poYW9waW4ueXNqaWFuemh1LmNvbSIsImlhdCI6MTUwNDg2NzUwOCwiZXhwIjoxNTA0OTg3NTA4LCJuYmYiOiIiLCJ1dWlkIjoiZDc1OTdkZDktNTcxYS1kYmYxLTUwMzAtNTk3YjQ4YzFhODE1In0.HfZvUPEj0ho31qqRKIDkHcEkzj44zM3xUV1VsXDMxPk
+[ log ] localhost/index.php/auth/com_list?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9hcGkueXNqaWFuemh1LmNvbSIsImF1ZCI6Imh0dHA6XC9cL3poYW9waW4ueXNqaWFuemh1LmNvbSIsImlhdCI6MTUwNDg2NzUwOCwiZXhwIjoxNTA0OTg3NTA4LCJuYmYiOiIiLCJ1dWlkIjoiZDc1OTdkZDktNTcxYS1kYmYxLTUwMzAtNTk3YjQ4YzFhODE1In0.HfZvUPEj0ho31qqRKIDkHcEkzj44zM3xUV1VsXDMxPk [运行时间：0.084122s][吞吐率：11.89req/s] [内存消耗：2,471.27kb] [文件加载：57]
+[ info ] [ LANG ] D:\textgulp\website\php\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'auth',
+    2 => 'com_list',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=nng4gi73hbiliqmne9610qt826',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://localhost/main.html',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.79 Safari/537.36',
+  'origin' => 'http://localhost',
+  'accept' => 'application/json, text/plain, */*',
+  'content-length' => '58',
+  'connection' => 'close',
+  'host' => 'localhost',
+)
+[ info ] [ PARAM ] array (
+  'token' => 'eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9hcGkueXNqaWFuemh1LmNvbSIsImF1ZCI6Imh0dHA6XC9cL3poYW9waW4ueXNqaWFuemh1LmNvbSIsImlhdCI6MTUwNDg2NzUwOCwiZXhwIjoxNTA0OTg3NTA4LCJuYmYiOiIiLCJ1dWlkIjoiZDc1OTdkZDktNTcxYS1kYmYxLTUwMzAtNTk3YjQ4YzFhODE1In0.HfZvUPEj0ho31qqRKIDkHcEkzj44zM3xUV1VsXDMxPk',
+  'codeid' => 'CqNdN9bS_aPvjiQ',
+  'c_alias' => 'QS_diary',
+  'orderstrid' => '3',
+  'top' => '6',
+)
+[ info ] [ CACHE ] INIT File
+[ info ] [ RUN ] app\api\controller\Auth->com_list[ D:\textgulp\website\php\application\api\controller\Auth.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000894s ] mysql:dbname=xiaochen;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ys_system_conf` [ RunTime:0.011417s ]
+[ sql ] [ SQL ] SELECT * FROM `ys_system_conf` WHERE  `tbnum` = '5'  AND `isdel` = 0 LIMIT 1 [ RunTime:0.000879s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ys_dict` [ RunTime:0.012277s ]
+[ sql ] [ SQL ] SELECT * FROM `ys_dict` WHERE  `c_alias` = 'QS_diary'  AND `isdel` = 0 ORDER BY createtime asc LIMIT 6 [ RunTime:0.002475s ]
+[ sql ] [ SQL ] SELECT * FROM `ys_system_conf` WHERE  `tbnum` = '5'  AND `isdel` = 0 LIMIT 1 [ RunTime:0.000703s ]
+
+---------------------------------------------------------------
+[ 2017-09-08T22:28:15+08:00 ] ::1 ::1 POST /index.php/open/menutree_select?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9hcGkueXNqaWFuemh1LmNvbSIsImF1ZCI6Imh0dHA6XC9cL3poYW9waW4ueXNqaWFuemh1LmNvbSIsImlhdCI6MTUwNDg2NzUwOCwiZXhwIjoxNTA0OTg3NTA4LCJuYmYiOiIiLCJ1dWlkIjoiZDc1OTdkZDktNTcxYS1kYmYxLTUwMzAtNTk3YjQ4YzFhODE1In0.HfZvUPEj0ho31qqRKIDkHcEkzj44zM3xUV1VsXDMxPk
+[ log ] localhost/index.php/open/menutree_select?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9hcGkueXNqaWFuemh1LmNvbSIsImF1ZCI6Imh0dHA6XC9cL3poYW9waW4ueXNqaWFuemh1LmNvbSIsImlhdCI6MTUwNDg2NzUwOCwiZXhwIjoxNTA0OTg3NTA4LCJuYmYiOiIiLCJ1dWlkIjoiZDc1OTdkZDktNTcxYS1kYmYxLTUwMzAtNTk3YjQ4YzFhODE1In0.HfZvUPEj0ho31qqRKIDkHcEkzj44zM3xUV1VsXDMxPk [运行时间：0.048974s][吞吐率：20.42req/s] [内存消耗：2,252.92kb] [文件加载：53]
+[ info ] [ LANG ] D:\textgulp\website\php\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'open',
+    2 => 'menutree_select',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=nng4gi73hbiliqmne9610qt826',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://localhost/main.html',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.79 Safari/537.36',
+  'x-requested-with' => 'XMLHttpRequest',
+  'origin' => 'http://localhost',
+  'accept' => '*/*',
+  'content-length' => '7',
+  'connection' => 'close',
+  'host' => 'localhost',
+)
+[ info ] [ PARAM ] array (
+  'token' => 'eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9hcGkueXNqaWFuemh1LmNvbSIsImF1ZCI6Imh0dHA6XC9cL3poYW9waW4ueXNqaWFuemh1LmNvbSIsImlhdCI6MTUwNDg2NzUwOCwiZXhwIjoxNTA0OTg3NTA4LCJuYmYiOiIiLCJ1dWlkIjoiZDc1OTdkZDktNTcxYS1kYmYxLTUwMzAtNTk3YjQ4YzFhODE1In0.HfZvUPEj0ho31qqRKIDkHcEkzj44zM3xUV1VsXDMxPk',
+  'debug' => '0',
+)
+[ info ] [ RUN ] app\api\controller\Open->menutree_select[ D:\textgulp\website\php\application\api\controller\Open.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000805s ] mysql:dbname=xiaochen;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ys_system_conf` [ RunTime:0.009896s ]
+[ sql ] [ SQL ] SELECT * FROM `ys_system_conf` WHERE  `isdel` = 0 [ RunTime:0.000450s ]
+
+---------------------------------------------------------------
+[ 2017-09-08T22:28:15+08:00 ] ::1 ::1 POST /index.php/open/islogin?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9hcGkueXNqaWFuemh1LmNvbSIsImF1ZCI6Imh0dHA6XC9cL3poYW9waW4ueXNqaWFuemh1LmNvbSIsImlhdCI6MTUwNDg2NzUwOCwiZXhwIjoxNTA0OTg3NTA4LCJuYmYiOiIiLCJ1dWlkIjoiZDc1OTdkZDktNTcxYS1kYmYxLTUwMzAtNTk3YjQ4YzFhODE1In0.HfZvUPEj0ho31qqRKIDkHcEkzj44zM3xUV1VsXDMxPk
+[ log ] localhost/index.php/open/islogin?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9hcGkueXNqaWFuemh1LmNvbSIsImF1ZCI6Imh0dHA6XC9cL3poYW9waW4ueXNqaWFuemh1LmNvbSIsImlhdCI6MTUwNDg2NzUwOCwiZXhwIjoxNTA0OTg3NTA4LCJuYmYiOiIiLCJ1dWlkIjoiZDc1OTdkZDktNTcxYS1kYmYxLTUwMzAtNTk3YjQ4YzFhODE1In0.HfZvUPEj0ho31qqRKIDkHcEkzj44zM3xUV1VsXDMxPk [运行时间：0.029949s][吞吐率：33.39req/s] [内存消耗：1,781.91kb] [文件加载：50]
+[ info ] [ LANG ] D:\textgulp\website\php\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'open',
+    2 => 'islogin',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=nng4gi73hbiliqmne9610qt826',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://localhost/main.html',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.79 Safari/537.36',
+  'x-requested-with' => 'XMLHttpRequest',
+  'origin' => 'http://localhost',
+  'accept' => '*/*',
+  'content-length' => '0',
+  'connection' => 'close',
+  'host' => 'localhost',
+)
+[ info ] [ PARAM ] array (
+  'token' => 'eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9hcGkueXNqaWFuemh1LmNvbSIsImF1ZCI6Imh0dHA6XC9cL3poYW9waW4ueXNqaWFuemh1LmNvbSIsImlhdCI6MTUwNDg2NzUwOCwiZXhwIjoxNTA0OTg3NTA4LCJuYmYiOiIiLCJ1dWlkIjoiZDc1OTdkZDktNTcxYS1kYmYxLTUwMzAtNTk3YjQ4YzFhODE1In0.HfZvUPEj0ho31qqRKIDkHcEkzj44zM3xUV1VsXDMxPk',
+)
+[ info ] [ RUN ] app\api\controller\Open->islogin[ D:\textgulp\website\php\application\api\controller\Open.php ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-09-08T22:28:15+08:00 ] ::1 ::1 POST /index.php/auth/com_list?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9hcGkueXNqaWFuemh1LmNvbSIsImF1ZCI6Imh0dHA6XC9cL3poYW9waW4ueXNqaWFuemh1LmNvbSIsImlhdCI6MTUwNDg2NzUwOCwiZXhwIjoxNTA0OTg3NTA4LCJuYmYiOiIiLCJ1dWlkIjoiZDc1OTdkZDktNTcxYS1kYmYxLTUwMzAtNTk3YjQ4YzFhODE1In0.HfZvUPEj0ho31qqRKIDkHcEkzj44zM3xUV1VsXDMxPk
+[ log ] localhost/index.php/auth/com_list?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9hcGkueXNqaWFuemh1LmNvbSIsImF1ZCI6Imh0dHA6XC9cL3poYW9waW4ueXNqaWFuemh1LmNvbSIsImlhdCI6MTUwNDg2NzUwOCwiZXhwIjoxNTA0OTg3NTA4LCJuYmYiOiIiLCJ1dWlkIjoiZDc1OTdkZDktNTcxYS1kYmYxLTUwMzAtNTk3YjQ4YzFhODE1In0.HfZvUPEj0ho31qqRKIDkHcEkzj44zM3xUV1VsXDMxPk [运行时间：0.113843s][吞吐率：8.78req/s] [内存消耗：2,472.81kb] [文件加载：57]
+[ info ] [ LANG ] D:\textgulp\website\php\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'auth',
+    2 => 'com_list',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=nng4gi73hbiliqmne9610qt826',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://localhost/main.html',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.79 Safari/537.36',
+  'origin' => 'http://localhost',
+  'accept' => 'application/json, text/plain, */*',
+  'content-length' => '52',
+  'connection' => 'close',
+  'host' => 'localhost',
+)
+[ info ] [ PARAM ] array (
+  'token' => 'eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9hcGkueXNqaWFuemh1LmNvbSIsImF1ZCI6Imh0dHA6XC9cL3poYW9waW4ueXNqaWFuemh1LmNvbSIsImlhdCI6MTUwNDg2NzUwOCwiZXhwIjoxNTA0OTg3NTA4LCJuYmYiOiIiLCJ1dWlkIjoiZDc1OTdkZDktNTcxYS1kYmYxLTUwMzAtNTk3YjQ4YzFhODE1In0.HfZvUPEj0ho31qqRKIDkHcEkzj44zM3xUV1VsXDMxPk',
+  'codeid' => 'CPZRbILQrvzniQ',
+  'diarytype' => '1',
+  'top' => '3',
+  'orderstrid' => '2',
+)
+[ info ] [ CACHE ] INIT File
+[ info ] [ RUN ] app\api\controller\Auth->com_list[ D:\textgulp\website\php\application\api\controller\Auth.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001259s ] mysql:dbname=xiaochen;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ys_system_conf` [ RunTime:0.014422s ]
+[ sql ] [ SQL ] SELECT * FROM `ys_system_conf` WHERE  `tbnum` = '1'  AND `isdel` = 0 LIMIT 1 [ RunTime:0.000831s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ys_article` [ RunTime:0.014882s ]
+[ sql ] [ SQL ] SELECT * FROM `ys_article` WHERE  `diarytype` = 1  AND `isdel` = 0 ORDER BY createtime desc LIMIT 3 [ RunTime:0.001014s ]
+[ sql ] [ SQL ] SELECT * FROM `ys_system_conf` WHERE  `tbnum` = '1'  AND `isdel` = 0 LIMIT 1 [ RunTime:0.000496s ]
+
+---------------------------------------------------------------
+[ 2017-09-08T22:28:15+08:00 ] ::1 ::1 POST /index.php/auth/com_list?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9hcGkueXNqaWFuemh1LmNvbSIsImF1ZCI6Imh0dHA6XC9cL3poYW9waW4ueXNqaWFuemh1LmNvbSIsImlhdCI6MTUwNDg2NzUwOCwiZXhwIjoxNTA0OTg3NTA4LCJuYmYiOiIiLCJ1dWlkIjoiZDc1OTdkZDktNTcxYS1kYmYxLTUwMzAtNTk3YjQ4YzFhODE1In0.HfZvUPEj0ho31qqRKIDkHcEkzj44zM3xUV1VsXDMxPk
+[ log ] localhost/index.php/auth/com_list?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9hcGkueXNqaWFuemh1LmNvbSIsImF1ZCI6Imh0dHA6XC9cL3poYW9waW4ueXNqaWFuemh1LmNvbSIsImlhdCI6MTUwNDg2NzUwOCwiZXhwIjoxNTA0OTg3NTA4LCJuYmYiOiIiLCJ1dWlkIjoiZDc1OTdkZDktNTcxYS1kYmYxLTUwMzAtNTk3YjQ4YzFhODE1In0.HfZvUPEj0ho31qqRKIDkHcEkzj44zM3xUV1VsXDMxPk [运行时间：0.169056s][吞吐率：5.92req/s] [内存消耗：2,471.56kb] [文件加载：57]
+[ info ] [ LANG ] D:\textgulp\website\php\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'auth',
+    2 => 'com_list',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=nng4gi73hbiliqmne9610qt826',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://localhost/main.html',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.79 Safari/537.36',
+  'origin' => 'http://localhost',
+  'accept' => 'application/json, text/plain, */*',
+  'content-length' => '52',
+  'connection' => 'close',
+  'host' => 'localhost',
+)
+[ info ] [ PARAM ] array (
+  'token' => 'eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9hcGkueXNqaWFuemh1LmNvbSIsImF1ZCI6Imh0dHA6XC9cL3poYW9waW4ueXNqaWFuemh1LmNvbSIsImlhdCI6MTUwNDg2NzUwOCwiZXhwIjoxNTA0OTg3NTA4LCJuYmYiOiIiLCJ1dWlkIjoiZDc1OTdkZDktNTcxYS1kYmYxLTUwMzAtNTk3YjQ4YzFhODE1In0.HfZvUPEj0ho31qqRKIDkHcEkzj44zM3xUV1VsXDMxPk',
+  'codeid' => 'CPZRbILQrvzniQ',
+  'diarytype' => '2',
+  'top' => '3',
+  'orderstrid' => '2',
+)
+[ info ] [ CACHE ] INIT File
+[ info ] [ RUN ] app\api\controller\Auth->com_list[ D:\textgulp\website\php\application\api\controller\Auth.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001274s ] mysql:dbname=xiaochen;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ys_system_conf` [ RunTime:0.022222s ]
+[ sql ] [ SQL ] SELECT * FROM `ys_system_conf` WHERE  `tbnum` = '1'  AND `isdel` = 0 LIMIT 1 [ RunTime:0.000936s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ys_article` [ RunTime:0.014134s ]
+[ sql ] [ SQL ] SELECT * FROM `ys_article` WHERE  `diarytype` = 2  AND `isdel` = 0 ORDER BY createtime desc LIMIT 3 [ RunTime:0.000946s ]
+[ sql ] [ SQL ] SELECT * FROM `ys_system_conf` WHERE  `tbnum` = '1'  AND `isdel` = 0 LIMIT 1 [ RunTime:0.000794s ]
+
+---------------------------------------------------------------
+[ 2017-09-08T22:28:15+08:00 ] ::1 ::1 POST /index.php/auth/com_list?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9hcGkueXNqaWFuemh1LmNvbSIsImF1ZCI6Imh0dHA6XC9cL3poYW9waW4ueXNqaWFuemh1LmNvbSIsImlhdCI6MTUwNDg2NzUwOCwiZXhwIjoxNTA0OTg3NTA4LCJuYmYiOiIiLCJ1dWlkIjoiZDc1OTdkZDktNTcxYS1kYmYxLTUwMzAtNTk3YjQ4YzFhODE1In0.HfZvUPEj0ho31qqRKIDkHcEkzj44zM3xUV1VsXDMxPk
+[ log ] localhost/index.php/auth/com_list?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9hcGkueXNqaWFuemh1LmNvbSIsImF1ZCI6Imh0dHA6XC9cL3poYW9waW4ueXNqaWFuemh1LmNvbSIsImlhdCI6MTUwNDg2NzUwOCwiZXhwIjoxNTA0OTg3NTA4LCJuYmYiOiIiLCJ1dWlkIjoiZDc1OTdkZDktNTcxYS1kYmYxLTUwMzAtNTk3YjQ4YzFhODE1In0.HfZvUPEj0ho31qqRKIDkHcEkzj44zM3xUV1VsXDMxPk [运行时间：0.216946s][吞吐率：4.61req/s] [内存消耗：2,471.56kb] [文件加载：57]
+[ info ] [ LANG ] D:\textgulp\website\php\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'auth',
+    2 => 'com_list',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=nng4gi73hbiliqmne9610qt826',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://localhost/main.html',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.79 Safari/537.36',
+  'origin' => 'http://localhost',
+  'accept' => 'application/json, text/plain, */*',
+  'content-length' => '52',
+  'connection' => 'close',
+  'host' => 'localhost',
+)
+[ info ] [ PARAM ] array (
+  'token' => 'eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9hcGkueXNqaWFuemh1LmNvbSIsImF1ZCI6Imh0dHA6XC9cL3poYW9waW4ueXNqaWFuemh1LmNvbSIsImlhdCI6MTUwNDg2NzUwOCwiZXhwIjoxNTA0OTg3NTA4LCJuYmYiOiIiLCJ1dWlkIjoiZDc1OTdkZDktNTcxYS1kYmYxLTUwMzAtNTk3YjQ4YzFhODE1In0.HfZvUPEj0ho31qqRKIDkHcEkzj44zM3xUV1VsXDMxPk',
+  'codeid' => 'CPZRbILQrvzniQ',
+  'diarytype' => '3',
+  'top' => '3',
+  'orderstrid' => '2',
+)
+[ info ] [ CACHE ] INIT File
+[ info ] [ RUN ] app\api\controller\Auth->com_list[ D:\textgulp\website\php\application\api\controller\Auth.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001415s ] mysql:dbname=xiaochen;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ys_system_conf` [ RunTime:0.016732s ]
+[ sql ] [ SQL ] SELECT * FROM `ys_system_conf` WHERE  `tbnum` = '1'  AND `isdel` = 0 LIMIT 1 [ RunTime:0.000746s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ys_article` [ RunTime:0.014759s ]
+[ sql ] [ SQL ] SELECT * FROM `ys_article` WHERE  `diarytype` = 3  AND `isdel` = 0 ORDER BY createtime desc LIMIT 3 [ RunTime:0.001014s ]
+[ sql ] [ SQL ] SELECT * FROM `ys_system_conf` WHERE  `tbnum` = '1'  AND `isdel` = 0 LIMIT 1 [ RunTime:0.000842s ]
+
+---------------------------------------------------------------
+[ 2017-09-08T22:28:16+08:00 ] ::1 ::1 POST /index.php/auth/com_list?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9hcGkueXNqaWFuemh1LmNvbSIsImF1ZCI6Imh0dHA6XC9cL3poYW9waW4ueXNqaWFuemh1LmNvbSIsImlhdCI6MTUwNDg2NzUwOCwiZXhwIjoxNTA0OTg3NTA4LCJuYmYiOiIiLCJ1dWlkIjoiZDc1OTdkZDktNTcxYS1kYmYxLTUwMzAtNTk3YjQ4YzFhODE1In0.HfZvUPEj0ho31qqRKIDkHcEkzj44zM3xUV1VsXDMxPk
+[ log ] localhost/index.php/auth/com_list?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9hcGkueXNqaWFuemh1LmNvbSIsImF1ZCI6Imh0dHA6XC9cL3poYW9waW4ueXNqaWFuemh1LmNvbSIsImlhdCI6MTUwNDg2NzUwOCwiZXhwIjoxNTA0OTg3NTA4LCJuYmYiOiIiLCJ1dWlkIjoiZDc1OTdkZDktNTcxYS1kYmYxLTUwMzAtNTk3YjQ4YzFhODE1In0.HfZvUPEj0ho31qqRKIDkHcEkzj44zM3xUV1VsXDMxPk [运行时间：0.076614s][吞吐率：13.05req/s] [内存消耗：2,471.34kb] [文件加载：57]
+[ info ] [ LANG ] D:\textgulp\website\php\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'auth',
+    2 => 'com_list',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=nng4gi73hbiliqmne9610qt826',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://localhost/main.html',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.79 Safari/537.36',
+  'origin' => 'http://localhost',
+  'accept' => 'application/json, text/plain, */*',
+  'content-length' => '58',
+  'connection' => 'close',
+  'host' => 'localhost',
+)
+[ info ] [ PARAM ] array (
+  'token' => 'eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9hcGkueXNqaWFuemh1LmNvbSIsImF1ZCI6Imh0dHA6XC9cL3poYW9waW4ueXNqaWFuemh1LmNvbSIsImlhdCI6MTUwNDg2NzUwOCwiZXhwIjoxNTA0OTg3NTA4LCJuYmYiOiIiLCJ1dWlkIjoiZDc1OTdkZDktNTcxYS1kYmYxLTUwMzAtNTk3YjQ4YzFhODE1In0.HfZvUPEj0ho31qqRKIDkHcEkzj44zM3xUV1VsXDMxPk',
+  'codeid' => 'CqNdN9bS_aPvjiQ',
+  'c_alias' => 'QS_diary',
+  'orderstrid' => '3',
+  'top' => '6',
+)
+[ info ] [ CACHE ] INIT File
+[ info ] [ RUN ] app\api\controller\Auth->com_list[ D:\textgulp\website\php\application\api\controller\Auth.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000974s ] mysql:dbname=xiaochen;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ys_system_conf` [ RunTime:0.016958s ]
+[ sql ] [ SQL ] SELECT * FROM `ys_system_conf` WHERE  `tbnum` = '5'  AND `isdel` = 0 LIMIT 1 [ RunTime:0.000566s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ys_dict` [ RunTime:0.010615s ]
+[ sql ] [ SQL ] SELECT * FROM `ys_dict` WHERE  `c_alias` = 'QS_diary'  AND `isdel` = 0 ORDER BY createtime asc LIMIT 6 [ RunTime:0.000673s ]
+[ sql ] [ SQL ] SELECT * FROM `ys_system_conf` WHERE  `tbnum` = '5'  AND `isdel` = 0 LIMIT 1 [ RunTime:0.000560s ]
+
+---------------------------------------------------------------
+[ 2017-09-08T22:29:56+08:00 ] ::1 ::1 POST /index.php/open/menutree_select?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9hcGkueXNqaWFuemh1LmNvbSIsImF1ZCI6Imh0dHA6XC9cL3poYW9waW4ueXNqaWFuemh1LmNvbSIsImlhdCI6MTUwNDg2NzUwOCwiZXhwIjoxNTA0OTg3NTA4LCJuYmYiOiIiLCJ1dWlkIjoiZDc1OTdkZDktNTcxYS1kYmYxLTUwMzAtNTk3YjQ4YzFhODE1In0.HfZvUPEj0ho31qqRKIDkHcEkzj44zM3xUV1VsXDMxPk
+[ log ] localhost/index.php/open/menutree_select?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9hcGkueXNqaWFuemh1LmNvbSIsImF1ZCI6Imh0dHA6XC9cL3poYW9waW4ueXNqaWFuemh1LmNvbSIsImlhdCI6MTUwNDg2NzUwOCwiZXhwIjoxNTA0OTg3NTA4LCJuYmYiOiIiLCJ1dWlkIjoiZDc1OTdkZDktNTcxYS1kYmYxLTUwMzAtNTk3YjQ4YzFhODE1In0.HfZvUPEj0ho31qqRKIDkHcEkzj44zM3xUV1VsXDMxPk [运行时间：0.060568s][吞吐率：16.51req/s] [内存消耗：2,253.15kb] [文件加载：53]
+[ info ] [ LANG ] D:\textgulp\website\php\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'open',
+    2 => 'menutree_select',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=nng4gi73hbiliqmne9610qt826',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://localhost/main.html',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.79 Safari/537.36',
+  'x-requested-with' => 'XMLHttpRequest',
+  'origin' => 'http://localhost',
+  'accept' => '*/*',
+  'cache-control' => 'no-cache',
+  'pragma' => 'no-cache',
+  'content-length' => '7',
+  'connection' => 'close',
+  'host' => 'localhost',
+)
+[ info ] [ PARAM ] array (
+  'token' => 'eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9hcGkueXNqaWFuemh1LmNvbSIsImF1ZCI6Imh0dHA6XC9cL3poYW9waW4ueXNqaWFuemh1LmNvbSIsImlhdCI6MTUwNDg2NzUwOCwiZXhwIjoxNTA0OTg3NTA4LCJuYmYiOiIiLCJ1dWlkIjoiZDc1OTdkZDktNTcxYS1kYmYxLTUwMzAtNTk3YjQ4YzFhODE1In0.HfZvUPEj0ho31qqRKIDkHcEkzj44zM3xUV1VsXDMxPk',
+  'debug' => '0',
+)
+[ info ] [ RUN ] app\api\controller\Open->menutree_select[ D:\textgulp\website\php\application\api\controller\Open.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000896s ] mysql:dbname=xiaochen;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ys_system_conf` [ RunTime:0.013520s ]
+[ sql ] [ SQL ] SELECT * FROM `ys_system_conf` WHERE  `isdel` = 0 [ RunTime:0.000852s ]
+
+---------------------------------------------------------------
+[ 2017-09-08T22:29:56+08:00 ] ::1 ::1 POST /index.php/open/islogin?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9hcGkueXNqaWFuemh1LmNvbSIsImF1ZCI6Imh0dHA6XC9cL3poYW9waW4ueXNqaWFuemh1LmNvbSIsImlhdCI6MTUwNDg2NzUwOCwiZXhwIjoxNTA0OTg3NTA4LCJuYmYiOiIiLCJ1dWlkIjoiZDc1OTdkZDktNTcxYS1kYmYxLTUwMzAtNTk3YjQ4YzFhODE1In0.HfZvUPEj0ho31qqRKIDkHcEkzj44zM3xUV1VsXDMxPk
+[ log ] localhost/index.php/open/islogin?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9hcGkueXNqaWFuemh1LmNvbSIsImF1ZCI6Imh0dHA6XC9cL3poYW9waW4ueXNqaWFuemh1LmNvbSIsImlhdCI6MTUwNDg2NzUwOCwiZXhwIjoxNTA0OTg3NTA4LCJuYmYiOiIiLCJ1dWlkIjoiZDc1OTdkZDktNTcxYS1kYmYxLTUwMzAtNTk3YjQ4YzFhODE1In0.HfZvUPEj0ho31qqRKIDkHcEkzj44zM3xUV1VsXDMxPk [运行时间：0.035067s][吞吐率：28.52req/s] [内存消耗：1,782.15kb] [文件加载：50]
+[ info ] [ LANG ] D:\textgulp\website\php\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'open',
+    2 => 'islogin',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=nng4gi73hbiliqmne9610qt826',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://localhost/main.html',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.79 Safari/537.36',
+  'x-requested-with' => 'XMLHttpRequest',
+  'origin' => 'http://localhost',
+  'accept' => '*/*',
+  'cache-control' => 'no-cache',
+  'pragma' => 'no-cache',
+  'content-length' => '0',
+  'connection' => 'close',
+  'host' => 'localhost',
+)
+[ info ] [ PARAM ] array (
+  'token' => 'eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9hcGkueXNqaWFuemh1LmNvbSIsImF1ZCI6Imh0dHA6XC9cL3poYW9waW4ueXNqaWFuemh1LmNvbSIsImlhdCI6MTUwNDg2NzUwOCwiZXhwIjoxNTA0OTg3NTA4LCJuYmYiOiIiLCJ1dWlkIjoiZDc1OTdkZDktNTcxYS1kYmYxLTUwMzAtNTk3YjQ4YzFhODE1In0.HfZvUPEj0ho31qqRKIDkHcEkzj44zM3xUV1VsXDMxPk',
+)
+[ info ] [ RUN ] app\api\controller\Open->islogin[ D:\textgulp\website\php\application\api\controller\Open.php ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-09-08T22:29:56+08:00 ] ::1 ::1 POST /index.php/auth/com_list?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9hcGkueXNqaWFuemh1LmNvbSIsImF1ZCI6Imh0dHA6XC9cL3poYW9waW4ueXNqaWFuemh1LmNvbSIsImlhdCI6MTUwNDg2NzUwOCwiZXhwIjoxNTA0OTg3NTA4LCJuYmYiOiIiLCJ1dWlkIjoiZDc1OTdkZDktNTcxYS1kYmYxLTUwMzAtNTk3YjQ4YzFhODE1In0.HfZvUPEj0ho31qqRKIDkHcEkzj44zM3xUV1VsXDMxPk
+[ log ] localhost/index.php/auth/com_list?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9hcGkueXNqaWFuemh1LmNvbSIsImF1ZCI6Imh0dHA6XC9cL3poYW9waW4ueXNqaWFuemh1LmNvbSIsImlhdCI6MTUwNDg2NzUwOCwiZXhwIjoxNTA0OTg3NTA4LCJuYmYiOiIiLCJ1dWlkIjoiZDc1OTdkZDktNTcxYS1kYmYxLTUwMzAtNTk3YjQ4YzFhODE1In0.HfZvUPEj0ho31qqRKIDkHcEkzj44zM3xUV1VsXDMxPk [运行时间：0.112566s][吞吐率：8.88req/s] [内存消耗：2,472.81kb] [文件加载：57]
+[ info ] [ LANG ] D:\textgulp\website\php\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'auth',
+    2 => 'com_list',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=nng4gi73hbiliqmne9610qt826',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://localhost/main.html',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.79 Safari/537.36',
+  'origin' => 'http://localhost',
+  'accept' => 'application/json, text/plain, */*',
+  'content-length' => '52',
+  'connection' => 'close',
+  'host' => 'localhost',
+)
+[ info ] [ PARAM ] array (
+  'token' => 'eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9hcGkueXNqaWFuemh1LmNvbSIsImF1ZCI6Imh0dHA6XC9cL3poYW9waW4ueXNqaWFuemh1LmNvbSIsImlhdCI6MTUwNDg2NzUwOCwiZXhwIjoxNTA0OTg3NTA4LCJuYmYiOiIiLCJ1dWlkIjoiZDc1OTdkZDktNTcxYS1kYmYxLTUwMzAtNTk3YjQ4YzFhODE1In0.HfZvUPEj0ho31qqRKIDkHcEkzj44zM3xUV1VsXDMxPk',
+  'codeid' => 'CPZRbILQrvzniQ',
+  'diarytype' => '1',
+  'top' => '3',
+  'orderstrid' => '2',
+)
+[ info ] [ CACHE ] INIT File
+[ info ] [ RUN ] app\api\controller\Auth->com_list[ D:\textgulp\website\php\application\api\controller\Auth.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001340s ] mysql:dbname=xiaochen;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ys_system_conf` [ RunTime:0.016096s ]
+[ sql ] [ SQL ] SELECT * FROM `ys_system_conf` WHERE  `tbnum` = '1'  AND `isdel` = 0 LIMIT 1 [ RunTime:0.000836s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ys_article` [ RunTime:0.015640s ]
+[ sql ] [ SQL ] SELECT * FROM `ys_article` WHERE  `diarytype` = 1  AND `isdel` = 0 ORDER BY createtime desc LIMIT 3 [ RunTime:0.001106s ]
+[ sql ] [ SQL ] SELECT * FROM `ys_system_conf` WHERE  `tbnum` = '1'  AND `isdel` = 0 LIMIT 1 [ RunTime:0.001168s ]
+
+---------------------------------------------------------------
+[ 2017-09-08T22:29:56+08:00 ] ::1 ::1 POST /index.php/auth/com_list?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9hcGkueXNqaWFuemh1LmNvbSIsImF1ZCI6Imh0dHA6XC9cL3poYW9waW4ueXNqaWFuemh1LmNvbSIsImlhdCI6MTUwNDg2NzUwOCwiZXhwIjoxNTA0OTg3NTA4LCJuYmYiOiIiLCJ1dWlkIjoiZDc1OTdkZDktNTcxYS1kYmYxLTUwMzAtNTk3YjQ4YzFhODE1In0.HfZvUPEj0ho31qqRKIDkHcEkzj44zM3xUV1VsXDMxPk
+[ log ] localhost/index.php/auth/com_list?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9hcGkueXNqaWFuemh1LmNvbSIsImF1ZCI6Imh0dHA6XC9cL3poYW9waW4ueXNqaWFuemh1LmNvbSIsImlhdCI6MTUwNDg2NzUwOCwiZXhwIjoxNTA0OTg3NTA4LCJuYmYiOiIiLCJ1dWlkIjoiZDc1OTdkZDktNTcxYS1kYmYxLTUwMzAtNTk3YjQ4YzFhODE1In0.HfZvUPEj0ho31qqRKIDkHcEkzj44zM3xUV1VsXDMxPk [运行时间：0.181706s][吞吐率：5.50req/s] [内存消耗：2,471.56kb] [文件加载：57]
+[ info ] [ LANG ] D:\textgulp\website\php\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'auth',
+    2 => 'com_list',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=nng4gi73hbiliqmne9610qt826',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://localhost/main.html',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.79 Safari/537.36',
+  'origin' => 'http://localhost',
+  'accept' => 'application/json, text/plain, */*',
+  'content-length' => '52',
+  'connection' => 'close',
+  'host' => 'localhost',
+)
+[ info ] [ PARAM ] array (
+  'token' => 'eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9hcGkueXNqaWFuemh1LmNvbSIsImF1ZCI6Imh0dHA6XC9cL3poYW9waW4ueXNqaWFuemh1LmNvbSIsImlhdCI6MTUwNDg2NzUwOCwiZXhwIjoxNTA0OTg3NTA4LCJuYmYiOiIiLCJ1dWlkIjoiZDc1OTdkZDktNTcxYS1kYmYxLTUwMzAtNTk3YjQ4YzFhODE1In0.HfZvUPEj0ho31qqRKIDkHcEkzj44zM3xUV1VsXDMxPk',
+  'codeid' => 'CPZRbILQrvzniQ',
+  'diarytype' => '3',
+  'top' => '3',
+  'orderstrid' => '2',
+)
+[ info ] [ CACHE ] INIT File
+[ info ] [ RUN ] app\api\controller\Auth->com_list[ D:\textgulp\website\php\application\api\controller\Auth.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002972s ] mysql:dbname=xiaochen;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ys_system_conf` [ RunTime:0.015956s ]
+[ sql ] [ SQL ] SELECT * FROM `ys_system_conf` WHERE  `tbnum` = '1'  AND `isdel` = 0 LIMIT 1 [ RunTime:0.000845s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ys_article` [ RunTime:0.016343s ]
+[ sql ] [ SQL ] SELECT * FROM `ys_article` WHERE  `diarytype` = 3  AND `isdel` = 0 ORDER BY createtime desc LIMIT 3 [ RunTime:0.000991s ]
+[ sql ] [ SQL ] SELECT * FROM `ys_system_conf` WHERE  `tbnum` = '1'  AND `isdel` = 0 LIMIT 1 [ RunTime:0.001547s ]
+
+---------------------------------------------------------------
+[ 2017-09-08T22:29:56+08:00 ] ::1 ::1 POST /index.php/auth/com_list?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9hcGkueXNqaWFuemh1LmNvbSIsImF1ZCI6Imh0dHA6XC9cL3poYW9waW4ueXNqaWFuemh1LmNvbSIsImlhdCI6MTUwNDg2NzUwOCwiZXhwIjoxNTA0OTg3NTA4LCJuYmYiOiIiLCJ1dWlkIjoiZDc1OTdkZDktNTcxYS1kYmYxLTUwMzAtNTk3YjQ4YzFhODE1In0.HfZvUPEj0ho31qqRKIDkHcEkzj44zM3xUV1VsXDMxPk
+[ log ] localhost/index.php/auth/com_list?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9hcGkueXNqaWFuemh1LmNvbSIsImF1ZCI6Imh0dHA6XC9cL3poYW9waW4ueXNqaWFuemh1LmNvbSIsImlhdCI6MTUwNDg2NzUwOCwiZXhwIjoxNTA0OTg3NTA4LCJuYmYiOiIiLCJ1dWlkIjoiZDc1OTdkZDktNTcxYS1kYmYxLTUwMzAtNTk3YjQ4YzFhODE1In0.HfZvUPEj0ho31qqRKIDkHcEkzj44zM3xUV1VsXDMxPk [运行时间：0.257878s][吞吐率：3.88req/s] [内存消耗：2,471.56kb] [文件加载：57]
+[ info ] [ LANG ] D:\textgulp\website\php\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'auth',
+    2 => 'com_list',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=nng4gi73hbiliqmne9610qt826',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://localhost/main.html',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.79 Safari/537.36',
+  'origin' => 'http://localhost',
+  'accept' => 'application/json, text/plain, */*',
+  'content-length' => '52',
+  'connection' => 'close',
+  'host' => 'localhost',
+)
+[ info ] [ PARAM ] array (
+  'token' => 'eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9hcGkueXNqaWFuemh1LmNvbSIsImF1ZCI6Imh0dHA6XC9cL3poYW9waW4ueXNqaWFuemh1LmNvbSIsImlhdCI6MTUwNDg2NzUwOCwiZXhwIjoxNTA0OTg3NTA4LCJuYmYiOiIiLCJ1dWlkIjoiZDc1OTdkZDktNTcxYS1kYmYxLTUwMzAtNTk3YjQ4YzFhODE1In0.HfZvUPEj0ho31qqRKIDkHcEkzj44zM3xUV1VsXDMxPk',
+  'codeid' => 'CPZRbILQrvzniQ',
+  'diarytype' => '2',
+  'top' => '3',
+  'orderstrid' => '2',
+)
+[ info ] [ CACHE ] INIT File
+[ info ] [ RUN ] app\api\controller\Auth->com_list[ D:\textgulp\website\php\application\api\controller\Auth.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001101s ] mysql:dbname=xiaochen;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ys_system_conf` [ RunTime:0.015564s ]
+[ sql ] [ SQL ] SELECT * FROM `ys_system_conf` WHERE  `tbnum` = '1'  AND `isdel` = 0 LIMIT 1 [ RunTime:0.000665s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ys_article` [ RunTime:0.015331s ]
+[ sql ] [ SQL ] SELECT * FROM `ys_article` WHERE  `diarytype` = 2  AND `isdel` = 0 ORDER BY createtime desc LIMIT 3 [ RunTime:0.000920s ]
+[ sql ] [ SQL ] SELECT * FROM `ys_system_conf` WHERE  `tbnum` = '1'  AND `isdel` = 0 LIMIT 1 [ RunTime:0.000499s ]
+
+---------------------------------------------------------------
+[ 2017-09-08T22:29:57+08:00 ] ::1 ::1 POST /index.php/auth/com_list?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9hcGkueXNqaWFuemh1LmNvbSIsImF1ZCI6Imh0dHA6XC9cL3poYW9waW4ueXNqaWFuemh1LmNvbSIsImlhdCI6MTUwNDg2NzUwOCwiZXhwIjoxNTA0OTg3NTA4LCJuYmYiOiIiLCJ1dWlkIjoiZDc1OTdkZDktNTcxYS1kYmYxLTUwMzAtNTk3YjQ4YzFhODE1In0.HfZvUPEj0ho31qqRKIDkHcEkzj44zM3xUV1VsXDMxPk
+[ log ] localhost/index.php/auth/com_list?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9hcGkueXNqaWFuemh1LmNvbSIsImF1ZCI6Imh0dHA6XC9cL3poYW9waW4ueXNqaWFuemh1LmNvbSIsImlhdCI6MTUwNDg2NzUwOCwiZXhwIjoxNTA0OTg3NTA4LCJuYmYiOiIiLCJ1dWlkIjoiZDc1OTdkZDktNTcxYS1kYmYxLTUwMzAtNTk3YjQ4YzFhODE1In0.HfZvUPEj0ho31qqRKIDkHcEkzj44zM3xUV1VsXDMxPk [运行时间：0.126336s][吞吐率：7.92req/s] [内存消耗：2,471.34kb] [文件加载：57]
+[ info ] [ LANG ] D:\textgulp\website\php\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'auth',
+    2 => 'com_list',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=nng4gi73hbiliqmne9610qt826',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://localhost/main.html',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.79 Safari/537.36',
+  'origin' => 'http://localhost',
+  'accept' => 'application/json, text/plain, */*',
+  'content-length' => '58',
+  'connection' => 'close',
+  'host' => 'localhost',
+)
+[ info ] [ PARAM ] array (
+  'token' => 'eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9hcGkueXNqaWFuemh1LmNvbSIsImF1ZCI6Imh0dHA6XC9cL3poYW9waW4ueXNqaWFuemh1LmNvbSIsImlhdCI6MTUwNDg2NzUwOCwiZXhwIjoxNTA0OTg3NTA4LCJuYmYiOiIiLCJ1dWlkIjoiZDc1OTdkZDktNTcxYS1kYmYxLTUwMzAtNTk3YjQ4YzFhODE1In0.HfZvUPEj0ho31qqRKIDkHcEkzj44zM3xUV1VsXDMxPk',
+  'codeid' => 'CqNdN9bS_aPvjiQ',
+  'c_alias' => 'QS_diary',
+  'orderstrid' => '3',
+  'top' => '6',
+)
+[ info ] [ CACHE ] INIT File
+[ info ] [ RUN ] app\api\controller\Auth->com_list[ D:\textgulp\website\php\application\api\controller\Auth.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001273s ] mysql:dbname=xiaochen;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ys_system_conf` [ RunTime:0.064762s ]
+[ sql ] [ SQL ] SELECT * FROM `ys_system_conf` WHERE  `tbnum` = '5'  AND `isdel` = 0 LIMIT 1 [ RunTime:0.000791s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ys_dict` [ RunTime:0.010010s ]
+[ sql ] [ SQL ] SELECT * FROM `ys_dict` WHERE  `c_alias` = 'QS_diary'  AND `isdel` = 0 ORDER BY createtime asc LIMIT 6 [ RunTime:0.000995s ]
+[ sql ] [ SQL ] SELECT * FROM `ys_system_conf` WHERE  `tbnum` = '5'  AND `isdel` = 0 LIMIT 1 [ RunTime:0.000560s ]
+
+---------------------------------------------------------------
+[ 2017-09-08T22:30:00+08:00 ] ::1 ::1 POST /index.php/open/menutree_select?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9hcGkueXNqaWFuemh1LmNvbSIsImF1ZCI6Imh0dHA6XC9cL3poYW9waW4ueXNqaWFuemh1LmNvbSIsImlhdCI6MTUwNDg2NzUwOCwiZXhwIjoxNTA0OTg3NTA4LCJuYmYiOiIiLCJ1dWlkIjoiZDc1OTdkZDktNTcxYS1kYmYxLTUwMzAtNTk3YjQ4YzFhODE1In0.HfZvUPEj0ho31qqRKIDkHcEkzj44zM3xUV1VsXDMxPk
+[ log ] localhost/index.php/open/menutree_select?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9hcGkueXNqaWFuemh1LmNvbSIsImF1ZCI6Imh0dHA6XC9cL3poYW9waW4ueXNqaWFuemh1LmNvbSIsImlhdCI6MTUwNDg2NzUwOCwiZXhwIjoxNTA0OTg3NTA4LCJuYmYiOiIiLCJ1dWlkIjoiZDc1OTdkZDktNTcxYS1kYmYxLTUwMzAtNTk3YjQ4YzFhODE1In0.HfZvUPEj0ho31qqRKIDkHcEkzj44zM3xUV1VsXDMxPk [运行时间：0.058506s][吞吐率：17.09req/s] [内存消耗：2,252.92kb] [文件加载：53]
+[ info ] [ LANG ] D:\textgulp\website\php\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'open',
+    2 => 'menutree_select',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=nng4gi73hbiliqmne9610qt826',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://localhost/main.html',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.79 Safari/537.36',
+  'x-requested-with' => 'XMLHttpRequest',
+  'origin' => 'http://localhost',
+  'accept' => '*/*',
+  'content-length' => '7',
+  'connection' => 'close',
+  'host' => 'localhost',
+)
+[ info ] [ PARAM ] array (
+  'token' => 'eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9hcGkueXNqaWFuemh1LmNvbSIsImF1ZCI6Imh0dHA6XC9cL3poYW9waW4ueXNqaWFuemh1LmNvbSIsImlhdCI6MTUwNDg2NzUwOCwiZXhwIjoxNTA0OTg3NTA4LCJuYmYiOiIiLCJ1dWlkIjoiZDc1OTdkZDktNTcxYS1kYmYxLTUwMzAtNTk3YjQ4YzFhODE1In0.HfZvUPEj0ho31qqRKIDkHcEkzj44zM3xUV1VsXDMxPk',
+  'debug' => '0',
+)
+[ info ] [ RUN ] app\api\controller\Open->menutree_select[ D:\textgulp\website\php\application\api\controller\Open.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000883s ] mysql:dbname=xiaochen;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ys_system_conf` [ RunTime:0.011243s ]
+[ sql ] [ SQL ] SELECT * FROM `ys_system_conf` WHERE  `isdel` = 0 [ RunTime:0.000589s ]
+
+---------------------------------------------------------------
+[ 2017-09-08T22:30:00+08:00 ] ::1 ::1 POST /index.php/open/islogin?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9hcGkueXNqaWFuemh1LmNvbSIsImF1ZCI6Imh0dHA6XC9cL3poYW9waW4ueXNqaWFuemh1LmNvbSIsImlhdCI6MTUwNDg2NzUwOCwiZXhwIjoxNTA0OTg3NTA4LCJuYmYiOiIiLCJ1dWlkIjoiZDc1OTdkZDktNTcxYS1kYmYxLTUwMzAtNTk3YjQ4YzFhODE1In0.HfZvUPEj0ho31qqRKIDkHcEkzj44zM3xUV1VsXDMxPk
+[ log ] localhost/index.php/open/islogin?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9hcGkueXNqaWFuemh1LmNvbSIsImF1ZCI6Imh0dHA6XC9cL3poYW9waW4ueXNqaWFuemh1LmNvbSIsImlhdCI6MTUwNDg2NzUwOCwiZXhwIjoxNTA0OTg3NTA4LCJuYmYiOiIiLCJ1dWlkIjoiZDc1OTdkZDktNTcxYS1kYmYxLTUwMzAtNTk3YjQ4YzFhODE1In0.HfZvUPEj0ho31qqRKIDkHcEkzj44zM3xUV1VsXDMxPk [运行时间：0.041274s][吞吐率：24.23req/s] [内存消耗：1,781.91kb] [文件加载：50]
+[ info ] [ LANG ] D:\textgulp\website\php\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'open',
+    2 => 'islogin',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=nng4gi73hbiliqmne9610qt826',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://localhost/main.html',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.79 Safari/537.36',
+  'x-requested-with' => 'XMLHttpRequest',
+  'origin' => 'http://localhost',
+  'accept' => '*/*',
+  'content-length' => '0',
+  'connection' => 'close',
+  'host' => 'localhost',
+)
+[ info ] [ PARAM ] array (
+  'token' => 'eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9hcGkueXNqaWFuemh1LmNvbSIsImF1ZCI6Imh0dHA6XC9cL3poYW9waW4ueXNqaWFuemh1LmNvbSIsImlhdCI6MTUwNDg2NzUwOCwiZXhwIjoxNTA0OTg3NTA4LCJuYmYiOiIiLCJ1dWlkIjoiZDc1OTdkZDktNTcxYS1kYmYxLTUwMzAtNTk3YjQ4YzFhODE1In0.HfZvUPEj0ho31qqRKIDkHcEkzj44zM3xUV1VsXDMxPk',
+)
+[ info ] [ RUN ] app\api\controller\Open->islogin[ D:\textgulp\website\php\application\api\controller\Open.php ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-09-08T22:30:00+08:00 ] ::1 ::1 POST /index.php/auth/com_list?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9hcGkueXNqaWFuemh1LmNvbSIsImF1ZCI6Imh0dHA6XC9cL3poYW9waW4ueXNqaWFuemh1LmNvbSIsImlhdCI6MTUwNDg2NzUwOCwiZXhwIjoxNTA0OTg3NTA4LCJuYmYiOiIiLCJ1dWlkIjoiZDc1OTdkZDktNTcxYS1kYmYxLTUwMzAtNTk3YjQ4YzFhODE1In0.HfZvUPEj0ho31qqRKIDkHcEkzj44zM3xUV1VsXDMxPk
+[ log ] localhost/index.php/auth/com_list?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9hcGkueXNqaWFuemh1LmNvbSIsImF1ZCI6Imh0dHA6XC9cL3poYW9waW4ueXNqaWFuemh1LmNvbSIsImlhdCI6MTUwNDg2NzUwOCwiZXhwIjoxNTA0OTg3NTA4LCJuYmYiOiIiLCJ1dWlkIjoiZDc1OTdkZDktNTcxYS1kYmYxLTUwMzAtNTk3YjQ4YzFhODE1In0.HfZvUPEj0ho31qqRKIDkHcEkzj44zM3xUV1VsXDMxPk [运行时间：0.100420s][吞吐率：9.96req/s] [内存消耗：2,471.56kb] [文件加载：57]
+[ info ] [ LANG ] D:\textgulp\website\php\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'auth',
+    2 => 'com_list',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=nng4gi73hbiliqmne9610qt826',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://localhost/main.html',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.79 Safari/537.36',
+  'origin' => 'http://localhost',
+  'accept' => 'application/json, text/plain, */*',
+  'content-length' => '52',
+  'connection' => 'close',
+  'host' => 'localhost',
+)
+[ info ] [ PARAM ] array (
+  'token' => 'eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9hcGkueXNqaWFuemh1LmNvbSIsImF1ZCI6Imh0dHA6XC9cL3poYW9waW4ueXNqaWFuemh1LmNvbSIsImlhdCI6MTUwNDg2NzUwOCwiZXhwIjoxNTA0OTg3NTA4LCJuYmYiOiIiLCJ1dWlkIjoiZDc1OTdkZDktNTcxYS1kYmYxLTUwMzAtNTk3YjQ4YzFhODE1In0.HfZvUPEj0ho31qqRKIDkHcEkzj44zM3xUV1VsXDMxPk',
+  'codeid' => 'CPZRbILQrvzniQ',
+  'diarytype' => '2',
+  'top' => '3',
+  'orderstrid' => '2',
+)
+[ info ] [ CACHE ] INIT File
+[ info ] [ RUN ] app\api\controller\Auth->com_list[ D:\textgulp\website\php\application\api\controller\Auth.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001200s ] mysql:dbname=xiaochen;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ys_system_conf` [ RunTime:0.014533s ]
+[ sql ] [ SQL ] SELECT * FROM `ys_system_conf` WHERE  `tbnum` = '1'  AND `isdel` = 0 LIMIT 1 [ RunTime:0.000825s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ys_article` [ RunTime:0.014457s ]
+[ sql ] [ SQL ] SELECT * FROM `ys_article` WHERE  `diarytype` = 2  AND `isdel` = 0 ORDER BY createtime desc LIMIT 3 [ RunTime:0.000963s ]
+[ sql ] [ SQL ] SELECT * FROM `ys_system_conf` WHERE  `tbnum` = '1'  AND `isdel` = 0 LIMIT 1 [ RunTime:0.000696s ]
+
+---------------------------------------------------------------
+[ 2017-09-08T22:30:00+08:00 ] ::1 ::1 POST /index.php/auth/com_list?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9hcGkueXNqaWFuemh1LmNvbSIsImF1ZCI6Imh0dHA6XC9cL3poYW9waW4ueXNqaWFuemh1LmNvbSIsImlhdCI6MTUwNDg2NzUwOCwiZXhwIjoxNTA0OTg3NTA4LCJuYmYiOiIiLCJ1dWlkIjoiZDc1OTdkZDktNTcxYS1kYmYxLTUwMzAtNTk3YjQ4YzFhODE1In0.HfZvUPEj0ho31qqRKIDkHcEkzj44zM3xUV1VsXDMxPk
+[ log ] localhost/index.php/auth/com_list?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9hcGkueXNqaWFuemh1LmNvbSIsImF1ZCI6Imh0dHA6XC9cL3poYW9waW4ueXNqaWFuemh1LmNvbSIsImlhdCI6MTUwNDg2NzUwOCwiZXhwIjoxNTA0OTg3NTA4LCJuYmYiOiIiLCJ1dWlkIjoiZDc1OTdkZDktNTcxYS1kYmYxLTUwMzAtNTk3YjQ4YzFhODE1In0.HfZvUPEj0ho31qqRKIDkHcEkzj44zM3xUV1VsXDMxPk [运行时间：0.177511s][吞吐率：5.63req/s] [内存消耗：2,472.81kb] [文件加载：57]
+[ info ] [ LANG ] D:\textgulp\website\php\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'auth',
+    2 => 'com_list',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=nng4gi73hbiliqmne9610qt826',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://localhost/main.html',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.79 Safari/537.36',
+  'origin' => 'http://localhost',
+  'accept' => 'application/json, text/plain, */*',
+  'content-length' => '52',
+  'connection' => 'close',
+  'host' => 'localhost',
+)
+[ info ] [ PARAM ] array (
+  'token' => 'eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9hcGkueXNqaWFuemh1LmNvbSIsImF1ZCI6Imh0dHA6XC9cL3poYW9waW4ueXNqaWFuemh1LmNvbSIsImlhdCI6MTUwNDg2NzUwOCwiZXhwIjoxNTA0OTg3NTA4LCJuYmYiOiIiLCJ1dWlkIjoiZDc1OTdkZDktNTcxYS1kYmYxLTUwMzAtNTk3YjQ4YzFhODE1In0.HfZvUPEj0ho31qqRKIDkHcEkzj44zM3xUV1VsXDMxPk',
+  'codeid' => 'CPZRbILQrvzniQ',
+  'diarytype' => '1',
+  'top' => '3',
+  'orderstrid' => '2',
+)
+[ info ] [ CACHE ] INIT File
+[ info ] [ RUN ] app\api\controller\Auth->com_list[ D:\textgulp\website\php\application\api\controller\Auth.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010798s ] mysql:dbname=xiaochen;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ys_system_conf` [ RunTime:0.014698s ]
+[ sql ] [ SQL ] SELECT * FROM `ys_system_conf` WHERE  `tbnum` = '1'  AND `isdel` = 0 LIMIT 1 [ RunTime:0.000815s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ys_article` [ RunTime:0.012967s ]
+[ sql ] [ SQL ] SELECT * FROM `ys_article` WHERE  `diarytype` = 1  AND `isdel` = 0 ORDER BY createtime desc LIMIT 3 [ RunTime:0.001004s ]
+[ sql ] [ SQL ] SELECT * FROM `ys_system_conf` WHERE  `tbnum` = '1'  AND `isdel` = 0 LIMIT 1 [ RunTime:0.001385s ]
+
+---------------------------------------------------------------
+[ 2017-09-08T22:30:00+08:00 ] ::1 ::1 POST /index.php/auth/com_list?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9hcGkueXNqaWFuemh1LmNvbSIsImF1ZCI6Imh0dHA6XC9cL3poYW9waW4ueXNqaWFuemh1LmNvbSIsImlhdCI6MTUwNDg2NzUwOCwiZXhwIjoxNTA0OTg3NTA4LCJuYmYiOiIiLCJ1dWlkIjoiZDc1OTdkZDktNTcxYS1kYmYxLTUwMzAtNTk3YjQ4YzFhODE1In0.HfZvUPEj0ho31qqRKIDkHcEkzj44zM3xUV1VsXDMxPk
+[ log ] localhost/index.php/auth/com_list?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9hcGkueXNqaWFuemh1LmNvbSIsImF1ZCI6Imh0dHA6XC9cL3poYW9waW4ueXNqaWFuemh1LmNvbSIsImlhdCI6MTUwNDg2NzUwOCwiZXhwIjoxNTA0OTg3NTA4LCJuYmYiOiIiLCJ1dWlkIjoiZDc1OTdkZDktNTcxYS1kYmYxLTUwMzAtNTk3YjQ4YzFhODE1In0.HfZvUPEj0ho31qqRKIDkHcEkzj44zM3xUV1VsXDMxPk [运行时间：0.239832s][吞吐率：4.17req/s] [内存消耗：2,471.56kb] [文件加载：57]
+[ info ] [ LANG ] D:\textgulp\website\php\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'auth',
+    2 => 'com_list',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=nng4gi73hbiliqmne9610qt826',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://localhost/main.html',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.79 Safari/537.36',
+  'origin' => 'http://localhost',
+  'accept' => 'application/json, text/plain, */*',
+  'content-length' => '52',
+  'connection' => 'close',
+  'host' => 'localhost',
+)
+[ info ] [ PARAM ] array (
+  'token' => 'eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9hcGkueXNqaWFuemh1LmNvbSIsImF1ZCI6Imh0dHA6XC9cL3poYW9waW4ueXNqaWFuemh1LmNvbSIsImlhdCI6MTUwNDg2NzUwOCwiZXhwIjoxNTA0OTg3NTA4LCJuYmYiOiIiLCJ1dWlkIjoiZDc1OTdkZDktNTcxYS1kYmYxLTUwMzAtNTk3YjQ4YzFhODE1In0.HfZvUPEj0ho31qqRKIDkHcEkzj44zM3xUV1VsXDMxPk',
+  'codeid' => 'CPZRbILQrvzniQ',
+  'diarytype' => '3',
+  'top' => '3',
+  'orderstrid' => '2',
+)
+[ info ] [ CACHE ] INIT File
+[ info ] [ RUN ] app\api\controller\Auth->com_list[ D:\textgulp\website\php\application\api\controller\Auth.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.011726s ] mysql:dbname=xiaochen;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ys_system_conf` [ RunTime:0.016496s ]
+[ sql ] [ SQL ] SELECT * FROM `ys_system_conf` WHERE  `tbnum` = '1'  AND `isdel` = 0 LIMIT 1 [ RunTime:0.000834s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ys_article` [ RunTime:0.015553s ]
+[ sql ] [ SQL ] SELECT * FROM `ys_article` WHERE  `diarytype` = 3  AND `isdel` = 0 ORDER BY createtime desc LIMIT 3 [ RunTime:0.000892s ]
+[ sql ] [ SQL ] SELECT * FROM `ys_system_conf` WHERE  `tbnum` = '1'  AND `isdel` = 0 LIMIT 1 [ RunTime:0.000733s ]
+
+---------------------------------------------------------------
+[ 2017-09-08T22:30:01+08:00 ] ::1 ::1 POST /index.php/auth/com_list?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9hcGkueXNqaWFuemh1LmNvbSIsImF1ZCI6Imh0dHA6XC9cL3poYW9waW4ueXNqaWFuemh1LmNvbSIsImlhdCI6MTUwNDg2NzUwOCwiZXhwIjoxNTA0OTg3NTA4LCJuYmYiOiIiLCJ1dWlkIjoiZDc1OTdkZDktNTcxYS1kYmYxLTUwMzAtNTk3YjQ4YzFhODE1In0.HfZvUPEj0ho31qqRKIDkHcEkzj44zM3xUV1VsXDMxPk
+[ log ] localhost/index.php/auth/com_list?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9hcGkueXNqaWFuemh1LmNvbSIsImF1ZCI6Imh0dHA6XC9cL3poYW9waW4ueXNqaWFuemh1LmNvbSIsImlhdCI6MTUwNDg2NzUwOCwiZXhwIjoxNTA0OTg3NTA4LCJuYmYiOiIiLCJ1dWlkIjoiZDc1OTdkZDktNTcxYS1kYmYxLTUwMzAtNTk3YjQ4YzFhODE1In0.HfZvUPEj0ho31qqRKIDkHcEkzj44zM3xUV1VsXDMxPk [运行时间：0.096493s][吞吐率：10.36req/s] [内存消耗：2,471.34kb] [文件加载：57]
+[ info ] [ LANG ] D:\textgulp\website\php\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'auth',
+    2 => 'com_list',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=nng4gi73hbiliqmne9610qt826',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://localhost/main.html',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.79 Safari/537.36',
+  'origin' => 'http://localhost',
+  'accept' => 'application/json, text/plain, */*',
+  'content-length' => '58',
+  'connection' => 'close',
+  'host' => 'localhost',
+)
+[ info ] [ PARAM ] array (
+  'token' => 'eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9hcGkueXNqaWFuemh1LmNvbSIsImF1ZCI6Imh0dHA6XC9cL3poYW9waW4ueXNqaWFuemh1LmNvbSIsImlhdCI6MTUwNDg2NzUwOCwiZXhwIjoxNTA0OTg3NTA4LCJuYmYiOiIiLCJ1dWlkIjoiZDc1OTdkZDktNTcxYS1kYmYxLTUwMzAtNTk3YjQ4YzFhODE1In0.HfZvUPEj0ho31qqRKIDkHcEkzj44zM3xUV1VsXDMxPk',
+  'codeid' => 'CqNdN9bS_aPvjiQ',
+  'c_alias' => 'QS_diary',
+  'orderstrid' => '3',
+  'top' => '6',
+)
+[ info ] [ CACHE ] INIT File
+[ info ] [ RUN ] app\api\controller\Auth->com_list[ D:\textgulp\website\php\application\api\controller\Auth.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000831s ] mysql:dbname=xiaochen;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ys_system_conf` [ RunTime:0.032431s ]
+[ sql ] [ SQL ] SELECT * FROM `ys_system_conf` WHERE  `tbnum` = '5'  AND `isdel` = 0 LIMIT 1 [ RunTime:0.000550s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ys_dict` [ RunTime:0.012829s ]
+[ sql ] [ SQL ] SELECT * FROM `ys_dict` WHERE  `c_alias` = 'QS_diary'  AND `isdel` = 0 ORDER BY createtime asc LIMIT 6 [ RunTime:0.000459s ]
+[ sql ] [ SQL ] SELECT * FROM `ys_system_conf` WHERE  `tbnum` = '5'  AND `isdel` = 0 LIMIT 1 [ RunTime:0.000414s ]
+
+---------------------------------------------------------------
+[ 2017-09-08T22:30:52+08:00 ] ::1 ::1 POST /index.php/open/menutree_select?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9hcGkueXNqaWFuemh1LmNvbSIsImF1ZCI6Imh0dHA6XC9cL3poYW9waW4ueXNqaWFuemh1LmNvbSIsImlhdCI6MTUwNDg2NzUwOCwiZXhwIjoxNTA0OTg3NTA4LCJuYmYiOiIiLCJ1dWlkIjoiZDc1OTdkZDktNTcxYS1kYmYxLTUwMzAtNTk3YjQ4YzFhODE1In0.HfZvUPEj0ho31qqRKIDkHcEkzj44zM3xUV1VsXDMxPk
+[ log ] localhost/index.php/open/menutree_select?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9hcGkueXNqaWFuemh1LmNvbSIsImF1ZCI6Imh0dHA6XC9cL3poYW9waW4ueXNqaWFuemh1LmNvbSIsImlhdCI6MTUwNDg2NzUwOCwiZXhwIjoxNTA0OTg3NTA4LCJuYmYiOiIiLCJ1dWlkIjoiZDc1OTdkZDktNTcxYS1kYmYxLTUwMzAtNTk3YjQ4YzFhODE1In0.HfZvUPEj0ho31qqRKIDkHcEkzj44zM3xUV1VsXDMxPk [运行时间：0.067569s][吞吐率：14.80req/s] [内存消耗：2,253.15kb] [文件加载：53]
+[ info ] [ LANG ] D:\textgulp\website\php\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'open',
+    2 => 'menutree_select',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=nng4gi73hbiliqmne9610qt826',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://localhost/main.html',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.79 Safari/537.36',
+  'x-requested-with' => 'XMLHttpRequest',
+  'origin' => 'http://localhost',
+  'accept' => '*/*',
+  'cache-control' => 'no-cache',
+  'pragma' => 'no-cache',
+  'content-length' => '7',
+  'connection' => 'close',
+  'host' => 'localhost',
+)
+[ info ] [ PARAM ] array (
+  'token' => 'eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9hcGkueXNqaWFuemh1LmNvbSIsImF1ZCI6Imh0dHA6XC9cL3poYW9waW4ueXNqaWFuemh1LmNvbSIsImlhdCI6MTUwNDg2NzUwOCwiZXhwIjoxNTA0OTg3NTA4LCJuYmYiOiIiLCJ1dWlkIjoiZDc1OTdkZDktNTcxYS1kYmYxLTUwMzAtNTk3YjQ4YzFhODE1In0.HfZvUPEj0ho31qqRKIDkHcEkzj44zM3xUV1VsXDMxPk',
+  'debug' => '0',
+)
+[ info ] [ RUN ] app\api\controller\Open->menutree_select[ D:\textgulp\website\php\application\api\controller\Open.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000863s ] mysql:dbname=xiaochen;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ys_system_conf` [ RunTime:0.012177s ]
+[ sql ] [ SQL ] SELECT * FROM `ys_system_conf` WHERE  `isdel` = 0 [ RunTime:0.000680s ]
+
+---------------------------------------------------------------
+[ 2017-09-08T22:30:53+08:00 ] ::1 ::1 POST /index.php/open/islogin?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9hcGkueXNqaWFuemh1LmNvbSIsImF1ZCI6Imh0dHA6XC9cL3poYW9waW4ueXNqaWFuemh1LmNvbSIsImlhdCI6MTUwNDg2NzUwOCwiZXhwIjoxNTA0OTg3NTA4LCJuYmYiOiIiLCJ1dWlkIjoiZDc1OTdkZDktNTcxYS1kYmYxLTUwMzAtNTk3YjQ4YzFhODE1In0.HfZvUPEj0ho31qqRKIDkHcEkzj44zM3xUV1VsXDMxPk
+[ log ] localhost/index.php/open/islogin?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9hcGkueXNqaWFuemh1LmNvbSIsImF1ZCI6Imh0dHA6XC9cL3poYW9waW4ueXNqaWFuemh1LmNvbSIsImlhdCI6MTUwNDg2NzUwOCwiZXhwIjoxNTA0OTg3NTA4LCJuYmYiOiIiLCJ1dWlkIjoiZDc1OTdkZDktNTcxYS1kYmYxLTUwMzAtNTk3YjQ4YzFhODE1In0.HfZvUPEj0ho31qqRKIDkHcEkzj44zM3xUV1VsXDMxPk [运行时间：0.032434s][吞吐率：30.83req/s] [内存消耗：1,782.15kb] [文件加载：50]
+[ info ] [ LANG ] D:\textgulp\website\php\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'open',
+    2 => 'islogin',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=nng4gi73hbiliqmne9610qt826',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://localhost/main.html',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.79 Safari/537.36',
+  'x-requested-with' => 'XMLHttpRequest',
+  'origin' => 'http://localhost',
+  'accept' => '*/*',
+  'cache-control' => 'no-cache',
+  'pragma' => 'no-cache',
+  'content-length' => '0',
+  'connection' => 'close',
+  'host' => 'localhost',
+)
+[ info ] [ PARAM ] array (
+  'token' => 'eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9hcGkueXNqaWFuemh1LmNvbSIsImF1ZCI6Imh0dHA6XC9cL3poYW9waW4ueXNqaWFuemh1LmNvbSIsImlhdCI6MTUwNDg2NzUwOCwiZXhwIjoxNTA0OTg3NTA4LCJuYmYiOiIiLCJ1dWlkIjoiZDc1OTdkZDktNTcxYS1kYmYxLTUwMzAtNTk3YjQ4YzFhODE1In0.HfZvUPEj0ho31qqRKIDkHcEkzj44zM3xUV1VsXDMxPk',
+)
+[ info ] [ RUN ] app\api\controller\Open->islogin[ D:\textgulp\website\php\application\api\controller\Open.php ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-09-08T22:30:53+08:00 ] ::1 ::1 POST /index.php/auth/com_list?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9hcGkueXNqaWFuemh1LmNvbSIsImF1ZCI6Imh0dHA6XC9cL3poYW9waW4ueXNqaWFuemh1LmNvbSIsImlhdCI6MTUwNDg2NzUwOCwiZXhwIjoxNTA0OTg3NTA4LCJuYmYiOiIiLCJ1dWlkIjoiZDc1OTdkZDktNTcxYS1kYmYxLTUwMzAtNTk3YjQ4YzFhODE1In0.HfZvUPEj0ho31qqRKIDkHcEkzj44zM3xUV1VsXDMxPk
+[ log ] localhost/index.php/auth/com_list?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9hcGkueXNqaWFuemh1LmNvbSIsImF1ZCI6Imh0dHA6XC9cL3poYW9waW4ueXNqaWFuemh1LmNvbSIsImlhdCI6MTUwNDg2NzUwOCwiZXhwIjoxNTA0OTg3NTA4LCJuYmYiOiIiLCJ1dWlkIjoiZDc1OTdkZDktNTcxYS1kYmYxLTUwMzAtNTk3YjQ4YzFhODE1In0.HfZvUPEj0ho31qqRKIDkHcEkzj44zM3xUV1VsXDMxPk [运行时间：0.160621s][吞吐率：6.23req/s] [内存消耗：2,472.81kb] [文件加载：57]
+[ info ] [ LANG ] D:\textgulp\website\php\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'auth',
+    2 => 'com_list',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=nng4gi73hbiliqmne9610qt826',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://localhost/main.html',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.79 Safari/537.36',
+  'origin' => 'http://localhost',
+  'accept' => 'application/json, text/plain, */*',
+  'content-length' => '52',
+  'connection' => 'close',
+  'host' => 'localhost',
+)
+[ info ] [ PARAM ] array (
+  'token' => 'eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9hcGkueXNqaWFuemh1LmNvbSIsImF1ZCI6Imh0dHA6XC9cL3poYW9waW4ueXNqaWFuemh1LmNvbSIsImlhdCI6MTUwNDg2NzUwOCwiZXhwIjoxNTA0OTg3NTA4LCJuYmYiOiIiLCJ1dWlkIjoiZDc1OTdkZDktNTcxYS1kYmYxLTUwMzAtNTk3YjQ4YzFhODE1In0.HfZvUPEj0ho31qqRKIDkHcEkzj44zM3xUV1VsXDMxPk',
+  'codeid' => 'CPZRbILQrvzniQ',
+  'diarytype' => '1',
+  'top' => '3',
+  'orderstrid' => '2',
+)
+[ info ] [ CACHE ] INIT File
+[ info ] [ RUN ] app\api\controller\Auth->com_list[ D:\textgulp\website\php\application\api\controller\Auth.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001019s ] mysql:dbname=xiaochen;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ys_system_conf` [ RunTime:0.014386s ]
+[ sql ] [ SQL ] SELECT * FROM `ys_system_conf` WHERE  `tbnum` = '1'  AND `isdel` = 0 LIMIT 1 [ RunTime:0.000784s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ys_article` [ RunTime:0.030094s ]
+[ sql ] [ SQL ] SELECT * FROM `ys_article` WHERE  `diarytype` = 1  AND `isdel` = 0 ORDER BY createtime desc LIMIT 3 [ RunTime:0.002744s ]
+[ sql ] [ SQL ] SELECT * FROM `ys_system_conf` WHERE  `tbnum` = '1'  AND `isdel` = 0 LIMIT 1 [ RunTime:0.000899s ]
+
+---------------------------------------------------------------
+[ 2017-09-08T22:30:53+08:00 ] ::1 ::1 POST /index.php/auth/com_list?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9hcGkueXNqaWFuemh1LmNvbSIsImF1ZCI6Imh0dHA6XC9cL3poYW9waW4ueXNqaWFuemh1LmNvbSIsImlhdCI6MTUwNDg2NzUwOCwiZXhwIjoxNTA0OTg3NTA4LCJuYmYiOiIiLCJ1dWlkIjoiZDc1OTdkZDktNTcxYS1kYmYxLTUwMzAtNTk3YjQ4YzFhODE1In0.HfZvUPEj0ho31qqRKIDkHcEkzj44zM3xUV1VsXDMxPk
+[ log ] localhost/index.php/auth/com_list?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9hcGkueXNqaWFuemh1LmNvbSIsImF1ZCI6Imh0dHA6XC9cL3poYW9waW4ueXNqaWFuemh1LmNvbSIsImlhdCI6MTUwNDg2NzUwOCwiZXhwIjoxNTA0OTg3NTA4LCJuYmYiOiIiLCJ1dWlkIjoiZDc1OTdkZDktNTcxYS1kYmYxLTUwMzAtNTk3YjQ4YzFhODE1In0.HfZvUPEj0ho31qqRKIDkHcEkzj44zM3xUV1VsXDMxPk [运行时间：0.212605s][吞吐率：4.70req/s] [内存消耗：2,471.56kb] [文件加载：57]
+[ info ] [ LANG ] D:\textgulp\website\php\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'auth',
+    2 => 'com_list',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=nng4gi73hbiliqmne9610qt826',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://localhost/main.html',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.79 Safari/537.36',
+  'origin' => 'http://localhost',
+  'accept' => 'application/json, text/plain, */*',
+  'content-length' => '52',
+  'connection' => 'close',
+  'host' => 'localhost',
+)
+[ info ] [ PARAM ] array (
+  'token' => 'eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9hcGkueXNqaWFuemh1LmNvbSIsImF1ZCI6Imh0dHA6XC9cL3poYW9waW4ueXNqaWFuemh1LmNvbSIsImlhdCI6MTUwNDg2NzUwOCwiZXhwIjoxNTA0OTg3NTA4LCJuYmYiOiIiLCJ1dWlkIjoiZDc1OTdkZDktNTcxYS1kYmYxLTUwMzAtNTk3YjQ4YzFhODE1In0.HfZvUPEj0ho31qqRKIDkHcEkzj44zM3xUV1VsXDMxPk',
+  'codeid' => 'CPZRbILQrvzniQ',
+  'diarytype' => '3',
+  'top' => '3',
+  'orderstrid' => '2',
+)
+[ info ] [ CACHE ] INIT File
+[ info ] [ RUN ] app\api\controller\Auth->com_list[ D:\textgulp\website\php\application\api\controller\Auth.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001488s ] mysql:dbname=xiaochen;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ys_system_conf` [ RunTime:0.015642s ]
+[ sql ] [ SQL ] SELECT * FROM `ys_system_conf` WHERE  `tbnum` = '1'  AND `isdel` = 0 LIMIT 1 [ RunTime:0.000799s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ys_article` [ RunTime:0.015082s ]
+[ sql ] [ SQL ] SELECT * FROM `ys_article` WHERE  `diarytype` = 3  AND `isdel` = 0 ORDER BY createtime desc LIMIT 3 [ RunTime:0.001013s ]
+[ sql ] [ SQL ] SELECT * FROM `ys_system_conf` WHERE  `tbnum` = '1'  AND `isdel` = 0 LIMIT 1 [ RunTime:0.000732s ]
+
+---------------------------------------------------------------
+[ 2017-09-08T22:30:53+08:00 ] ::1 ::1 POST /index.php/auth/com_list?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9hcGkueXNqaWFuemh1LmNvbSIsImF1ZCI6Imh0dHA6XC9cL3poYW9waW4ueXNqaWFuemh1LmNvbSIsImlhdCI6MTUwNDg2NzUwOCwiZXhwIjoxNTA0OTg3NTA4LCJuYmYiOiIiLCJ1dWlkIjoiZDc1OTdkZDktNTcxYS1kYmYxLTUwMzAtNTk3YjQ4YzFhODE1In0.HfZvUPEj0ho31qqRKIDkHcEkzj44zM3xUV1VsXDMxPk
+[ log ] localhost/index.php/auth/com_list?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9hcGkueXNqaWFuemh1LmNvbSIsImF1ZCI6Imh0dHA6XC9cL3poYW9waW4ueXNqaWFuemh1LmNvbSIsImlhdCI6MTUwNDg2NzUwOCwiZXhwIjoxNTA0OTg3NTA4LCJuYmYiOiIiLCJ1dWlkIjoiZDc1OTdkZDktNTcxYS1kYmYxLTUwMzAtNTk3YjQ4YzFhODE1In0.HfZvUPEj0ho31qqRKIDkHcEkzj44zM3xUV1VsXDMxPk [运行时间：0.267231s][吞吐率：3.74req/s] [内存消耗：2,471.56kb] [文件加载：57]
+[ info ] [ LANG ] D:\textgulp\website\php\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'auth',
+    2 => 'com_list',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=nng4gi73hbiliqmne9610qt826',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://localhost/main.html',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.79 Safari/537.36',
+  'origin' => 'http://localhost',
+  'accept' => 'application/json, text/plain, */*',
+  'content-length' => '52',
+  'connection' => 'close',
+  'host' => 'localhost',
+)
+[ info ] [ PARAM ] array (
+  'token' => 'eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9hcGkueXNqaWFuemh1LmNvbSIsImF1ZCI6Imh0dHA6XC9cL3poYW9waW4ueXNqaWFuemh1LmNvbSIsImlhdCI6MTUwNDg2NzUwOCwiZXhwIjoxNTA0OTg3NTA4LCJuYmYiOiIiLCJ1dWlkIjoiZDc1OTdkZDktNTcxYS1kYmYxLTUwMzAtNTk3YjQ4YzFhODE1In0.HfZvUPEj0ho31qqRKIDkHcEkzj44zM3xUV1VsXDMxPk',
+  'codeid' => 'CPZRbILQrvzniQ',
+  'diarytype' => '2',
+  'top' => '3',
+  'orderstrid' => '2',
+)
+[ info ] [ CACHE ] INIT File
+[ info ] [ RUN ] app\api\controller\Auth->com_list[ D:\textgulp\website\php\application\api\controller\Auth.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001213s ] mysql:dbname=xiaochen;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ys_system_conf` [ RunTime:0.013799s ]
+[ sql ] [ SQL ] SELECT * FROM `ys_system_conf` WHERE  `tbnum` = '1'  AND `isdel` = 0 LIMIT 1 [ RunTime:0.000890s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ys_article` [ RunTime:0.015144s ]
+[ sql ] [ SQL ] SELECT * FROM `ys_article` WHERE  `diarytype` = 2  AND `isdel` = 0 ORDER BY createtime desc LIMIT 3 [ RunTime:0.000866s ]
+[ sql ] [ SQL ] SELECT * FROM `ys_system_conf` WHERE  `tbnum` = '1'  AND `isdel` = 0 LIMIT 1 [ RunTime:0.000589s ]
+
+---------------------------------------------------------------
+[ 2017-09-08T22:30:54+08:00 ] ::1 ::1 POST /index.php/auth/com_list?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9hcGkueXNqaWFuemh1LmNvbSIsImF1ZCI6Imh0dHA6XC9cL3poYW9waW4ueXNqaWFuemh1LmNvbSIsImlhdCI6MTUwNDg2NzUwOCwiZXhwIjoxNTA0OTg3NTA4LCJuYmYiOiIiLCJ1dWlkIjoiZDc1OTdkZDktNTcxYS1kYmYxLTUwMzAtNTk3YjQ4YzFhODE1In0.HfZvUPEj0ho31qqRKIDkHcEkzj44zM3xUV1VsXDMxPk
+[ log ] localhost/index.php/auth/com_list?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9hcGkueXNqaWFuemh1LmNvbSIsImF1ZCI6Imh0dHA6XC9cL3poYW9waW4ueXNqaWFuemh1LmNvbSIsImlhdCI6MTUwNDg2NzUwOCwiZXhwIjoxNTA0OTg3NTA4LCJuYmYiOiIiLCJ1dWlkIjoiZDc1OTdkZDktNTcxYS1kYmYxLTUwMzAtNTk3YjQ4YzFhODE1In0.HfZvUPEj0ho31qqRKIDkHcEkzj44zM3xUV1VsXDMxPk [运行时间：0.079642s][吞吐率：12.56req/s] [内存消耗：2,471.34kb] [文件加载：57]
+[ info ] [ LANG ] D:\textgulp\website\php\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'auth',
+    2 => 'com_list',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=nng4gi73hbiliqmne9610qt826',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://localhost/main.html',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.79 Safari/537.36',
+  'origin' => 'http://localhost',
+  'accept' => 'application/json, text/plain, */*',
+  'content-length' => '58',
+  'connection' => 'close',
+  'host' => 'localhost',
+)
+[ info ] [ PARAM ] array (
+  'token' => 'eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9hcGkueXNqaWFuemh1LmNvbSIsImF1ZCI6Imh0dHA6XC9cL3poYW9waW4ueXNqaWFuemh1LmNvbSIsImlhdCI6MTUwNDg2NzUwOCwiZXhwIjoxNTA0OTg3NTA4LCJuYmYiOiIiLCJ1dWlkIjoiZDc1OTdkZDktNTcxYS1kYmYxLTUwMzAtNTk3YjQ4YzFhODE1In0.HfZvUPEj0ho31qqRKIDkHcEkzj44zM3xUV1VsXDMxPk',
+  'codeid' => 'CqNdN9bS_aPvjiQ',
+  'c_alias' => 'QS_diary',
+  'orderstrid' => '3',
+  'top' => '6',
+)
+[ info ] [ CACHE ] INIT File
+[ info ] [ RUN ] app\api\controller\Auth->com_list[ D:\textgulp\website\php\application\api\controller\Auth.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001077s ] mysql:dbname=xiaochen;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ys_system_conf` [ RunTime:0.012339s ]
+[ sql ] [ SQL ] SELECT * FROM `ys_system_conf` WHERE  `tbnum` = '5'  AND `isdel` = 0 LIMIT 1 [ RunTime:0.000594s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ys_dict` [ RunTime:0.014537s ]
+[ sql ] [ SQL ] SELECT * FROM `ys_dict` WHERE  `c_alias` = 'QS_diary'  AND `isdel` = 0 ORDER BY createtime asc LIMIT 6 [ RunTime:0.000695s ]
+[ sql ] [ SQL ] SELECT * FROM `ys_system_conf` WHERE  `tbnum` = '5'  AND `isdel` = 0 LIMIT 1 [ RunTime:0.000658s ]
+
+---------------------------------------------------------------
+[ 2017-09-08T22:30:59+08:00 ] ::1 ::1 POST /index.php/open/menutree_select?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9hcGkueXNqaWFuemh1LmNvbSIsImF1ZCI6Imh0dHA6XC9cL3poYW9waW4ueXNqaWFuemh1LmNvbSIsImlhdCI6MTUwNDg2NzUwOCwiZXhwIjoxNTA0OTg3NTA4LCJuYmYiOiIiLCJ1dWlkIjoiZDc1OTdkZDktNTcxYS1kYmYxLTUwMzAtNTk3YjQ4YzFhODE1In0.HfZvUPEj0ho31qqRKIDkHcEkzj44zM3xUV1VsXDMxPk
+[ log ] localhost/index.php/open/menutree_select?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9hcGkueXNqaWFuemh1LmNvbSIsImF1ZCI6Imh0dHA6XC9cL3poYW9waW4ueXNqaWFuemh1LmNvbSIsImlhdCI6MTUwNDg2NzUwOCwiZXhwIjoxNTA0OTg3NTA4LCJuYmYiOiIiLCJ1dWlkIjoiZDc1OTdkZDktNTcxYS1kYmYxLTUwMzAtNTk3YjQ4YzFhODE1In0.HfZvUPEj0ho31qqRKIDkHcEkzj44zM3xUV1VsXDMxPk [运行时间：0.076372s][吞吐率：13.09req/s] [内存消耗：2,252.92kb] [文件加载：53]
+[ info ] [ LANG ] D:\textgulp\website\php\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'open',
+    2 => 'menutree_select',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=nng4gi73hbiliqmne9610qt826',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://localhost/main.html',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.79 Safari/537.36',
+  'x-requested-with' => 'XMLHttpRequest',
+  'origin' => 'http://localhost',
+  'accept' => '*/*',
+  'content-length' => '7',
+  'connection' => 'close',
+  'host' => 'localhost',
+)
+[ info ] [ PARAM ] array (
+  'token' => 'eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9hcGkueXNqaWFuemh1LmNvbSIsImF1ZCI6Imh0dHA6XC9cL3poYW9waW4ueXNqaWFuemh1LmNvbSIsImlhdCI6MTUwNDg2NzUwOCwiZXhwIjoxNTA0OTg3NTA4LCJuYmYiOiIiLCJ1dWlkIjoiZDc1OTdkZDktNTcxYS1kYmYxLTUwMzAtNTk3YjQ4YzFhODE1In0.HfZvUPEj0ho31qqRKIDkHcEkzj44zM3xUV1VsXDMxPk',
+  'debug' => '0',
+)
+[ info ] [ RUN ] app\api\controller\Open->menutree_select[ D:\textgulp\website\php\application\api\controller\Open.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000813s ] mysql:dbname=xiaochen;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ys_system_conf` [ RunTime:0.023294s ]
+[ sql ] [ SQL ] SELECT * FROM `ys_system_conf` WHERE  `isdel` = 0 [ RunTime:0.000544s ]
+
+---------------------------------------------------------------
+[ 2017-09-08T22:30:59+08:00 ] ::1 ::1 POST /index.php/open/islogin?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9hcGkueXNqaWFuemh1LmNvbSIsImF1ZCI6Imh0dHA6XC9cL3poYW9waW4ueXNqaWFuemh1LmNvbSIsImlhdCI6MTUwNDg2NzUwOCwiZXhwIjoxNTA0OTg3NTA4LCJuYmYiOiIiLCJ1dWlkIjoiZDc1OTdkZDktNTcxYS1kYmYxLTUwMzAtNTk3YjQ4YzFhODE1In0.HfZvUPEj0ho31qqRKIDkHcEkzj44zM3xUV1VsXDMxPk
+[ log ] localhost/index.php/open/islogin?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9hcGkueXNqaWFuemh1LmNvbSIsImF1ZCI6Imh0dHA6XC9cL3poYW9waW4ueXNqaWFuemh1LmNvbSIsImlhdCI6MTUwNDg2NzUwOCwiZXhwIjoxNTA0OTg3NTA4LCJuYmYiOiIiLCJ1dWlkIjoiZDc1OTdkZDktNTcxYS1kYmYxLTUwMzAtNTk3YjQ4YzFhODE1In0.HfZvUPEj0ho31qqRKIDkHcEkzj44zM3xUV1VsXDMxPk [运行时间：0.039829s][吞吐率：25.11req/s] [内存消耗：1,781.91kb] [文件加载：50]
+[ info ] [ LANG ] D:\textgulp\website\php\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'open',
+    2 => 'islogin',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=nng4gi73hbiliqmne9610qt826',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://localhost/main.html',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.79 Safari/537.36',
+  'x-requested-with' => 'XMLHttpRequest',
+  'origin' => 'http://localhost',
+  'accept' => '*/*',
+  'content-length' => '0',
+  'connection' => 'close',
+  'host' => 'localhost',
+)
+[ info ] [ PARAM ] array (
+  'token' => 'eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9hcGkueXNqaWFuemh1LmNvbSIsImF1ZCI6Imh0dHA6XC9cL3poYW9waW4ueXNqaWFuemh1LmNvbSIsImlhdCI6MTUwNDg2NzUwOCwiZXhwIjoxNTA0OTg3NTA4LCJuYmYiOiIiLCJ1dWlkIjoiZDc1OTdkZDktNTcxYS1kYmYxLTUwMzAtNTk3YjQ4YzFhODE1In0.HfZvUPEj0ho31qqRKIDkHcEkzj44zM3xUV1VsXDMxPk',
+)
+[ info ] [ RUN ] app\api\controller\Open->islogin[ D:\textgulp\website\php\application\api\controller\Open.php ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-09-08T22:30:59+08:00 ] ::1 ::1 POST /index.php/auth/com_list?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9hcGkueXNqaWFuemh1LmNvbSIsImF1ZCI6Imh0dHA6XC9cL3poYW9waW4ueXNqaWFuemh1LmNvbSIsImlhdCI6MTUwNDg2NzUwOCwiZXhwIjoxNTA0OTg3NTA4LCJuYmYiOiIiLCJ1dWlkIjoiZDc1OTdkZDktNTcxYS1kYmYxLTUwMzAtNTk3YjQ4YzFhODE1In0.HfZvUPEj0ho31qqRKIDkHcEkzj44zM3xUV1VsXDMxPk
+[ log ] localhost/index.php/auth/com_list?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9hcGkueXNqaWFuemh1LmNvbSIsImF1ZCI6Imh0dHA6XC9cL3poYW9waW4ueXNqaWFuemh1LmNvbSIsImlhdCI6MTUwNDg2NzUwOCwiZXhwIjoxNTA0OTg3NTA4LCJuYmYiOiIiLCJ1dWlkIjoiZDc1OTdkZDktNTcxYS1kYmYxLTUwMzAtNTk3YjQ4YzFhODE1In0.HfZvUPEj0ho31qqRKIDkHcEkzj44zM3xUV1VsXDMxPk [运行时间：0.113898s][吞吐率：8.78req/s] [内存消耗：2,472.81kb] [文件加载：57]
+[ info ] [ LANG ] D:\textgulp\website\php\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'auth',
+    2 => 'com_list',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=nng4gi73hbiliqmne9610qt826',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://localhost/main.html',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.79 Safari/537.36',
+  'origin' => 'http://localhost',
+  'accept' => 'application/json, text/plain, */*',
+  'content-length' => '52',
+  'connection' => 'close',
+  'host' => 'localhost',
+)
+[ info ] [ PARAM ] array (
+  'token' => 'eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9hcGkueXNqaWFuemh1LmNvbSIsImF1ZCI6Imh0dHA6XC9cL3poYW9waW4ueXNqaWFuemh1LmNvbSIsImlhdCI6MTUwNDg2NzUwOCwiZXhwIjoxNTA0OTg3NTA4LCJuYmYiOiIiLCJ1dWlkIjoiZDc1OTdkZDktNTcxYS1kYmYxLTUwMzAtNTk3YjQ4YzFhODE1In0.HfZvUPEj0ho31qqRKIDkHcEkzj44zM3xUV1VsXDMxPk',
+  'codeid' => 'CPZRbILQrvzniQ',
+  'diarytype' => '1',
+  'top' => '3',
+  'orderstrid' => '2',
+)
+[ info ] [ CACHE ] INIT File
+[ info ] [ RUN ] app\api\controller\Auth->com_list[ D:\textgulp\website\php\application\api\controller\Auth.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001650s ] mysql:dbname=xiaochen;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ys_system_conf` [ RunTime:0.015716s ]
+[ sql ] [ SQL ] SELECT * FROM `ys_system_conf` WHERE  `tbnum` = '1'  AND `isdel` = 0 LIMIT 1 [ RunTime:0.000780s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ys_article` [ RunTime:0.016584s ]
+[ sql ] [ SQL ] SELECT * FROM `ys_article` WHERE  `diarytype` = 1  AND `isdel` = 0 ORDER BY createtime desc LIMIT 3 [ RunTime:0.000984s ]
+[ sql ] [ SQL ] SELECT * FROM `ys_system_conf` WHERE  `tbnum` = '1'  AND `isdel` = 0 LIMIT 1 [ RunTime:0.000628s ]
+
+---------------------------------------------------------------
+[ 2017-09-08T22:30:59+08:00 ] ::1 ::1 POST /index.php/auth/com_list?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9hcGkueXNqaWFuemh1LmNvbSIsImF1ZCI6Imh0dHA6XC9cL3poYW9waW4ueXNqaWFuemh1LmNvbSIsImlhdCI6MTUwNDg2NzUwOCwiZXhwIjoxNTA0OTg3NTA4LCJuYmYiOiIiLCJ1dWlkIjoiZDc1OTdkZDktNTcxYS1kYmYxLTUwMzAtNTk3YjQ4YzFhODE1In0.HfZvUPEj0ho31qqRKIDkHcEkzj44zM3xUV1VsXDMxPk
+[ log ] localhost/index.php/auth/com_list?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9hcGkueXNqaWFuemh1LmNvbSIsImF1ZCI6Imh0dHA6XC9cL3poYW9waW4ueXNqaWFuemh1LmNvbSIsImlhdCI6MTUwNDg2NzUwOCwiZXhwIjoxNTA0OTg3NTA4LCJuYmYiOiIiLCJ1dWlkIjoiZDc1OTdkZDktNTcxYS1kYmYxLTUwMzAtNTk3YjQ4YzFhODE1In0.HfZvUPEj0ho31qqRKIDkHcEkzj44zM3xUV1VsXDMxPk [运行时间：0.162907s][吞吐率：6.14req/s] [内存消耗：2,471.56kb] [文件加载：57]
+[ info ] [ LANG ] D:\textgulp\website\php\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'auth',
+    2 => 'com_list',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=nng4gi73hbiliqmne9610qt826',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://localhost/main.html',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.79 Safari/537.36',
+  'origin' => 'http://localhost',
+  'accept' => 'application/json, text/plain, */*',
+  'content-length' => '52',
+  'connection' => 'close',
+  'host' => 'localhost',
+)
+[ info ] [ PARAM ] array (
+  'token' => 'eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9hcGkueXNqaWFuemh1LmNvbSIsImF1ZCI6Imh0dHA6XC9cL3poYW9waW4ueXNqaWFuemh1LmNvbSIsImlhdCI6MTUwNDg2NzUwOCwiZXhwIjoxNTA0OTg3NTA4LCJuYmYiOiIiLCJ1dWlkIjoiZDc1OTdkZDktNTcxYS1kYmYxLTUwMzAtNTk3YjQ4YzFhODE1In0.HfZvUPEj0ho31qqRKIDkHcEkzj44zM3xUV1VsXDMxPk',
+  'codeid' => 'CPZRbILQrvzniQ',
+  'diarytype' => '2',
+  'top' => '3',
+  'orderstrid' => '2',
+)
+[ info ] [ CACHE ] INIT File
+[ info ] [ RUN ] app\api\controller\Auth->com_list[ D:\textgulp\website\php\application\api\controller\Auth.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001094s ] mysql:dbname=xiaochen;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ys_system_conf` [ RunTime:0.013827s ]
+[ sql ] [ SQL ] SELECT * FROM `ys_system_conf` WHERE  `tbnum` = '1'  AND `isdel` = 0 LIMIT 1 [ RunTime:0.000535s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ys_article` [ RunTime:0.015760s ]
+[ sql ] [ SQL ] SELECT * FROM `ys_article` WHERE  `diarytype` = 2  AND `isdel` = 0 ORDER BY createtime desc LIMIT 3 [ RunTime:0.000812s ]
+[ sql ] [ SQL ] SELECT * FROM `ys_system_conf` WHERE  `tbnum` = '1'  AND `isdel` = 0 LIMIT 1 [ RunTime:0.000896s ]
+
+---------------------------------------------------------------
+[ 2017-09-08T22:30:59+08:00 ] ::1 ::1 POST /index.php/auth/com_list?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9hcGkueXNqaWFuemh1LmNvbSIsImF1ZCI6Imh0dHA6XC9cL3poYW9waW4ueXNqaWFuemh1LmNvbSIsImlhdCI6MTUwNDg2NzUwOCwiZXhwIjoxNTA0OTg3NTA4LCJuYmYiOiIiLCJ1dWlkIjoiZDc1OTdkZDktNTcxYS1kYmYxLTUwMzAtNTk3YjQ4YzFhODE1In0.HfZvUPEj0ho31qqRKIDkHcEkzj44zM3xUV1VsXDMxPk
+[ log ] localhost/index.php/auth/com_list?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9hcGkueXNqaWFuemh1LmNvbSIsImF1ZCI6Imh0dHA6XC9cL3poYW9waW4ueXNqaWFuemh1LmNvbSIsImlhdCI6MTUwNDg2NzUwOCwiZXhwIjoxNTA0OTg3NTA4LCJuYmYiOiIiLCJ1dWlkIjoiZDc1OTdkZDktNTcxYS1kYmYxLTUwMzAtNTk3YjQ4YzFhODE1In0.HfZvUPEj0ho31qqRKIDkHcEkzj44zM3xUV1VsXDMxPk [运行时间：0.212914s][吞吐率：4.70req/s] [内存消耗：2,471.56kb] [文件加载：57]
+[ info ] [ LANG ] D:\textgulp\website\php\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'auth',
+    2 => 'com_list',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=nng4gi73hbiliqmne9610qt826',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://localhost/main.html',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.79 Safari/537.36',
+  'origin' => 'http://localhost',
+  'accept' => 'application/json, text/plain, */*',
+  'content-length' => '52',
+  'connection' => 'close',
+  'host' => 'localhost',
+)
+[ info ] [ PARAM ] array (
+  'token' => 'eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9hcGkueXNqaWFuemh1LmNvbSIsImF1ZCI6Imh0dHA6XC9cL3poYW9waW4ueXNqaWFuemh1LmNvbSIsImlhdCI6MTUwNDg2NzUwOCwiZXhwIjoxNTA0OTg3NTA4LCJuYmYiOiIiLCJ1dWlkIjoiZDc1OTdkZDktNTcxYS1kYmYxLTUwMzAtNTk3YjQ4YzFhODE1In0.HfZvUPEj0ho31qqRKIDkHcEkzj44zM3xUV1VsXDMxPk',
+  'codeid' => 'CPZRbILQrvzniQ',
+  'diarytype' => '3',
+  'top' => '3',
+  'orderstrid' => '2',
+)
+[ info ] [ CACHE ] INIT File
+[ info ] [ RUN ] app\api\controller\Auth->com_list[ D:\textgulp\website\php\application\api\controller\Auth.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001234s ] mysql:dbname=xiaochen;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ys_system_conf` [ RunTime:0.013454s ]
+[ sql ] [ SQL ] SELECT * FROM `ys_system_conf` WHERE  `tbnum` = '1'  AND `isdel` = 0 LIMIT 1 [ RunTime:0.000766s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ys_article` [ RunTime:0.014345s ]
+[ sql ] [ SQL ] SELECT * FROM `ys_article` WHERE  `diarytype` = 3  AND `isdel` = 0 ORDER BY createtime desc LIMIT 3 [ RunTime:0.000951s ]
+[ sql ] [ SQL ] SELECT * FROM `ys_system_conf` WHERE  `tbnum` = '1'  AND `isdel` = 0 LIMIT 1 [ RunTime:0.000765s ]
+
+---------------------------------------------------------------
+[ 2017-09-08T22:31:00+08:00 ] ::1 ::1 POST /index.php/auth/com_list?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9hcGkueXNqaWFuemh1LmNvbSIsImF1ZCI6Imh0dHA6XC9cL3poYW9waW4ueXNqaWFuemh1LmNvbSIsImlhdCI6MTUwNDg2NzUwOCwiZXhwIjoxNTA0OTg3NTA4LCJuYmYiOiIiLCJ1dWlkIjoiZDc1OTdkZDktNTcxYS1kYmYxLTUwMzAtNTk3YjQ4YzFhODE1In0.HfZvUPEj0ho31qqRKIDkHcEkzj44zM3xUV1VsXDMxPk
+[ log ] localhost/index.php/auth/com_list?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9hcGkueXNqaWFuemh1LmNvbSIsImF1ZCI6Imh0dHA6XC9cL3poYW9waW4ueXNqaWFuemh1LmNvbSIsImlhdCI6MTUwNDg2NzUwOCwiZXhwIjoxNTA0OTg3NTA4LCJuYmYiOiIiLCJ1dWlkIjoiZDc1OTdkZDktNTcxYS1kYmYxLTUwMzAtNTk3YjQ4YzFhODE1In0.HfZvUPEj0ho31qqRKIDkHcEkzj44zM3xUV1VsXDMxPk [运行时间：0.129520s][吞吐率：7.72req/s] [内存消耗：2,471.34kb] [文件加载：57]
+[ info ] [ LANG ] D:\textgulp\website\php\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'auth',
+    2 => 'com_list',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=nng4gi73hbiliqmne9610qt826',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://localhost/main.html',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.79 Safari/537.36',
+  'origin' => 'http://localhost',
+  'accept' => 'application/json, text/plain, */*',
+  'content-length' => '58',
+  'connection' => 'close',
+  'host' => 'localhost',
+)
+[ info ] [ PARAM ] array (
+  'token' => 'eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9hcGkueXNqaWFuemh1LmNvbSIsImF1ZCI6Imh0dHA6XC9cL3poYW9waW4ueXNqaWFuemh1LmNvbSIsImlhdCI6MTUwNDg2NzUwOCwiZXhwIjoxNTA0OTg3NTA4LCJuYmYiOiIiLCJ1dWlkIjoiZDc1OTdkZDktNTcxYS1kYmYxLTUwMzAtNTk3YjQ4YzFhODE1In0.HfZvUPEj0ho31qqRKIDkHcEkzj44zM3xUV1VsXDMxPk',
+  'codeid' => 'CqNdN9bS_aPvjiQ',
+  'c_alias' => 'QS_diary',
+  'orderstrid' => '3',
+  'top' => '6',
+)
+[ info ] [ CACHE ] INIT File
+[ info ] [ RUN ] app\api\controller\Auth->com_list[ D:\textgulp\website\php\application\api\controller\Auth.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000933s ] mysql:dbname=xiaochen;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ys_system_conf` [ RunTime:0.066456s ]
+[ sql ] [ SQL ] SELECT * FROM `ys_system_conf` WHERE  `tbnum` = '5'  AND `isdel` = 0 LIMIT 1 [ RunTime:0.000560s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ys_dict` [ RunTime:0.011514s ]
+[ sql ] [ SQL ] SELECT * FROM `ys_dict` WHERE  `c_alias` = 'QS_diary'  AND `isdel` = 0 ORDER BY createtime asc LIMIT 6 [ RunTime:0.000620s ]
+[ sql ] [ SQL ] SELECT * FROM `ys_system_conf` WHERE  `tbnum` = '5'  AND `isdel` = 0 LIMIT 1 [ RunTime:0.000497s ]
+
+---------------------------------------------------------------
+[ 2017-09-08T22:31:54+08:00 ] ::1 ::1 POST /index.php/open/menutree_select?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9hcGkueXNqaWFuemh1LmNvbSIsImF1ZCI6Imh0dHA6XC9cL3poYW9waW4ueXNqaWFuemh1LmNvbSIsImlhdCI6MTUwNDg2NzUwOCwiZXhwIjoxNTA0OTg3NTA4LCJuYmYiOiIiLCJ1dWlkIjoiZDc1OTdkZDktNTcxYS1kYmYxLTUwMzAtNTk3YjQ4YzFhODE1In0.HfZvUPEj0ho31qqRKIDkHcEkzj44zM3xUV1VsXDMxPk
+[ log ] localhost/index.php/open/menutree_select?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9hcGkueXNqaWFuemh1LmNvbSIsImF1ZCI6Imh0dHA6XC9cL3poYW9waW4ueXNqaWFuemh1LmNvbSIsImlhdCI6MTUwNDg2NzUwOCwiZXhwIjoxNTA0OTg3NTA4LCJuYmYiOiIiLCJ1dWlkIjoiZDc1OTdkZDktNTcxYS1kYmYxLTUwMzAtNTk3YjQ4YzFhODE1In0.HfZvUPEj0ho31qqRKIDkHcEkzj44zM3xUV1VsXDMxPk [运行时间：0.149386s][吞吐率：6.69req/s] [内存消耗：2,252.92kb] [文件加载：53]
+[ info ] [ LANG ] D:\textgulp\website\php\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'open',
+    2 => 'menutree_select',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=nng4gi73hbiliqmne9610qt826',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://localhost/main.html',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.79 Safari/537.36',
+  'x-requested-with' => 'XMLHttpRequest',
+  'origin' => 'http://localhost',
+  'accept' => '*/*',
+  'content-length' => '7',
+  'connection' => 'close',
+  'host' => 'localhost',
+)
+[ info ] [ PARAM ] array (
+  'token' => 'eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9hcGkueXNqaWFuemh1LmNvbSIsImF1ZCI6Imh0dHA6XC9cL3poYW9waW4ueXNqaWFuemh1LmNvbSIsImlhdCI6MTUwNDg2NzUwOCwiZXhwIjoxNTA0OTg3NTA4LCJuYmYiOiIiLCJ1dWlkIjoiZDc1OTdkZDktNTcxYS1kYmYxLTUwMzAtNTk3YjQ4YzFhODE1In0.HfZvUPEj0ho31qqRKIDkHcEkzj44zM3xUV1VsXDMxPk',
+  'debug' => '0',
+)
+[ info ] [ RUN ] app\api\controller\Open->menutree_select[ D:\textgulp\website\php\application\api\controller\Open.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001254s ] mysql:dbname=xiaochen;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ys_system_conf` [ RunTime:0.096790s ]
+[ sql ] [ SQL ] SELECT * FROM `ys_system_conf` WHERE  `isdel` = 0 [ RunTime:0.000443s ]
+
+---------------------------------------------------------------
+[ 2017-09-08T22:31:54+08:00 ] ::1 ::1 POST /index.php/open/islogin?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9hcGkueXNqaWFuemh1LmNvbSIsImF1ZCI6Imh0dHA6XC9cL3poYW9waW4ueXNqaWFuemh1LmNvbSIsImlhdCI6MTUwNDg2NzUwOCwiZXhwIjoxNTA0OTg3NTA4LCJuYmYiOiIiLCJ1dWlkIjoiZDc1OTdkZDktNTcxYS1kYmYxLTUwMzAtNTk3YjQ4YzFhODE1In0.HfZvUPEj0ho31qqRKIDkHcEkzj44zM3xUV1VsXDMxPk
+[ log ] localhost/index.php/open/islogin?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9hcGkueXNqaWFuemh1LmNvbSIsImF1ZCI6Imh0dHA6XC9cL3poYW9waW4ueXNqaWFuemh1LmNvbSIsImlhdCI6MTUwNDg2NzUwOCwiZXhwIjoxNTA0OTg3NTA4LCJuYmYiOiIiLCJ1dWlkIjoiZDc1OTdkZDktNTcxYS1kYmYxLTUwMzAtNTk3YjQ4YzFhODE1In0.HfZvUPEj0ho31qqRKIDkHcEkzj44zM3xUV1VsXDMxPk [运行时间：0.037109s][吞吐率：26.95req/s] [内存消耗：1,781.91kb] [文件加载：50]
+[ info ] [ LANG ] D:\textgulp\website\php\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'open',
+    2 => 'islogin',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=nng4gi73hbiliqmne9610qt826',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://localhost/main.html',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.79 Safari/537.36',
+  'x-requested-with' => 'XMLHttpRequest',
+  'origin' => 'http://localhost',
+  'accept' => '*/*',
+  'content-length' => '0',
+  'connection' => 'close',
+  'host' => 'localhost',
+)
+[ info ] [ PARAM ] array (
+  'token' => 'eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9hcGkueXNqaWFuemh1LmNvbSIsImF1ZCI6Imh0dHA6XC9cL3poYW9waW4ueXNqaWFuemh1LmNvbSIsImlhdCI6MTUwNDg2NzUwOCwiZXhwIjoxNTA0OTg3NTA4LCJuYmYiOiIiLCJ1dWlkIjoiZDc1OTdkZDktNTcxYS1kYmYxLTUwMzAtNTk3YjQ4YzFhODE1In0.HfZvUPEj0ho31qqRKIDkHcEkzj44zM3xUV1VsXDMxPk',
+)
+[ info ] [ RUN ] app\api\controller\Open->islogin[ D:\textgulp\website\php\application\api\controller\Open.php ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-09-08T22:31:54+08:00 ] ::1 ::1 POST /index.php/auth/com_list?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9hcGkueXNqaWFuemh1LmNvbSIsImF1ZCI6Imh0dHA6XC9cL3poYW9waW4ueXNqaWFuemh1LmNvbSIsImlhdCI6MTUwNDg2NzUwOCwiZXhwIjoxNTA0OTg3NTA4LCJuYmYiOiIiLCJ1dWlkIjoiZDc1OTdkZDktNTcxYS1kYmYxLTUwMzAtNTk3YjQ4YzFhODE1In0.HfZvUPEj0ho31qqRKIDkHcEkzj44zM3xUV1VsXDMxPk
+[ log ] localhost/index.php/auth/com_list?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9hcGkueXNqaWFuemh1LmNvbSIsImF1ZCI6Imh0dHA6XC9cL3poYW9waW4ueXNqaWFuemh1LmNvbSIsImlhdCI6MTUwNDg2NzUwOCwiZXhwIjoxNTA0OTg3NTA4LCJuYmYiOiIiLCJ1dWlkIjoiZDc1OTdkZDktNTcxYS1kYmYxLTUwMzAtNTk3YjQ4YzFhODE1In0.HfZvUPEj0ho31qqRKIDkHcEkzj44zM3xUV1VsXDMxPk [运行时间：0.109664s][吞吐率：9.12req/s] [内存消耗：2,472.81kb] [文件加载：57]
+[ info ] [ LANG ] D:\textgulp\website\php\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'auth',
+    2 => 'com_list',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=nng4gi73hbiliqmne9610qt826',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://localhost/main.html',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.79 Safari/537.36',
+  'origin' => 'http://localhost',
+  'accept' => 'application/json, text/plain, */*',
+  'content-length' => '52',
+  'connection' => 'close',
+  'host' => 'localhost',
+)
+[ info ] [ PARAM ] array (
+  'token' => 'eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9hcGkueXNqaWFuemh1LmNvbSIsImF1ZCI6Imh0dHA6XC9cL3poYW9waW4ueXNqaWFuemh1LmNvbSIsImlhdCI6MTUwNDg2NzUwOCwiZXhwIjoxNTA0OTg3NTA4LCJuYmYiOiIiLCJ1dWlkIjoiZDc1OTdkZDktNTcxYS1kYmYxLTUwMzAtNTk3YjQ4YzFhODE1In0.HfZvUPEj0ho31qqRKIDkHcEkzj44zM3xUV1VsXDMxPk',
+  'codeid' => 'CPZRbILQrvzniQ',
+  'diarytype' => '1',
+  'top' => '3',
+  'orderstrid' => '2',
+)
+[ info ] [ CACHE ] INIT File
+[ info ] [ RUN ] app\api\controller\Auth->com_list[ D:\textgulp\website\php\application\api\controller\Auth.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001112s ] mysql:dbname=xiaochen;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ys_system_conf` [ RunTime:0.014521s ]
+[ sql ] [ SQL ] SELECT * FROM `ys_system_conf` WHERE  `tbnum` = '1'  AND `isdel` = 0 LIMIT 1 [ RunTime:0.000772s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ys_article` [ RunTime:0.014687s ]
+[ sql ] [ SQL ] SELECT * FROM `ys_article` WHERE  `diarytype` = 1  AND `isdel` = 0 ORDER BY createtime desc LIMIT 3 [ RunTime:0.000983s ]
+[ sql ] [ SQL ] SELECT * FROM `ys_system_conf` WHERE  `tbnum` = '1'  AND `isdel` = 0 LIMIT 1 [ RunTime:0.000547s ]
+
+---------------------------------------------------------------
+[ 2017-09-08T22:31:54+08:00 ] ::1 ::1 POST /index.php/auth/com_list?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9hcGkueXNqaWFuemh1LmNvbSIsImF1ZCI6Imh0dHA6XC9cL3poYW9waW4ueXNqaWFuemh1LmNvbSIsImlhdCI6MTUwNDg2NzUwOCwiZXhwIjoxNTA0OTg3NTA4LCJuYmYiOiIiLCJ1dWlkIjoiZDc1OTdkZDktNTcxYS1kYmYxLTUwMzAtNTk3YjQ4YzFhODE1In0.HfZvUPEj0ho31qqRKIDkHcEkzj44zM3xUV1VsXDMxPk
+[ log ] localhost/index.php/auth/com_list?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9hcGkueXNqaWFuemh1LmNvbSIsImF1ZCI6Imh0dHA6XC9cL3poYW9waW4ueXNqaWFuemh1LmNvbSIsImlhdCI6MTUwNDg2NzUwOCwiZXhwIjoxNTA0OTg3NTA4LCJuYmYiOiIiLCJ1dWlkIjoiZDc1OTdkZDktNTcxYS1kYmYxLTUwMzAtNTk3YjQ4YzFhODE1In0.HfZvUPEj0ho31qqRKIDkHcEkzj44zM3xUV1VsXDMxPk [运行时间：0.156564s][吞吐率：6.39req/s] [内存消耗：2,471.56kb] [文件加载：57]
+[ info ] [ LANG ] D:\textgulp\website\php\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'auth',
+    2 => 'com_list',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=nng4gi73hbiliqmne9610qt826',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://localhost/main.html',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.79 Safari/537.36',
+  'origin' => 'http://localhost',
+  'accept' => 'application/json, text/plain, */*',
+  'content-length' => '52',
+  'connection' => 'close',
+  'host' => 'localhost',
+)
+[ info ] [ PARAM ] array (
+  'token' => 'eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9hcGkueXNqaWFuemh1LmNvbSIsImF1ZCI6Imh0dHA6XC9cL3poYW9waW4ueXNqaWFuemh1LmNvbSIsImlhdCI6MTUwNDg2NzUwOCwiZXhwIjoxNTA0OTg3NTA4LCJuYmYiOiIiLCJ1dWlkIjoiZDc1OTdkZDktNTcxYS1kYmYxLTUwMzAtNTk3YjQ4YzFhODE1In0.HfZvUPEj0ho31qqRKIDkHcEkzj44zM3xUV1VsXDMxPk',
+  'codeid' => 'CPZRbILQrvzniQ',
+  'diarytype' => '2',
+  'top' => '3',
+  'orderstrid' => '2',
+)
+[ info ] [ CACHE ] INIT File
+[ info ] [ RUN ] app\api\controller\Auth->com_list[ D:\textgulp\website\php\application\api\controller\Auth.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001228s ] mysql:dbname=xiaochen;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ys_system_conf` [ RunTime:0.014050s ]
+[ sql ] [ SQL ] SELECT * FROM `ys_system_conf` WHERE  `tbnum` = '1'  AND `isdel` = 0 LIMIT 1 [ RunTime:0.000676s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ys_article` [ RunTime:0.013187s ]
+[ sql ] [ SQL ] SELECT * FROM `ys_article` WHERE  `diarytype` = 2  AND `isdel` = 0 ORDER BY createtime desc LIMIT 3 [ RunTime:0.001018s ]
+[ sql ] [ SQL ] SELECT * FROM `ys_system_conf` WHERE  `tbnum` = '1'  AND `isdel` = 0 LIMIT 1 [ RunTime:0.000663s ]
+
+---------------------------------------------------------------
+[ 2017-09-08T22:31:54+08:00 ] ::1 ::1 POST /index.php/auth/com_list?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9hcGkueXNqaWFuemh1LmNvbSIsImF1ZCI6Imh0dHA6XC9cL3poYW9waW4ueXNqaWFuemh1LmNvbSIsImlhdCI6MTUwNDg2NzUwOCwiZXhwIjoxNTA0OTg3NTA4LCJuYmYiOiIiLCJ1dWlkIjoiZDc1OTdkZDktNTcxYS1kYmYxLTUwMzAtNTk3YjQ4YzFhODE1In0.HfZvUPEj0ho31qqRKIDkHcEkzj44zM3xUV1VsXDMxPk
+[ log ] localhost/index.php/auth/com_list?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9hcGkueXNqaWFuemh1LmNvbSIsImF1ZCI6Imh0dHA6XC9cL3poYW9waW4ueXNqaWFuemh1LmNvbSIsImlhdCI6MTUwNDg2NzUwOCwiZXhwIjoxNTA0OTg3NTA4LCJuYmYiOiIiLCJ1dWlkIjoiZDc1OTdkZDktNTcxYS1kYmYxLTUwMzAtNTk3YjQ4YzFhODE1In0.HfZvUPEj0ho31qqRKIDkHcEkzj44zM3xUV1VsXDMxPk [运行时间：0.158226s][吞吐率：6.32req/s] [内存消耗：2,471.56kb] [文件加载：57]
+[ info ] [ LANG ] D:\textgulp\website\php\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'auth',
+    2 => 'com_list',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=nng4gi73hbiliqmne9610qt826',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://localhost/main.html',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.79 Safari/537.36',
+  'origin' => 'http://localhost',
+  'accept' => 'application/json, text/plain, */*',
+  'content-length' => '52',
+  'connection' => 'close',
+  'host' => 'localhost',
+)
+[ info ] [ PARAM ] array (
+  'token' => 'eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9hcGkueXNqaWFuemh1LmNvbSIsImF1ZCI6Imh0dHA6XC9cL3poYW9waW4ueXNqaWFuemh1LmNvbSIsImlhdCI6MTUwNDg2NzUwOCwiZXhwIjoxNTA0OTg3NTA4LCJuYmYiOiIiLCJ1dWlkIjoiZDc1OTdkZDktNTcxYS1kYmYxLTUwMzAtNTk3YjQ4YzFhODE1In0.HfZvUPEj0ho31qqRKIDkHcEkzj44zM3xUV1VsXDMxPk',
+  'codeid' => 'CPZRbILQrvzniQ',
+  'diarytype' => '3',
+  'top' => '3',
+  'orderstrid' => '2',
+)
+[ info ] [ CACHE ] INIT File
+[ info ] [ RUN ] app\api\controller\Auth->com_list[ D:\textgulp\website\php\application\api\controller\Auth.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001287s ] mysql:dbname=xiaochen;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ys_system_conf` [ RunTime:0.015198s ]
+[ sql ] [ SQL ] SELECT * FROM `ys_system_conf` WHERE  `tbnum` = '1'  AND `isdel` = 0 LIMIT 1 [ RunTime:0.000746s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ys_article` [ RunTime:0.014184s ]
+[ sql ] [ SQL ] SELECT * FROM `ys_article` WHERE  `diarytype` = 3  AND `isdel` = 0 ORDER BY createtime desc LIMIT 3 [ RunTime:0.000949s ]
+[ sql ] [ SQL ] SELECT * FROM `ys_system_conf` WHERE  `tbnum` = '1'  AND `isdel` = 0 LIMIT 1 [ RunTime:0.000670s ]
+
+---------------------------------------------------------------
+[ 2017-09-08T22:31:55+08:00 ] ::1 ::1 POST /index.php/auth/com_list?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9hcGkueXNqaWFuemh1LmNvbSIsImF1ZCI6Imh0dHA6XC9cL3poYW9waW4ueXNqaWFuemh1LmNvbSIsImlhdCI6MTUwNDg2NzUwOCwiZXhwIjoxNTA0OTg3NTA4LCJuYmYiOiIiLCJ1dWlkIjoiZDc1OTdkZDktNTcxYS1kYmYxLTUwMzAtNTk3YjQ4YzFhODE1In0.HfZvUPEj0ho31qqRKIDkHcEkzj44zM3xUV1VsXDMxPk
+[ log ] localhost/index.php/auth/com_list?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9hcGkueXNqaWFuemh1LmNvbSIsImF1ZCI6Imh0dHA6XC9cL3poYW9waW4ueXNqaWFuemh1LmNvbSIsImlhdCI6MTUwNDg2NzUwOCwiZXhwIjoxNTA0OTg3NTA4LCJuYmYiOiIiLCJ1dWlkIjoiZDc1OTdkZDktNTcxYS1kYmYxLTUwMzAtNTk3YjQ4YzFhODE1In0.HfZvUPEj0ho31qqRKIDkHcEkzj44zM3xUV1VsXDMxPk [运行时间：0.141196s][吞吐率：7.08req/s] [内存消耗：2,471.34kb] [文件加载：57]
+[ info ] [ LANG ] D:\textgulp\website\php\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'auth',
+    2 => 'com_list',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=nng4gi73hbiliqmne9610qt826',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://localhost/main.html',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.79 Safari/537.36',
+  'origin' => 'http://localhost',
+  'accept' => 'application/json, text/plain, */*',
+  'content-length' => '58',
+  'connection' => 'close',
+  'host' => 'localhost',
+)
+[ info ] [ PARAM ] array (
+  'token' => 'eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9hcGkueXNqaWFuemh1LmNvbSIsImF1ZCI6Imh0dHA6XC9cL3poYW9waW4ueXNqaWFuemh1LmNvbSIsImlhdCI6MTUwNDg2NzUwOCwiZXhwIjoxNTA0OTg3NTA4LCJuYmYiOiIiLCJ1dWlkIjoiZDc1OTdkZDktNTcxYS1kYmYxLTUwMzAtNTk3YjQ4YzFhODE1In0.HfZvUPEj0ho31qqRKIDkHcEkzj44zM3xUV1VsXDMxPk',
+  'codeid' => 'CqNdN9bS_aPvjiQ',
+  'c_alias' => 'QS_diary',
+  'orderstrid' => '3',
+  'top' => '6',
+)
+[ info ] [ CACHE ] INIT File
+[ info ] [ RUN ] app\api\controller\Auth->com_list[ D:\textgulp\website\php\application\api\controller\Auth.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000678s ] mysql:dbname=xiaochen;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ys_system_conf` [ RunTime:0.080573s ]
+[ sql ] [ SQL ] SELECT * FROM `ys_system_conf` WHERE  `tbnum` = '5'  AND `isdel` = 0 LIMIT 1 [ RunTime:0.000456s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ys_dict` [ RunTime:0.012696s ]
+[ sql ] [ SQL ] SELECT * FROM `ys_dict` WHERE  `c_alias` = 'QS_diary'  AND `isdel` = 0 ORDER BY createtime asc LIMIT 6 [ RunTime:0.000653s ]
+[ sql ] [ SQL ] SELECT * FROM `ys_system_conf` WHERE  `tbnum` = '5'  AND `isdel` = 0 LIMIT 1 [ RunTime:0.000438s ]
+
+---------------------------------------------------------------

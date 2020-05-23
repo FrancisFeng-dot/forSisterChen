@@ -1,0 +1,569 @@
+[ 2018-05-22T12:11:19+08:00 ] 127.0.0.1 127.0.0.1 GET /?op=pv&dabaojian=113918&xiaobaoyang=24316&pt=2&rn=1526962274458
+[ log ] 127.0.0.1/?op=pv&dabaojian=113918&xiaobaoyang=24316&pt=2&rn=1526962274458 [运行时间：1.766036s][吞吐率：0.57req/s] [内存消耗：1,395.46kb] [文件加载：42]
+[ info ] [ LANG ] D:\textgulp\chenchen.wms.cn\php\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'referer' => 'http://cntorrentkitty.com/',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept' => '*/*',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:60.0) Gecko/20100101 Firefox/60.0',
+  'host' => '127.0.0.1',
+)
+[ info ] [ PARAM ] array (
+  'op' => 'pv',
+  'dabaojian' => '113918',
+  'xiaobaoyang' => '24316',
+  'pt' => '2',
+  'rn' => '1526962274458',
+)
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2018-05-22T12:11:27+08:00 ] 127.0.0.1 127.0.0.1 GET /?z=113912&rn=1526962287404
+[ log ] 127.0.0.1/?z=113912&rn=1526962287404 [运行时间：0.044120s][吞吐率：22.67req/s] [内存消耗：1,395.21kb] [文件加载：42]
+[ info ] [ LANG ] D:\textgulp\chenchen.wms.cn\php\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'referer' => 'http://cntorrentkitty.com/tk/%E7%9C%9F%E5%AE%9E%E5%A5%B3%E5%8F%8B/1-0-0.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept' => '*/*',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:60.0) Gecko/20100101 Firefox/60.0',
+  'host' => '127.0.0.1',
+)
+[ info ] [ PARAM ] array (
+  'z' => '113912',
+  'rn' => '1526962287404',
+)
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2018-05-22T12:11:27+08:00 ] 127.0.0.1 127.0.0.1 GET /?op=pv&xiaobaoyang=25060&dabaojian=113912&rn=1526962287405
+[ log ] 127.0.0.1/?op=pv&xiaobaoyang=25060&dabaojian=113912&rn=1526962287405 [运行时间：0.034371s][吞吐率：29.09req/s] [内存消耗：1,395.45kb] [文件加载：42]
+[ info ] [ LANG ] D:\textgulp\chenchen.wms.cn\php\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'referer' => 'http://cntorrentkitty.com/tk/%E7%9C%9F%E5%AE%9E%E5%A5%B3%E5%8F%8B/1-0-0.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept' => '*/*',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:60.0) Gecko/20100101 Firefox/60.0',
+  'host' => '127.0.0.1',
+)
+[ info ] [ PARAM ] array (
+  'op' => 'pv',
+  'xiaobaoyang' => '25060',
+  'dabaojian' => '113912',
+  'rn' => '1526962287405',
+)
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2018-05-22T12:11:27+08:00 ] 127.0.0.1 127.0.0.1 GET /?uid=61559
+[ log ] 127.0.0.1/?uid=61559 [运行时间：0.034119s][吞吐率：29.31req/s] [内存消耗：1,395.02kb] [文件加载：42]
+[ info ] [ LANG ] D:\textgulp\chenchen.wms.cn\php\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'referer' => 'http://cntorrentkitty.com/tk/%E7%9C%9F%E5%AE%9E%E5%A5%B3%E5%8F%8B/1-0-0.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept' => '*/*',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:60.0) Gecko/20100101 Firefox/60.0',
+  'host' => '127.0.0.1',
+)
+[ info ] [ PARAM ] array (
+  'uid' => '61559',
+)
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2018-05-22T12:12:42+08:00 ] 127.0.0.1 127.0.0.1 GET /?op=pv&dabaojian=113918&xiaobaoyang=25062&pt=2&rn=1526962361401
+[ log ] 127.0.0.1/?op=pv&dabaojian=113918&xiaobaoyang=25062&pt=2&rn=1526962361401 [运行时间：0.041876s][吞吐率：23.88req/s] [内存消耗：1,395.60kb] [文件加载：42]
+[ info ] [ LANG ] D:\textgulp\chenchen.wms.cn\php\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'referer' => 'http://cntorrentkitty.com/tk/%E7%9C%9F%E5%AE%9E%E5%A5%B3%E5%8F%8B/1-1-0.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept' => '*/*',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:60.0) Gecko/20100101 Firefox/60.0',
+  'host' => '127.0.0.1',
+)
+[ info ] [ PARAM ] array (
+  'op' => 'pv',
+  'dabaojian' => '113918',
+  'xiaobaoyang' => '25062',
+  'pt' => '2',
+  'rn' => '1526962361401',
+)
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2018-05-22T12:12:59+08:00 ] 127.0.0.1 127.0.0.1 GET /?op=pv&dabaojian=113918&xiaobaoyang=25126&pt=2&rn=1526962379085
+[ log ] 127.0.0.1/?op=pv&dabaojian=113918&xiaobaoyang=25126&pt=2&rn=1526962379085 [运行时间：0.076288s][吞吐率：13.11req/s] [内存消耗：1,395.60kb] [文件加载：42]
+[ info ] [ LANG ] D:\textgulp\chenchen.wms.cn\php\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'referer' => 'http://cntorrentkitty.com/tk/%E7%9C%9F%E5%AE%9E%E5%A5%B3%E5%8F%8B/1-1-6.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept' => '*/*',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:60.0) Gecko/20100101 Firefox/60.0',
+  'host' => '127.0.0.1',
+)
+[ info ] [ PARAM ] array (
+  'op' => 'pv',
+  'dabaojian' => '113918',
+  'xiaobaoyang' => '25126',
+  'pt' => '2',
+  'rn' => '1526962379085',
+)
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2018-05-22T12:13:09+08:00 ] 127.0.0.1 127.0.0.1 GET /?op=pv&dabaojian=113918&xiaobaoyang=25058&pt=2&rn=1526962388658
+[ log ] 127.0.0.1/?op=pv&dabaojian=113918&xiaobaoyang=25058&pt=2&rn=1526962388658 [运行时间：0.052543s][吞吐率：19.03req/s] [内存消耗：1,395.60kb] [文件加载：42]
+[ info ] [ LANG ] D:\textgulp\chenchen.wms.cn\php\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'referer' => 'http://cntorrentkitty.com/tk/%E7%9C%9F%E5%AE%9E%E5%A5%B3%E5%8F%8B/1-0-6.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept' => '*/*',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:60.0) Gecko/20100101 Firefox/60.0',
+  'host' => '127.0.0.1',
+)
+[ info ] [ PARAM ] array (
+  'op' => 'pv',
+  'dabaojian' => '113918',
+  'xiaobaoyang' => '25058',
+  'pt' => '2',
+  'rn' => '1526962388658',
+)
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2018-05-22T12:13:13+08:00 ] 127.0.0.1 127.0.0.1 GET /?op=pv&dabaojian=113918&xiaobaoyang=25126&pt=2&rn=1526962393477
+[ log ] 127.0.0.1/?op=pv&dabaojian=113918&xiaobaoyang=25126&pt=2&rn=1526962393477 [运行时间：0.067509s][吞吐率：14.81req/s] [内存消耗：1,395.60kb] [文件加载：42]
+[ info ] [ LANG ] D:\textgulp\chenchen.wms.cn\php\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'referer' => 'http://cntorrentkitty.com/tk/%E7%9C%9F%E5%AE%9E%E5%A5%B3%E5%8F%8B/1-0-0.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept' => '*/*',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:60.0) Gecko/20100101 Firefox/60.0',
+  'host' => '127.0.0.1',
+)
+[ info ] [ PARAM ] array (
+  'op' => 'pv',
+  'dabaojian' => '113918',
+  'xiaobaoyang' => '25126',
+  'pt' => '2',
+  'rn' => '1526962393477',
+)
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2018-05-22T12:13:14+08:00 ] 127.0.0.1 127.0.0.1 GET /?uid=61559
+[ log ] 127.0.0.1/?uid=61559 [运行时间：0.054783s][吞吐率：18.25req/s] [内存消耗：1,395.02kb] [文件加载：42]
+[ info ] [ LANG ] D:\textgulp\chenchen.wms.cn\php\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'referer' => 'http://cntorrentkitty.com/tk/%E7%9C%9F%E5%AE%9E%E5%A5%B3%E5%8F%8B/1-0-0.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept' => '*/*',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:60.0) Gecko/20100101 Firefox/60.0',
+  'host' => '127.0.0.1',
+)
+[ info ] [ PARAM ] array (
+  'uid' => '61559',
+)
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2018-05-22T12:13:14+08:00 ] 127.0.0.1 127.0.0.1 GET /?op=pv&xiaobaoyang=25145&dabaojian=113912&rn=1526962393931
+[ log ] 127.0.0.1/?op=pv&xiaobaoyang=25145&dabaojian=113912&rn=1526962393931 [运行时间：0.035929s][吞吐率：27.83req/s] [内存消耗：1,395.45kb] [文件加载：42]
+[ info ] [ LANG ] D:\textgulp\chenchen.wms.cn\php\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'referer' => 'http://cntorrentkitty.com/tk/%E7%9C%9F%E5%AE%9E%E5%A5%B3%E5%8F%8B/1-0-0.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept' => '*/*',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:60.0) Gecko/20100101 Firefox/60.0',
+  'host' => '127.0.0.1',
+)
+[ info ] [ PARAM ] array (
+  'op' => 'pv',
+  'xiaobaoyang' => '25145',
+  'dabaojian' => '113912',
+  'rn' => '1526962393931',
+)
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2018-05-22T12:13:20+08:00 ] 127.0.0.1 127.0.0.1 GET /?uid=61559
+[ log ] 127.0.0.1/?uid=61559 [运行时间：0.067155s][吞吐率：14.89req/s] [内存消耗：1,395.07kb] [文件加载：42]
+[ info ] [ LANG ] D:\textgulp\chenchen.wms.cn\php\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'referer' => 'http://cntorrentkitty.com/Zl_VUiuwOKXN3rgw1D14-oX58-Y.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept' => '*/*',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:60.0) Gecko/20100101 Firefox/60.0',
+  'host' => '127.0.0.1',
+)
+[ info ] [ PARAM ] array (
+  'uid' => '61559',
+)
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2018-05-22T12:13:20+08:00 ] 127.0.0.1 127.0.0.1 GET /?op=pv&dabaojian=113918&xiaobaoyang=25062&pt=2&rn=1526962399728
+[ log ] 127.0.0.1/?op=pv&dabaojian=113918&xiaobaoyang=25062&pt=2&rn=1526962399728 [运行时间：0.057121s][吞吐率：17.51req/s] [内存消耗：1,395.46kb] [文件加载：42]
+[ info ] [ LANG ] D:\textgulp\chenchen.wms.cn\php\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'referer' => 'http://cntorrentkitty.com/Zl_VUiuwOKXN3rgw1D14-oX58-Y.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept' => '*/*',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:60.0) Gecko/20100101 Firefox/60.0',
+  'host' => '127.0.0.1',
+)
+[ info ] [ PARAM ] array (
+  'op' => 'pv',
+  'dabaojian' => '113918',
+  'xiaobaoyang' => '25062',
+  'pt' => '2',
+  'rn' => '1526962399728',
+)
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2018-05-22T12:13:20+08:00 ] 127.0.0.1 127.0.0.1 GET /?op=pv&xiaobaoyang=25098&dabaojian=113912&rn=1526962399753
+[ log ] 127.0.0.1/?op=pv&xiaobaoyang=25098&dabaojian=113912&rn=1526962399753 [运行时间：0.043462s][吞吐率：23.01req/s] [内存消耗：1,395.47kb] [文件加载：42]
+[ info ] [ LANG ] D:\textgulp\chenchen.wms.cn\php\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'referer' => 'http://cntorrentkitty.com/Zl_VUiuwOKXN3rgw1D14-oX58-Y.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept' => '*/*',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:60.0) Gecko/20100101 Firefox/60.0',
+  'host' => '127.0.0.1',
+)
+[ info ] [ PARAM ] array (
+  'op' => 'pv',
+  'xiaobaoyang' => '25098',
+  'dabaojian' => '113912',
+  'rn' => '1526962399753',
+)
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2018-05-22T12:13:27+08:00 ] 127.0.0.1 127.0.0.1 GET /?z=113918&rn=1526962406979
+[ log ] 127.0.0.1/?z=113918&rn=1526962406979 [运行时间：0.065615s][吞吐率：15.24req/s] [内存消耗：1,395.15kb] [文件加载：42]
+[ info ] [ LANG ] D:\textgulp\chenchen.wms.cn\php\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'referer' => 'http://storetorrents.com/hash/112D1A05FC617BF4E3E438A1330318D574F6B752',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept' => '*/*',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:60.0) Gecko/20100101 Firefox/60.0',
+  'host' => '127.0.0.1',
+)
+[ info ] [ PARAM ] array (
+  'z' => '113918',
+  'rn' => '1526962406979',
+)
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2018-05-22T12:13:27+08:00 ] 127.0.0.1 127.0.0.1 GET /?op=pv&dabaojian=113918&xiaobaoyang=25058&pt=2&rn=1526962407017
+[ log ] 127.0.0.1/?op=pv&dabaojian=113918&xiaobaoyang=25058&pt=2&rn=1526962407017 [运行时间：0.052393s][吞吐率：19.09req/s] [内存消耗：1,395.63kb] [文件加载：42]
+[ info ] [ LANG ] D:\textgulp\chenchen.wms.cn\php\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'referer' => 'http://storetorrents.com/hash/112D1A05FC617BF4E3E438A1330318D574F6B752',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept' => '*/*',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:60.0) Gecko/20100101 Firefox/60.0',
+  'host' => '127.0.0.1',
+)
+[ info ] [ PARAM ] array (
+  'op' => 'pv',
+  'dabaojian' => '113918',
+  'xiaobaoyang' => '25058',
+  'pt' => '2',
+  'rn' => '1526962407017',
+)
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2018-05-22T12:15:47+08:00 ] 127.0.0.1 127.0.0.1 GET /?op=pv&dabaojian=113918&xiaobaoyang=25062&pt=2&rn=1526962546515
+[ log ] 127.0.0.1/?op=pv&dabaojian=113918&xiaobaoyang=25062&pt=2&rn=1526962546515 [运行时间：0.042610s][吞吐率：23.47req/s] [内存消耗：1,395.90kb] [文件加载：42]
+[ info ] [ LANG ] D:\textgulp\chenchen.wms.cn\php\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cache-control' => 'no-cache',
+  'pragma' => 'no-cache',
+  'connection' => 'close',
+  'referer' => 'http://cntorrentkitty.com/tk/%E7%9C%9F%E5%AE%9E%E5%A5%B3%E5%8F%8B/1-0-0.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept' => '*/*',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:60.0) Gecko/20100101 Firefox/60.0',
+  'host' => '127.0.0.1',
+)
+[ info ] [ PARAM ] array (
+  'op' => 'pv',
+  'dabaojian' => '113918',
+  'xiaobaoyang' => '25062',
+  'pt' => '2',
+  'rn' => '1526962546515',
+)
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2018-05-22T12:15:47+08:00 ] 127.0.0.1 127.0.0.1 GET /?op=pv&xiaobaoyang=25149&dabaojian=113912&rn=1526962546714
+[ log ] 127.0.0.1/?op=pv&xiaobaoyang=25149&dabaojian=113912&rn=1526962546714 [运行时间：0.047122s][吞吐率：21.22req/s] [内存消耗：1,395.82kb] [文件加载：42]
+[ info ] [ LANG ] D:\textgulp\chenchen.wms.cn\php\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cache-control' => 'no-cache',
+  'pragma' => 'no-cache',
+  'connection' => 'close',
+  'referer' => 'http://cntorrentkitty.com/tk/%E7%9C%9F%E5%AE%9E%E5%A5%B3%E5%8F%8B/1-0-0.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept' => '*/*',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:60.0) Gecko/20100101 Firefox/60.0',
+  'host' => '127.0.0.1',
+)
+[ info ] [ PARAM ] array (
+  'op' => 'pv',
+  'xiaobaoyang' => '25149',
+  'dabaojian' => '113912',
+  'rn' => '1526962546714',
+)
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2018-05-22T12:15:47+08:00 ] 127.0.0.1 127.0.0.1 GET /?uid=61559
+[ log ] 127.0.0.1/?uid=61559 [运行时间：0.055617s][吞吐率：17.98req/s] [内存消耗：1,395.42kb] [文件加载：42]
+[ info ] [ LANG ] D:\textgulp\chenchen.wms.cn\php\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cache-control' => 'no-cache',
+  'pragma' => 'no-cache',
+  'connection' => 'close',
+  'referer' => 'http://cntorrentkitty.com/tk/%E7%9C%9F%E5%AE%9E%E5%A5%B3%E5%8F%8B/1-0-0.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept' => '*/*',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:60.0) Gecko/20100101 Firefox/60.0',
+  'host' => '127.0.0.1',
+)
+[ info ] [ PARAM ] array (
+  'uid' => '61559',
+)
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2018-05-22T16:39:11+08:00 ] 127.0.0.1 127.0.0.1 GET /?op=pv&dabaojian=113918&xiaobaoyang=24316&pt=2&rn=1526978351228
+[ log ] 127.0.0.1/?op=pv&dabaojian=113918&xiaobaoyang=24316&pt=2&rn=1526978351228 [运行时间：0.040602s][吞吐率：24.63req/s] [内存消耗：1,395.45kb] [文件加载：42]
+[ info ] [ LANG ] D:\textgulp\chenchen.wms.cn\php\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'referer' => 'http://cntorrentkitty.com/',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept' => '*/*',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:60.0) Gecko/20100101 Firefox/60.0',
+  'host' => '127.0.0.1',
+)
+[ info ] [ PARAM ] array (
+  'op' => 'pv',
+  'dabaojian' => '113918',
+  'xiaobaoyang' => '24316',
+  'pt' => '2',
+  'rn' => '1526978351228',
+)
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------

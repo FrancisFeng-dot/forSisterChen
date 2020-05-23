@@ -1,0 +1,181 @@
+<style>
+    ::-webkit-scrollbar-track {background-color: #F0F3F4;} /* 滚动条的滑轨背景颜色 */
+    ::-webkit-scrollbar-thumb {background-color: rgba(0, 0, 0, 0); } /* 滑块颜色 */
+    ::-webkit-scrollbar-button {background-color: #F0F3F4;} /* 滑轨两头的监听按钮颜色 */
+    ::-webkit-scrollbar-corner {background-color: #F0F3F4;} /* 横向滚动条和纵向滚动条相交处尖角的颜色 */
+    ._citys { width: 450px; display: inline-block; border: 2px solid #eee; padding: 5px; position: relative; background: #fff;}
+    ._citys span { color: #56b4f8; height: 15px; width: 15px; line-height: 15px; text-align: center; border-radius: 3px; position: absolute; right: 10px; top: 10px; border: 1px solid #56b4f8; cursor: pointer; }
+    ._citys0 { width: 100%; height: 34px; display: inline-block; border-bottom: 2px solid #56b4f8; padding: 0; margin: 0; }
+    ._citys0 li { display: inline-block; line-height: 34px; font-size: 15px; color: #888; width: 80px; text-align: center; cursor: pointer; }
+    .citySel { background-color: #56b4f8; color: #fff !important; }
+    ._citys1 { width: 100%; display: inline-block; padding: 10px 0; }
+    ._citys1 a { width: 83px; height: 35px; display: inline-block; background-color: #f5f5f5; color: #666; margin-left: 6px; margin-top: 3px; line-height: 35px; text-align: center; cursor: pointer; font-size: 13px; overflow: hidden; }
+    ._citys1 a:hover { color: #fff; background-color: #56b4f8; }
+    .AreaS { background-color: #56b4f8 !important; color: #fff !important; }
+    #_citysheng li:nth-last-child(1){display:none !important;}
+    .search-choice{
+        position:relative;
+    }
+    #PoPy{
+        position:absolute;
+        top: 170px;
+        left: 404px;
+    }
+</style>
+<div class="gray-bg" ng-controller="com_ctrl">
+    <div class="wrapper wrapper-content animated fadeInRight" style="position: relative;">
+        <div class="row" ng-if="tapshow==0" style="height: 615px;position: absolute;overflow-y: auto;overflow-x: hidden;padding-right: 14px;">
+            <div class="col-sm-4 enlarge" ng-if="value.isdel==0" ng-repeat="(key, value) in com_list.data">
+                <div class="contact-box" style="height: 179px;position: relative;">
+                    <span class="lianxicha" theid="codeid" comdelone="com_del">
+                    <!-- <a href="" title="" class="" style="background: url(/images/icon.png) no-repeat;background-position: 1px -40px;cursor: pointer;position: absolute;width: 13px;height: 14px;top: 0px;margin: auto;bottom: 0;left: 0px;right: 0;"></a> -->
+                    </span>
+                    <a href="" yseditadd="com_editadd" tapshowupload2='1' more='1' savekey="com_editadd.params.headimg">
+                        <div class="col-sm-4">
+                            <div class="text-center">
+                                <img alt="image" class="img-circle m-t-xs img-responsive" ng-src="{{value.headimg}}" style="width: 75px;height: 75px;">
+                                <div class="m-t-xs font-bold">{{value.jobname}}</div>
+                            </div>
+                        </div>
+                        <div class="col-sm-8">
+                            <h3><strong>{{value.name}}</strong></h3>
+                            <p><i class="fa fa-map-marker"></i>{{value.city}}</p>
+                            <address>
+                            <strong>{{value.companyname}}</strong><br>
+                            E-mail:{{value.email}}<br>
+                            Weibo:<a href="">{{value.weibo}}</a><br>
+                            <abbr title="Phone">Tel:</abbr>{{value.telephone}}
+                        </address>
+                        </div>
+                        <div class="clearfix"></div>
+                    </a>
+                </div>
+            </div>
+            <div class="col-sm-4 enlarge" yseditadd="com_editadd" tapshowupload2='1' more='1' savekey="com_editadd.params.headimg">
+                <div class="contact-box" style="height: 179px;">
+                    <a href="">
+                        <div class="col-sm-4">
+                            <div class="text-center">
+                                <img alt="image" class="img-circle m-t-xs img-responsive" src="/images/a1.jpg">
+                                <div class="m-t-xs font-bold">样例(点击新增联系人)</div>
+                            </div>
+                        </div>
+                        <div class="col-sm-8">
+                            <h3><strong>联系人</strong></h3>
+                            <p><i class="fa fa-map-marker"></i>地址</p>
+                            <address>
+                            <strong>公司名称</strong><br>
+                            E-mail:xxx@baidu.com<br>
+                            Weibo:<a href="">http://weibo.com/xxx</a><br>
+                            <abbr title="Phone">Tel:</abbr>(123) 456-7890
+                        </address>
+                        </div>
+                        <div class="clearfix"></div>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="row main-in col-sm-11" ng-if="tapshow==1" style="height: 615px;position: absolute;overflow-y: auto;overflow-x: hidden;">
+            <div class="in-content">
+                <div class="in-head">
+                    <p>基本信息</p>
+                    <div class="row in-photo">
+                        <div class="col-xs-1" style="margin-bottom: 38px;">
+                            <div id="fileList" class="p-img">
+                                <img ng-if="com_editadd.params.headimg === undefined" src="/images/a1.jpg" alt="">
+                                <img ng-if="com_editadd.params.headimg !== undefined" ng-src="{{com_editadd.params.headimg}}" alt="">
+                            </div>
+                        </div>
+                        <div class="col-xs-11 upload">
+                            <button name="picker">上传图像</button>
+                            <p>美丽瞬间，留住此刻！</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="in-body">
+                    <div class="row username">
+                        <div class="account col-xs-2">
+                            <p class="text-right">姓名</p>
+                        </div>
+                        <div class="col-xs-9 account_in">
+                            <input ng-model="com_editadd.params.name" type="text" placeholder="请输入">
+                        </div>
+                    </div>
+                    <div class="row sex">
+                        <div class="account col-xs-2">
+                            <p class="text-right">性别</p>
+                        </div>
+                        <div class="col-xs-9 sex">
+                            <input ng-model="com_editadd.params.sex" type="radio" name="sex" id="feman" value="2" placeholder="请输入">
+                            <label for="feman">男</label>
+                            <input ng-model="com_editadd.params.sex" type="radio" name="sex" id="man" value="1" placeholder="请输入">
+                            <label for="man">女</label>
+                        </div>
+                    </div>
+                    <div class="row job">
+                        <div class="account col-xs-2">
+                            <p class="text-right mr42">所在单位</p>
+                        </div>
+                        <div class="col-xs-9 account_in">
+                            <input ng-model="com_editadd.params.companyname" type="text" placeholder="请输入单位名称">
+                        </div>
+                    </div>
+                    <div class="row job">
+                        <div class="account col-xs-2">
+                            <p class="text-right mr42">职位</p>
+                        </div>
+                        <div class="col-xs-9 account_in">
+                            <input ng-model="com_editadd.params.jobname" type="text" placeholder="请输入职位名称">
+                        </div>
+                    </div>
+                    <div class="row job">
+                        <div class="account col-xs-2">
+                            <p class="text-right mr42">所在城市</p>
+                        </div>
+                        <div class="col-xs-9 account_in">
+                            <input ng-model="com_editadd.params.city" id="city"  ng-click="city($event)" type="text" name="searchCom" class="set_input" pname="{{com_editadd.params.city}}" cname="" placeholder="点击选择地址">
+                        </div>
+                    </div>
+                    <div class="row job">
+                        <div class="account col-xs-2">
+                            <p class="text-right mr42">手机号码</p>
+                        </div>
+                        <div class="col-xs-9 account_in long">
+                            <input ng-model="com_editadd.params.telephone" type="text" placeholder="请输入11位手机号码">
+                        </div>
+                    </div>
+                    <div class="row job">
+                        <div class="account col-xs-2">
+                            <p class="text-right mr42">邮箱</p>
+                        </div>
+                        <div class="col-xs-9 account_in long">
+                            <input ng-model="com_editadd.params.email" type="text" placeholder="请输入邮箱">
+                        </div>
+                    </div>
+                    <div class="row job">
+                        <div class="account col-xs-2">
+                            <p class="text-right mr42">微博</p>
+                        </div>
+                        <div class="col-xs-9 account_in long">
+                            <input ng-model="com_editadd.params.weibo" type="text" placeholder="请输入微博">
+                        </div>
+                    </div>
+                    <div class="row job last">
+                        <div class="account col-xs-2">
+                            <p class="text-right mr42">贴标签</p>
+                        </div>
+                        <div class="col-xs-9 account_in long" style="width: 68%;">
+                            <textarea ng-model="com_editadd.params.tabel" type="text" placeholder="请输入对这家伙的印象" style="width: 100%;height: 128px;"></textarea>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row btn_row">
+                <div class="col-xs-12 text-center">
+                    <button comtime="com_editadd" class="save_btn">保存</button>
+                    <button tapshow="0" class="save_btn">返回</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

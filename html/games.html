@@ -1,0 +1,103 @@
+<style>
+    ::-webkit-scrollbar-track {background-color: #ffffff;} /* 滚动条的滑轨背景颜色 */
+    ::-webkit-scrollbar-thumb {background-color: rgba(0, 0, 0, 0); } /* 滑块颜色 */
+    ::-webkit-scrollbar-button {background-color: #ffffff;} /* 滑轨两头的监听按钮颜色 */
+    ::-webkit-scrollbar-corner {background-color: #ffffff;} /* 横向滚动条和纵向滚动条相交处尖角的颜色 */
+</style>
+<div class="gray-bg pr" ng-controller="com_ctrl">
+    <a href="/main.html#index"><img src="/images/shouye.png" alt="" class="fr"></a>
+    <div class="wrapper wrapper-content">
+        <div class="row">
+            <div class="fl w_192">
+                <div class="ibox float-e-margins pd_16">
+                    <div class="mod_box blog_sorts blog_sorts2" id="rightCateArea">
+                        <div class="hd">
+                            <h4>游戏列表</h4>
+                        </div>
+                        <div class="bd bd2" id="cateListContainer">
+                            <div class="mod_list">
+                                <ul id="cateList">
+                                    <li class="bg3_hover bg3_hover2">
+                                        <a href="javascript:;" class="c_tx">
+                                            <span class="left">2048</span>
+                                        </a>
+                                    </li>
+                                    <li class="bg3_hover">
+                                        <a href="javascript:;" class="c_tx">
+                                            <span class="left">超级英雄宝石方块</span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="animated fadeInRight album1">
+                <div class="row pr w_b92" name="game">
+                    <div class="album2">
+                        <div class="headerling">
+                            <h1>2048</h1>
+                            <a href="javascript:newgame();" id="newgamebutton">New Game</a>
+                            <p>Modified by 冯大叔</p>
+                            <p>score : <span id="score">0</span></p>
+                        </div>
+                        <div id="grid-container">
+                            <div class="grid-cell" id="grid-cell-0-0"></div>
+                            <div class="grid-cell" id="grid-cell-0-1"></div>
+                            <div class="grid-cell" id="grid-cell-0-2"></div>
+                            <div class="grid-cell" id="grid-cell-0-3"></div>
+
+                            <div class="grid-cell" id="grid-cell-1-0"></div>
+                            <div class="grid-cell" id="grid-cell-1-1"></div>
+                            <div class="grid-cell" id="grid-cell-1-2"></div>
+                            <div class="grid-cell" id="grid-cell-1-3"></div>
+
+                            <div class="grid-cell" id="grid-cell-2-0"></div>
+                            <div class="grid-cell" id="grid-cell-2-1"></div>
+                            <div class="grid-cell" id="grid-cell-2-2"></div>
+                            <div class="grid-cell" id="grid-cell-2-3"></div>
+
+                            <div class="grid-cell" id="grid-cell-3-0"></div>
+                            <div class="grid-cell" id="grid-cell-3-1"></div>
+                            <div class="grid-cell" id="grid-cell-3-2"></div>
+                            <div class="grid-cell" id="grid-cell-3-3"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="w_996 h_617 none" name="game">
+                    <div id="bgTmp1"></div>
+                    <div id="bgTmp2"><img src="/images/bg/bg000.png" /></div>
+                    <div id="uGirl1"></div>
+                    <h2 id="topH" align="center">总分：<span id="sumScore">0</span></h2>
+                    <div id="scorePanel"></div>
+                    <table id="panelTb" class="panelTb" align="center" ></table>
+                    <div id="gameTimeBar"><div id="gameTime">???</div></div>
+                    <h3 id="btmH" align="center">
+                        <!--<button id="btnAgain" class="aC1 clr1">休息一下</button>-->
+                        <button id="btnReset" class="aC1 clr2">重头开始</button>
+                    </h3>
+                    <div id="txtTit" class="warn1"></div>
+                    <div id="txtTit2" class="warn2"></div>
+                    <div id="cartoonPanel" class="cartoonPanel"></div>
+                    <div id="endPanel">
+                        <h3 align="center">成绩统计</h3>
+                        <p>
+                            总分：<span id="finSumScore">0</span>
+                            <!--<a id="fuckA">Let it Go</a>-->
+                        </p>
+                        <p>
+                            <div align="center" id="finUni"></div>
+                            <br />
+                            GAME OVER
+                        </p>
+                        <div id="btnPnl" align="center">
+                            <button id="btnReset2" class="aC2 clr2">再玩一次</button>
+                        </div>
+                        <div id="aSpeech"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

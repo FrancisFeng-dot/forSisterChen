@@ -1,0 +1,1539 @@
+[ 2017-07-09T23:56:26+08:00 ] 127.0.0.1 127.0.0.1 GET /Base/verify?timestamp=%27+Date.parse(new%20Date())
+[ log ] api.yushan.com/Base/verify?timestamp=%27+Date.parse(new%20Date()) [运行时间：1.193625s][吞吐率：0.84req/s] [内存消耗：1,492.10kb] [文件加载：44]
+[ info ] [ LANG ] D:\ys\api.yushan.com\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'Base',
+    2 => 'verify',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://zhaopin.yushan.com/login.html',
+  'accept' => 'image/webp,image/apng,image/*,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.115 Safari/537.36',
+  'connection' => 'close',
+  'host' => 'api.yushan.com',
+)
+[ info ] [ PARAM ] array (
+  '/Base/verify' => '',
+  'timestamp' => '\' Date.parse(new Date())',
+)
+[ info ] [ RUN ] app\api\controller\Base->verify[ D:\ys\api.yushan.com\application\api\controller\Base.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-07-09T23:56:36+08:00 ] 127.0.0.1 127.0.0.1 POST /Base/login
+[ log ] api.yushan.com/Base/login [运行时间：0.570140s][吞吐率：1.75req/s] [内存消耗：2,171.27kb] [文件加载：57]
+[ info ] [ LANG ] D:\ys\api.yushan.com\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'Base',
+    2 => 'login',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=mge8seppp9qeavjbqhj5mm3a20',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://zhaopin.yushan.com/login.html',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.115 Safari/537.36',
+  'origin' => 'http://zhaopin.yushan.com',
+  'accept' => '*/*',
+  'content-length' => '43',
+  'connection' => 'close',
+  'host' => 'api.yushan.com',
+)
+[ info ] [ PARAM ] array (
+  '/Base/login' => '',
+  'username' => 'admin',
+  'password' => '123456',
+  'captcha' => 'mchh',
+)
+[ info ] [ RUN ] app\api\controller\Base->login[ D:\ys\api.yushan.com\application\api\controller\Base.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ CACHE ] INIT File
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.012841s ] mysql:dbname=ysjianzhu;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ys_admin_user` [ RunTime:0.102409s ]
+[ sql ] [ SQL ] SELECT * FROM `ys_admin_user` WHERE  (  username='admin' ) LIMIT 1 [ RunTime:0.001903s ]
+[ sql ] [ SQL ] SELECT `id`,`password`,`encrypt` FROM `ys_admin_user` WHERE  (  id=1 ) LIMIT 1 [ RunTime:0.001269s ]
+[ sql ] [ SQL ] UPDATE `ys_admin_user`  SET `login_count`=login_count+1  WHERE  (  id=1 ) [ RunTime:0.001509s ]
+
+---------------------------------------------------------------
+[ 2017-07-09T23:56:37+08:00 ] 127.0.0.1 127.0.0.1 GET /Base/verify?timestamp=1499615797000
+[ log ] api.yushan.com/Base/verify?timestamp=1499615797000 [运行时间：0.212697s][吞吐率：4.70req/s] [内存消耗：1,492.38kb] [文件加载：44]
+[ info ] [ LANG ] D:\ys\api.yushan.com\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'Base',
+    2 => 'verify',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=mge8seppp9qeavjbqhj5mm3a20',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://zhaopin.yushan.com/login.html',
+  'accept' => 'image/webp,image/apng,image/*,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.115 Safari/537.36',
+  'connection' => 'close',
+  'host' => 'api.yushan.com',
+)
+[ info ] [ PARAM ] array (
+  '/Base/verify' => '',
+  'timestamp' => '1499615797000',
+)
+[ info ] [ RUN ] app\api\controller\Base->verify[ D:\ys\api.yushan.com\application\api\controller\Base.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-07-09T23:56:38+08:00 ] 127.0.0.1 127.0.0.1 GET /Base/verify?timestamp=%27+Date.parse(new%20Date())
+[ log ] api.yushan.com/Base/verify?timestamp=%27+Date.parse(new%20Date()) [运行时间：0.120924s][吞吐率：8.27req/s] [内存消耗：1,492.42kb] [文件加载：44]
+[ info ] [ LANG ] D:\ys\api.yushan.com\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'Base',
+    2 => 'verify',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=mge8seppp9qeavjbqhj5mm3a20',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://zhaopin.yushan.com/main.html',
+  'accept' => 'image/webp,image/apng,image/*,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.115 Safari/537.36',
+  'connection' => 'close',
+  'host' => 'api.yushan.com',
+)
+[ info ] [ PARAM ] array (
+  '/Base/verify' => '',
+  'timestamp' => '\' Date.parse(new Date())',
+)
+[ info ] [ RUN ] app\api\controller\Base->verify[ D:\ys\api.yushan.com\application\api\controller\Base.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-07-09T23:56:38+08:00 ] 127.0.0.1 127.0.0.1 POST /open/menutree_select?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9hcGkueXNqaWFuemh1LmNvbSIsImF1ZCI6Imh0dHA6XC9cL3poYW9waW4ueXNqaWFuemh1LmNvbSIsImlhdCI6MTQ5OTYxNTc5NiwiZXhwIjoxNDk5NzM1Nzk2LCJuYmYiOiIiLCJ1dWlkIjoiNTNmMmMyNGYtNDlhNS1hNDk2LTg2MzktZjgzM2MwMTJjZWQ1In0.koOWm6r93siB6Izlp661FDkC7JBzKYTGaezeCKXryN0
+[ log ] api.yushan.com/open/menutree_select?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9hcGkueXNqaWFuemh1LmNvbSIsImF1ZCI6Imh0dHA6XC9cL3poYW9waW4ueXNqaWFuemh1LmNvbSIsImlhdCI6MTQ5OTYxNTc5NiwiZXhwIjoxNDk5NzM1Nzk2LCJuYmYiOiIiLCJ1dWlkIjoiNTNmMmMyNGYtNDlhNS1hNDk2LTg2MzktZjgzM2MwMTJjZWQ1In0.koOWm6r93siB6Izlp661FDkC7JBzKYTGaezeCKXryN0 [运行时间：0.408821s][吞吐率：2.45req/s] [内存消耗：2,106.30kb] [文件加载：53]
+[ info ] [ LANG ] D:\ys\api.yushan.com\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'open',
+    2 => 'menutree_select',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://zhaopin.yushan.com/main.html',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.115 Safari/537.36',
+  'origin' => 'http://zhaopin.yushan.com',
+  'accept' => '*/*',
+  'content-length' => '7',
+  'connection' => 'close',
+  'host' => 'api.yushan.com',
+)
+[ info ] [ PARAM ] array (
+  '/open/menutree_select' => '',
+  'token' => 'eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9hcGkueXNqaWFuemh1LmNvbSIsImF1ZCI6Imh0dHA6XC9cL3poYW9waW4ueXNqaWFuemh1LmNvbSIsImlhdCI6MTQ5OTYxNTc5NiwiZXhwIjoxNDk5NzM1Nzk2LCJuYmYiOiIiLCJ1dWlkIjoiNTNmMmMyNGYtNDlhNS1hNDk2LTg2MzktZjgzM2MwMTJjZWQ1In0.koOWm6r93siB6Izlp661FDkC7JBzKYTGaezeCKXryN0',
+  'debug' => '0',
+)
+[ info ] [ RUN ] app\api\controller\Open->menutree_select[ D:\ys\api.yushan.com\application\api\controller\Open.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001263s ] mysql:dbname=ysjianzhu;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ys_system_menu` [ RunTime:0.076287s ]
+[ sql ] [ SQL ] SELECT * FROM `ys_system_menu` WHERE  `isdel` = 0 ORDER BY listorder asc [ RunTime:0.047637s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ys_system_conf` [ RunTime:0.079847s ]
+[ sql ] [ SQL ] SELECT * FROM `ys_system_conf` WHERE  `isdel` = 0 [ RunTime:0.012993s ]
+
+---------------------------------------------------------------
+[ 2017-07-09T23:56:39+08:00 ] 127.0.0.1 127.0.0.1 GET /Base/verify?timestamp=%27+Date.parse(new%20Date())
+[ log ] api.yushan.com/Base/verify?timestamp=%27+Date.parse(new%20Date()) [运行时间：0.133176s][吞吐率：7.51req/s] [内存消耗：1,492.42kb] [文件加载：44]
+[ info ] [ LANG ] D:\ys\api.yushan.com\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'Base',
+    2 => 'verify',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=mge8seppp9qeavjbqhj5mm3a20',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://zhaopin.yushan.com/main.html',
+  'accept' => 'image/webp,image/apng,image/*,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.115 Safari/537.36',
+  'connection' => 'close',
+  'host' => 'api.yushan.com',
+)
+[ info ] [ PARAM ] array (
+  '/Base/verify' => '',
+  'timestamp' => '\' Date.parse(new Date())',
+)
+[ info ] [ RUN ] app\api\controller\Base->verify[ D:\ys\api.yushan.com\application\api\controller\Base.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-07-09T23:56:40+08:00 ] 127.0.0.1 127.0.0.1 POST /open/com_list?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9hcGkueXNqaWFuemh1LmNvbSIsImF1ZCI6Imh0dHA6XC9cL3poYW9waW4ueXNqaWFuemh1LmNvbSIsImlhdCI6MTQ5OTYxNTc5NiwiZXhwIjoxNDk5NzM1Nzk2LCJuYmYiOiIiLCJ1dWlkIjoiNTNmMmMyNGYtNDlhNS1hNDk2LTg2MzktZjgzM2MwMTJjZWQ1In0.koOWm6r93siB6Izlp661FDkC7JBzKYTGaezeCKXryN0
+[ log ] api.yushan.com/open/com_list?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9hcGkueXNqaWFuemh1LmNvbSIsImF1ZCI6Imh0dHA6XC9cL3poYW9waW4ueXNqaWFuemh1LmNvbSIsImlhdCI6MTQ5OTYxNTc5NiwiZXhwIjoxNDk5NzM1Nzk2LCJuYmYiOiIiLCJ1dWlkIjoiNTNmMmMyNGYtNDlhNS1hNDk2LTg2MzktZjgzM2MwMTJjZWQ1In0.koOWm6r93siB6Izlp661FDkC7JBzKYTGaezeCKXryN0 [运行时间：0.246110s][吞吐率：4.06req/s] [内存消耗：2,061.84kb] [文件加载：53]
+[ info ] [ LANG ] D:\ys\api.yushan.com\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'open',
+    2 => 'com_list',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://zhaopin.yushan.com/main.html',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.115 Safari/537.36',
+  'origin' => 'http://zhaopin.yushan.com',
+  'accept' => 'application/json, text/plain, */*',
+  'content-length' => '44',
+  'connection' => 'close',
+  'host' => 'api.yushan.com',
+)
+[ info ] [ PARAM ] array (
+  '/open/com_list' => '',
+  'token' => 'eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9hcGkueXNqaWFuemh1LmNvbSIsImF1ZCI6Imh0dHA6XC9cL3poYW9waW4ueXNqaWFuemh1LmNvbSIsImlhdCI6MTQ5OTYxNTc5NiwiZXhwIjoxNDk5NzM1Nzk2LCJuYmYiOiIiLCJ1dWlkIjoiNTNmMmMyNGYtNDlhNS1hNDk2LTg2MzktZjgzM2MwMTJjZWQ1In0.koOWm6r93siB6Izlp661FDkC7JBzKYTGaezeCKXryN0',
+  'codeid' => 'D6BWa9bW_aPrjmxs',
+  'debug' => '1',
+  'debugkey' => 'c58',
+)
+[ info ] [ RUN ] app\api\controller\Open->com_list[ D:\ys\api.yushan.com\application\api\controller\Open.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001380s ] mysql:dbname=ysjianzhu;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ys_system_conf` [ RunTime:0.013949s ]
+[ sql ] [ SQL ] SELECT * FROM `ys_system_conf` WHERE  `tbnum` = '58'  AND `isdel` = 0 LIMIT 1 [ RunTime:0.000685s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ys_province` [ RunTime:0.041702s ]
+[ sql ] [ SQL ] SELECT * FROM `ys_province` WHERE  `isdel` = 0 [ RunTime:0.000537s ]
+[ sql ] [ SQL ] SELECT * FROM `ys_system_conf` WHERE  `tbnum` = '58'  AND `isdel` = 0 LIMIT 1 [ RunTime:0.000584s ]
+
+---------------------------------------------------------------
+[ 2017-07-09T23:56:40+08:00 ] 127.0.0.1 127.0.0.1 POST /open/com_list?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9hcGkueXNqaWFuemh1LmNvbSIsImF1ZCI6Imh0dHA6XC9cL3poYW9waW4ueXNqaWFuemh1LmNvbSIsImlhdCI6MTQ5OTYxNTc5NiwiZXhwIjoxNDk5NzM1Nzk2LCJuYmYiOiIiLCJ1dWlkIjoiNTNmMmMyNGYtNDlhNS1hNDk2LTg2MzktZjgzM2MwMTJjZWQ1In0.koOWm6r93siB6Izlp661FDkC7JBzKYTGaezeCKXryN0
+[ log ] api.yushan.com/open/com_list?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9hcGkueXNqaWFuemh1LmNvbSIsImF1ZCI6Imh0dHA6XC9cL3poYW9waW4ueXNqaWFuemh1LmNvbSIsImlhdCI6MTQ5OTYxNTc5NiwiZXhwIjoxNDk5NzM1Nzk2LCJuYmYiOiIiLCJ1dWlkIjoiNTNmMmMyNGYtNDlhNS1hNDk2LTg2MzktZjgzM2MwMTJjZWQ1In0.koOWm6r93siB6Izlp661FDkC7JBzKYTGaezeCKXryN0 [运行时间：0.459281s][吞吐率：2.18req/s] [内存消耗：2,064.31kb] [文件加载：53]
+[ info ] [ LANG ] D:\ys\api.yushan.com\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'open',
+    2 => 'com_list',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://zhaopin.yushan.com/main.html',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.115 Safari/537.36',
+  'origin' => 'http://zhaopin.yushan.com',
+  'accept' => 'application/json, text/plain, */*',
+  'content-length' => '65',
+  'connection' => 'close',
+  'host' => 'api.yushan.com',
+)
+[ info ] [ PARAM ] array (
+  '/open/com_list' => '',
+  'token' => 'eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9hcGkueXNqaWFuemh1LmNvbSIsImF1ZCI6Imh0dHA6XC9cL3poYW9waW4ueXNqaWFuemh1LmNvbSIsImlhdCI6MTQ5OTYxNTc5NiwiZXhwIjoxNDk5NzM1Nzk2LCJuYmYiOiIiLCJ1dWlkIjoiNTNmMmMyNGYtNDlhNS1hNDk2LTg2MzktZjgzM2MwMTJjZWQ1In0.koOWm6r93siB6Izlp661FDkC7JBzKYTGaezeCKXryN0',
+  'codeid' => 'C6pTP4DUrarhlBs',
+  'c_alias' => 'QS_experience',
+  'debug' => '1',
+  'debugkey' => 'c77',
+)
+[ info ] [ RUN ] app\api\controller\Open->com_list[ D:\ys\api.yushan.com\application\api\controller\Open.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.020064s ] mysql:dbname=ysjianzhu;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ys_system_conf` [ RunTime:0.262626s ]
+[ sql ] [ SQL ] SELECT * FROM `ys_system_conf` WHERE  `tbnum` = '77'  AND `isdel` = 0 LIMIT 1 [ RunTime:0.002036s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ys_dict` [ RunTime:0.021438s ]
+[ sql ] [ SQL ] SELECT * FROM `ys_dict` WHERE  `c_alias` = 'QS_experience'  AND `isdel` = 0 [ RunTime:0.050349s ]
+[ sql ] [ SQL ] SELECT * FROM `ys_system_conf` WHERE  `tbnum` = '77'  AND `isdel` = 0 LIMIT 1 [ RunTime:0.001363s ]
+
+---------------------------------------------------------------
+[ 2017-07-09T23:56:40+08:00 ] 127.0.0.1 127.0.0.1 POST /open/com_list?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9hcGkueXNqaWFuemh1LmNvbSIsImF1ZCI6Imh0dHA6XC9cL3poYW9waW4ueXNqaWFuemh1LmNvbSIsImlhdCI6MTQ5OTYxNTc5NiwiZXhwIjoxNDk5NzM1Nzk2LCJuYmYiOiIiLCJ1dWlkIjoiNTNmMmMyNGYtNDlhNS1hNDk2LTg2MzktZjgzM2MwMTJjZWQ1In0.koOWm6r93siB6Izlp661FDkC7JBzKYTGaezeCKXryN0
+[ log ] api.yushan.com/open/com_list?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9hcGkueXNqaWFuemh1LmNvbSIsImF1ZCI6Imh0dHA6XC9cL3poYW9waW4ueXNqaWFuemh1LmNvbSIsImlhdCI6MTQ5OTYxNTc5NiwiZXhwIjoxNDk5NzM1Nzk2LCJuYmYiOiIiLCJ1dWlkIjoiNTNmMmMyNGYtNDlhNS1hNDk2LTg2MzktZjgzM2MwMTJjZWQ1In0.koOWm6r93siB6Izlp661FDkC7JBzKYTGaezeCKXryN0 [运行时间：0.497627s][吞吐率：2.01req/s] [内存消耗：2,064.30kb] [文件加载：53]
+[ info ] [ LANG ] D:\ys\api.yushan.com\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'open',
+    2 => 'com_list',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://zhaopin.yushan.com/main.html',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.115 Safari/537.36',
+  'origin' => 'http://zhaopin.yushan.com',
+  'accept' => 'application/json, text/plain, */*',
+  'content-length' => '67',
+  'connection' => 'close',
+  'host' => 'api.yushan.com',
+)
+[ info ] [ PARAM ] array (
+  '/open/com_list' => '',
+  'token' => 'eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9hcGkueXNqaWFuemh1LmNvbSIsImF1ZCI6Imh0dHA6XC9cL3poYW9waW4ueXNqaWFuemh1LmNvbSIsImlhdCI6MTQ5OTYxNTc5NiwiZXhwIjoxNDk5NzM1Nzk2LCJuYmYiOiIiLCJ1dWlkIjoiNTNmMmMyNGYtNDlhNS1hNDk2LTg2MzktZjgzM2MwMTJjZWQ1In0.koOWm6r93siB6Izlp661FDkC7JBzKYTGaezeCKXryN0',
+  'codeid' => 'C6pTP4DUrarhlBs',
+  'c_alias' => 'QS_company_type',
+  'debug' => '1',
+  'debugkey' => 'a55',
+)
+[ info ] [ RUN ] app\api\controller\Open->com_list[ D:\ys\api.yushan.com\application\api\controller\Open.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.005048s ] mysql:dbname=ysjianzhu;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ys_system_conf` [ RunTime:0.023736s ]
+[ sql ] [ SQL ] SELECT * FROM `ys_system_conf` WHERE  `tbnum` = '77'  AND `isdel` = 0 LIMIT 1 [ RunTime:0.002499s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ys_dict` [ RunTime:0.281333s ]
+[ sql ] [ SQL ] SELECT * FROM `ys_dict` WHERE  `c_alias` = 'QS_company_type'  AND `isdel` = 0 [ RunTime:0.073696s ]
+[ sql ] [ SQL ] SELECT * FROM `ys_system_conf` WHERE  `tbnum` = '77'  AND `isdel` = 0 LIMIT 1 [ RunTime:0.001380s ]
+
+---------------------------------------------------------------
+[ 2017-07-09T23:56:40+08:00 ] 127.0.0.1 127.0.0.1 POST /open/com_list?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9hcGkueXNqaWFuemh1LmNvbSIsImF1ZCI6Imh0dHA6XC9cL3poYW9waW4ueXNqaWFuemh1LmNvbSIsImlhdCI6MTQ5OTYxNTc5NiwiZXhwIjoxNDk5NzM1Nzk2LCJuYmYiOiIiLCJ1dWlkIjoiNTNmMmMyNGYtNDlhNS1hNDk2LTg2MzktZjgzM2MwMTJjZWQ1In0.koOWm6r93siB6Izlp661FDkC7JBzKYTGaezeCKXryN0
+[ log ] api.yushan.com/open/com_list?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9hcGkueXNqaWFuemh1LmNvbSIsImF1ZCI6Imh0dHA6XC9cL3poYW9waW4ueXNqaWFuemh1LmNvbSIsImlhdCI6MTQ5OTYxNTc5NiwiZXhwIjoxNDk5NzM1Nzk2LCJuYmYiOiIiLCJ1dWlkIjoiNTNmMmMyNGYtNDlhNS1hNDk2LTg2MzktZjgzM2MwMTJjZWQ1In0.koOWm6r93siB6Izlp661FDkC7JBzKYTGaezeCKXryN0 [运行时间：0.526082s][吞吐率：1.90req/s] [内存消耗：2,064.23kb] [文件加载：53]
+[ info ] [ LANG ] D:\ys\api.yushan.com\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'open',
+    2 => 'com_list',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://zhaopin.yushan.com/main.html',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.115 Safari/537.36',
+  'origin' => 'http://zhaopin.yushan.com',
+  'accept' => 'application/json, text/plain, */*',
+  'content-length' => '59',
+  'connection' => 'close',
+  'host' => 'api.yushan.com',
+)
+[ info ] [ PARAM ] array (
+  '/open/com_list' => '',
+  'token' => 'eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9hcGkueXNqaWFuemh1LmNvbSIsImF1ZCI6Imh0dHA6XC9cL3poYW9waW4ueXNqaWFuemh1LmNvbSIsImlhdCI6MTQ5OTYxNTc5NiwiZXhwIjoxNDk5NzM1Nzk2LCJuYmYiOiIiLCJ1dWlkIjoiNTNmMmMyNGYtNDlhNS1hNDk2LTg2MzktZjgzM2MwMTJjZWQ1In0.koOWm6r93siB6Izlp661FDkC7JBzKYTGaezeCKXryN0',
+  'codeid' => 'C6pTP4DUrarhlBs',
+  'c_alias' => 'QS_wage',
+  'debug' => '1',
+  'debugkey' => 'a77',
+)
+[ info ] [ RUN ] app\api\controller\Open->com_list[ D:\ys\api.yushan.com\application\api\controller\Open.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.006918s ] mysql:dbname=ysjianzhu;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ys_system_conf` [ RunTime:0.026878s ]
+[ sql ] [ SQL ] SELECT * FROM `ys_system_conf` WHERE  `tbnum` = '77'  AND `isdel` = 0 LIMIT 1 [ RunTime:0.000789s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ys_dict` [ RunTime:0.285321s ]
+[ sql ] [ SQL ] SELECT * FROM `ys_dict` WHERE  `c_alias` = 'QS_wage'  AND `isdel` = 0 [ RunTime:0.077545s ]
+[ sql ] [ SQL ] SELECT * FROM `ys_system_conf` WHERE  `tbnum` = '77'  AND `isdel` = 0 LIMIT 1 [ RunTime:0.037238s ]
+
+---------------------------------------------------------------
+[ 2017-07-09T23:56:40+08:00 ] 127.0.0.1 127.0.0.1 POST /open/com_list?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9hcGkueXNqaWFuemh1LmNvbSIsImF1ZCI6Imh0dHA6XC9cL3poYW9waW4ueXNqaWFuemh1LmNvbSIsImlhdCI6MTQ5OTYxNTc5NiwiZXhwIjoxNDk5NzM1Nzk2LCJuYmYiOiIiLCJ1dWlkIjoiNTNmMmMyNGYtNDlhNS1hNDk2LTg2MzktZjgzM2MwMTJjZWQ1In0.koOWm6r93siB6Izlp661FDkC7JBzKYTGaezeCKXryN0
+[ log ] api.yushan.com/open/com_list?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9hcGkueXNqaWFuemh1LmNvbSIsImF1ZCI6Imh0dHA6XC9cL3poYW9waW4ueXNqaWFuemh1LmNvbSIsImlhdCI6MTQ5OTYxNTc5NiwiZXhwIjoxNDk5NzM1Nzk2LCJuYmYiOiIiLCJ1dWlkIjoiNTNmMmMyNGYtNDlhNS1hNDk2LTg2MzktZjgzM2MwMTJjZWQ1In0.koOWm6r93siB6Izlp661FDkC7JBzKYTGaezeCKXryN0 [运行时间：0.501186s][吞吐率：2.00req/s] [内存消耗：2,111.18kb] [文件加载：53]
+[ info ] [ LANG ] D:\ys\api.yushan.com\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'open',
+    2 => 'com_list',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://zhaopin.yushan.com/main.html',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.115 Safari/537.36',
+  'origin' => 'http://zhaopin.yushan.com',
+  'accept' => 'application/json, text/plain, */*',
+  'content-length' => '43',
+  'connection' => 'close',
+  'host' => 'api.yushan.com',
+)
+[ info ] [ PARAM ] array (
+  '/open/com_list' => '',
+  'token' => 'eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9hcGkueXNqaWFuemh1LmNvbSIsImF1ZCI6Imh0dHA6XC9cL3poYW9waW4ueXNqaWFuemh1LmNvbSIsImlhdCI6MTQ5OTYxNTc5NiwiZXhwIjoxNDk5NzM1Nzk2LCJuYmYiOiIiLCJ1dWlkIjoiNTNmMmMyNGYtNDlhNS1hNDk2LTg2MzktZjgzM2MwMTJjZWQ1In0.koOWm6r93siB6Izlp661FDkC7JBzKYTGaezeCKXryN0',
+  'codeid' => 'D6VWaoLX9KnjlBs',
+  'debug' => '1',
+  'debugkey' => 'c57',
+)
+[ info ] [ RUN ] app\api\controller\Open->com_list[ D:\ys\api.yushan.com\application\api\controller\Open.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001759s ] mysql:dbname=ysjianzhu;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ys_system_conf` [ RunTime:0.031000s ]
+[ sql ] [ SQL ] SELECT * FROM `ys_system_conf` WHERE  `tbnum` = '57'  AND `isdel` = 0 LIMIT 1 [ RunTime:0.000753s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ys_city` [ RunTime:0.272943s ]
+[ sql ] [ SQL ] SELECT * FROM `ys_city` WHERE  `isdel` = 0 [ RunTime:0.045594s ]
+[ sql ] [ SQL ] SELECT * FROM `ys_system_conf` WHERE  `tbnum` = '57'  AND `isdel` = 0 LIMIT 1 [ RunTime:0.001045s ]
+
+---------------------------------------------------------------
+[ 2017-07-09T23:56:40+08:00 ] 127.0.0.1 127.0.0.1 POST /open/ucom_list_page?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9hcGkueXNqaWFuemh1LmNvbSIsImF1ZCI6Imh0dHA6XC9cL3poYW9waW4ueXNqaWFuemh1LmNvbSIsImlhdCI6MTQ5OTYxNTc5NiwiZXhwIjoxNDk5NzM1Nzk2LCJuYmYiOiIiLCJ1dWlkIjoiNTNmMmMyNGYtNDlhNS1hNDk2LTg2MzktZjgzM2MwMTJjZWQ1In0.koOWm6r93siB6Izlp661FDkC7JBzKYTGaezeCKXryN0
+[ log ] api.yushan.com/open/ucom_list_page?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9hcGkueXNqaWFuemh1LmNvbSIsImF1ZCI6Imh0dHA6XC9cL3poYW9waW4ueXNqaWFuemh1LmNvbSIsImlhdCI6MTQ5OTYxNTc5NiwiZXhwIjoxNDk5NzM1Nzk2LCJuYmYiOiIiLCJ1dWlkIjoiNTNmMmMyNGYtNDlhNS1hNDk2LTg2MzktZjgzM2MwMTJjZWQ1In0.koOWm6r93siB6Izlp661FDkC7JBzKYTGaezeCKXryN0 [运行时间：0.583295s][吞吐率：1.71req/s] [内存消耗：2,130.07kb] [文件加载：53]
+[ info ] [ LANG ] D:\ys\api.yushan.com\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'open',
+    2 => 'ucom_list_page',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://zhaopin.yushan.com/main.html',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.115 Safari/537.36',
+  'origin' => 'http://zhaopin.yushan.com',
+  'accept' => 'application/json, text/plain, */*',
+  'content-length' => '42',
+  'connection' => 'close',
+  'host' => 'api.yushan.com',
+)
+[ info ] [ PARAM ] array (
+  '/open/ucom_list_page' => '',
+  'token' => 'eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9hcGkueXNqaWFuemh1LmNvbSIsImF1ZCI6Imh0dHA6XC9cL3poYW9waW4ueXNqaWFuemh1LmNvbSIsImlhdCI6MTQ5OTYxNTc5NiwiZXhwIjoxNDk5NzM1Nzk2LCJuYmYiOiIiLCJ1dWlkIjoiNTNmMmMyNGYtNDlhNS1hNDk2LTg2MzktZjgzM2MwMTJjZWQ1In0.koOWm6r93siB6Izlp661FDkC7JBzKYTGaezeCKXryN0',
+  'codeid' => 'DaNXPdfRqf7hmhs',
+  'listnum' => '8',
+  'curPage' => '1',
+)
+[ info ] [ RUN ] app\api\controller\Open->ucom_list_page[ D:\ys\api.yushan.com\application\api\controller\Open.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.009844s ] mysql:dbname=ysjianzhu;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ys_system_conf` [ RunTime:0.027295s ]
+[ sql ] [ SQL ] SELECT * FROM `ys_system_conf` WHERE  `tbnum` = '79'  AND `isdel` = 0 LIMIT 1 [ RunTime:0.000740s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ys_jobs` [ RunTime:0.282292s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `ys_jobs` WHERE  `isdel` = 0 LIMIT 1 [ RunTime:0.048643s ]
+[ sql ] [ SQL ] SELECT * FROM `ys_jobs` WHERE  `isdel` = 0 LIMIT 0,8 [ RunTime:0.002224s ]
+[ sql ] [ SQL ] SELECT * FROM `ys_system_conf` WHERE  `tbnum` = '79'  AND `isdel` = 0 LIMIT 1 [ RunTime:0.000772s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ys_user` [ RunTime:0.071910s ]
+[ sql ] [ SQL ] SELECT `nickname`,`id`,`headimg` FROM `ys_user` WHERE  `id` IN (1,1,1,1,1,1,84,88)  AND `isdel` = 0 [ RunTime:0.025476s ]
+
+---------------------------------------------------------------
+[ 2017-07-09T23:56:41+08:00 ] 127.0.0.1 127.0.0.1 GET /Base/verify?timestamp=%27+Date.parse(new%20Date())
+[ log ] api.yushan.com/Base/verify?timestamp=%27+Date.parse(new%20Date()) [运行时间：0.095226s][吞吐率：10.50req/s] [内存消耗：1,492.42kb] [文件加载：44]
+[ info ] [ LANG ] D:\ys\api.yushan.com\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'Base',
+    2 => 'verify',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=mge8seppp9qeavjbqhj5mm3a20',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://zhaopin.yushan.com/main.html',
+  'accept' => 'image/webp,image/apng,image/*,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.115 Safari/537.36',
+  'connection' => 'close',
+  'host' => 'api.yushan.com',
+)
+[ info ] [ PARAM ] array (
+  '/Base/verify' => '',
+  'timestamp' => '\' Date.parse(new Date())',
+)
+[ info ] [ RUN ] app\api\controller\Base->verify[ D:\ys\api.yushan.com\application\api\controller\Base.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-07-09T23:56:41+08:00 ] 127.0.0.1 127.0.0.1 POST /open/menutree_select?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9hcGkueXNqaWFuemh1LmNvbSIsImF1ZCI6Imh0dHA6XC9cL3poYW9waW4ueXNqaWFuemh1LmNvbSIsImlhdCI6MTQ5OTYxNTc5NiwiZXhwIjoxNDk5NzM1Nzk2LCJuYmYiOiIiLCJ1dWlkIjoiNTNmMmMyNGYtNDlhNS1hNDk2LTg2MzktZjgzM2MwMTJjZWQ1In0.koOWm6r93siB6Izlp661FDkC7JBzKYTGaezeCKXryN0
+[ log ] api.yushan.com/open/menutree_select?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9hcGkueXNqaWFuemh1LmNvbSIsImF1ZCI6Imh0dHA6XC9cL3poYW9waW4ueXNqaWFuemh1LmNvbSIsImlhdCI6MTQ5OTYxNTc5NiwiZXhwIjoxNDk5NzM1Nzk2LCJuYmYiOiIiLCJ1dWlkIjoiNTNmMmMyNGYtNDlhNS1hNDk2LTg2MzktZjgzM2MwMTJjZWQ1In0.koOWm6r93siB6Izlp661FDkC7JBzKYTGaezeCKXryN0 [运行时间：0.090016s][吞吐率：11.11req/s] [内存消耗：2,106.30kb] [文件加载：53]
+[ info ] [ LANG ] D:\ys\api.yushan.com\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'open',
+    2 => 'menutree_select',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://zhaopin.yushan.com/main.html',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.115 Safari/537.36',
+  'origin' => 'http://zhaopin.yushan.com',
+  'accept' => '*/*',
+  'content-length' => '7',
+  'connection' => 'close',
+  'host' => 'api.yushan.com',
+)
+[ info ] [ PARAM ] array (
+  '/open/menutree_select' => '',
+  'token' => 'eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9hcGkueXNqaWFuemh1LmNvbSIsImF1ZCI6Imh0dHA6XC9cL3poYW9waW4ueXNqaWFuemh1LmNvbSIsImlhdCI6MTQ5OTYxNTc5NiwiZXhwIjoxNDk5NzM1Nzk2LCJuYmYiOiIiLCJ1dWlkIjoiNTNmMmMyNGYtNDlhNS1hNDk2LTg2MzktZjgzM2MwMTJjZWQ1In0.koOWm6r93siB6Izlp661FDkC7JBzKYTGaezeCKXryN0',
+  'debug' => '0',
+)
+[ info ] [ RUN ] app\api\controller\Open->menutree_select[ D:\ys\api.yushan.com\application\api\controller\Open.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000885s ] mysql:dbname=ysjianzhu;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ys_system_menu` [ RunTime:0.009409s ]
+[ sql ] [ SQL ] SELECT * FROM `ys_system_menu` WHERE  `isdel` = 0 ORDER BY listorder asc [ RunTime:0.000929s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ys_system_conf` [ RunTime:0.010101s ]
+[ sql ] [ SQL ] SELECT * FROM `ys_system_conf` WHERE  `isdel` = 0 [ RunTime:0.000789s ]
+
+---------------------------------------------------------------
+[ 2017-07-09T23:56:41+08:00 ] 127.0.0.1 127.0.0.1 GET /Base/verify?timestamp=%27+Date.parse(new%20Date())
+[ log ] api.yushan.com/Base/verify?timestamp=%27+Date.parse(new%20Date()) [运行时间：0.093288s][吞吐率：10.72req/s] [内存消耗：1,492.42kb] [文件加载：44]
+[ info ] [ LANG ] D:\ys\api.yushan.com\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'Base',
+    2 => 'verify',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=mge8seppp9qeavjbqhj5mm3a20',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://zhaopin.yushan.com/main.html',
+  'accept' => 'image/webp,image/apng,image/*,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.115 Safari/537.36',
+  'connection' => 'close',
+  'host' => 'api.yushan.com',
+)
+[ info ] [ PARAM ] array (
+  '/Base/verify' => '',
+  'timestamp' => '\' Date.parse(new Date())',
+)
+[ info ] [ RUN ] app\api\controller\Base->verify[ D:\ys\api.yushan.com\application\api\controller\Base.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-07-09T23:56:41+08:00 ] 127.0.0.1 127.0.0.1 POST /auth/get_jobtype?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9hcGkueXNqaWFuemh1LmNvbSIsImF1ZCI6Imh0dHA6XC9cL3poYW9waW4ueXNqaWFuemh1LmNvbSIsImlhdCI6MTQ5OTYxNTc5NiwiZXhwIjoxNDk5NzM1Nzk2LCJuYmYiOiIiLCJ1dWlkIjoiNTNmMmMyNGYtNDlhNS1hNDk2LTg2MzktZjgzM2MwMTJjZWQ1In0.koOWm6r93siB6Izlp661FDkC7JBzKYTGaezeCKXryN0
+[ log ] api.yushan.com/auth/get_jobtype?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9hcGkueXNqaWFuemh1LmNvbSIsImF1ZCI6Imh0dHA6XC9cL3poYW9waW4ueXNqaWFuemh1LmNvbSIsImlhdCI6MTQ5OTYxNTc5NiwiZXhwIjoxNDk5NzM1Nzk2LCJuYmYiOiIiLCJ1dWlkIjoiNTNmMmMyNGYtNDlhNS1hNDk2LTg2MzktZjgzM2MwMTJjZWQ1In0.koOWm6r93siB6Izlp661FDkC7JBzKYTGaezeCKXryN0 [运行时间：0.419528s][吞吐率：2.38req/s] [内存消耗：2,295.26kb] [文件加载：57]
+[ info ] [ LANG ] D:\ys\api.yushan.com\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'auth',
+    2 => 'get_jobtype',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://zhaopin.yushan.com/main.html',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.115 Safari/537.36',
+  'origin' => 'http://zhaopin.yushan.com',
+  'accept' => 'application/json, text/plain, */*',
+  'content-length' => '24',
+  'connection' => 'close',
+  'host' => 'api.yushan.com',
+)
+[ info ] [ PARAM ] array (
+  '/auth/get_jobtype' => '',
+  'token' => 'eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9hcGkueXNqaWFuemh1LmNvbSIsImF1ZCI6Imh0dHA6XC9cL3poYW9waW4ueXNqaWFuemh1LmNvbSIsImlhdCI6MTQ5OTYxNTc5NiwiZXhwIjoxNDk5NzM1Nzk2LCJuYmYiOiIiLCJ1dWlkIjoiNTNmMmMyNGYtNDlhNS1hNDk2LTg2MzktZjgzM2MwMTJjZWQ1In0.koOWm6r93siB6Izlp661FDkC7JBzKYTGaezeCKXryN0',
+  'codeid' => 'CPYGa4CD_bvznkwFB',
+)
+[ info ] [ CACHE ] INIT File
+[ info ] [ RUN ] app\api\controller\Auth->get_jobtype[ D:\ys\api.yushan.com\application\api\controller\Auth.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001473s ] mysql:dbname=ysjianzhu;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ys_jobs_category` [ RunTime:0.041477s ]
+[ sql ] [ SQL ] SELECT `id`,`categoryname` FROM `ys_jobs_category` WHERE  `parentid` = 0  AND `isdel` = 0 [ RunTime:0.011964s ]
+
+---------------------------------------------------------------
+[ 2017-07-09T23:56:42+08:00 ] 127.0.0.1 127.0.0.1 POST /auth/mycom_detail?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9hcGkueXNqaWFuemh1LmNvbSIsImF1ZCI6Imh0dHA6XC9cL3poYW9waW4ueXNqaWFuemh1LmNvbSIsImlhdCI6MTQ5OTYxNTc5NiwiZXhwIjoxNDk5NzM1Nzk2LCJuYmYiOiIiLCJ1dWlkIjoiNTNmMmMyNGYtNDlhNS1hNDk2LTg2MzktZjgzM2MwMTJjZWQ1In0.koOWm6r93siB6Izlp661FDkC7JBzKYTGaezeCKXryN0
+[ log ] api.yushan.com/auth/mycom_detail?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9hcGkueXNqaWFuemh1LmNvbSIsImF1ZCI6Imh0dHA6XC9cL3poYW9waW4ueXNqaWFuemh1LmNvbSIsImlhdCI6MTQ5OTYxNTc5NiwiZXhwIjoxNDk5NzM1Nzk2LCJuYmYiOiIiLCJ1dWlkIjoiNTNmMmMyNGYtNDlhNS1hNDk2LTg2MzktZjgzM2MwMTJjZWQ1In0.koOWm6r93siB6Izlp661FDkC7JBzKYTGaezeCKXryN0 [运行时间：0.597765s][吞吐率：1.67req/s] [内存消耗：2,367.04kb] [文件加载：57]
+[ info ] [ LANG ] D:\ys\api.yushan.com\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'auth',
+    2 => 'mycom_detail',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://zhaopin.yushan.com/main.html',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.115 Safari/537.36',
+  'origin' => 'http://zhaopin.yushan.com',
+  'accept' => 'application/json, text/plain, */*',
+  'content-length' => '22',
+  'connection' => 'close',
+  'host' => 'api.yushan.com',
+)
+[ info ] [ PARAM ] array (
+  '/auth/mycom_detail' => '',
+  'token' => 'eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9hcGkueXNqaWFuemh1LmNvbSIsImF1ZCI6Imh0dHA6XC9cL3poYW9waW4ueXNqaWFuemh1LmNvbSIsImlhdCI6MTQ5OTYxNTc5NiwiZXhwIjoxNDk5NzM1Nzk2LCJuYmYiOiIiLCJ1dWlkIjoiNTNmMmMyNGYtNDlhNS1hNDk2LTg2MzktZjgzM2MwMTJjZWQ1In0.koOWm6r93siB6Izlp661FDkC7JBzKYTGaezeCKXryN0',
+  'codeid' => 'DvEAO4vXr6rukhs',
+)
+[ info ] [ CACHE ] INIT File
+[ info ] [ RUN ] app\api\controller\Auth->mycom_detail[ D:\ys\api.yushan.com\application\api\controller\Auth.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000997s ] mysql:dbname=ysjianzhu;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ys_system_conf` [ RunTime:0.028675s ]
+[ sql ] [ SQL ] SELECT * FROM `ys_system_conf` WHERE  `tbnum` = '81'  AND `isdel` = 0 LIMIT 1 [ RunTime:0.000594s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ys_admin_user` [ RunTime:0.013779s ]
+[ sql ] [ SQL ] SELECT * FROM `ys_admin_user` WHERE  `uuid` = '53f2c24f-49a5-a496-8639-f833c012ced5' LIMIT 1 [ RunTime:0.000649s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ys_jobs_company` [ RunTime:0.133606s ]
+[ sql ] [ SQL ] SELECT * FROM `ys_jobs_company` WHERE  `uid` = 1  AND `isdel` = 0 LIMIT 1 [ RunTime:0.031234s ]
+
+---------------------------------------------------------------
+[ 2017-07-09T23:56:42+08:00 ] 127.0.0.1 127.0.0.1 POST /auth/job_list_page?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9hcGkueXNqaWFuemh1LmNvbSIsImF1ZCI6Imh0dHA6XC9cL3poYW9waW4ueXNqaWFuemh1LmNvbSIsImlhdCI6MTQ5OTYxNTc5NiwiZXhwIjoxNDk5NzM1Nzk2LCJuYmYiOiIiLCJ1dWlkIjoiNTNmMmMyNGYtNDlhNS1hNDk2LTg2MzktZjgzM2MwMTJjZWQ1In0.koOWm6r93siB6Izlp661FDkC7JBzKYTGaezeCKXryN0
+[ log ] api.yushan.com/auth/job_list_page?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9hcGkueXNqaWFuemh1LmNvbSIsImF1ZCI6Imh0dHA6XC9cL3poYW9waW4ueXNqaWFuemh1LmNvbSIsImlhdCI6MTQ5OTYxNTc5NiwiZXhwIjoxNDk5NzM1Nzk2LCJuYmYiOiIiLCJ1dWlkIjoiNTNmMmMyNGYtNDlhNS1hNDk2LTg2MzktZjgzM2MwMTJjZWQ1In0.koOWm6r93siB6Izlp661FDkC7JBzKYTGaezeCKXryN0 [运行时间：0.627072s][吞吐率：1.59req/s] [内存消耗：2,337.78kb] [文件加载：57]
+[ info ] [ LANG ] D:\ys\api.yushan.com\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'auth',
+    2 => 'job_list_page',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://zhaopin.yushan.com/main.html',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.115 Safari/537.36',
+  'origin' => 'http://zhaopin.yushan.com',
+  'accept' => 'application/json, text/plain, */*',
+  'content-length' => '42',
+  'connection' => 'close',
+  'host' => 'api.yushan.com',
+)
+[ info ] [ PARAM ] array (
+  '/auth/job_list_page' => '',
+  'token' => 'eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9hcGkueXNqaWFuemh1LmNvbSIsImF1ZCI6Imh0dHA6XC9cL3poYW9waW4ueXNqaWFuemh1LmNvbSIsImlhdCI6MTQ5OTYxNTc5NiwiZXhwIjoxNDk5NzM1Nzk2LCJuYmYiOiIiLCJ1dWlkIjoiNTNmMmMyNGYtNDlhNS1hNDk2LTg2MzktZjgzM2MwMTJjZWQ1In0.koOWm6r93siB6Izlp661FDkC7JBzKYTGaezeCKXryN0',
+  'codeid' => 'DaNXPdfRqf7hmhs',
+  'listnum' => '4',
+  'curPage' => '1',
+)
+[ info ] [ CACHE ] INIT File
+[ info ] [ RUN ] app\api\controller\Auth->job_list_page[ D:\ys\api.yushan.com\application\api\controller\Auth.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000818s ] mysql:dbname=ysjianzhu;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ys_system_conf` [ RunTime:0.028351s ]
+[ sql ] [ SQL ] SELECT * FROM `ys_system_conf` WHERE  `tbnum` = '79'  AND `isdel` = 0 LIMIT 1 [ RunTime:0.000528s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ys_jobs` [ RunTime:0.013983s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `ys_jobs` WHERE  `uid` = 81  AND `isdel` = 0 LIMIT 1 [ RunTime:0.000412s ]
+[ sql ] [ SQL ] SELECT * FROM `ys_jobs` WHERE  `uid` = 81  AND `isdel` = 0 LIMIT 0,4 [ RunTime:0.001323s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ys_chatlog` [ RunTime:0.132543s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM ( SELECT count(*) FROM `ys_chatlog` WHERE  `jobid` = 136 GROUP BY chatuser ) `_group_count_` LIMIT 1 [ RunTime:0.030750s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM ( SELECT count(*) FROM `ys_chatlog` WHERE  `jobid` = 137 GROUP BY chatuser ) `_group_count_` LIMIT 1 [ RunTime:0.026852s ]
+[ sql ] [ SQL ] SELECT * FROM `ys_system_conf` WHERE  `tbnum` = '79'  AND `isdel` = 0 LIMIT 1 [ RunTime:0.001243s ]
+
+---------------------------------------------------------------
+[ 2017-07-09T23:56:44+08:00 ] 127.0.0.1 127.0.0.1 POST /auth/get_jobs_select?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9hcGkueXNqaWFuemh1LmNvbSIsImF1ZCI6Imh0dHA6XC9cL3poYW9waW4ueXNqaWFuemh1LmNvbSIsImlhdCI6MTQ5OTYxNTc5NiwiZXhwIjoxNDk5NzM1Nzk2LCJuYmYiOiIiLCJ1dWlkIjoiNTNmMmMyNGYtNDlhNS1hNDk2LTg2MzktZjgzM2MwMTJjZWQ1In0.koOWm6r93siB6Izlp661FDkC7JBzKYTGaezeCKXryN0
+[ log ] api.yushan.com/auth/get_jobs_select?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9hcGkueXNqaWFuemh1LmNvbSIsImF1ZCI6Imh0dHA6XC9cL3poYW9waW4ueXNqaWFuemh1LmNvbSIsImlhdCI6MTQ5OTYxNTc5NiwiZXhwIjoxNDk5NzM1Nzk2LCJuYmYiOiIiLCJ1dWlkIjoiNTNmMmMyNGYtNDlhNS1hNDk2LTg2MzktZjgzM2MwMTJjZWQ1In0.koOWm6r93siB6Izlp661FDkC7JBzKYTGaezeCKXryN0 [运行时间：0.096374s][吞吐率：10.38req/s] [内存消耗：2,320.53kb] [文件加载：57]
+[ info ] [ LANG ] D:\ys\api.yushan.com\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'auth',
+    2 => 'get_jobs_select',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://zhaopin.yushan.com/main.html',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.115 Safari/537.36',
+  'origin' => 'http://zhaopin.yushan.com',
+  'accept' => 'application/json, text/plain, */*',
+  'cache-control' => 'no-cache',
+  'pragma' => 'no-cache',
+  'content-length' => '0',
+  'connection' => 'close',
+  'host' => 'api.yushan.com',
+)
+[ info ] [ PARAM ] array (
+  '/auth/get_jobs_select' => '',
+  'token' => 'eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9hcGkueXNqaWFuemh1LmNvbSIsImF1ZCI6Imh0dHA6XC9cL3poYW9waW4ueXNqaWFuemh1LmNvbSIsImlhdCI6MTQ5OTYxNTc5NiwiZXhwIjoxNDk5NzM1Nzk2LCJuYmYiOiIiLCJ1dWlkIjoiNTNmMmMyNGYtNDlhNS1hNDk2LTg2MzktZjgzM2MwMTJjZWQ1In0.koOWm6r93siB6Izlp661FDkC7JBzKYTGaezeCKXryN0',
+)
+[ info ] [ CACHE ] INIT File
+[ info ] [ RUN ] app\api\controller\Auth->get_jobs_select[ D:\ys\api.yushan.com\application\api\controller\Auth.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001431s ] mysql:dbname=ysjianzhu;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ys_admin_user` [ RunTime:0.011882s ]
+[ sql ] [ SQL ] SELECT * FROM `ys_admin_user` WHERE  `uuid` = '53f2c24f-49a5-a496-8639-f833c012ced5' LIMIT 1 [ RunTime:0.000446s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ys_jobs` [ RunTime:0.011321s ]
+[ sql ] [ SQL ] SELECT `jobs_name` FROM `ys_jobs` WHERE  `uid` = 1  AND `isdel` = 0 [ RunTime:0.000560s ]
+
+---------------------------------------------------------------
+[ 2017-07-09T23:56:44+08:00 ] 127.0.0.1 127.0.0.1 POST /chat/getadminchatloglist?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9hcGkueXNqaWFuemh1LmNvbSIsImF1ZCI6Imh0dHA6XC9cL3poYW9waW4ueXNqaWFuemh1LmNvbSIsImlhdCI6MTQ5OTYxNTc5NiwiZXhwIjoxNDk5NzM1Nzk2LCJuYmYiOiIiLCJ1dWlkIjoiNTNmMmMyNGYtNDlhNS1hNDk2LTg2MzktZjgzM2MwMTJjZWQ1In0.koOWm6r93siB6Izlp661FDkC7JBzKYTGaezeCKXryN0
+[ log ] api.yushan.com/chat/getadminchatloglist?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9hcGkueXNqaWFuemh1LmNvbSIsImF1ZCI6Imh0dHA6XC9cL3poYW9waW4ueXNqaWFuemh1LmNvbSIsImlhdCI6MTQ5OTYxNTc5NiwiZXhwIjoxNDk5NzM1Nzk2LCJuYmYiOiIiLCJ1dWlkIjoiNTNmMmMyNGYtNDlhNS1hNDk2LTg2MzktZjgzM2MwMTJjZWQ1In0.koOWm6r93siB6Izlp661FDkC7JBzKYTGaezeCKXryN0 [运行时间：0.164554s][吞吐率：6.08req/s] [内存消耗：2,344.71kb] [文件加载：57]
+[ info ] [ LANG ] D:\ys\api.yushan.com\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'chat',
+    2 => 'getadminchatloglist',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://zhaopin.yushan.com/main.html',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.115 Safari/537.36',
+  'origin' => 'http://zhaopin.yushan.com',
+  'accept' => 'application/json, text/plain, */*',
+  'cache-control' => 'no-cache',
+  'pragma' => 'no-cache',
+  'content-length' => '30',
+  'connection' => 'close',
+  'host' => 'api.yushan.com',
+)
+[ info ] [ PARAM ] array (
+  '/chat/getadminchatloglist' => '',
+  'token' => 'eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9hcGkueXNqaWFuemh1LmNvbSIsImF1ZCI6Imh0dHA6XC9cL3poYW9waW4ueXNqaWFuemh1LmNvbSIsImlhdCI6MTQ5OTYxNTc5NiwiZXhwIjoxNDk5NzM1Nzk2LCJuYmYiOiIiLCJ1dWlkIjoiNTNmMmMyNGYtNDlhNS1hNDk2LTg2MzktZjgzM2MwMTJjZWQ1In0.koOWm6r93siB6Izlp661FDkC7JBzKYTGaezeCKXryN0',
+  'jobs_name' => '',
+  'salary' => '',
+  'experience' => '',
+)
+[ info ] [ CACHE ] INIT File
+[ info ] [ RUN ] app\api\controller\Chat->getadminchatloglist[ D:\ys\api.yushan.com\application\api\controller\Chat.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000684s ] mysql:dbname=ysjianzhu;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ys_admin_user` [ RunTime:0.010249s ]
+[ sql ] [ SQL ] SELECT * FROM `ys_admin_user` WHERE  `uuid` = '53f2c24f-49a5-a496-8639-f833c012ced5' LIMIT 1 [ RunTime:0.000416s ]
+[ sql ] [ SQL ] SELECT A.* FROM ys_chatlog A,
+      (SELECT createtime, MAX(createtime) max_time FROM ys_chatlog where from_id=1 or to_id=1 GROUP BY chatuser,jobid) B
+      WHERE  A.createtime = B.max_time
+      GROUP BY chatuser,jobid [ RunTime:0.012668s ]
+[ sql ] [ SQL ] SELECT `headimg`,`nickname` FROM `ys_admin_user` WHERE  `id` = 2  AND `isdel` = 0 LIMIT 1 [ RunTime:0.000446s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ys_chatlog` [ RunTime:0.008930s ]
+[ sql ] [ SQL ] SELECT * FROM `ys_chatlog` WHERE  (  from_id=2 AND to_id=1 ) OR (  from_id=1 AND to_id=2 ) [ RunTime:0.000941s ]
+[ sql ] [ SQL ] SELECT `headimg`,`nickname` FROM `ys_admin_user` WHERE  `id` = 2  AND `isdel` = 0 LIMIT 1 [ RunTime:0.000321s ]
+[ sql ] [ SQL ] SELECT * FROM `ys_chatlog` WHERE  (  from_id=2 AND to_id=1 ) OR (  from_id=1 AND to_id=2 ) [ RunTime:0.000825s ]
+[ sql ] [ SQL ] SELECT `headimg`,`nickname` FROM `ys_admin_user` WHERE  `id` = 2  AND `isdel` = 0 LIMIT 1 [ RunTime:0.000362s ]
+[ sql ] [ SQL ] SELECT * FROM `ys_chatlog` WHERE  (  from_id=1 AND to_id=2 ) OR (  from_id=2 AND to_id=1 ) [ RunTime:0.000738s ]
+[ sql ] [ SQL ] SELECT `headimg`,`nickname` FROM `ys_admin_user` WHERE  `id` = 2  AND `isdel` = 0 LIMIT 1 [ RunTime:0.000294s ]
+[ sql ] [ SQL ] SELECT * FROM `ys_chatlog` WHERE  (  from_id=2 AND to_id=1 ) OR (  from_id=1 AND to_id=2 ) [ RunTime:0.000720s ]
+[ sql ] [ SQL ] SELECT `headimg`,`nickname` FROM `ys_admin_user` WHERE  `id` = 2  AND `isdel` = 0 LIMIT 1 [ RunTime:0.000326s ]
+[ sql ] [ SQL ] SELECT * FROM `ys_chatlog` WHERE  (  from_id=2 AND to_id=1 ) OR (  from_id=1 AND to_id=2 ) [ RunTime:0.000881s ]
+[ sql ] [ SQL ] SELECT `headimg`,`nickname` FROM `ys_admin_user` WHERE  `id` = 2  AND `isdel` = 0 LIMIT 1 [ RunTime:0.000291s ]
+[ sql ] [ SQL ] SELECT * FROM `ys_chatlog` WHERE  (  from_id=2 AND to_id=1 ) OR (  from_id=1 AND to_id=2 ) [ RunTime:0.000903s ]
+[ sql ] [ SQL ] SELECT `headimg`,`nickname` FROM `ys_admin_user` WHERE  `id` = 2  AND `isdel` = 0 LIMIT 1 [ RunTime:0.000549s ]
+[ sql ] [ SQL ] SELECT * FROM `ys_chatlog` WHERE  (  from_id=1 AND to_id=2 ) OR (  from_id=2 AND to_id=1 ) [ RunTime:0.001111s ]
+
+---------------------------------------------------------------
+[ 2017-07-09T23:56:46+08:00 ] 127.0.0.1 127.0.0.1 POST /chat/getchat?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9hcGkueXNqaWFuemh1LmNvbSIsImF1ZCI6Imh0dHA6XC9cL3poYW9waW4ueXNqaWFuemh1LmNvbSIsImlhdCI6MTQ5OTYxNTc5NiwiZXhwIjoxNDk5NzM1Nzk2LCJuYmYiOiIiLCJ1dWlkIjoiNTNmMmMyNGYtNDlhNS1hNDk2LTg2MzktZjgzM2MwMTJjZWQ1In0.koOWm6r93siB6Izlp661FDkC7JBzKYTGaezeCKXryN0
+[ log ] api.yushan.com/chat/getchat?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9hcGkueXNqaWFuemh1LmNvbSIsImF1ZCI6Imh0dHA6XC9cL3poYW9waW4ueXNqaWFuemh1LmNvbSIsImlhdCI6MTQ5OTYxNTc5NiwiZXhwIjoxNDk5NzM1Nzk2LCJuYmYiOiIiLCJ1dWlkIjoiNTNmMmMyNGYtNDlhNS1hNDk2LTg2MzktZjgzM2MwMTJjZWQ1In0.koOWm6r93siB6Izlp661FDkC7JBzKYTGaezeCKXryN0 [运行时间：0.175443s][吞吐率：5.70req/s] [内存消耗：2,189.36kb] [文件加载：57]
+[ info ] [ LANG ] D:\ys\api.yushan.com\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'chat',
+    2 => 'getchat',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://zhaopin.yushan.com/main.html',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.115 Safari/537.36',
+  'origin' => 'http://zhaopin.yushan.com',
+  'accept' => 'application/json, text/plain, */*',
+  'cache-control' => 'no-cache',
+  'pragma' => 'no-cache',
+  'content-length' => '10',
+  'connection' => 'close',
+  'host' => 'api.yushan.com',
+)
+[ info ] [ PARAM ] array (
+  '/chat/getchat' => '',
+  'token' => 'eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9hcGkueXNqaWFuemh1LmNvbSIsImF1ZCI6Imh0dHA6XC9cL3poYW9waW4ueXNqaWFuemh1LmNvbSIsImlhdCI6MTQ5OTYxNTc5NiwiZXhwIjoxNDk5NzM1Nzk2LCJuYmYiOiIiLCJ1dWlkIjoiNTNmMmMyNGYtNDlhNS1hNDk2LTg2MzktZjgzM2MwMTJjZWQ1In0.koOWm6r93siB6Izlp661FDkC7JBzKYTGaezeCKXryN0',
+  'touserid' => '2',
+)
+[ info ] [ CACHE ] INIT File
+[ info ] [ RUN ] app\api\controller\Chat->getchat[ D:\ys\api.yushan.com\application\api\controller\Chat.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000847s ] mysql:dbname=ysjianzhu;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ys_admin_user` [ RunTime:0.042052s ]
+[ sql ] [ SQL ] SELECT * FROM `ys_admin_user` WHERE  `uuid` = '53f2c24f-49a5-a496-8639-f833c012ced5' LIMIT 1 [ RunTime:0.000551s ]
+[ sql ] [ SQL ] SELECT * FROM `ys_admin_user` WHERE  `id` = 2 LIMIT 1 [ RunTime:0.000474s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ys_jobs_company` [ RunTime:0.016061s ]
+[ sql ] [ SQL ] SELECT `id` FROM `ys_jobs_company` WHERE  `uid` = 1  AND `isdel` = 0 LIMIT 1 [ RunTime:0.001265s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ys_prosecute` [ RunTime:0.057922s ]
+[ sql ] [ SQL ] SELECT * FROM `ys_prosecute` WHERE  `uid` = 1  AND `reportman` = '2'  AND `isdel` = 0 LIMIT 1 [ RunTime:0.001994s ]
+
+---------------------------------------------------------------
+[ 2017-07-09T23:56:46+08:00 ] 127.0.0.1 127.0.0.1 POST /chat/needSend?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9hcGkueXNqaWFuemh1LmNvbSIsImF1ZCI6Imh0dHA6XC9cL3poYW9waW4ueXNqaWFuemh1LmNvbSIsImlhdCI6MTQ5OTYxNTc5NiwiZXhwIjoxNDk5NzM1Nzk2LCJuYmYiOiIiLCJ1dWlkIjoiNTNmMmMyNGYtNDlhNS1hNDk2LTg2MzktZjgzM2MwMTJjZWQ1In0.koOWm6r93siB6Izlp661FDkC7JBzKYTGaezeCKXryN0
+[ log ] api.yushan.com/chat/needSend?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9hcGkueXNqaWFuemh1LmNvbSIsImF1ZCI6Imh0dHA6XC9cL3poYW9waW4ueXNqaWFuemh1LmNvbSIsImlhdCI6MTQ5OTYxNTc5NiwiZXhwIjoxNDk5NzM1Nzk2LCJuYmYiOiIiLCJ1dWlkIjoiNTNmMmMyNGYtNDlhNS1hNDk2LTg2MzktZjgzM2MwMTJjZWQ1In0.koOWm6r93siB6Izlp661FDkC7JBzKYTGaezeCKXryN0 [运行时间：0.120564s][吞吐率：8.29req/s] [内存消耗：2,154.02kb] [文件加载：57]
+[ info ] [ LANG ] D:\ys\api.yushan.com\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'chat',
+    2 => 'needSend',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://zhaopin.yushan.com/main.html',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.115 Safari/537.36',
+  'origin' => 'http://zhaopin.yushan.com',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'cache-control' => 'no-cache',
+  'pragma' => 'no-cache',
+  'content-length' => '6',
+  'connection' => 'close',
+  'host' => 'api.yushan.com',
+)
+[ info ] [ PARAM ] array (
+  '/chat/needSend' => '',
+  'token' => 'eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9hcGkueXNqaWFuemh1LmNvbSIsImF1ZCI6Imh0dHA6XC9cL3poYW9waW4ueXNqaWFuemh1LmNvbSIsImlhdCI6MTQ5OTYxNTc5NiwiZXhwIjoxNDk5NzM1Nzk2LCJuYmYiOiIiLCJ1dWlkIjoiNTNmMmMyNGYtNDlhNS1hNDk2LTg2MzktZjgzM2MwMTJjZWQ1In0.koOWm6r93siB6Izlp661FDkC7JBzKYTGaezeCKXryN0',
+  'toid' => '2',
+)
+[ info ] [ CACHE ] INIT File
+[ info ] [ RUN ] app\api\controller\Chat->needSend[ D:\ys\api.yushan.com\application\api\controller\Chat.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000777s ] mysql:dbname=ysjianzhu;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ys_chatlog` [ RunTime:0.021259s ]
+[ sql ] [ SQL ] UPDATE `ys_chatlog`  SET `need_send`=0  WHERE  `chatuser` = ',2' [ RunTime:0.001661s ]
+
+---------------------------------------------------------------
+[ 2017-07-09T23:56:47+08:00 ] 127.0.0.1 127.0.0.1 POST /chat/getadminchatlog?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9hcGkueXNqaWFuemh1LmNvbSIsImF1ZCI6Imh0dHA6XC9cL3poYW9waW4ueXNqaWFuemh1LmNvbSIsImlhdCI6MTQ5OTYxNTc5NiwiZXhwIjoxNDk5NzM1Nzk2LCJuYmYiOiIiLCJ1dWlkIjoiNTNmMmMyNGYtNDlhNS1hNDk2LTg2MzktZjgzM2MwMTJjZWQ1In0.koOWm6r93siB6Izlp661FDkC7JBzKYTGaezeCKXryN0
+[ log ] api.yushan.com/chat/getadminchatlog?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9hcGkueXNqaWFuemh1LmNvbSIsImF1ZCI6Imh0dHA6XC9cL3poYW9waW4ueXNqaWFuemh1LmNvbSIsImlhdCI6MTQ5OTYxNTc5NiwiZXhwIjoxNDk5NzM1Nzk2LCJuYmYiOiIiLCJ1dWlkIjoiNTNmMmMyNGYtNDlhNS1hNDk2LTg2MzktZjgzM2MwMTJjZWQ1In0.koOWm6r93siB6Izlp661FDkC7JBzKYTGaezeCKXryN0 [运行时间：1.174993s][吞吐率：0.85req/s] [内存消耗：2,360.05kb] [文件加载：57]
+[ info ] [ LANG ] D:\ys\api.yushan.com\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'chat',
+    2 => 'getadminchatlog',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://zhaopin.yushan.com/main.html',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.115 Safari/537.36',
+  'origin' => 'http://zhaopin.yushan.com',
+  'accept' => 'application/json, text/plain, */*',
+  'cache-control' => 'no-cache',
+  'pragma' => 'no-cache',
+  'content-length' => '16',
+  'connection' => 'close',
+  'host' => 'api.yushan.com',
+)
+[ info ] [ PARAM ] array (
+  '/chat/getadminchatlog' => '',
+  'token' => 'eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9hcGkueXNqaWFuemh1LmNvbSIsImF1ZCI6Imh0dHA6XC9cL3poYW9waW4ueXNqaWFuemh1LmNvbSIsImlhdCI6MTQ5OTYxNTc5NiwiZXhwIjoxNDk5NzM1Nzk2LCJuYmYiOiIiLCJ1dWlkIjoiNTNmMmMyNGYtNDlhNS1hNDk2LTg2MzktZjgzM2MwMTJjZWQ1In0.koOWm6r93siB6Izlp661FDkC7JBzKYTGaezeCKXryN0',
+  'uid' => '1',
+  'touserid' => '2',
+)
+[ info ] [ CACHE ] INIT File
+[ info ] [ RUN ] app\api\controller\Chat->getadminChatLog[ D:\ys\api.yushan.com\application\api\controller\Chat.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000791s ] mysql:dbname=ysjianzhu;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ys_resume` [ RunTime:0.043150s ]
+[ sql ] [ SQL ] SELECT * FROM `ys_resume` WHERE  `id` = 2  AND `isdel` = 0 LIMIT 1 [ RunTime:0.121622s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ys_chatlog` [ RunTime:0.027354s ]
+[ sql ] [ SQL ] SELECT * FROM `ys_chatlog` WHERE  (  from_id=1 AND to_id=2 ) OR (  from_id=2 AND to_id=1 ) ORDER BY `createtime`  desc [ RunTime:0.008350s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ys_admin_user` [ RunTime:0.031428s ]
+[ sql ] [ SQL ] SELECT id uid,headimg avatar,`nickname` FROM `ys_admin_user` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.001413s ]
+[ sql ] [ SQL ] SELECT id uid,headimg avatar,`nickname` FROM `ys_admin_user` WHERE  `id` = 2 LIMIT 1 [ RunTime:0.000702s ]
+[ sql ] [ SQL ] SELECT id uid,headimg avatar,`nickname` FROM `ys_admin_user` WHERE  `id` = 2 LIMIT 1 [ RunTime:0.000695s ]
+[ sql ] [ SQL ] SELECT id uid,headimg avatar,`nickname` FROM `ys_admin_user` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000694s ]
+[ sql ] [ SQL ] SELECT id uid,headimg avatar,`nickname` FROM `ys_admin_user` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000693s ]
+[ sql ] [ SQL ] SELECT id uid,headimg avatar,`nickname` FROM `ys_admin_user` WHERE  `id` = 2 LIMIT 1 [ RunTime:0.000821s ]
+[ sql ] [ SQL ] SELECT id uid,headimg avatar,`nickname` FROM `ys_admin_user` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000709s ]
+[ sql ] [ SQL ] SELECT id uid,headimg avatar,`nickname` FROM `ys_admin_user` WHERE  `id` = 2 LIMIT 1 [ RunTime:0.000718s ]
+[ sql ] [ SQL ] SELECT id uid,headimg avatar,`nickname` FROM `ys_admin_user` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000695s ]
+[ sql ] [ SQL ] SELECT id uid,headimg avatar,`nickname` FROM `ys_admin_user` WHERE  `id` = 2 LIMIT 1 [ RunTime:0.000702s ]
+[ sql ] [ SQL ] SELECT id uid,headimg avatar,`nickname` FROM `ys_admin_user` WHERE  `id` = 2 LIMIT 1 [ RunTime:0.000773s ]
+[ sql ] [ SQL ] SELECT id uid,headimg avatar,`nickname` FROM `ys_admin_user` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000709s ]
+[ sql ] [ SQL ] SELECT id uid,headimg avatar,`nickname` FROM `ys_admin_user` WHERE  `id` = 2 LIMIT 1 [ RunTime:0.000720s ]
+[ sql ] [ SQL ] SELECT id uid,headimg avatar,`nickname` FROM `ys_admin_user` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000706s ]
+[ sql ] [ SQL ] SELECT id uid,headimg avatar,`nickname` FROM `ys_admin_user` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000720s ]
+[ sql ] [ SQL ] SELECT id uid,headimg avatar,`nickname` FROM `ys_admin_user` WHERE  `id` = 2 LIMIT 1 [ RunTime:0.000882s ]
+[ sql ] [ SQL ] SELECT id uid,headimg avatar,`nickname` FROM `ys_admin_user` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000736s ]
+[ sql ] [ SQL ] SELECT id uid,headimg avatar,`nickname` FROM `ys_admin_user` WHERE  `id` = 2 LIMIT 1 [ RunTime:0.000738s ]
+[ sql ] [ SQL ] SELECT id uid,headimg avatar,`nickname` FROM `ys_admin_user` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000698s ]
+[ sql ] [ SQL ] SELECT id uid,headimg avatar,`nickname` FROM `ys_admin_user` WHERE  `id` = 2 LIMIT 1 [ RunTime:0.000743s ]
+[ sql ] [ SQL ] SELECT id uid,headimg avatar,`nickname` FROM `ys_admin_user` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000766s ]
+[ sql ] [ SQL ] SELECT id uid,headimg avatar,`nickname` FROM `ys_admin_user` WHERE  `id` = 2 LIMIT 1 [ RunTime:0.000700s ]
+[ sql ] [ SQL ] SELECT id uid,headimg avatar,`nickname` FROM `ys_admin_user` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000714s ]
+[ sql ] [ SQL ] SELECT id uid,headimg avatar,`nickname` FROM `ys_admin_user` WHERE  `id` = 2 LIMIT 1 [ RunTime:0.000778s ]
+[ sql ] [ SQL ] SELECT id uid,headimg avatar,`nickname` FROM `ys_admin_user` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000969s ]
+[ sql ] [ SQL ] SELECT id uid,headimg avatar,`nickname` FROM `ys_admin_user` WHERE  `id` = 2 LIMIT 1 [ RunTime:0.000704s ]
+[ sql ] [ SQL ] SELECT id uid,headimg avatar,`nickname` FROM `ys_admin_user` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000720s ]
+[ sql ] [ SQL ] SELECT id uid,headimg avatar,`nickname` FROM `ys_admin_user` WHERE  `id` = 2 LIMIT 1 [ RunTime:0.000699s ]
+[ sql ] [ SQL ] SELECT id uid,headimg avatar,`nickname` FROM `ys_admin_user` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000737s ]
+[ sql ] [ SQL ] SELECT id uid,headimg avatar,`nickname` FROM `ys_admin_user` WHERE  `id` = 2 LIMIT 1 [ RunTime:0.000714s ]
+[ sql ] [ SQL ] SELECT id uid,headimg avatar,`nickname` FROM `ys_admin_user` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000760s ]
+[ sql ] [ SQL ] SELECT id uid,headimg avatar,`nickname` FROM `ys_admin_user` WHERE  `id` = 2 LIMIT 1 [ RunTime:0.000729s ]
+[ sql ] [ SQL ] SELECT id uid,headimg avatar,`nickname` FROM `ys_admin_user` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000698s ]
+[ sql ] [ SQL ] SELECT id uid,headimg avatar,`nickname` FROM `ys_admin_user` WHERE  `id` = 2 LIMIT 1 [ RunTime:0.000840s ]
+[ sql ] [ SQL ] SELECT id uid,headimg avatar,`nickname` FROM `ys_admin_user` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000967s ]
+[ sql ] [ SQL ] SELECT id uid,headimg avatar,`nickname` FROM `ys_admin_user` WHERE  `id` = 2 LIMIT 1 [ RunTime:0.000753s ]
+[ sql ] [ SQL ] SELECT id uid,headimg avatar,`nickname` FROM `ys_admin_user` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000739s ]
+[ sql ] [ SQL ] SELECT id uid,headimg avatar,`nickname` FROM `ys_admin_user` WHERE  `id` = 2 LIMIT 1 [ RunTime:0.000705s ]
+[ sql ] [ SQL ] SELECT id uid,headimg avatar,`nickname` FROM `ys_admin_user` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000757s ]
+[ sql ] [ SQL ] SELECT id uid,headimg avatar,`nickname` FROM `ys_admin_user` WHERE  `id` = 2 LIMIT 1 [ RunTime:0.000719s ]
+[ sql ] [ SQL ] SELECT id uid,headimg avatar,`nickname` FROM `ys_admin_user` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000704s ]
+[ sql ] [ SQL ] SELECT id uid,headimg avatar,`nickname` FROM `ys_admin_user` WHERE  `id` = 2 LIMIT 1 [ RunTime:0.000791s ]
+[ sql ] [ SQL ] SELECT id uid,headimg avatar,`nickname` FROM `ys_admin_user` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000705s ]
+[ sql ] [ SQL ] SELECT id uid,headimg avatar,`nickname` FROM `ys_admin_user` WHERE  `id` = 2 LIMIT 1 [ RunTime:0.001124s ]
+[ sql ] [ SQL ] SELECT id uid,headimg avatar,`nickname` FROM `ys_admin_user` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000759s ]
+[ sql ] [ SQL ] SELECT id uid,headimg avatar,`nickname` FROM `ys_admin_user` WHERE  `id` = 2 LIMIT 1 [ RunTime:0.000707s ]
+[ sql ] [ SQL ] SELECT id uid,headimg avatar,`nickname` FROM `ys_admin_user` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000726s ]
+[ sql ] [ SQL ] SELECT id uid,headimg avatar,`nickname` FROM `ys_admin_user` WHERE  `id` = 2 LIMIT 1 [ RunTime:0.000727s ]
+[ sql ] [ SQL ] SELECT id uid,headimg avatar,`nickname` FROM `ys_admin_user` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000729s ]
+[ sql ] [ SQL ] SELECT id uid,headimg avatar,`nickname` FROM `ys_admin_user` WHERE  `id` = 2 LIMIT 1 [ RunTime:0.000753s ]
+[ sql ] [ SQL ] SELECT id uid,headimg avatar,`nickname` FROM `ys_admin_user` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000746s ]
+[ sql ] [ SQL ] SELECT id uid,headimg avatar,`nickname` FROM `ys_admin_user` WHERE  `id` = 2 LIMIT 1 [ RunTime:0.000728s ]
+[ sql ] [ SQL ] SELECT id uid,headimg avatar,`nickname` FROM `ys_admin_user` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000722s ]
+[ sql ] [ SQL ] SELECT id uid,headimg avatar,`nickname` FROM `ys_admin_user` WHERE  `id` = 2 LIMIT 1 [ RunTime:0.000778s ]
+[ sql ] [ SQL ] SELECT id uid,headimg avatar,`nickname` FROM `ys_admin_user` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000707s ]
+[ sql ] [ SQL ] SELECT id uid,headimg avatar,`nickname` FROM `ys_admin_user` WHERE  `id` = 2 LIMIT 1 [ RunTime:0.000777s ]
+[ sql ] [ SQL ] SELECT id uid,headimg avatar,`nickname` FROM `ys_admin_user` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000692s ]
+[ sql ] [ SQL ] SELECT id uid,headimg avatar,`nickname` FROM `ys_admin_user` WHERE  `id` = 2 LIMIT 1 [ RunTime:0.000939s ]
+[ sql ] [ SQL ] SELECT id uid,headimg avatar,`nickname` FROM `ys_admin_user` WHERE  `id` = 2 LIMIT 1 [ RunTime:0.000763s ]
+[ sql ] [ SQL ] SELECT id uid,headimg avatar,`nickname` FROM `ys_admin_user` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000730s ]
+[ sql ] [ SQL ] SELECT id uid,headimg avatar,`nickname` FROM `ys_admin_user` WHERE  `id` = 2 LIMIT 1 [ RunTime:0.000719s ]
+[ sql ] [ SQL ] SELECT id uid,headimg avatar,`nickname` FROM `ys_admin_user` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000694s ]
+[ sql ] [ SQL ] SELECT id uid,headimg avatar,`nickname` FROM `ys_admin_user` WHERE  `id` = 2 LIMIT 1 [ RunTime:0.000697s ]
+[ sql ] [ SQL ] SELECT id uid,headimg avatar,`nickname` FROM `ys_admin_user` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000785s ]
+[ sql ] [ SQL ] SELECT id uid,headimg avatar,`nickname` FROM `ys_admin_user` WHERE  `id` = 2 LIMIT 1 [ RunTime:0.000701s ]
+[ sql ] [ SQL ] SELECT id uid,headimg avatar,`nickname` FROM `ys_admin_user` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000717s ]
+[ sql ] [ SQL ] SELECT id uid,headimg avatar,`nickname` FROM `ys_admin_user` WHERE  `id` = 2 LIMIT 1 [ RunTime:0.000692s ]
+[ sql ] [ SQL ] SELECT id uid,headimg avatar,`nickname` FROM `ys_admin_user` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000766s ]
+[ sql ] [ SQL ] SELECT id uid,headimg avatar,`nickname` FROM `ys_admin_user` WHERE  `id` = 2 LIMIT 1 [ RunTime:0.000753s ]
+[ sql ] [ SQL ] SELECT id uid,headimg avatar,`nickname` FROM `ys_admin_user` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000716s ]
+[ sql ] [ SQL ] SELECT id uid,headimg avatar,`nickname` FROM `ys_admin_user` WHERE  `id` = 2 LIMIT 1 [ RunTime:0.000719s ]
+[ sql ] [ SQL ] SELECT id uid,headimg avatar,`nickname` FROM `ys_admin_user` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000781s ]
+[ sql ] [ SQL ] SELECT id uid,headimg avatar,`nickname` FROM `ys_admin_user` WHERE  `id` = 2 LIMIT 1 [ RunTime:0.001045s ]
+[ sql ] [ SQL ] SELECT id uid,headimg avatar,`nickname` FROM `ys_admin_user` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000805s ]
+[ sql ] [ SQL ] SELECT id uid,headimg avatar,`nickname` FROM `ys_admin_user` WHERE  `id` = 2 LIMIT 1 [ RunTime:0.000864s ]
+[ sql ] [ SQL ] SELECT id uid,headimg avatar,`nickname` FROM `ys_admin_user` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000946s ]
+[ sql ] [ SQL ] SELECT id uid,headimg avatar,`nickname` FROM `ys_admin_user` WHERE  `id` = 2 LIMIT 1 [ RunTime:0.000764s ]
+[ sql ] [ SQL ] SELECT id uid,headimg avatar,`nickname` FROM `ys_admin_user` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000842s ]
+[ sql ] [ SQL ] SELECT id uid,headimg avatar,`nickname` FROM `ys_admin_user` WHERE  `id` = 2 LIMIT 1 [ RunTime:0.000982s ]
+[ sql ] [ SQL ] SELECT id uid,headimg avatar,`nickname` FROM `ys_admin_user` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.001324s ]
+[ sql ] [ SQL ] SELECT id uid,headimg avatar,`nickname` FROM `ys_admin_user` WHERE  `id` = 2 LIMIT 1 [ RunTime:0.000959s ]
+[ sql ] [ SQL ] SELECT id uid,headimg avatar,`nickname` FROM `ys_admin_user` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.001052s ]
+[ sql ] [ SQL ] SELECT id uid,headimg avatar,`nickname` FROM `ys_admin_user` WHERE  `id` = 2 LIMIT 1 [ RunTime:0.000956s ]
+[ sql ] [ SQL ] SELECT id uid,headimg avatar,`nickname` FROM `ys_admin_user` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000771s ]
+[ sql ] [ SQL ] SELECT id uid,headimg avatar,`nickname` FROM `ys_admin_user` WHERE  `id` = 2 LIMIT 1 [ RunTime:0.000981s ]
+[ sql ] [ SQL ] SELECT id uid,headimg avatar,`nickname` FROM `ys_admin_user` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000898s ]
+[ sql ] [ SQL ] SELECT id uid,headimg avatar,`nickname` FROM `ys_admin_user` WHERE  `id` = 2 LIMIT 1 [ RunTime:0.000731s ]
+[ sql ] [ SQL ] SELECT id uid,headimg avatar,`nickname` FROM `ys_admin_user` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000920s ]
+[ sql ] [ SQL ] SELECT id uid,headimg avatar,`nickname` FROM `ys_admin_user` WHERE  `id` = 2 LIMIT 1 [ RunTime:0.001060s ]
+[ sql ] [ SQL ] SELECT id uid,headimg avatar,`nickname` FROM `ys_admin_user` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000871s ]
+[ sql ] [ SQL ] SELECT id uid,headimg avatar,`nickname` FROM `ys_admin_user` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000834s ]
+[ sql ] [ SQL ] SELECT id uid,headimg avatar,`nickname` FROM `ys_admin_user` WHERE  `id` = 2 LIMIT 1 [ RunTime:0.001216s ]
+[ sql ] [ SQL ] SELECT id uid,headimg avatar,`nickname` FROM `ys_admin_user` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000894s ]
+[ sql ] [ SQL ] SELECT id uid,headimg avatar,`nickname` FROM `ys_admin_user` WHERE  `id` = 2 LIMIT 1 [ RunTime:0.000672s ]
+[ sql ] [ SQL ] SELECT id uid,headimg avatar,`nickname` FROM `ys_admin_user` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000700s ]
+[ sql ] [ SQL ] SELECT id uid,headimg avatar,`nickname` FROM `ys_admin_user` WHERE  `id` = 2 LIMIT 1 [ RunTime:0.000903s ]
+[ sql ] [ SQL ] SELECT id uid,headimg avatar,`nickname` FROM `ys_admin_user` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000987s ]
+[ sql ] [ SQL ] SELECT id uid,headimg avatar,`nickname` FROM `ys_admin_user` WHERE  `id` = 2 LIMIT 1 [ RunTime:0.000791s ]
+[ sql ] [ SQL ] SELECT id uid,headimg avatar,`nickname` FROM `ys_admin_user` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000966s ]
+[ sql ] [ SQL ] SELECT id uid,headimg avatar,`nickname` FROM `ys_admin_user` WHERE  `id` = 2 LIMIT 1 [ RunTime:0.000892s ]
+[ sql ] [ SQL ] SELECT id uid,headimg avatar,`nickname` FROM `ys_admin_user` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000847s ]
+[ sql ] [ SQL ] SELECT id uid,headimg avatar,`nickname` FROM `ys_admin_user` WHERE  `id` = 2 LIMIT 1 [ RunTime:0.000806s ]
+[ sql ] [ SQL ] SELECT id uid,headimg avatar,`nickname` FROM `ys_admin_user` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000824s ]
+[ sql ] [ SQL ] SELECT id uid,headimg avatar,`nickname` FROM `ys_admin_user` WHERE  `id` = 2 LIMIT 1 [ RunTime:0.000914s ]
+[ sql ] [ SQL ] SELECT id uid,headimg avatar,`nickname` FROM `ys_admin_user` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000960s ]
+[ sql ] [ SQL ] SELECT id uid,headimg avatar,`nickname` FROM `ys_admin_user` WHERE  `id` = 2 LIMIT 1 [ RunTime:0.000904s ]
+[ sql ] [ SQL ] SELECT id uid,headimg avatar,`nickname` FROM `ys_admin_user` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000897s ]
+[ sql ] [ SQL ] SELECT id uid,headimg avatar,`nickname` FROM `ys_admin_user` WHERE  `id` = 2 LIMIT 1 [ RunTime:0.000881s ]
+[ sql ] [ SQL ] SELECT id uid,headimg avatar,`nickname` FROM `ys_admin_user` WHERE  `id` = 2 LIMIT 1 [ RunTime:0.000858s ]
+[ sql ] [ SQL ] SELECT id uid,headimg avatar,`nickname` FROM `ys_admin_user` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000764s ]
+[ sql ] [ SQL ] SELECT id uid,headimg avatar,`nickname` FROM `ys_admin_user` WHERE  `id` = 2 LIMIT 1 [ RunTime:0.000879s ]
+[ sql ] [ SQL ] SELECT id uid,headimg avatar,`nickname` FROM `ys_admin_user` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000824s ]
+[ sql ] [ SQL ] SELECT id uid,headimg avatar,`nickname` FROM `ys_admin_user` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000748s ]
+[ sql ] [ SQL ] SELECT id uid,headimg avatar,`nickname` FROM `ys_admin_user` WHERE  `id` = 2 LIMIT 1 [ RunTime:0.000716s ]
+[ sql ] [ SQL ] SELECT id uid,headimg avatar,`nickname` FROM `ys_admin_user` WHERE  `id` = 2 LIMIT 1 [ RunTime:0.000803s ]
+[ sql ] [ SQL ] SELECT id uid,headimg avatar,`nickname` FROM `ys_admin_user` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000838s ]
+[ sql ] [ SQL ] SELECT id uid,headimg avatar,`nickname` FROM `ys_admin_user` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000782s ]
+[ sql ] [ SQL ] SELECT id uid,headimg avatar,`nickname` FROM `ys_admin_user` WHERE  `id` = 2 LIMIT 1 [ RunTime:0.000762s ]
+[ sql ] [ SQL ] SELECT id uid,headimg avatar,`nickname` FROM `ys_admin_user` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000719s ]
+[ sql ] [ SQL ] SELECT id uid,headimg avatar,`nickname` FROM `ys_admin_user` WHERE  `id` = 2 LIMIT 1 [ RunTime:0.000737s ]
+[ sql ] [ SQL ] SELECT id uid,headimg avatar,`nickname` FROM `ys_admin_user` WHERE  `id` = 2 LIMIT 1 [ RunTime:0.000756s ]
+[ sql ] [ SQL ] SELECT id uid,headimg avatar,`nickname` FROM `ys_admin_user` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000707s ]
+[ sql ] [ SQL ] SELECT id uid,headimg avatar,`nickname` FROM `ys_admin_user` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000714s ]
+[ sql ] [ SQL ] SELECT id uid,headimg avatar,`nickname` FROM `ys_admin_user` WHERE  `id` = 2 LIMIT 1 [ RunTime:0.000718s ]
+[ sql ] [ SQL ] SELECT id uid,headimg avatar,`nickname` FROM `ys_admin_user` WHERE  `id` = 2 LIMIT 1 [ RunTime:0.000720s ]
+[ sql ] [ SQL ] SELECT id uid,headimg avatar,`nickname` FROM `ys_admin_user` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000932s ]
+[ sql ] [ SQL ] SELECT id uid,headimg avatar,`nickname` FROM `ys_admin_user` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000815s ]
+[ sql ] [ SQL ] SELECT id uid,headimg avatar,`nickname` FROM `ys_admin_user` WHERE  `id` = 2 LIMIT 1 [ RunTime:0.000766s ]
+[ sql ] [ SQL ] SELECT id uid,headimg avatar,`nickname` FROM `ys_admin_user` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000697s ]
+[ sql ] [ SQL ] SELECT id uid,headimg avatar,`nickname` FROM `ys_admin_user` WHERE  `id` = 2 LIMIT 1 [ RunTime:0.000821s ]
+[ sql ] [ SQL ] SELECT id uid,headimg avatar,`nickname` FROM `ys_admin_user` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000776s ]
+[ sql ] [ SQL ] SELECT id uid,headimg avatar,`nickname` FROM `ys_admin_user` WHERE  `id` = 2 LIMIT 1 [ RunTime:0.000791s ]
+[ sql ] [ SQL ] SELECT id uid,headimg avatar,`nickname` FROM `ys_admin_user` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000725s ]
+[ sql ] [ SQL ] SELECT id uid,headimg avatar,`nickname` FROM `ys_admin_user` WHERE  `id` = 2 LIMIT 1 [ RunTime:0.000706s ]
+[ sql ] [ SQL ] SELECT id uid,headimg avatar,`nickname` FROM `ys_admin_user` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000798s ]
+[ sql ] [ SQL ] SELECT id uid,headimg avatar,`nickname` FROM `ys_admin_user` WHERE  `id` = 2 LIMIT 1 [ RunTime:0.000707s ]
+[ sql ] [ SQL ] SELECT id uid,headimg avatar,`nickname` FROM `ys_admin_user` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000721s ]
+[ sql ] [ SQL ] SELECT id uid,headimg avatar,`nickname` FROM `ys_admin_user` WHERE  `id` = 2 LIMIT 1 [ RunTime:0.000731s ]
+[ sql ] [ SQL ] SELECT id uid,headimg avatar,`nickname` FROM `ys_admin_user` WHERE  `id` = 2 LIMIT 1 [ RunTime:0.000693s ]
+[ sql ] [ SQL ] SELECT id uid,headimg avatar,`nickname` FROM `ys_admin_user` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000762s ]
+[ sql ] [ SQL ] SELECT id uid,headimg avatar,`nickname` FROM `ys_admin_user` WHERE  `id` = 2 LIMIT 1 [ RunTime:0.000728s ]
+[ sql ] [ SQL ] SELECT id uid,headimg avatar,`nickname` FROM `ys_admin_user` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000729s ]
+[ sql ] [ SQL ] SELECT id uid,headimg avatar,`nickname` FROM `ys_admin_user` WHERE  `id` = 2 LIMIT 1 [ RunTime:0.000721s ]
+[ sql ] [ SQL ] SELECT id uid,headimg avatar,`nickname` FROM `ys_admin_user` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000696s ]
+[ sql ] [ SQL ] SELECT id uid,headimg avatar,`nickname` FROM `ys_admin_user` WHERE  `id` = 2 LIMIT 1 [ RunTime:0.000719s ]
+[ sql ] [ SQL ] SELECT id uid,headimg avatar,`nickname` FROM `ys_admin_user` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000735s ]
+[ sql ] [ SQL ] SELECT id uid,headimg avatar,`nickname` FROM `ys_admin_user` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000953s ]
+[ sql ] [ SQL ] SELECT id uid,headimg avatar,`nickname` FROM `ys_admin_user` WHERE  `id` = 2 LIMIT 1 [ RunTime:0.000748s ]
+[ sql ] [ SQL ] SELECT id uid,headimg avatar,`nickname` FROM `ys_admin_user` WHERE  `id` = 2 LIMIT 1 [ RunTime:0.000692s ]
+[ sql ] [ SQL ] SELECT id uid,headimg avatar,`nickname` FROM `ys_admin_user` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000716s ]
+[ sql ] [ SQL ] SELECT id uid,headimg avatar,`nickname` FROM `ys_admin_user` WHERE  `id` = 2 LIMIT 1 [ RunTime:0.000791s ]
+[ sql ] [ SQL ] SELECT id uid,headimg avatar,`nickname` FROM `ys_admin_user` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000776s ]
+[ sql ] [ SQL ] SELECT id uid,headimg avatar,`nickname` FROM `ys_admin_user` WHERE  `id` = 2 LIMIT 1 [ RunTime:0.000720s ]
+[ sql ] [ SQL ] SELECT id uid,headimg avatar,`nickname` FROM `ys_admin_user` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000693s ]
+[ sql ] [ SQL ] SELECT id uid,headimg avatar,`nickname` FROM `ys_admin_user` WHERE  `id` = 2 LIMIT 1 [ RunTime:0.000750s ]
+[ sql ] [ SQL ] SELECT id uid,headimg avatar,`nickname` FROM `ys_admin_user` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000720s ]
+[ sql ] [ SQL ] SELECT id uid,headimg avatar,`nickname` FROM `ys_admin_user` WHERE  `id` = 2 LIMIT 1 [ RunTime:0.000898s ]
+[ sql ] [ SQL ] SELECT id uid,headimg avatar,`nickname` FROM `ys_admin_user` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000719s ]
+[ sql ] [ SQL ] SELECT id uid,headimg avatar,`nickname` FROM `ys_admin_user` WHERE  `id` = 2 LIMIT 1 [ RunTime:0.000709s ]
+[ sql ] [ SQL ] SELECT id uid,headimg avatar,`nickname` FROM `ys_admin_user` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000772s ]
+[ sql ] [ SQL ] SELECT id uid,headimg avatar,`nickname` FROM `ys_admin_user` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000724s ]
+[ sql ] [ SQL ] SELECT id uid,headimg avatar,`nickname` FROM `ys_admin_user` WHERE  `id` = 2 LIMIT 1 [ RunTime:0.000728s ]
+[ sql ] [ SQL ] SELECT id uid,headimg avatar,`nickname` FROM `ys_admin_user` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000697s ]
+[ sql ] [ SQL ] SELECT id uid,headimg avatar,`nickname` FROM `ys_admin_user` WHERE  `id` = 2 LIMIT 1 [ RunTime:0.000721s ]
+[ sql ] [ SQL ] SELECT id uid,headimg avatar,`nickname` FROM `ys_admin_user` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000724s ]
+[ sql ] [ SQL ] SELECT id uid,headimg avatar,`nickname` FROM `ys_admin_user` WHERE  `id` = 2 LIMIT 1 [ RunTime:0.000711s ]
+[ sql ] [ SQL ] SELECT id uid,headimg avatar,`nickname` FROM `ys_admin_user` WHERE  `id` = 2 LIMIT 1 [ RunTime:0.000721s ]
+[ sql ] [ SQL ] SELECT id uid,headimg avatar,`nickname` FROM `ys_admin_user` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000692s ]
+[ sql ] [ SQL ] SELECT id uid,headimg avatar,`nickname` FROM `ys_admin_user` WHERE  `id` = 2 LIMIT 1 [ RunTime:0.000733s ]
+[ sql ] [ SQL ] SELECT id uid,headimg avatar,`nickname` FROM `ys_admin_user` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000786s ]
+[ sql ] [ SQL ] SELECT id uid,headimg avatar,`nickname` FROM `ys_admin_user` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000804s ]
+[ sql ] [ SQL ] SELECT id uid,headimg avatar,`nickname` FROM `ys_admin_user` WHERE  `id` = 2 LIMIT 1 [ RunTime:0.000760s ]
+[ sql ] [ SQL ] SELECT id uid,headimg avatar,`nickname` FROM `ys_admin_user` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000919s ]
+[ sql ] [ SQL ] SELECT id uid,headimg avatar,`nickname` FROM `ys_admin_user` WHERE  `id` = 2 LIMIT 1 [ RunTime:0.000804s ]
+[ sql ] [ SQL ] SELECT id uid,headimg avatar,`nickname` FROM `ys_admin_user` WHERE  `id` = 2 LIMIT 1 [ RunTime:0.000841s ]
+[ sql ] [ SQL ] SELECT id uid,headimg avatar,`nickname` FROM `ys_admin_user` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000766s ]
+[ sql ] [ SQL ] SELECT id uid,headimg avatar,`nickname` FROM `ys_admin_user` WHERE  `id` = 2 LIMIT 1 [ RunTime:0.000699s ]
+[ sql ] [ SQL ] SELECT id uid,headimg avatar,`nickname` FROM `ys_admin_user` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000693s ]
+[ sql ] [ SQL ] SELECT id uid,headimg avatar,`nickname` FROM `ys_admin_user` WHERE  `id` = 2 LIMIT 1 [ RunTime:0.000715s ]
+[ sql ] [ SQL ] SELECT id uid,headimg avatar,`nickname` FROM `ys_admin_user` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000776s ]
+[ sql ] [ SQL ] SELECT id uid,headimg avatar,`nickname` FROM `ys_admin_user` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000825s ]
+[ sql ] [ SQL ] SELECT id uid,headimg avatar,`nickname` FROM `ys_admin_user` WHERE  `id` = 2 LIMIT 1 [ RunTime:0.000705s ]
+[ sql ] [ SQL ] SELECT id uid,headimg avatar,`nickname` FROM `ys_admin_user` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000828s ]
+[ sql ] [ SQL ] SELECT id uid,headimg avatar,`nickname` FROM `ys_admin_user` WHERE  `id` = 2 LIMIT 1 [ RunTime:0.000778s ]
+[ sql ] [ SQL ] SELECT id uid,headimg avatar,`nickname` FROM `ys_admin_user` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000704s ]
+[ sql ] [ SQL ] SELECT id uid,headimg avatar,`nickname` FROM `ys_admin_user` WHERE  `id` = 2 LIMIT 1 [ RunTime:0.000853s ]
+[ sql ] [ SQL ] SELECT id uid,headimg avatar,`nickname` FROM `ys_admin_user` WHERE  `id` = 2 LIMIT 1 [ RunTime:0.000704s ]
+[ sql ] [ SQL ] SELECT id uid,headimg avatar,`nickname` FROM `ys_admin_user` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000695s ]
+[ sql ] [ SQL ] SELECT id uid,headimg avatar,`nickname` FROM `ys_admin_user` WHERE  `id` = 2 LIMIT 1 [ RunTime:0.000765s ]
+[ sql ] [ SQL ] SELECT id uid,headimg avatar,`nickname` FROM `ys_admin_user` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000685s ]
+[ sql ] [ SQL ] SELECT id uid,headimg avatar,`nickname` FROM `ys_admin_user` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000771s ]
+[ sql ] [ SQL ] SELECT id uid,headimg avatar,`nickname` FROM `ys_admin_user` WHERE  `id` = 2 LIMIT 1 [ RunTime:0.000710s ]
+[ sql ] [ SQL ] SELECT id uid,headimg avatar,`nickname` FROM `ys_admin_user` WHERE  `id` = 2 LIMIT 1 [ RunTime:0.000944s ]
+[ sql ] [ SQL ] SELECT id uid,headimg avatar,`nickname` FROM `ys_admin_user` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000705s ]
+[ sql ] [ SQL ] SELECT id uid,headimg avatar,`nickname` FROM `ys_admin_user` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000744s ]
+[ sql ] [ SQL ] SELECT id uid,headimg avatar,`nickname` FROM `ys_admin_user` WHERE  `id` = 2 LIMIT 1 [ RunTime:0.000757s ]
+[ sql ] [ SQL ] SELECT id uid,headimg avatar,`nickname` FROM `ys_admin_user` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000690s ]
+[ sql ] [ SQL ] SELECT id uid,headimg avatar,`nickname` FROM `ys_admin_user` WHERE  `id` = 2 LIMIT 1 [ RunTime:0.000720s ]
+[ sql ] [ SQL ] SELECT id uid,headimg avatar,`nickname` FROM `ys_admin_user` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000821s ]
+[ sql ] [ SQL ] SELECT id uid,headimg avatar,`nickname` FROM `ys_admin_user` WHERE  `id` = 2 LIMIT 1 [ RunTime:0.000715s ]
+[ sql ] [ SQL ] SELECT id uid,headimg avatar,`nickname` FROM `ys_admin_user` WHERE  `id` = 2 LIMIT 1 [ RunTime:0.000727s ]
+[ sql ] [ SQL ] SELECT id uid,headimg avatar,`nickname` FROM `ys_admin_user` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000970s ]
+[ sql ] [ SQL ] SELECT id uid,headimg avatar,`nickname` FROM `ys_admin_user` WHERE  `id` = 2 LIMIT 1 [ RunTime:0.000830s ]
+[ sql ] [ SQL ] SELECT id uid,headimg avatar,`nickname` FROM `ys_admin_user` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000745s ]
+[ sql ] [ SQL ] SELECT id uid,headimg avatar,`nickname` FROM `ys_admin_user` WHERE  `id` = 2 LIMIT 1 [ RunTime:0.000725s ]
+[ sql ] [ SQL ] SELECT id uid,headimg avatar,`nickname` FROM `ys_admin_user` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000691s ]
+[ sql ] [ SQL ] SELECT id uid,headimg avatar,`nickname` FROM `ys_admin_user` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000693s ]
+[ sql ] [ SQL ] SELECT id uid,headimg avatar,`nickname` FROM `ys_admin_user` WHERE  `id` = 2 LIMIT 1 [ RunTime:0.000714s ]
+[ sql ] [ SQL ] SELECT id uid,headimg avatar,`nickname` FROM `ys_admin_user` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000832s ]
+[ sql ] [ SQL ] SELECT id uid,headimg avatar,`nickname` FROM `ys_admin_user` WHERE  `id` = 2 LIMIT 1 [ RunTime:0.000723s ]
+[ sql ] [ SQL ] SELECT id uid,headimg avatar,`nickname` FROM `ys_admin_user` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000691s ]
+[ sql ] [ SQL ] SELECT id uid,headimg avatar,`nickname` FROM `ys_admin_user` WHERE  `id` = 2 LIMIT 1 [ RunTime:0.001121s ]
+[ sql ] [ SQL ] SELECT id uid,headimg avatar,`nickname` FROM `ys_admin_user` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.001197s ]
+[ sql ] [ SQL ] SELECT id uid,headimg avatar,`nickname` FROM `ys_admin_user` WHERE  `id` = 2 LIMIT 1 [ RunTime:0.000858s ]
+[ sql ] [ SQL ] SELECT id uid,headimg avatar,`nickname` FROM `ys_admin_user` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000813s ]
+[ sql ] [ SQL ] SELECT id uid,headimg avatar,`nickname` FROM `ys_admin_user` WHERE  `id` = 2 LIMIT 1 [ RunTime:0.000724s ]
+[ sql ] [ SQL ] SELECT id uid,headimg avatar,`nickname` FROM `ys_admin_user` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000834s ]
+[ sql ] [ SQL ] SELECT id uid,headimg avatar,`nickname` FROM `ys_admin_user` WHERE  `id` = 2 LIMIT 1 [ RunTime:0.000881s ]
+[ sql ] [ SQL ] SELECT id uid,headimg avatar,`nickname` FROM `ys_admin_user` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000739s ]
+[ sql ] [ SQL ] SELECT id uid,headimg avatar,`nickname` FROM `ys_admin_user` WHERE  `id` = 2 LIMIT 1 [ RunTime:0.000897s ]
+[ sql ] [ SQL ] SELECT id uid,headimg avatar,`nickname` FROM `ys_admin_user` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000799s ]
+[ sql ] [ SQL ] SELECT id uid,headimg avatar,`nickname` FROM `ys_admin_user` WHERE  `id` = 2 LIMIT 1 [ RunTime:0.000950s ]
+[ sql ] [ SQL ] SELECT id uid,headimg avatar,`nickname` FROM `ys_admin_user` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000751s ]
+[ sql ] [ SQL ] SELECT id uid,headimg avatar,`nickname` FROM `ys_admin_user` WHERE  `id` = 2 LIMIT 1 [ RunTime:0.000711s ]
+[ sql ] [ SQL ] SELECT id uid,headimg avatar,`nickname` FROM `ys_admin_user` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000721s ]
+[ sql ] [ SQL ] SELECT id uid,headimg avatar,`nickname` FROM `ys_admin_user` WHERE  `id` = 2 LIMIT 1 [ RunTime:0.000721s ]
+[ sql ] [ SQL ] SELECT id uid,headimg avatar,`nickname` FROM `ys_admin_user` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000785s ]
+[ sql ] [ SQL ] SELECT id uid,headimg avatar,`nickname` FROM `ys_admin_user` WHERE  `id` = 2 LIMIT 1 [ RunTime:0.000694s ]
+[ sql ] [ SQL ] SELECT id uid,headimg avatar,`nickname` FROM `ys_admin_user` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000717s ]
+[ sql ] [ SQL ] SELECT id uid,headimg avatar,`nickname` FROM `ys_admin_user` WHERE  `id` = 2 LIMIT 1 [ RunTime:0.000694s ]
+[ sql ] [ SQL ] SELECT id uid,headimg avatar,`nickname` FROM `ys_admin_user` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000693s ]
+[ sql ] [ SQL ] SELECT id uid,headimg avatar,`nickname` FROM `ys_admin_user` WHERE  `id` = 2 LIMIT 1 [ RunTime:0.000783s ]
+[ sql ] [ SQL ] SELECT id uid,headimg avatar,`nickname` FROM `ys_admin_user` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000712s ]
+[ sql ] [ SQL ] SELECT id uid,headimg avatar,`nickname` FROM `ys_admin_user` WHERE  `id` = 2 LIMIT 1 [ RunTime:0.000814s ]
+[ sql ] [ SQL ] SELECT id uid,headimg avatar,`nickname` FROM `ys_admin_user` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000696s ]
+[ sql ] [ SQL ] SELECT id uid,headimg avatar,`nickname` FROM `ys_admin_user` WHERE  `id` = 2 LIMIT 1 [ RunTime:0.000730s ]
+[ sql ] [ SQL ] SELECT id uid,headimg avatar,`nickname` FROM `ys_admin_user` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000790s ]
+[ sql ] [ SQL ] SELECT id uid,headimg avatar,`nickname` FROM `ys_admin_user` WHERE  `id` = 2 LIMIT 1 [ RunTime:0.000709s ]
+[ sql ] [ SQL ] SELECT id uid,headimg avatar,`nickname` FROM `ys_admin_user` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000721s ]
+[ sql ] [ SQL ] SELECT id uid,headimg avatar,`nickname` FROM `ys_admin_user` WHERE  `id` = 2 LIMIT 1 [ RunTime:0.000703s ]
+[ sql ] [ SQL ] SELECT id uid,headimg avatar,`nickname` FROM `ys_admin_user` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000760s ]
+[ sql ] [ SQL ] SELECT id uid,headimg avatar,`nickname` FROM `ys_admin_user` WHERE  `id` = 2 LIMIT 1 [ RunTime:0.000733s ]
+[ sql ] [ SQL ] SELECT id uid,headimg avatar,`nickname` FROM `ys_admin_user` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000915s ]
+[ sql ] [ SQL ] SELECT id uid,headimg avatar,`nickname` FROM `ys_admin_user` WHERE  `id` = 2 LIMIT 1 [ RunTime:0.000837s ]
+[ sql ] [ SQL ] SELECT id uid,headimg avatar,`nickname` FROM `ys_admin_user` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000898s ]
+[ sql ] [ SQL ] SELECT id uid,headimg avatar,`nickname` FROM `ys_admin_user` WHERE  `id` = 2 LIMIT 1 [ RunTime:0.000821s ]
+[ sql ] [ SQL ] SELECT id uid,headimg avatar,`nickname` FROM `ys_admin_user` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000696s ]
+[ sql ] [ SQL ] SELECT id uid,headimg avatar,`nickname` FROM `ys_admin_user` WHERE  `id` = 2 LIMIT 1 [ RunTime:0.000704s ]
+[ sql ] [ SQL ] SELECT id uid,headimg avatar,`nickname` FROM `ys_admin_user` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000716s ]
+[ sql ] [ SQL ] SELECT id uid,headimg avatar,`nickname` FROM `ys_admin_user` WHERE  `id` = 2 LIMIT 1 [ RunTime:0.000759s ]
+[ sql ] [ SQL ] SELECT id uid,headimg avatar,`nickname` FROM `ys_admin_user` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000792s ]
+[ sql ] [ SQL ] SELECT id uid,headimg avatar,`nickname` FROM `ys_admin_user` WHERE  `id` = 2 LIMIT 1 [ RunTime:0.000696s ]
+[ sql ] [ SQL ] SELECT id uid,headimg avatar,`nickname` FROM `ys_admin_user` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000848s ]
+[ sql ] [ SQL ] SELECT id uid,headimg avatar,`nickname` FROM `ys_admin_user` WHERE  `id` = 2 LIMIT 1 [ RunTime:0.000701s ]
+[ sql ] [ SQL ] SELECT id uid,headimg avatar,`nickname` FROM `ys_admin_user` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000738s ]
+[ sql ] [ SQL ] SELECT id uid,headimg avatar,`nickname` FROM `ys_admin_user` WHERE  `id` = 2 LIMIT 1 [ RunTime:0.000764s ]
+[ sql ] [ SQL ] SELECT id uid,headimg avatar,`nickname` FROM `ys_admin_user` WHERE  `id` = 2 LIMIT 1 [ RunTime:0.000695s ]
+[ sql ] [ SQL ] SELECT id uid,headimg avatar,`nickname` FROM `ys_admin_user` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000759s ]
+[ sql ] [ SQL ] SELECT id uid,headimg avatar,`nickname` FROM `ys_admin_user` WHERE  `id` = 2 LIMIT 1 [ RunTime:0.000742s ]
+[ sql ] [ SQL ] SELECT id uid,headimg avatar,`nickname` FROM `ys_admin_user` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000720s ]
+[ sql ] [ SQL ] SELECT id uid,headimg avatar,`nickname` FROM `ys_admin_user` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000723s ]
+[ sql ] [ SQL ] SELECT id uid,headimg avatar,`nickname` FROM `ys_admin_user` WHERE  `id` = 2 LIMIT 1 [ RunTime:0.000749s ]
+[ sql ] [ SQL ] SELECT id uid,headimg avatar,`nickname` FROM `ys_admin_user` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000823s ]
+[ sql ] [ SQL ] SELECT id uid,headimg avatar,`nickname` FROM `ys_admin_user` WHERE  `id` = 2 LIMIT 1 [ RunTime:0.000701s ]
+[ sql ] [ SQL ] SELECT id uid,headimg avatar,`nickname` FROM `ys_admin_user` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000807s ]
+[ sql ] [ SQL ] SELECT id uid,headimg avatar,`nickname` FROM `ys_admin_user` WHERE  `id` = 2 LIMIT 1 [ RunTime:0.000865s ]
+[ sql ] [ SQL ] SELECT id uid,headimg avatar,`nickname` FROM `ys_admin_user` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000732s ]
+[ sql ] [ SQL ] SELECT id uid,headimg avatar,`nickname` FROM `ys_admin_user` WHERE  `id` = 2 LIMIT 1 [ RunTime:0.000727s ]
+[ sql ] [ SQL ] SELECT id uid,headimg avatar,`nickname` FROM `ys_admin_user` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000697s ]
+[ sql ] [ SQL ] SELECT id uid,headimg avatar,`nickname` FROM `ys_admin_user` WHERE  `id` = 2 LIMIT 1 [ RunTime:0.000834s ]
+[ sql ] [ SQL ] SELECT id uid,headimg avatar,`nickname` FROM `ys_admin_user` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000885s ]
+[ sql ] [ SQL ] SELECT id uid,headimg avatar,`nickname` FROM `ys_admin_user` WHERE  `id` = 2 LIMIT 1 [ RunTime:0.000831s ]
+[ sql ] [ SQL ] SELECT id uid,headimg avatar,`nickname` FROM `ys_admin_user` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000911s ]
+[ sql ] [ SQL ] SELECT id uid,headimg avatar,`nickname` FROM `ys_admin_user` WHERE  `id` = 2 LIMIT 1 [ RunTime:0.000805s ]
+[ sql ] [ SQL ] SELECT id uid,headimg avatar,`nickname` FROM `ys_admin_user` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000887s ]
+[ sql ] [ SQL ] SELECT id uid,headimg avatar,`nickname` FROM `ys_admin_user` WHERE  `id` = 2 LIMIT 1 [ RunTime:0.000729s ]
+[ sql ] [ SQL ] SELECT id uid,headimg avatar,`nickname` FROM `ys_admin_user` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000725s ]
+[ sql ] [ SQL ] SELECT id uid,headimg avatar,`nickname` FROM `ys_admin_user` WHERE  `id` = 2 LIMIT 1 [ RunTime:0.000694s ]
+[ sql ] [ SQL ] SELECT id uid,headimg avatar,`nickname` FROM `ys_admin_user` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000734s ]
+[ sql ] [ SQL ] SELECT id uid,headimg avatar,`nickname` FROM `ys_admin_user` WHERE  `id` = 2 LIMIT 1 [ RunTime:0.000839s ]
+[ sql ] [ SQL ] SELECT id uid,headimg avatar,`nickname` FROM `ys_admin_user` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000880s ]
+[ sql ] [ SQL ] SELECT id uid,headimg avatar,`nickname` FROM `ys_admin_user` WHERE  `id` = 2 LIMIT 1 [ RunTime:0.000910s ]
+[ sql ] [ SQL ] SELECT id uid,headimg avatar,`nickname` FROM `ys_admin_user` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000790s ]
+[ sql ] [ SQL ] SELECT id uid,headimg avatar,`nickname` FROM `ys_admin_user` WHERE  `id` = 2 LIMIT 1 [ RunTime:0.000736s ]
+[ sql ] [ SQL ] SELECT id uid,headimg avatar,`nickname` FROM `ys_admin_user` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000717s ]
+[ sql ] [ SQL ] SELECT id uid,headimg avatar,`nickname` FROM `ys_admin_user` WHERE  `id` = 2 LIMIT 1 [ RunTime:0.000689s ]
+[ sql ] [ SQL ] SELECT id uid,headimg avatar,`nickname` FROM `ys_admin_user` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000711s ]
+[ sql ] [ SQL ] SELECT id uid,headimg avatar,`nickname` FROM `ys_admin_user` WHERE  `id` = 2 LIMIT 1 [ RunTime:0.000729s ]
+[ sql ] [ SQL ] SELECT id uid,headimg avatar,`nickname` FROM `ys_admin_user` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000786s ]
+[ sql ] [ SQL ] SELECT id uid,headimg avatar,`nickname` FROM `ys_admin_user` WHERE  `id` = 2 LIMIT 1 [ RunTime:0.000706s ]
+[ sql ] [ SQL ] SELECT id uid,headimg avatar,`nickname` FROM `ys_admin_user` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000693s ]
+[ sql ] [ SQL ] SELECT id uid,headimg avatar,`nickname` FROM `ys_admin_user` WHERE  `id` = 2 LIMIT 1 [ RunTime:0.000715s ]
+[ sql ] [ SQL ] SELECT id uid,headimg avatar,`nickname` FROM `ys_admin_user` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000761s ]
+[ sql ] [ SQL ] SELECT id uid,headimg avatar,`nickname` FROM `ys_admin_user` WHERE  `id` = 2 LIMIT 1 [ RunTime:0.000743s ]
+[ sql ] [ SQL ] SELECT id uid,headimg avatar,`nickname` FROM `ys_admin_user` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000809s ]
+[ sql ] [ SQL ] SELECT id uid,headimg avatar,`nickname` FROM `ys_admin_user` WHERE  `id` = 2 LIMIT 1 [ RunTime:0.000707s ]
+[ sql ] [ SQL ] SELECT id uid,headimg avatar,`nickname` FROM `ys_admin_user` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000729s ]
+[ sql ] [ SQL ] SELECT id uid,headimg avatar,`nickname` FROM `ys_admin_user` WHERE  `id` = 2 LIMIT 1 [ RunTime:0.000744s ]
+[ sql ] [ SQL ] SELECT id uid,headimg avatar,`nickname` FROM `ys_admin_user` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000749s ]
+[ sql ] [ SQL ] SELECT id uid,headimg avatar,`nickname` FROM `ys_admin_user` WHERE  `id` = 2 LIMIT 1 [ RunTime:0.000697s ]
+[ sql ] [ SQL ] SELECT id uid,headimg avatar,`nickname` FROM `ys_admin_user` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000765s ]
+[ sql ] [ SQL ] SELECT id uid,headimg avatar,`nickname` FROM `ys_admin_user` WHERE  `id` = 2 LIMIT 1 [ RunTime:0.000740s ]
+[ sql ] [ SQL ] SELECT id uid,headimg avatar,`nickname` FROM `ys_admin_user` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000658s ]
+[ sql ] [ SQL ] SELECT id uid,headimg avatar,`nickname` FROM `ys_admin_user` WHERE  `id` = 2 LIMIT 1 [ RunTime:0.000720s ]
+[ sql ] [ SQL ] SELECT id uid,headimg avatar,`nickname` FROM `ys_admin_user` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000756s ]
+[ sql ] [ SQL ] SELECT id uid,headimg avatar,`nickname` FROM `ys_admin_user` WHERE  `id` = 2 LIMIT 1 [ RunTime:0.000720s ]
+[ sql ] [ SQL ] SELECT id uid,headimg avatar,`nickname` FROM `ys_admin_user` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000694s ]
+[ sql ] [ SQL ] SELECT id uid,headimg avatar,`nickname` FROM `ys_admin_user` WHERE  `id` = 2 LIMIT 1 [ RunTime:0.000729s ]
+[ sql ] [ SQL ] SELECT id uid,headimg avatar,`nickname` FROM `ys_admin_user` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000715s ]
+[ sql ] [ SQL ] SELECT id uid,headimg avatar,`nickname` FROM `ys_admin_user` WHERE  `id` = 2 LIMIT 1 [ RunTime:0.000697s ]
+[ sql ] [ SQL ] SELECT id uid,headimg avatar,`nickname` FROM `ys_admin_user` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000733s ]
+[ sql ] [ SQL ] SELECT id uid,headimg avatar,`nickname` FROM `ys_admin_user` WHERE  `id` = 2 LIMIT 1 [ RunTime:0.000709s ]
+[ sql ] [ SQL ] SELECT id uid,headimg avatar,`nickname` FROM `ys_admin_user` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000778s ]
+[ sql ] [ SQL ] SELECT id uid,headimg avatar,`nickname` FROM `ys_admin_user` WHERE  `id` = 2 LIMIT 1 [ RunTime:0.000745s ]
+[ sql ] [ SQL ] SELECT id uid,headimg avatar,`nickname` FROM `ys_admin_user` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000815s ]
+[ sql ] [ SQL ] SELECT id uid,headimg avatar,`nickname` FROM `ys_admin_user` WHERE  `id` = 2 LIMIT 1 [ RunTime:0.000717s ]
+[ sql ] [ SQL ] SELECT id uid,headimg avatar,`nickname` FROM `ys_admin_user` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000697s ]
+[ sql ] [ SQL ] SELECT id uid,headimg avatar,`nickname` FROM `ys_admin_user` WHERE  `id` = 2 LIMIT 1 [ RunTime:0.000867s ]
+[ sql ] [ SQL ] SELECT id uid,headimg avatar,`nickname` FROM `ys_admin_user` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000749s ]
+[ sql ] [ SQL ] SELECT id uid,headimg avatar,`nickname` FROM `ys_admin_user` WHERE  `id` = 2 LIMIT 1 [ RunTime:0.000720s ]
+[ sql ] [ SQL ] SELECT id uid,headimg avatar,`nickname` FROM `ys_admin_user` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000732s ]
+[ sql ] [ SQL ] SELECT id uid,headimg avatar,`nickname` FROM `ys_admin_user` WHERE  `id` = 2 LIMIT 1 [ RunTime:0.000695s ]
+[ sql ] [ SQL ] SELECT id uid,headimg avatar,`nickname` FROM `ys_admin_user` WHERE  `id` = 2 LIMIT 1 [ RunTime:0.000866s ]
+[ sql ] [ SQL ] SELECT id uid,headimg avatar,`nickname` FROM `ys_admin_user` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000845s ]
+[ sql ] [ SQL ] SELECT id uid,headimg avatar,`nickname` FROM `ys_admin_user` WHERE  `id` = 2 LIMIT 1 [ RunTime:0.000759s ]
+[ sql ] [ SQL ] SELECT id uid,headimg avatar,`nickname` FROM `ys_admin_user` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000694s ]
+[ sql ] [ SQL ] SELECT id uid,headimg avatar,`nickname` FROM `ys_admin_user` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000726s ]
+[ sql ] [ SQL ] SELECT id uid,headimg avatar,`nickname` FROM `ys_admin_user` WHERE  `id` = 2 LIMIT 1 [ RunTime:0.000741s ]
+[ sql ] [ SQL ] SELECT id uid,headimg avatar,`nickname` FROM `ys_admin_user` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000695s ]
+[ sql ] [ SQL ] SELECT id uid,headimg avatar,`nickname` FROM `ys_admin_user` WHERE  `id` = 2 LIMIT 1 [ RunTime:0.000715s ]
+[ sql ] [ SQL ] SELECT id uid,headimg avatar,`nickname` FROM `ys_admin_user` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000690s ]
+[ sql ] [ SQL ] SELECT id uid,headimg avatar,`nickname` FROM `ys_admin_user` WHERE  `id` = 2 LIMIT 1 [ RunTime:0.000721s ]
+[ sql ] [ SQL ] SELECT id uid,headimg avatar,`nickname` FROM `ys_admin_user` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000716s ]
+[ sql ] [ SQL ] SELECT id uid,headimg avatar,`nickname` FROM `ys_admin_user` WHERE  `id` = 2 LIMIT 1 [ RunTime:0.000696s ]
+[ sql ] [ SQL ] SELECT id uid,headimg avatar,`nickname` FROM `ys_admin_user` WHERE  `id` = 2 LIMIT 1 [ RunTime:0.000854s ]
+[ sql ] [ SQL ] SELECT id uid,headimg avatar,`nickname` FROM `ys_admin_user` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000709s ]
+[ sql ] [ SQL ] SELECT id uid,headimg avatar,`nickname` FROM `ys_admin_user` WHERE  `id` = 2 LIMIT 1 [ RunTime:0.000721s ]
+[ sql ] [ SQL ] SELECT id uid,headimg avatar,`nickname` FROM `ys_admin_user` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000684s ]
+[ sql ] [ SQL ] SELECT id uid,headimg avatar,`nickname` FROM `ys_admin_user` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000697s ]
+[ sql ] [ SQL ] SELECT id uid,headimg avatar,`nickname` FROM `ys_admin_user` WHERE  `id` = 2 LIMIT 1 [ RunTime:0.000717s ]
+[ sql ] [ SQL ] SELECT id uid,headimg avatar,`nickname` FROM `ys_admin_user` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000694s ]
+[ sql ] [ SQL ] SELECT id uid,headimg avatar,`nickname` FROM `ys_admin_user` WHERE  `id` = 2 LIMIT 1 [ RunTime:0.000760s ]
+[ sql ] [ SQL ] SELECT id uid,headimg avatar,`nickname` FROM `ys_admin_user` WHERE  `id` = 2 LIMIT 1 [ RunTime:0.000702s ]
+[ sql ] [ SQL ] SELECT id uid,headimg avatar,`nickname` FROM `ys_admin_user` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000701s ]
+[ sql ] [ SQL ] SELECT id uid,headimg avatar,`nickname` FROM `ys_admin_user` WHERE  `id` = 2 LIMIT 1 [ RunTime:0.000857s ]
+[ sql ] [ SQL ] SELECT id uid,headimg avatar,`nickname` FROM `ys_admin_user` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000710s ]
+[ sql ] [ SQL ] SELECT id uid,headimg avatar,`nickname` FROM `ys_admin_user` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000841s ]
+[ sql ] [ SQL ] SELECT id uid,headimg avatar,`nickname` FROM `ys_admin_user` WHERE  `id` = 2 LIMIT 1 [ RunTime:0.000715s ]
+[ sql ] [ SQL ] SELECT id uid,headimg avatar,`nickname` FROM `ys_admin_user` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000718s ]
+[ sql ] [ SQL ] SELECT id uid,headimg avatar,`nickname` FROM `ys_admin_user` WHERE  `id` = 2 LIMIT 1 [ RunTime:0.000694s ]
+[ sql ] [ SQL ] SELECT id uid,headimg avatar,`nickname` FROM `ys_admin_user` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000704s ]
+[ sql ] [ SQL ] SELECT id uid,headimg avatar,`nickname` FROM `ys_admin_user` WHERE  `id` = 2 LIMIT 1 [ RunTime:0.000720s ]
+[ sql ] [ SQL ] SELECT id uid,headimg avatar,`nickname` FROM `ys_admin_user` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000745s ]
+[ sql ] [ SQL ] SELECT id uid,headimg avatar,`nickname` FROM `ys_admin_user` WHERE  `id` = 2 LIMIT 1 [ RunTime:0.000719s ]
+[ sql ] [ SQL ] SELECT id uid,headimg avatar,`nickname` FROM `ys_admin_user` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000693s ]
+[ sql ] [ SQL ] SELECT id uid,headimg avatar,`nickname` FROM `ys_admin_user` WHERE  `id` = 2 LIMIT 1 [ RunTime:0.000692s ]
+[ sql ] [ SQL ] SELECT id uid,headimg avatar,`nickname` FROM `ys_admin_user` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000713s ]
+[ sql ] [ SQL ] SELECT id uid,headimg avatar,`nickname` FROM `ys_admin_user` WHERE  `id` = 2 LIMIT 1 [ RunTime:0.000699s ]
+[ sql ] [ SQL ] SELECT id uid,headimg avatar,`nickname` FROM `ys_admin_user` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000874s ]
+[ sql ] [ SQL ] SELECT id uid,headimg avatar,`nickname` FROM `ys_admin_user` WHERE  `id` = 2 LIMIT 1 [ RunTime:0.000742s ]
+[ sql ] [ SQL ] SELECT id uid,headimg avatar,`nickname` FROM `ys_admin_user` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000721s ]
+[ sql ] [ SQL ] SELECT id uid,headimg avatar,`nickname` FROM `ys_admin_user` WHERE  `id` = 2 LIMIT 1 [ RunTime:0.000695s ]
+[ sql ] [ SQL ] SELECT id uid,headimg avatar,`nickname` FROM `ys_admin_user` WHERE  `id` = 2 LIMIT 1 [ RunTime:0.000729s ]
+[ sql ] [ SQL ] SELECT id uid,headimg avatar,`nickname` FROM `ys_admin_user` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000737s ]
+[ sql ] [ SQL ] SELECT id uid,headimg avatar,`nickname` FROM `ys_admin_user` WHERE  `id` = 2 LIMIT 1 [ RunTime:0.000698s ]
+[ sql ] [ SQL ] SELECT id uid,headimg avatar,`nickname` FROM `ys_admin_user` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000729s ]
+[ sql ] [ SQL ] SELECT id uid,headimg avatar,`nickname` FROM `ys_admin_user` WHERE  `id` = 2 LIMIT 1 [ RunTime:0.000738s ]
+[ sql ] [ SQL ] SELECT id uid,headimg avatar,`nickname` FROM `ys_admin_user` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000798s ]
+[ sql ] [ SQL ] SELECT id uid,headimg avatar,`nickname` FROM `ys_admin_user` WHERE  `id` = 2 LIMIT 1 [ RunTime:0.001054s ]
+[ sql ] [ SQL ] SELECT id uid,headimg avatar,`nickname` FROM `ys_admin_user` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000730s ]
+[ sql ] [ SQL ] SELECT id uid,headimg avatar,`nickname` FROM `ys_admin_user` WHERE  `id` = 2 LIMIT 1 [ RunTime:0.000721s ]
+[ sql ] [ SQL ] SELECT id uid,headimg avatar,`nickname` FROM `ys_admin_user` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000737s ]
+[ sql ] [ SQL ] SELECT id uid,headimg avatar,`nickname` FROM `ys_admin_user` WHERE  `id` = 2 LIMIT 1 [ RunTime:0.000699s ]
+[ sql ] [ SQL ] SELECT id uid,headimg avatar,`nickname` FROM `ys_admin_user` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000762s ]
+[ sql ] [ SQL ] SELECT id uid,headimg avatar,`nickname` FROM `ys_admin_user` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000698s ]
+[ sql ] [ SQL ] SELECT id uid,headimg avatar,`nickname` FROM `ys_admin_user` WHERE  `id` = 2 LIMIT 1 [ RunTime:0.000715s ]
+[ sql ] [ SQL ] SELECT id uid,headimg avatar,`nickname` FROM `ys_admin_user` WHERE  `id` = 2 LIMIT 1 [ RunTime:0.000691s ]
+[ sql ] [ SQL ] SELECT id uid,headimg avatar,`nickname` FROM `ys_admin_user` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000716s ]
+[ sql ] [ SQL ] SELECT id uid,headimg avatar,`nickname` FROM `ys_admin_user` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000920s ]
+[ sql ] [ SQL ] SELECT id uid,headimg avatar,`nickname` FROM `ys_admin_user` WHERE  `id` = 2 LIMIT 1 [ RunTime:0.000780s ]
+[ sql ] [ SQL ] SELECT id uid,headimg avatar,`nickname` FROM `ys_admin_user` WHERE  `id` = 2 LIMIT 1 [ RunTime:0.000716s ]
+[ sql ] [ SQL ] SELECT id uid,headimg avatar,`nickname` FROM `ys_admin_user` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000692s ]
+[ sql ] [ SQL ] SELECT id uid,headimg avatar,`nickname` FROM `ys_admin_user` WHERE  `id` = 2 LIMIT 1 [ RunTime:0.000720s ]
+[ sql ] [ SQL ] SELECT id uid,headimg avatar,`nickname` FROM `ys_admin_user` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000752s ]
+[ sql ] [ SQL ] SELECT id uid,headimg avatar,`nickname` FROM `ys_admin_user` WHERE  `id` = 2 LIMIT 1 [ RunTime:0.000810s ]
+[ sql ] [ SQL ] SELECT id uid,headimg avatar,`nickname` FROM `ys_admin_user` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000719s ]
+[ sql ] [ SQL ] SELECT id uid,headimg avatar,`nickname` FROM `ys_admin_user` WHERE  `id` = 2 LIMIT 1 [ RunTime:0.000703s ]
+[ sql ] [ SQL ] SELECT id uid,headimg avatar,`nickname` FROM `ys_admin_user` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000954s ]
+[ sql ] [ SQL ] SELECT id uid,headimg avatar,`nickname` FROM `ys_admin_user` WHERE  `id` = 2 LIMIT 1 [ RunTime:0.000716s ]
+[ sql ] [ SQL ] SELECT id uid,headimg avatar,`nickname` FROM `ys_admin_user` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000715s ]
+[ sql ] [ SQL ] SELECT id uid,headimg avatar,`nickname` FROM `ys_admin_user` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000695s ]
+[ sql ] [ SQL ] SELECT id uid,headimg avatar,`nickname` FROM `ys_admin_user` WHERE  `id` = 2 LIMIT 1 [ RunTime:0.000695s ]
+[ sql ] [ SQL ] SELECT id uid,headimg avatar,`nickname` FROM `ys_admin_user` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000716s ]
+[ sql ] [ SQL ] SELECT id uid,headimg avatar,`nickname` FROM `ys_admin_user` WHERE  `id` = 2 LIMIT 1 [ RunTime:0.000691s ]
+[ sql ] [ SQL ] SELECT id uid,headimg avatar,`nickname` FROM `ys_admin_user` WHERE  `id` = 2 LIMIT 1 [ RunTime:0.000728s ]
+[ sql ] [ SQL ] SELECT id uid,headimg avatar,`nickname` FROM `ys_admin_user` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000692s ]
+[ sql ] [ SQL ] SELECT id uid,headimg avatar,`nickname` FROM `ys_admin_user` WHERE  `id` = 2 LIMIT 1 [ RunTime:0.000693s ]
+[ sql ] [ SQL ] SELECT id uid,headimg avatar,`nickname` FROM `ys_admin_user` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000746s ]
+[ sql ] [ SQL ] SELECT id uid,headimg avatar,`nickname` FROM `ys_admin_user` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000904s ]
+[ sql ] [ SQL ] SELECT id uid,headimg avatar,`nickname` FROM `ys_admin_user` WHERE  `id` = 2 LIMIT 1 [ RunTime:0.000815s ]
+[ sql ] [ SQL ] SELECT id uid,headimg avatar,`nickname` FROM `ys_admin_user` WHERE  `id` = 2 LIMIT 1 [ RunTime:0.000705s ]
+[ sql ] [ SQL ] SELECT id uid,headimg avatar,`nickname` FROM `ys_admin_user` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000712s ]
+[ sql ] [ SQL ] SELECT id uid,headimg avatar,`nickname` FROM `ys_admin_user` WHERE  `id` = 2 LIMIT 1 [ RunTime:0.000692s ]
+[ sql ] [ SQL ] SELECT id uid,headimg avatar,`nickname` FROM `ys_admin_user` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000697s ]
+[ sql ] [ SQL ] SELECT id uid,headimg avatar,`nickname` FROM `ys_admin_user` WHERE  `id` = 2 LIMIT 1 [ RunTime:0.000758s ]
+[ sql ] [ SQL ] SELECT id uid,headimg avatar,`nickname` FROM `ys_admin_user` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000695s ]
+[ sql ] [ SQL ] SELECT id uid,headimg avatar,`nickname` FROM `ys_admin_user` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000727s ]
+[ sql ] [ SQL ] SELECT id uid,headimg avatar,`nickname` FROM `ys_admin_user` WHERE  `id` = 2 LIMIT 1 [ RunTime:0.000895s ]
+[ sql ] [ SQL ] SELECT id uid,headimg avatar,`nickname` FROM `ys_admin_user` WHERE  `id` = 2 LIMIT 1 [ RunTime:0.000894s ]
+[ sql ] [ SQL ] SELECT id uid,headimg avatar,`nickname` FROM `ys_admin_user` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000966s ]
+[ sql ] [ SQL ] SELECT id uid,headimg avatar,`nickname` FROM `ys_admin_user` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000906s ]
+[ sql ] [ SQL ] SELECT id uid,headimg avatar,`nickname` FROM `ys_admin_user` WHERE  `id` = 2 LIMIT 1 [ RunTime:0.000800s ]
+[ sql ] [ SQL ] SELECT id uid,headimg avatar,`nickname` FROM `ys_admin_user` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000670s ]
+[ sql ] [ SQL ] SELECT id uid,headimg avatar,`nickname` FROM `ys_admin_user` WHERE  `id` = 2 LIMIT 1 [ RunTime:0.000771s ]
+[ sql ] [ SQL ] SELECT id uid,headimg avatar,`nickname` FROM `ys_admin_user` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000766s ]
+[ sql ] [ SQL ] SELECT id uid,headimg avatar,`nickname` FROM `ys_admin_user` WHERE  `id` = 2 LIMIT 1 [ RunTime:0.000953s ]
+[ sql ] [ SQL ] SELECT id uid,headimg avatar,`nickname` FROM `ys_admin_user` WHERE  `id` = 2 LIMIT 1 [ RunTime:0.000750s ]
+[ sql ] [ SQL ] SELECT id uid,headimg avatar,`nickname` FROM `ys_admin_user` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000788s ]
+[ sql ] [ SQL ] SELECT id uid,headimg avatar,`nickname` FROM `ys_admin_user` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000823s ]
+[ sql ] [ SQL ] SELECT id uid,headimg avatar,`nickname` FROM `ys_admin_user` WHERE  `id` = 2 LIMIT 1 [ RunTime:0.000808s ]
+[ sql ] [ SQL ] SELECT id uid,headimg avatar,`nickname` FROM `ys_admin_user` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000808s ]
+[ sql ] [ SQL ] SELECT id uid,headimg avatar,`nickname` FROM `ys_admin_user` WHERE  `id` = 2 LIMIT 1 [ RunTime:0.000800s ]
+[ sql ] [ SQL ] SELECT id uid,headimg avatar,`nickname` FROM `ys_admin_user` WHERE  `id` = 2 LIMIT 1 [ RunTime:0.000782s ]
+[ sql ] [ SQL ] SELECT id uid,headimg avatar,`nickname` FROM `ys_admin_user` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000794s ]
+[ sql ] [ SQL ] SELECT id uid,headimg avatar,`nickname` FROM `ys_admin_user` WHERE  `id` = 2 LIMIT 1 [ RunTime:0.000724s ]
+[ sql ] [ SQL ] SELECT id uid,headimg avatar,`nickname` FROM `ys_admin_user` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000917s ]
+[ sql ] [ SQL ] SELECT id uid,headimg avatar,`nickname` FROM `ys_admin_user` WHERE  `id` = 2 LIMIT 1 [ RunTime:0.001032s ]
+[ sql ] [ SQL ] SELECT id uid,headimg avatar,`nickname` FROM `ys_admin_user` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000899s ]
+[ sql ] [ SQL ] SELECT id uid,headimg avatar,`nickname` FROM `ys_admin_user` WHERE  `id` = 2 LIMIT 1 [ RunTime:0.000894s ]
+[ sql ] [ SQL ] SELECT id uid,headimg avatar,`nickname` FROM `ys_admin_user` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000858s ]
+[ sql ] [ SQL ] SELECT id uid,headimg avatar,`nickname` FROM `ys_admin_user` WHERE  `id` = 2 LIMIT 1 [ RunTime:0.000926s ]
+[ sql ] [ SQL ] SELECT id uid,headimg avatar,`nickname` FROM `ys_admin_user` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.001304s ]
+[ sql ] [ SQL ] SELECT id uid,headimg avatar,`nickname` FROM `ys_admin_user` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000736s ]
+[ sql ] [ SQL ] SELECT id uid,headimg avatar,`nickname` FROM `ys_admin_user` WHERE  `id` = 2 LIMIT 1 [ RunTime:0.000711s ]
+[ sql ] [ SQL ] SELECT id uid,headimg avatar,`nickname` FROM `ys_admin_user` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000715s ]
+[ sql ] [ SQL ] SELECT id uid,headimg avatar,`nickname` FROM `ys_admin_user` WHERE  `id` = 2 LIMIT 1 [ RunTime:0.000717s ]
+[ sql ] [ SQL ] SELECT id uid,headimg avatar,`nickname` FROM `ys_admin_user` WHERE  `id` = 2 LIMIT 1 [ RunTime:0.000822s ]
+[ sql ] [ SQL ] SELECT id uid,headimg avatar,`nickname` FROM `ys_admin_user` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000731s ]
+[ sql ] [ SQL ] SELECT id uid,headimg avatar,`nickname` FROM `ys_admin_user` WHERE  `id` = 2 LIMIT 1 [ RunTime:0.000691s ]
+[ sql ] [ SQL ] SELECT id uid,headimg avatar,`nickname` FROM `ys_admin_user` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000701s ]
+[ sql ] [ SQL ] SELECT id uid,headimg avatar,`nickname` FROM `ys_admin_user` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000713s ]
+[ sql ] [ SQL ] SELECT id uid,headimg avatar,`nickname` FROM `ys_admin_user` WHERE  `id` = 2 LIMIT 1 [ RunTime:0.000910s ]
+[ sql ] [ SQL ] SELECT id uid,headimg avatar,`nickname` FROM `ys_admin_user` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000837s ]
+[ sql ] [ SQL ] SELECT id uid,headimg avatar,`nickname` FROM `ys_admin_user` WHERE  `id` = 2 LIMIT 1 [ RunTime:0.000868s ]
+[ sql ] [ SQL ] SELECT id uid,headimg avatar,`nickname` FROM `ys_admin_user` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000751s ]
+[ sql ] [ SQL ] SELECT id uid,headimg avatar,`nickname` FROM `ys_admin_user` WHERE  `id` = 2 LIMIT 1 [ RunTime:0.000766s ]
+[ sql ] [ SQL ] SELECT id uid,headimg avatar,`nickname` FROM `ys_admin_user` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000778s ]
+[ sql ] [ SQL ] SELECT id uid,headimg avatar,`nickname` FROM `ys_admin_user` WHERE  `id` = 2 LIMIT 1 [ RunTime:0.000839s ]
+[ sql ] [ SQL ] SELECT id uid,headimg avatar,`nickname` FROM `ys_admin_user` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000793s ]
+[ sql ] [ SQL ] SELECT id uid,headimg avatar,`nickname` FROM `ys_admin_user` WHERE  `id` = 2 LIMIT 1 [ RunTime:0.000814s ]
+[ sql ] [ SQL ] SELECT id uid,headimg avatar,`nickname` FROM `ys_admin_user` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000986s ]
+[ sql ] [ SQL ] SELECT id uid,headimg avatar,`nickname` FROM `ys_admin_user` WHERE  `id` = 2 LIMIT 1 [ RunTime:0.000848s ]
+[ sql ] [ SQL ] SELECT id uid,headimg avatar,`nickname` FROM `ys_admin_user` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000929s ]
+[ sql ] [ SQL ] SELECT id uid,headimg avatar,`nickname` FROM `ys_admin_user` WHERE  `id` = 2 LIMIT 1 [ RunTime:0.000956s ]
+[ sql ] [ SQL ] SELECT id uid,headimg avatar,`nickname` FROM `ys_admin_user` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000940s ]
+[ sql ] [ SQL ] SELECT id uid,headimg avatar,`nickname` FROM `ys_admin_user` WHERE  `id` = 2 LIMIT 1 [ RunTime:0.000812s ]
+[ sql ] [ SQL ] SELECT id uid,headimg avatar,`nickname` FROM `ys_admin_user` WHERE  `id` = 2 LIMIT 1 [ RunTime:0.000633s ]
+[ sql ] [ SQL ] SELECT id uid,headimg avatar,`nickname` FROM `ys_admin_user` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000850s ]
+[ sql ] [ SQL ] SELECT id uid,headimg avatar,`nickname` FROM `ys_admin_user` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000804s ]
+[ sql ] [ SQL ] SELECT id uid,headimg avatar,`nickname` FROM `ys_admin_user` WHERE  `id` = 2 LIMIT 1 [ RunTime:0.000842s ]
+[ sql ] [ SQL ] SELECT id uid,headimg avatar,`nickname` FROM `ys_admin_user` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000615s ]
+[ sql ] [ SQL ] SELECT id uid,headimg avatar,`nickname` FROM `ys_admin_user` WHERE  `id` = 2 LIMIT 1 [ RunTime:0.000706s ]
+[ sql ] [ SQL ] SELECT id uid,headimg avatar,`nickname` FROM `ys_admin_user` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000778s ]
+[ sql ] [ SQL ] SELECT id uid,headimg avatar,`nickname` FROM `ys_admin_user` WHERE  `id` = 2 LIMIT 1 [ RunTime:0.000866s ]
+[ sql ] [ SQL ] SELECT id uid,headimg avatar,`nickname` FROM `ys_admin_user` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000621s ]
+[ sql ] [ SQL ] SELECT id uid,headimg avatar,`nickname` FROM `ys_admin_user` WHERE  `id` = 2 LIMIT 1 [ RunTime:0.000601s ]
+[ sql ] [ SQL ] SELECT id uid,headimg avatar,`nickname` FROM `ys_admin_user` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000595s ]
+[ sql ] [ SQL ] SELECT id uid,headimg avatar,`nickname` FROM `ys_admin_user` WHERE  `id` = 2 LIMIT 1 [ RunTime:0.000745s ]
+[ sql ] [ SQL ] SELECT id uid,headimg avatar,`nickname` FROM `ys_admin_user` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000758s ]
+[ sql ] [ SQL ] SELECT id uid,headimg avatar,`nickname` FROM `ys_admin_user` WHERE  `id` = 2 LIMIT 1 [ RunTime:0.000584s ]
+[ sql ] [ SQL ] SELECT id uid,headimg avatar,`nickname` FROM `ys_admin_user` WHERE  `id` = 2 LIMIT 1 [ RunTime:0.000714s ]
+[ sql ] [ SQL ] SELECT id uid,headimg avatar,`nickname` FROM `ys_admin_user` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000660s ]
+[ sql ] [ SQL ] SELECT id uid,headimg avatar,`nickname` FROM `ys_admin_user` WHERE  `id` = 2 LIMIT 1 [ RunTime:0.001064s ]
+[ sql ] [ SQL ] SELECT id uid,headimg avatar,`nickname` FROM `ys_admin_user` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000938s ]
+[ sql ] [ SQL ] SELECT id uid,headimg avatar,`nickname` FROM `ys_admin_user` WHERE  `id` = 2 LIMIT 1 [ RunTime:0.001031s ]
+[ sql ] [ SQL ] SELECT id uid,headimg avatar,`nickname` FROM `ys_admin_user` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000775s ]
+[ sql ] [ SQL ] SELECT id uid,headimg avatar,`nickname` FROM `ys_admin_user` WHERE  `id` = 2 LIMIT 1 [ RunTime:0.000861s ]
+[ sql ] [ SQL ] SELECT id uid,headimg avatar,`nickname` FROM `ys_admin_user` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000692s ]
+[ sql ] [ SQL ] SELECT id uid,headimg avatar,`nickname` FROM `ys_admin_user` WHERE  `id` = 2 LIMIT 1 [ RunTime:0.000822s ]
+[ sql ] [ SQL ] SELECT id uid,headimg avatar,`nickname` FROM `ys_admin_user` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000666s ]
+[ sql ] [ SQL ] SELECT id uid,headimg avatar,`nickname` FROM `ys_admin_user` WHERE  `id` = 2 LIMIT 1 [ RunTime:0.000768s ]
+[ sql ] [ SQL ] SELECT id uid,headimg avatar,`nickname` FROM `ys_admin_user` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000712s ]
+[ sql ] [ SQL ] SELECT id uid,headimg avatar,`nickname` FROM `ys_admin_user` WHERE  `id` = 2 LIMIT 1 [ RunTime:0.001232s ]
+[ sql ] [ SQL ] SELECT id uid,headimg avatar,`nickname` FROM `ys_admin_user` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000810s ]
+[ sql ] [ SQL ] SELECT id uid,headimg avatar,`nickname` FROM `ys_admin_user` WHERE  `id` = 2 LIMIT 1 [ RunTime:0.000684s ]
+[ sql ] [ SQL ] SELECT id uid,headimg avatar,`nickname` FROM `ys_admin_user` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000512s ]
+[ sql ] [ SQL ] SELECT id uid,headimg avatar,`nickname` FROM `ys_admin_user` WHERE  `id` = 2 LIMIT 1 [ RunTime:0.001397s ]
+[ sql ] [ SQL ] SELECT id uid,headimg avatar,`nickname` FROM `ys_admin_user` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000889s ]
+[ sql ] [ SQL ] SELECT id uid,headimg avatar,`nickname` FROM `ys_admin_user` WHERE  `id` = 2 LIMIT 1 [ RunTime:0.000878s ]
+[ sql ] [ SQL ] SELECT id uid,headimg avatar,`nickname` FROM `ys_admin_user` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000941s ]
+[ sql ] [ SQL ] SELECT id uid,headimg avatar,`nickname` FROM `ys_admin_user` WHERE  `id` = 2 LIMIT 1 [ RunTime:0.000868s ]
+[ sql ] [ SQL ] SELECT id uid,headimg avatar,`nickname` FROM `ys_admin_user` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000773s ]
+[ sql ] [ SQL ] SELECT id uid,headimg avatar,`nickname` FROM `ys_admin_user` WHERE  `id` = 2 LIMIT 1 [ RunTime:0.001163s ]
+[ sql ] [ SQL ] SELECT id uid,headimg avatar,`nickname` FROM `ys_admin_user` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000683s ]
+[ sql ] [ SQL ] SELECT id uid,headimg avatar,`nickname` FROM `ys_admin_user` WHERE  `id` = 2 LIMIT 1 [ RunTime:0.001177s ]
+[ sql ] [ SQL ] SELECT id uid,headimg avatar,`nickname` FROM `ys_admin_user` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000808s ]
+[ sql ] [ SQL ] SELECT id uid,headimg avatar,`nickname` FROM `ys_admin_user` WHERE  `id` = 2 LIMIT 1 [ RunTime:0.000805s ]
+[ sql ] [ SQL ] SELECT id uid,headimg avatar,`nickname` FROM `ys_admin_user` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000855s ]
+
+---------------------------------------------------------------

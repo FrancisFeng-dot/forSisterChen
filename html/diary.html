@@ -1,0 +1,544 @@
+<style>
+    ::-webkit-scrollbar-track {background-color: #ffffff;} /* 滚动条的滑轨背景颜色 */
+    ::-webkit-scrollbar-thumb {background-color: rgba(0, 0, 0, 0); } /* 滑块颜色 */
+    ::-webkit-scrollbar-button {background-color: #ffffff;} /* 滑轨两头的监听按钮颜色 */
+    ::-webkit-scrollbar-corner {background-color: #ffffff;} /* 横向滚动条和纵向滚动条相交处尖角的颜色 */
+</style>
+<div class="gray-bg" ng-controller="com_ctrl">
+    <div class="diarymain" ng-if="toggleshow==0">
+        <div class="diarymaindiv">
+            <ul class="diaryul">
+                <li class="{{tapshow==0?'li_ac1':''}}" tap="0" ystaprun2="com_list_page.params.diarytype" value="1"><span>个人日记</span></li>
+                <li class="{{tapshow==1?'li_ac1':''}}" tap="1" ystaprun2="com_list_page.params.diarytype" value="2"><span>时光故事</span></li>
+                <li class="{{tapshow==2?'li_ac1':''}}" tap="2" ystaprun2="com_list_page.params.diarytype" value="3"><span>知识百科</span></li>
+            </ul>
+            <div class="mode_gb_other2">
+                <a href="/main.html#index" class="c_tx">返回首页</a>
+            </div>
+        </div>
+        <div class="mode_gb_cont">
+            <div class="wrap_aside">
+                <div class="main1">
+                    <div class="inner_main">
+                        <div class="mod_conts">
+                            <div class="entry_wrap">
+                                <div class="mod_entry show_in_owner" id="blog-top-nav">
+                                    <div class="exact_entry" id="write-ordinaryblog" yseditadd="com_editadd4" chushishu toggleshow='1'>
+                                        <a rel="write-blog-link" class="text gb_bt2"><span class="inner_wrap" rel="write-blog-link">
+                                            <img src="/images/kongjiant1.png" alt="" class="mt_f4">
+                                        写日志</span></a>
+                                        <!-- <div class="mod_themes">
+                                            <b class="uarr"></b>
+                                            <b class="uarr_in"></b>
+                                            <div class="mod_template">
+                                                <ul id="lead-themeblog">
+                                                </ul>
+                                            </div>
+                                        </div> -->
+                                    </div>
+                                    <!-- <div class="exact_entry" id="write-templateblog">
+                                        <div class="default_entry">
+                                            <a href="http://rc.qzone.qq.com/blog/addtemplateblog" target="_blank" rel="write-templateblog-link" class="text gb_bt2">
+                                                <span class="inner_wrap" rel="write-templateblog-link">
+                                                <img src="/images/mobanlist.png" alt="" class="mt_f4">模板日志
+                                                </span>
+                                            </a>
+                                            <button class="dorpdown_btn gb_bt2">
+                                                <span class="mod_arr arr_b"></span>
+                                            </button>
+                                        </div>
+                                        <div class="entry_droplist">
+                                            <ul>                    
+                                                <li>
+                                                    <a class="gb_bt2 last_bt" href="http://rc.qzone.qq.com/blog/addphotoblog" target="_blank" rel="write-photoblog-link"><span class="inner_wrap" rel="write-photoblog-link">
+                                                    <img src="/images/photoji.png" alt="">图片日志</span></a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div> -->
+                                </div>
+                                <div class="list_toolbar" id="list-toolbar" ng-if="total>0&&mk3!=1">
+                                    <span class="manage" ng-if="mk1==0" mkshow="mk1"><a id="batchEditHref" href="javascript:;" rel="switch-batch-mode">批量管理</a></span>
+                                    <span class="manage" ng-if="mk1==1" mkshow="mk1"><a id="batchEditHref" href="javascript:;" rel="switch-batch-mode">退出批量管理</a></span>
+                                    <div class="toolbar_other"><a href="javascript:;" id="order-by-sel" class="c_tx" title="按发表时间由新到旧排序"><span>发表时间</span><span class="mod_arr"></span></a></div>
+                                    <div class="sequence bg bor2" id="order-by-mnu">
+                                        <ul id="order-by-mnuul">
+                                            <li><a href="javascript:;" value="2" selectrun="com_list_page.params.orderstrid" title="按发表时间由新到旧排序" class="bg3_hover none">发表时间</a></li>
+                                            <!-- <li><a href="javascript:;" val="1" title="按最新评论时间由新到旧排序" class="bg3_hover">评论时间</a></li> -->
+                                            <li><a href="javascript:;" value="4" selectrun="com_list_page.params.orderstrid" title="按最后修改时间由新到旧排序" class="bg3_hover">最新修改</a></li>
+                                            <!-- <li><a href="javascript:;" val="3" title="按评论数目由多到少排序" class="bg3_hover">评论数目</a></li> -->
+                                        </ul>
+                                    </div>
+                                    <!-- <span class="switch" id="toggle-view-mode"><a href="javascript:;" ng-if="mk2==1" mkshow="mk2" title="切换到摘要模式">切换到摘要</a><a href="javascript:;" ng-if="mk2==0" mkshow="mk2" title="切换到列表">切换到列表</a><span class="symbol c_tx3">|</span></span> -->
+                                </div>
+                            </div>
+                            <!-- 排序菜单 -->
+                            <div ng-if="mk3!=1" class="listslo">
+                                <div class="tbor2 group_edit" id="batch-op-bar" ng-if="mk1==1">
+                                    <input type="checkbox" name="ckeckAll" id="ckeckAll" rel="batch-check-all"><label for="ckeckAll">全选</label>
+                                    <a class="btn-batch-delete" href="javascript:;" rel="batch-delete-link" comtime="com_del2">批量删除</a>
+                                    <a href="javascript:;" class="modify_type" rel="batch-change-category-menu">修改分类<span class="mod_arr" rel="batch-change-category-menu"></span></a>
+                                    <div class="bgr mod_modify_type" id="cateDropListDiv" style="top: 36px; left: 106px; z-index: 2;">
+                                        <div class="bd">
+                                            <ul>
+                                                <li ng-repeat="(key, value) in com_list.data" value="{{value.c_id}}" selectrun="com_editadd3.params.diarystyle">
+                                                    <a href="javascript:;" rel="batch-mod-category-item">{{value.c_name}}</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div class="bg2 ft">
+                                            <a href="javascript:;" rel="add-category" name="d">添加分类</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div ng-if="total==0">
+                                    <div class="empty_cont">
+                                        <p>您还没有日志，快去<a href="javascript:;" yseditadd="com_editadd4" chushishu toggleshow='1'>写日志</a>吧</p>
+                                    </div>
+                                </div>
+                                <div id="listArea" class="mod_list tbor2">
+                                <ul id="listAreaul">
+                                <li class="bg3_hover" ng-if="value.isdel==0" ng-repeat="(key, value) in com_list_page.data.datalist" name="incode">
+                                <div class="list_tit" rel="list-row" style="width:68%;height: 22px;">
+                                    <input type="checkbox" rel="batch-blog-select" ng-if="mk1==1" value="{{value.codeid}}" name="incode2">
+                                    <span class="article">
+                                        <a href="javascript:;" yseditadd="com_editadd4" chushishu toggleshow='1' class="c_tx2">
+                                            <span ng-bind-html="value.content|htmlfil"></span>
+                                        </a>
+                                        <span rel="blog-detail-link" title=""></span>
+                                    </span>
+                                </div>
+                                <div class="list_op c_tx3">
+                                    <span title="2017-09-02 17:11">{{value.createtime}}</span>&nbsp;
+                                    <span>
+                                        <a href="javascript:;" title="编辑" class="c_tx" chushishu rel="blog-edit-link" yseditadd="com_editadd4" toggleshow="1">编辑</a>
+                                        <a href="javascript:;" class="arr_wrap">
+                                            <span class="mod_arr" title="更多操作"></span>
+                                        </a>
+                                    </span>
+                                    <div class="mod_drop_op bg">
+                                        <ul class="bor2">
+                                            <li><a href="javascript:;" title="删除该日志" class="bg3_hover" theid='codeid' comdelone="com_del">删除日志</a></li>
+                                            <li name="e"><a href="javascript:;" title="修改日志分类" class="bg3_hover">修改分类</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="layui-layer layui-layer-page  layer-anim layui-layer2" type="page">
+                                    <div class="layui-layer-title" style="cursor: move;">编辑日志分类</div>
+                                    <div class="layui-layer-content" style="height: 87px;">
+                                        <div class="add_sort">
+                                            <span>选择分类：</span>
+                                            <select name="selectone" ysselect="com_editadd5.params.diarystyle">
+                                                <option value="{{val.c_id}}" ng-selected="{{value.diarystyle==val.c_id}}" ng-repeat="(k, val) in com_list.data">{{val.c_name}}</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <span class="layui-layer-setwin">
+                                        <a name="close1" class="layui-layer-ico layui-layer-close layui-layer-close1" href="javascript:;"></a>
+                                    </span>
+                                    <div class="layui-layer-btn layui-layer-btn-t">
+                                        <a class="layui-layer-btn0" theid="codeid" ysupdatetwo="com_editadd5.params.codeid">确定</a><a name="close1" class="layui-layer-btn1">取消</a>
+                                    </div>
+                                    <span class="layui-layer-resize"></span>
+                                </div>
+                                <div class="qz_mask qz_mask2"></div>
+                                </li>
+                                </ul>
+                                <div id="page" class="t_c" style="text-align: center;margin-top: 11px;"></div>
+                                </div>
+                            </div>
+                            <div id="page-container-blog" ng-if="mk3==1">
+                                <div class="set_title bbor2">
+                                    <strong>日志分类管理</strong>
+                                </div>
+                                <div class="admin_setting">
+                                    <div class="bd">
+                                        <ul class="bbor3" id="cateMgrDiv">
+                                        <li class="bor3" ng-if="value.isdel==0" ng-repeat="(key, value) in com_list.data">
+                                            <div class="admin_normal">
+                                                <span>{{value.c_name}}</span>
+                                                <a href="javascript:;" class="c_tx" name="fenlei1" yseditadd="com_editadd">编辑</a>
+                                                <a href="javascript:;" class="c_tx" theid="codeid" comdelone="com_del">删除</a>
+                                            </div>
+                                            <div class="admin_edit">
+                                                <input class="bor2" type="text" ng-model="com_editadd.params.c_name">
+                                                <button type="button" class="bt_tx2" comtime="com_editadd">确定</button>
+                                                <button type="button" class="bt_tx2" name="fenlei2">取消</button>
+                                            </div>
+                                        </li>
+                                        <li class="bor3" ng-if="mk4==1">
+                                            <div class="admin_edit2">
+                                                <input class="bor2" type="text" ng-model="com_editadd2.params.c_name">
+                                                <button type="button" class="bt_tx2" comtime="com_editadd2">确定</button>
+                                                <button type="button" class="bt_tx2" mkshow="mk4">取消</button>
+                                            </div>
+                                        </li>
+                                        </ul>
+                                    </div>
+                                    <div class="ft">
+                                        <p>
+                                            <a title="添加分类" href="javascript:;" rel="cate-show-add-link" class="c_tx" mkshow="mk4" name="fenlei3">添加分类</a>&nbsp;&nbsp;
+                                            <a title="返回日志列表" mk='mk3' mkshowrun="com_list_page" class="c_tx">返回日志列表</a>
+                                        </p>
+                                        <div class="c_tx3 set_tips">
+                                            <p><strong>温馨提示</strong></p>
+                                            <p>点击分类名称或编辑按钮可修改日志分类名称，点击保存按钮即可生效。</p>
+                                            <p>请您注意，分类名称长度不超过12个英文字母或6个汉字长度。</p>
+                                            <p>若删除日志分类，则该分类下的所有日志将自动迁移到“个人日志”分类下。</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="aside1">
+                    <div id="side_ad" style="display:none" class="mod_box bbor3"></div>
+                    <!-- 分类 -->
+                    <div class="mod_box blog_sorts bbor3" id="rightCateArea">
+                        <div class="hd">
+                            <h4>日志分类</h4>
+                            <div class="hd_other show_in_owmer">
+                                <a href="javascript:;" class="c_tx" title="管理分类" rel="category-manage-link" mkshow='mk3'>管理</a>
+                            </div>
+                        </div>
+                        <div class="bd" id="cateListContainer">
+                            <div class="mod_list">
+                                <ul id="cateList">
+                                    <li class="bg3_hover" setstore="" key="c_id">
+                                        <a href="javascript:;" title="" class="c_tx" cate rel="category-select-link" catehex>
+                                            <span class="left" cate catehex rel="category-select-link">全部日志</span>
+                                            <span class="right" cate catehex rel="category-select-link">({{diarytotal}})</span>
+                                        </a>
+                                    </li>
+                                    <li class="bg3_hover" ng-if="value.isdel==0" ng-repeat="(key, value) in com_list.data" setstore="{{value.c_id}}" key="c_id">
+                                        <a href="javascript:;" title="" class="c_tx" cate rel="category-select-link" catehex title="共0篇日志">
+                                            <span class="left" cate catehex rel="category-select-link">{{value.c_name}}</span>
+                                            <span class="right" cate catehex rel="category-select-link">({{value.total}})</span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- 搜索 -->
+                    <div class="mod_box bbor3" id="searchArea">
+                        <div id="searchTemplate">
+                            <div class="hd">
+                                <h4>搜索日志</h4>
+                            </div>
+                            <div class="bd">
+                                <div class="mod_search bor2 bg">
+                                    <label for="search">搜索</label>
+                                    <input type="text" name="search" class="c_tx3" id="blog_search_text" value="" placeholder="请输入关键字" clickinput moveinput ng-model="com_list_page.params.keyword">
+                                    <a href="javascript:;" id="blog_search_btn" class="icon_search">搜索</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- 日历 -->
+                    <div class="mod_box" id="calendarArea">
+                        <div id="calendarTemplate" style="">
+                            <div class="mod_calendar">
+                                <h4>日历</h4>
+                                <input type="text" layerdateone="com_list_page.params.begintime" class="c_tx3 c_tx3input" value="{{com_list_page.params.begintime}}" key="stime" ng-model="com_list_page.params.begintime" placeholder="请输入开始时间" clickinput moveinput id="jiansuo1">
+                                <input type="text" layerdateone="com_list_page.params.endtime" class="c_tx3 c_tx3input" value="{{com_list_page.params.endtime}}" key="stime" ng-model="com_list_page.params.endtime" placeholder="请输入结束时间" clickinput moveinput id="jiansuo2">
+                                <button class="diarybutton">检索</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>                      
+    </div>
+    <div class="diarymain" ng-if="toggleshow==1">
+        <div class="blog big_mode_blog" id="pageContainer">
+            <div class="bg_mode">
+                <div class="box_ml bor">
+                    <div class="mode_gb">
+                        <div class="mode_gb_title bg2">
+                            <div class="bg_mode_gb_title">
+                                <h3><span id="topBar">写日志</span></h3>
+                            </div>
+                            <div class="mode_gb_other">
+                                <a href="javascript:void(0)" class="c_tx" onclick="return false;" id="returnListArea" toggle='0' toggleshowrun="com_list_page">返回日志列表</a>
+                            </div>
+                        </div>
+                        <div id="pageHintArea" style="margin-top:-1px;"></div>
+                        <div class="mode_gb_cont2" id="app_mod">
+                            <div class="blog_write">
+                                <!-- <div class="blog_write_hd">
+                                    <div id="write_template_button" class="fr">
+                                        <a id="switch_to_template" class="btn_usual" href="javascript:void(0)" onclick="return false;">
+                                            <span class="ico_new_module"></span>写模板日志
+                                        </a>
+                                    </div>
+                                    <div id="letterpaper-toolbar" class="letter_paper">
+                                        <div class="toolbar_default" style="top:-33px;">
+                                            <div class="toolbar_default_box">
+                                                <span class="paper_label">信纸：</span>
+                                                <span class="paper_list">
+                                                    <a href="javascript:void(0);" _itemid="92702" _delegated_click="applyPanelItem" _delegated_mouseover="showPanelItem" _delegated_mouseout="hidePanelItem" onclick="return false;">
+                                                        <img src="http://qzonestyle.gtimg.cn/qzone/space_item/pre/14/92702.gif" title="分享传递正能量" alt="分享传递正能量">
+                                                    </a>
+                                                    <a href="javascript:void(0);" _itemid="108940" _delegated_click="applyPanelItem" _delegated_mouseover="showPanelItem" _delegated_mouseout="hidePanelItem" onclick="return false;">
+                                                        <img src="http://qzonestyle.gtimg.cn/qzone/space_item/pre/12/108940.gif" title="坐在花海回忆那些你和我的曾经。" alt="坐在花海回忆那些你和我的曾经。">
+                                                    </a>
+                                                    <a href="javascript:void(0);" _itemid="108941" _delegated_click="applyPanelItem" _delegated_mouseover="showPanelItem" _delegated_mouseout="hidePanelItem" onclick="return false;">
+                                                        <img src="http://qzonestyle.gtimg.cn/qzone/space_item/pre/13/108941.gif" title="我在等，等着你的回头等着我们的爱情。" alt="我在等，等着你的回头等着我们的爱情。">
+                                                    </a>
+                                                    <a href="javascript:void(0);" _itemid="108939" _delegated_click="applyPanelItem" _delegated_mouseover="showPanelItem" _delegated_mouseout="hidePanelItem" onclick="return false;">
+                                                        <img src="http://qzonestyle.gtimg.cn/qzone/space_item/pre/11/108939.gif" title="一刹那像过一年，我依然等着你。" alt="一刹那像过一年，我依然等着你。">
+                                                    </a>
+                                                </span>
+                                                <button class="bt_paper_more" _delegated_click="showLayout" type="button">更多
+                                                    <span class="down"></span>
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div> -->
+<!-- <div id="letterlayout-container" class="mod_paper_layout2" style="">
+    <div class="ptools">
+        <div class="sort">
+            <a href="javascript:void(0);" _tab_index="0" _delegated_click="switchLayoutTab" onclick="return false;" class="item c_tx item_now">普通信纸</a>
+            <a href="javascript:void(0);" _tab_index="1" _delegated_click="switchLayoutTab" onclick="return false;" class="item c_tx">自定义信纸</a>
+            <a href="javascript:void(0);" _tab_index="2" _delegated_click="switchLayoutTab" onclick="return false;" class="item c_tx">我的信纸</a>
+        </div>
+        <div class="psearch">
+            <input id="paperSearchBox" _delegated_click="clearDefaultValue" _delegated_keydown="enterSearch" type="text" class="ipt_txt c_tx3" value="输入关键词">
+            <button _delegated_click="search" type="button" class="bt_search">
+                <strong class="">搜索</strong>
+            </button>
+        </div>
+    </div>
+    <div class="pmain">
+        <div id="oldLetterStruct">
+            <div class="side">
+                <div id="paperLayoutSubnavDiy" class="sorts2" style="display: none;">
+                    <div class="item" _diy_tab_index="0">
+                        <a _delegated_click="switchLayoutDiyTab" href="javascript:void(0);" onclick="return false;">选择模板自定义</a>
+                    </div>
+                    <div class="item" _diy_tab_index="1">
+                        <a _delegated_click="switchLayoutDiyTab" href="javascript:void(0);" onclick="return false;" class="c_tx">我自定义的信纸</a>
+                    </div>
+                </div>
+                <div id="paperLayoutSubnav" style="">
+                    <div _itemid="714" class="sorts">
+                        <div class="item c_tx3">色系：</div>
+                        <div _parentid="714" _itemid="0" class="item item_now">
+                            <a _delegated_click="switchLayoutSubnav" href="javascript:void(0);" onclick="return false;">全部</a>
+                        </div>
+                        <div _parentid="714" _itemid="702" class="item">
+                            <a _delegated_click="switchLayoutSubnav" href="javascript:void(0);" onclick="return false;">粉紫</a>
+                        </div>
+                        <div _parentid="714" _itemid="703" class="item">
+                            <a _delegated_click="switchLayoutSubnav" href="javascript:void(0);" onclick="return false;">蓝绿</a>
+                        </div>
+                        <div _parentid="714" _itemid="704" class="item">
+                            <a _delegated_click="switchLayoutSubnav" href="javascript:void(0);" onclick="return false;">黑白</a>
+                        </div>
+                        <div _parentid="714" _itemid="705" class="item">
+                            <a _delegated_click="switchLayoutSubnav" href="javascript:void(0);" onclick="return false;">咖啡</a>
+                        </div>
+                    </div>
+                    <div class="line1"></div>
+                    <div _itemid="716" class="sorts">
+                        <div class="item c_tx3">主题：</div>
+                        <div _parentid="716" _itemid="0" class="item item_now">
+                        <a _delegated_click="switchLayoutSubnav" href="javascript:void(0);" onclick="return false;">全部</a>
+                        </div>
+                        <div _parentid="716" _itemid="706" class="item">
+                        <a _delegated_click="switchLayoutSubnav" href="javascript:void(0);" onclick="return false;">亲子</a>
+                        </div>
+                        <div _parentid="716" _itemid="707" class="item">
+                        <a _delegated_click="switchLayoutSubnav" href="javascript:void(0);" onclick="return false;">友情</a>
+                        </div>
+                        <div _parentid="716" _itemid="708" class="item">
+                        <a _delegated_click="switchLayoutSubnav" href="javascript:void(0);" onclick="return false;">爱情</a>
+                        </div>
+                        <div _parentid="716" _itemid="266" class="item">
+                        <a _delegated_click="switchLayoutSubnav" href="javascript:void(0);" onclick="return false;">可爱</a>
+                        </div>
+                        <div _parentid="716" _itemid="267" class="item">
+                        <a _delegated_click="switchLayoutSubnav" href="javascript:void(0);" onclick="return false;">浪漫</a>
+                        </div>
+                        <div _parentid="716" _itemid="268" class="item">
+                        <a _delegated_click="switchLayoutSubnav" href="javascript:void(0);" onclick="return false;">酷炫</a>
+                        </div>
+                        <div _parentid="716" _itemid="270" class="item">
+                        <a _delegated_click="switchLayoutSubnav" href="javascript:void(0);" onclick="return false;">古典</a>
+                        </div>
+                        <div _parentid="716" _itemid="271" class="item">
+                        <a _delegated_click="switchLayoutSubnav" href="javascript:void(0);" onclick="return false;">青春</a>
+                        </div>
+                        <div _parentid="716" _itemid="272" class="item">
+                        <a _delegated_click="switchLayoutSubnav" href="javascript:void(0);" onclick="return false;">商务</a>
+                        </div>
+                        <div _parentid="716" _itemid="697" class="item">
+                        <a _delegated_click="switchLayoutSubnav" href="javascript:void(0);" onclick="return false;">LOMO</a>
+                        </div>
+                        <div _parentid="716" _itemid="950" class="item">
+                        <a _delegated_click="switchLayoutSubnav" href="javascript:void(0);" onclick="return false;">四季</a>
+                        </div>
+                        <div _parentid="716" _itemid="952" class="item">
+                        <a _delegated_click="switchLayoutSubnav" href="javascript:void(0);" onclick="return false;">生日</a>
+                        </div>
+                        <div _parentid="716" _itemid="949" class="item">
+                        <a _delegated_click="switchLayoutSubnav" href="javascript:void(0);" onclick="return false;">动态</a>
+                        </div>
+                        <div _parentid="716" _itemid="951" class="item">
+                        <a _delegated_click="switchLayoutSubnav" href="javascript:void(0);" onclick="return false;">游戏电影</a></div>
+                        <div _parentid="716" _itemid="1002" class="item">
+                        <a _delegated_click="switchLayoutSubnav" href="javascript:void(0);" onclick="return false;">星座</a>
+                        </div>
+                        <div _parentid="716" _itemid="1570" class="item">
+                        <a _delegated_click="switchLayoutSubnav" href="javascript:void(0);" onclick="return false;">游记</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="cont">
+                <div id="paperLayoutNormal" style="">
+                    <div id="paperLayoutNormalItemList" class="plist">
+                        <div _item_index="0" _delegated_mouseover="normalLetterItemMouseover" _delegated_mouseout="normalLetterItemMouseout" class="item">
+                            <div _item_index="0" _delegated_click="applyLayoutItem" class="item_cont">
+                                <img src="http://qzonestyle.gtimg.cn/qzone/space_item/pre/4/100484_1.gif" alt="" class="pic" title="献给你肉眼看不见的世界"><i class="ico_free"></i>
+                                <div class="txt">金龟</div>
+                            </div>
+                            <div style="display:none;" class="item_bg"></div>
+                        </div>
+                        <div _item_index="1" _delegated_mouseover="normalLetterItemMouseover" _delegated_mouseout="normalLetterItemMouseout" class="item">
+                            <div _item_index="1" _delegated_click="applyLayoutItem" class="item_cont">
+                                <img src="http://qzonestyle.gtimg.cn/qzone/space_item/pre/12/108940_1.gif" alt="" class="pic" title="坐在花海回忆那些你和我的曾经。"><i class="ico_free"></i>
+                                <div class="txt">  花海的爱</div>
+                            </div>
+                            <div style="display:none;" class="item_bg"></div>
+                        </div>
+                        <div _item_index="2" _delegated_mouseover="normalLetterItemMouseover" _delegated_mouseout="normalLetterItemMouseout" class="item">
+                            <div _item_index="2" _delegated_click="applyLayoutItem" class="item_cont">
+                                <img src="http://qzonestyle.gtimg.cn/qzone/space_item/pre/13/108941_1.gif" alt="" class="pic" title="我在等，等着你的回头等着我们的爱情。">
+                                <div class="txt">
+                                    <a href="http://pay.qq.com/qzone/index.shtml?aid=zone.letter" target="_blank" class="gb_vip_icon" title="黄钻专用"></a>幸运精灵
+                                </div>
+                            </div>
+                            <div style="display: none;" class="item_bg">
+                                <button type="button" _item_index="2" _delegated_click="askforLetter">索要</button>
+                            </div>
+                        </div>
+                        <div _item_index="3" _delegated_mouseover="normalLetterItemMouseover" _delegated_mouseout="normalLetterItemMouseout" class="item">
+                            <div _item_index="3" _delegated_click="applyLayoutItem" class="item_cont">
+                                <img src="http://qzonestyle.gtimg.cn/qzone/space_item/pre/11/108939_1.gif" alt="" class="pic" title="一刹那像过一年，我依然等着你。">
+                                <div class="txt">
+                                    <a href="http://pay.qq.com/qzone/index.shtml?aid=zone.letter" target="_blank" class="gb_vip_icon" title="黄钻专用"></a>花丛
+                                </div>
+                            </div>
+                            <div style="display: none;" class="item_bg">
+                                <button type="button" _item_index="3" _delegated_click="askforLetter">索要</button>
+                            </div>
+                        </div>
+                        <div _item_index="4" _delegated_mouseover="normalLetterItemMouseover" _delegated_mouseout="normalLetterItemMouseout" class="item">
+                            <div _item_index="4" _delegated_click="applyLayoutItem" class="item_cont">
+                                <img src="http://qzonestyle.gtimg.cn/qzone/space_item/pre/14/108942_1.gif" alt="" class="pic" title="依恋在花丛里各自述说自己的心事荡漾着青春气息。">
+                                <div class="txt">
+                                    <a href="http://pay.qq.com/qzone/index.shtml?aid=zone.letter" target="_blank" class="gb_vip_icon" title="黄钻专用"></a>依然守候
+                                </div>
+                            </div>
+                            <div style="display:none;" class="item_bg">
+                                <button type="button" _item_index="4" _delegated_click="askforLetter">索要</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="paperLayoutNormalPager">
+                        <div class="pages" id="app_mod">
+                            <div class="mod_pagenav">
+                                <p class="mod_pagenav_main">
+                                    <span class="mod_pagenav_disable">
+                                        <span>上一页</span>
+                                    </span>
+                                    <span class="mod_pagenav_count">
+                                        <span class="current">
+                                            <span>1</span>
+                                        </span>
+                                        <a href="javascript:void(0);" onclick="M.widget.Pager._instance_collection[0].goTo(2); return false;" title="2" class="c_tx">
+                                            <span>2</span>
+                                        </a>
+                                        <a href="javascript:void(0);" onclick="M.widget.Pager._instance_collection[0].goTo(3); return false;" title="3" class="c_tx">
+                                            <span>3</span>
+                                        </a>
+                                        <a href="javascript:void(0);" onclick="M.widget.Pager._instance_collection[0].goTo(4); return false;" title="4" class="c_tx">
+                                            <span>4</span>
+                                        </a>
+                                        <a href="javascript:void(0);" onclick="M.widget.Pager._instance_collection[0].goTo(5); return false;" title="5" class="c_tx">
+                                            <span>5</span>
+                                        </a>
+                                        <span class="mod_pagenav_more">
+                                            <span>…</span>
+                                        </span>
+                                        <a href="javascript:void(0);" onclick="M.widget.Pager._instance_collection[0].goTo(299); return false;" title="299" class="c_tx">
+                                            <span>299</span>
+                                        </a>
+                                    </span>
+                                    <a href="javascript:void(0);" onclick="M.widget.Pager._instance_collection[0].goTo(2); return false;" title="下一页" class="c_tx">
+                                        <span>下一页</span>
+                                    </a>
+                                </p>
+                                <p class="mod_pagenav_option">
+                                    <span class="mod_pagenav_turn">到<input type="text" id="mallPagerInput0" name="mallPagerInput0" class="textinput" onkeydown="if(event.keyCode == 13) M.widget.Pager._instance_collection[0].goTo(this.value);" value="">页 
+                                        <button type="button" class="bt_tx2" onclick="M.widget.Pager._instance_collection[0].goTo($('mallPagerInput0').value);">
+                                        <span>前往</span>
+                                        </button>
+                                    </span>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div> -->
+                                <div>
+                                    <textarea id="editor" style="width:888px; height:340px;outline:none;padding-left: 0px;margin-top: 34px;" placeholder="请输入描述" ng-model="com_editadd4.params.content"></textarea>
+                                </div>
+                                <!-- 新设置区块 -->
+                                <div class="mod_blog_set">
+                                    <div id="blogSetArea" class="func_usual">
+                                        <div class="main_op">
+                                            <p>
+                                                <label>分类：</label>
+                                                <select id="blogCateSelect" ysselect="com_editadd4.params.diarystyle">
+                                                <option value="{{value.c_id}}" ng-selected="{{com_editadd4.params.diarystyle==value.c_id}}" ng-repeat="(key, value) in com_list.data">{{value.c_name}}</option>
+                                                </select>
+                                                <a title="添加分类" href="javascript:void(0);" name="d">添加分类</a>
+                                            </p>
+                                            <!-- <p>
+                                                <label for="rightTypeSelect">权限：</label>
+                                                <select id="rightTypeSelect" onchange="PageScheduler.selectRight($('rightTypeSelect').value);">
+                                                    <option value="1">公开</option>
+                                                    <option value="2">QQ好友可见</option>
+                                                    <option value="3">指定好友可见</option>
+                                                    <option value="4">仅自己可见</option>
+                                                </select>
+                                            </p> -->
+                                        </div>
+                                        <div class="publish_bar">
+                                            <div class="main_op">
+                                                <button id="saveBlogButton" class="btnstyle-strong btn-submit btn-submit-2" comtime="com_editadd4"><span>发 表</span></button>
+                                                <button id="cancelButton" onclick="PageScheduler.cancelWriteBlog();return false;" type="button" class="btnstyle-weak btn-edit-weak" toggle='0' toggleshowrun="com_list_page"><span>取消</span></button>
+                                            </div>
+                                            <!-- <div class="extra_op">
+                                                <button id="previewBlogButton" onclick="PageScheduler.previewBlog();return false;" type="button" title="预览日志(ctrl+p)" class="btnstyle-weak btn-edit-weak"><span>预览</span></button>
+                                                <button type="button" style="" id="btm-save-draft-btn" title="保存草稿(ctrl+s)" class="btnstyle-weak btn-edit-weak"><span>保存草稿</span></button>
+                                            </div> -->
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>                 
+        </div>
+    </div>
+</div>

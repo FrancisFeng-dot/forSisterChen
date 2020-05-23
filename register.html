@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+    <title>注册</title>
+    <link rel="stylesheet" href="/YS-frame/layer/2.2/skin/layer.css">
+    <link rel="shortcut icon" href="/images/favicon1.ico">
+    <link rel="stylesheet" href="/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/css/login.css">
+    <!-- <link rel="stylesheet" href="/css/layer.css"> -->
+    <script type="text/javascript" src="/js/jquery.js"></script>
+    <!-- <script type="text/javascript" src="/js/jquery.min.js"></script> -->
+    <script type="text/javascript" src="/js/layer.js"></script>
+</head>
+<body class="signin">
+    <div class="signinpanel">
+    <form method="get">
+        <h4 class="no-margins">欢迎注册CX+</h4>
+        <p class="m-t-md">创建一个CX+新用户</p>
+        <input class="form-control uname" id="username" type="text" placeholder="请输入注册账号">
+        <input class="form-control pword m-b" id="password" type="password" placeholder="请输入密码">
+        <input id="captcha" class="form-control ctcha" type="text" placeholder="请输入验证码">
+        <img class="code" alt="验证码" id="captchahit" src="index.php/Base/verify?timestamp='+Date.parse(new Date())" onclick="this.src='index.php/Base/verify?timestamp='+Date.parse(new Date())" style="width: 195px;">
+        <div class="btn btn-success btn-block loginBtn">注册</div>
+        <div class="signup-footer">
+            <div class="pull-left">
+                &copy; chenxi
+            </div>
+        </div>
+        <p class="text-muted text-center"><small>已经有账户了？</small><a href="login.html">点此登录</a>
+                </p>
+
+    </form>
+    </div>
+    <script>
+    $(function(){
+        $('.loginBtn').click(function() {
+            var  a=$('#username').val();
+            var  b=$('#password').val();
+            var  c=$('#captcha').val();
+            var sendData={
+                username:a,
+                password:b,
+                captcha:c
+            };
+            $.ajax({
+                url:'/index.php/base/u_register',
+                type:"POST",
+                data:sendData,
+                success:function(h){
+                if (h.code==1) {
+                    layer.msg('注册成功');
+                    setTimeout(function () {
+                      location.href = 'login.html';
+                    }, 1000);
+                  } else {
+                    layer.msg(h.msg);
+                    setTimeout(function () {
+                      location.href = 'register.html';
+                    }, 1000);
+                  }
+                  $('#captchahit').attr('src','index.php/Base/verify?timestamp='+Date.parse(new Date()));
+                }
+            });
+        });
+    });
+    </script>
+</body>
+</html>

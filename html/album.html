@@ -1,0 +1,134 @@
+<style>
+    ::-webkit-scrollbar-track {background-color: #ffffff;} /* 滚动条的滑轨背景颜色 */
+    ::-webkit-scrollbar-thumb {background-color: rgba(0, 0, 0, 0); } /* 滑块颜色 */
+    ::-webkit-scrollbar-button {background-color: #ffffff;} /* 滑轨两头的监听按钮颜色 */
+    ::-webkit-scrollbar-corner {background-color: #ffffff;} /* 横向滚动条和纵向滚动条相交处尖角的颜色 */
+</style>
+<div class="gray-bg pr" ng-controller="com_ctrl">
+    <a href="/main.html#index"><img src="/images/shouye.png" alt="" class="fr"></a>
+    <div class="wrapper wrapper-content">
+        <div class="row">
+            <div class="fl w_192">
+                <div class="ibox float-e-margins pd_16">
+                    <div class="mod_box blog_sorts blog_sorts2" id="rightCateArea">
+                        <div class="hd">
+                            <h4>相册列表</h4>
+                            <div class="hd_other show_in_owmer ml_4" mkshow="mk3">
+                                <a href="javascript:;" class="c_tx" title="管理分类">编辑</a>
+                            </div>
+                            <div class="hd_other show_in_owmer" mkshow="mk1">
+                                <a href="javascript:;" class="c_tx" title="管理分类">新增</a>
+                            </div>
+                        </div>
+                        <div class="bd bd2" id="cateListContainer">
+                            <div class="mod_list">
+                                <ul id="cateList">
+                                    <li class="bg3_hover">
+                                        <div class="admin_edit2" ng-if="mk1==1">
+                                            <input class="bor2 w_b74" type="text" ng-model="com_editadd.params.name">
+                                            <img src="/images/duigou1.png" alt="" comtime="com_editadd">
+                                            <img src="/images/dacha1.png" alt="" mkshow="mk1" >
+                                        </div>
+                                    </li>
+                                    <li class="bg3_hover" ng-repeat="(key, value) in com_list.data" value="{{value.id}}" selectrun="com_list2.params.pid" ng-if="mk3==0&&value.isdel==0">
+                                        <a href="javascript:;" class="c_tx">
+                                            <span class="left">{{value.name}}</span>
+                                            <span class="right">({{value.total}})</span>
+                                        </a>
+                                    </li>
+                                    <li class="bg3_hover" ng-repeat="(key, value) in com_list.data" ng-if="mk3==1&&value.isdel==0">
+                                        <a href="javascript:;" class="c_tx">
+                                            <input class="left bor2 w_b50" ng-model="value.name" ysupdateone="com_editadd.params.name">
+                                            <button type="button" class="w_34 bt_tx2  ml_4 f_12">确定</button>
+                                            <button type="button" class="w_34 bt_tx2  f_12" comdelone="com_del" theid="codeid">删除</button>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="animated fadeInRight album1">
+                <div class="row pr w_b92">
+                    <div class="album2">
+                        <div class="fl w_220" ng-if="value.isdel==0" ng-repeat="(key, value) in com_list2.data">
+                            <div class="file mt_20 mb_0">
+                                <img src="/images/chacha2.png" alt="" class="pa_r0" theid="codeid" comdelone="com_del">
+                                <div class="icon icon2" mkshow="mk4" selectrun="com_detail.params.codeid" value="{{value.codeid}}">
+                                    <img ng-src="{{value.img}}" alt="" class="iconimg">
+                                </div>
+                                <div class="file-name">
+                                    <small>添加时间：{{value.createtime}}</small>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="fl w_220">
+                            <div class="file mt_20 mb_0">
+                                <div class="icon icon2" mkshowupload="1" savekey="com_editadd2.params.img" more="99">
+                                    <i class="fa fa-file iconimg pt_24"></i>
+                                </div>
+                                <div class="file-name">
+                                    <small>添加时间:yyyy-mm-dd&nbsp;HH:mm:ss</small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="qz_dialog_layer" ng-if="mk2==1" id="qz_dialog_instance_qzDialog2">
+        <span class="layui-layer-setwin"><a class="layui-layer-ico layui-layer-close layui-layer-close2" href="javascript:;" style="top: -26px!important;"></a></span>
+        <div id="dialog_main_2" class="qz_dialog_layer_main">
+            <div id="dialog_head_2" class="qz_dialog_layer_title" style="cursor: move;">
+                <h3 id="dialog_title_2">上传照片</h3>
+            </div>
+            <div id="dialog_content_2" class="qz_dialog_layer_cont photo_upload" style="height: 447px;padding: 0px;width: auto;">
+                <div id="uploader" class="wu-example">
+                    <div class="queueList">
+                        <div id="dndArea" class="placeholder">
+                            <p class="pa_0">美照上传，留住记忆</p>
+                            <div class="jb-upload-img dp_ib mg_auto mt_42" name="picker">
+                                <input type="file" name="" placeholder="">点击选择图片
+                            </div>
+                        </div>
+                        <div id="filePicker" class="webuploader-container none">
+                            <ul class="jbimg-box">
+                                <li class="addjb-img" ng-repeat="(key, value) in com_editadd2.params.imgarr">
+                                    <img ng-src="{{value}}" alt="">
+                                    <img src="/images/close-circled.png" alt="" delimg="com_editadd2.params.img" class="deleteimg">
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="statusBar none">
+                        <div class="info w_260">
+                            <span class="fl">上传到：</span>
+                            <div class="main_op">
+                                <select class="w_138" ysselect="com_editadd2.params.pid">
+                                    <option value="{{value.id}}" ng-selected="com_editadd2.params.pid=={{value.id}}" ng-repeat="(key, value) in com_list.data">{{value.name}}</option>
+                                </select>
+                                <a title="添加相册" href="javascript:void(0);" name="a">添加相册</a>
+                            </div>
+                        </div>
+                        <div class="btns">
+                            <div id="filePicker2" class="webuploader-container mr_68">
+                                <div class="jb-upload-img2 dp_ib mg_auto" name="picker">
+                                    <input type="file" name="" placeholder="">继续上传
+                                </div>
+                            </div>
+                            <div class="uploadBtn state-pedding" comtime="com_editadd2">确认上传</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div ng-if="mk2==1" class="qz_mask qz_mask4"></div>
+    <div class="albumfangda" ng-if="mk4==1">
+        <a href="javascript:;" mkshow="mk4"><img src="/images/fanhui.png" alt="" class="fr mt_f30 mr_12"></a>
+        <img ng-src="{{com_detail.data.img}}" alt="" class="fangdaimg">
+    </div>
+    <div ng-if="mk4==1" class="qz_mask qz_mask5" style=""></div>
+</div>

@@ -1,0 +1,115 @@
+<style>
+    ::-webkit-scrollbar-track {background-color: #F0F3F4;} /* 滚动条的滑轨背景颜色 */
+    ::-webkit-scrollbar-thumb {background-color: rgba(0, 0, 0, 0); } /* 滑块颜色 */
+    ::-webkit-scrollbar-button {background-color: #F0F3F4;} /* 滑轨两头的监听按钮颜色 */
+    ::-webkit-scrollbar-corner {background-color: #F0F3F4;} /* 横向滚动条和纵向滚动条相交处尖角的颜色 */
+</style>
+<div class="gray-bg" ng-controller="com_ctrl">
+    <a href="/main.html#index"><img src="/images/shouye.png" alt="" class="fr mt_f20"></a>
+    <div class="animated fadeInRight video1" ng-if="mk1==0">
+        <div class="row video2" ng-if="toggshow==0">
+            <div class="fl enlarge mg_20" ng-if="value.isdel==0" ng-repeat="(key, value) in com_list.data">
+                <div class="contact-box2 pr">
+                    <span class="videocha" theid="codeid" comdelone="com_del">
+                        <a href="javascript:;" title=""class="videocha2"></a>
+                    </span>
+                    <a href="javascript:;" selectrun="com_detail.params.codeid" value="{{value.codeid}}">
+                        <img alt="image" class="img-responsive h_130 w_168" ng-src="{{value.thumb}}">
+                        <div class="vedio-laybox"></div>
+                    </a>
+                    <div class="clearfix"></div>
+                </div>
+            </div>
+            <div class="fl enlarge mg_20" toggshowupload='1' savekey="com_editadd.params">
+                <div class="contact-box2 pr h_130 w_168 bd_1">
+                    <a href="">
+                        <img alt="image" class="videoimg" src="/images/shangchuan.png">
+                    </a>
+                    <div class="clearfix"></div>
+                </div>
+            </div>
+        </div>
+        <div class="row video3" ng-if="toggshow==1">
+            <div class="in-content">
+                <div class="video4">
+                    <ul class="videoul">
+                        <li class="{{tapshow==0?'bcgr_1':''}}" tapshowupload3='0' savekey="com_editadd.params"><span>本地视频</span></li>
+                        <li class="{{tapshow==1?'bcgr_1':''}}" tapshowupload3='1' savekey="com_editadd.params"><span>直播视频</span></li>
+                        <li class="{{tapshow==2?'bcgr_1':''}}" tapshowupload3='2' savekey="com_editadd.params"><span>网络视频</span></li>
+                    </ul>
+                </div>
+                <div class="in-body">
+                    <div class="row pt_36">
+                        <div class="account col-xs-2">
+                            <p class="text-right">视频链接</p>
+                        </div>
+                        <div class="col-xs-9 account_in" ng-if="tapshow==0">
+                            <input ng-model="com_editadd.params.title" type="text" placeholder="请输入本地视频名称...">
+                        </div>
+                        <div class="col-xs-9 account_in" ng-if="tapshow==1">
+                            <input ng-model="com_editadd.params.content" type="text" placeholder="请输入直播视频链接..." class="w_222">
+                            <input ng-model="com_editadd.params.title" type="text" placeholder="请输入直播视频名称...">
+                        </div>
+                        <div class="col-xs-9 account_in" ng-if="tapshow==2">
+                            <input ng-model="com_editadd.params.content" type="text" placeholder="请输入网络视频链接..." class="w_222">
+                            <input ng-model="com_editadd.params.title" type="text" placeholder="请输入网络视频名称...">
+                        </div>
+                    </div>
+                    <div class="row pt_36" ng-if="tapshow==0">
+                        <div class="account col-xs-2">
+                            <p class="text-right">本地视频</p>
+                        </div>
+                        <div class="col-xs-9 ml_f38">
+                            <ul class="jbimg-box2 pr">
+                                <li class="pr none" id="fileList2" style="width: 168px;height: 130px;">
+                                    <img ng-src="{{com_editadd.params.content}}" alt="" class="addjb-img2">
+                                </li>
+                                <div delimg2="com_editadd.params.content" key1="fileList2" key2="imgparams2" class="videoimg2 none" id="imgparams2">
+                                    <img src="/images/close-circled.png" alt="" class="deleteimg">
+                                </div>
+                                <li class="jb-upload-img3 mlimpor_4" name="picker" setstore="list=#fileList2&more=1&key=content" key="upimg" pickerrun>
+                                   <input type="file">点击选择视频
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="row pt_36">
+                        <div class="account col-xs-2">
+                            <p class="text-right">缩略图</p>
+                        </div>
+                        <div class="col-xs-9 ml_f38">
+                            <ul class="jbimg-box2 pr">
+                                <li class="pr none" id="fileList1" style="width: 168px;height: 130px;">
+                                    <img ng-src="{{com_editadd.params.thumb}}" alt="" class="addjb-img2">
+                                </li>
+                                <div delimg2="com_editadd.params.thumb" key1="fileList1" key2="imgparams1" class="videoimg2 none" id="imgparams1">
+                                    <img src="/images/close-circled.png" alt="" class="deleteimg">
+                                </div>
+                                <li class="jb-upload-img3 mlimpor_4" name="picker" setstore="list=#fileList1&more=1&key=thumb" key="upimg" pickerrun>
+                                   <input type="file">点击选择图片
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row btn_row">
+                <div class="fl ml_166">
+                    <button selectrun="com_editadd.params.videotype" value="1" ng-if="tapshow==0" class="save_btn">保存</button>
+                    <button selectrun="com_editadd.params.videotype" value="2" ng-if="tapshow==1" class="save_btn">保存</button>
+                    <button selectrun="com_editadd.params.videotype" value="3" ng-if="tapshow==2" class="save_btn">保存</button>
+                    <button togg='0' toggshowrun="com_list" class="save_btn">返回</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="qz_dialog_layer2" ng-if="mk1==1">
+        <a href="javascript:;" mkshow="mk1"><img src="/images/fanhui.png" alt="" class="fr mt_f62 mr_12"></a>
+        <div class="videodetail t_c mg_auto w_728" ng-if="com_detail.data.videotype==1" >
+            <video ng-src="{{com_detail.data.content}}" preload="auto" style="object-fit: fill;" controls="controls" poster="{{com_detail.data.thumb}}">您的浏览器不支持 video 标签。</video>
+            <span class="cl_2 f_14">{{com_detail.data.title}}</span>
+        </div>
+        <div class="videodetail text-center mg_auto w_886" ng-if="com_detail.data.videotype==2||com_detail.data.videotype==3" ng-bind-html="com_detail.data.content|htmlfil"></div>
+    </div>
+    <div ng-if="mk1==1" class="qz_mask qz_mask3"></div>
+</div>

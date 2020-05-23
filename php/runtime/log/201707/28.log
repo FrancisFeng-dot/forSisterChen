@@ -1,0 +1,454 @@
+[ 2017-07-28T18:22:38+08:00 ] 127.0.0.1 127.0.0.1 GET /Base/verify?timestamp=%27+Date.parse(new%20Date())
+[ log ] api.yushan.com/Base/verify?timestamp=%27+Date.parse(new%20Date()) [运行时间：1.214429s][吞吐率：0.82req/s] [内存消耗：1,535.41kb] [文件加载：44]
+[ info ] [ LANG ] D:\ys\api.yushan.com\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'Base',
+    2 => 'verify',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://zhaopin.yushan.com/main.html',
+  'accept' => 'image/webp,image/apng,image/*,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/60.0.3112.78 Safari/537.36',
+  'connection' => 'close',
+  'host' => 'api.yushan.com',
+)
+[ info ] [ PARAM ] array (
+  'timestamp' => '\' Date.parse(new Date())',
+)
+[ info ] [ RUN ] app\api\controller\Base->verify[ D:\ys\api.yushan.com\application\api\controller\Base.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-07-28T18:25:21+08:00 ] 127.0.0.1 127.0.0.1 POST /chat/needSend?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9hcGkueXNqaWFuemh1LmNvbSIsImF1ZCI6Imh0dHA6XC9cL3poYW9waW4ueXNqaWFuemh1LmNvbSIsImlhdCI6MTUwMTIzNzUwOCwiZXhwIjoxNTAxMzU3NTA4LCJuYmYiOiIiLCJ1dWlkIjoiNGIwZTA2M2EtMDE0NS0yNzZkLTlmYzUtMjk5MWMyZWE1OGNlIn0.1wuy58KOrU1O5Di9As9weQP9bhAcipohZNn7OOS030c
+[ log ] api.yushan.com/chat/needSend?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9hcGkueXNqaWFuemh1LmNvbSIsImF1ZCI6Imh0dHA6XC9cL3poYW9waW4ueXNqaWFuemh1LmNvbSIsImlhdCI6MTUwMTIzNzUwOCwiZXhwIjoxNTAxMzU3NTA4LCJuYmYiOiIiLCJ1dWlkIjoiNGIwZTA2M2EtMDE0NS0yNzZkLTlmYzUtMjk5MWMyZWE1OGNlIn0.1wuy58KOrU1O5Di9As9weQP9bhAcipohZNn7OOS030c [运行时间：0.190962s][吞吐率：5.24req/s] [内存消耗：1,584.27kb] [文件加载：47]
+[ info ] [ LANG ] D:\ys\api.yushan.com\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'chat',
+    2 => 'needSend',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://zhaopin.yushan.com/main.html',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/60.0.3112.78 Safari/537.36',
+  'origin' => 'http://zhaopin.yushan.com',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'content-length' => '6',
+  'connection' => 'close',
+  'host' => 'api.yushan.com',
+)
+[ info ] [ PARAM ] array (
+  'token' => 'eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9hcGkueXNqaWFuemh1LmNvbSIsImF1ZCI6Imh0dHA6XC9cL3poYW9waW4ueXNqaWFuemh1LmNvbSIsImlhdCI6MTUwMTIzNzUwOCwiZXhwIjoxNTAxMzU3NTA4LCJuYmYiOiIiLCJ1dWlkIjoiNGIwZTA2M2EtMDE0NS0yNzZkLTlmYzUtMjk5MWMyZWE1OGNlIn0.1wuy58KOrU1O5Di9As9weQP9bhAcipohZNn7OOS030c',
+  'toid' => '1',
+)
+[ info ] [ CACHE ] INIT File
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-07-28T18:27:10+08:00 ] 127.0.0.1 127.0.0.1 POST /chat/needSend?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9hcGkueXNqaWFuemh1LmNvbSIsImF1ZCI6Imh0dHA6XC9cL3poYW9waW4ueXNqaWFuemh1LmNvbSIsImlhdCI6MTUwMTIzNzYxNywiZXhwIjoxNTAxMzU3NjE3LCJuYmYiOiIiLCJ1dWlkIjoiNTNmMmMyNGYtNDlhNS1hNDk2LTg2MzktZjgzM2MwMTJjZWQ1In0.m9zh2SW_jJgd38bKsRR72J1-RhZnKFC6ErApCWrhOyw
+[ log ] api.yushan.com/chat/needSend?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9hcGkueXNqaWFuemh1LmNvbSIsImF1ZCI6Imh0dHA6XC9cL3poYW9waW4ueXNqaWFuemh1LmNvbSIsImlhdCI6MTUwMTIzNzYxNywiZXhwIjoxNTAxMzU3NjE3LCJuYmYiOiIiLCJ1dWlkIjoiNTNmMmMyNGYtNDlhNS1hNDk2LTg2MzktZjgzM2MwMTJjZWQ1In0.m9zh2SW_jJgd38bKsRR72J1-RhZnKFC6ErApCWrhOyw [运行时间：0.055761s][吞吐率：17.93req/s] [内存消耗：1,584.31kb] [文件加载：47]
+[ info ] [ LANG ] D:\ys\api.yushan.com\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'chat',
+    2 => 'needSend',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cache-control' => 'no-cache',
+  'connection' => 'close',
+  'content-length' => '6',
+  'host' => 'api.yushan.com',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64; Trident/7.0; rv:11.0) like Gecko',
+  'accept-encoding' => 'gzip, deflate',
+  'origin' => 'http://zhaopin.yushan.com',
+  'accept-language' => 'zh-CN',
+  'referer' => 'http://zhaopin.yushan.com/main.html',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+)
+[ info ] [ PARAM ] array (
+  'token' => 'eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9hcGkueXNqaWFuemh1LmNvbSIsImF1ZCI6Imh0dHA6XC9cL3poYW9waW4ueXNqaWFuemh1LmNvbSIsImlhdCI6MTUwMTIzNzYxNywiZXhwIjoxNTAxMzU3NjE3LCJuYmYiOiIiLCJ1dWlkIjoiNTNmMmMyNGYtNDlhNS1hNDk2LTg2MzktZjgzM2MwMTJjZWQ1In0.m9zh2SW_jJgd38bKsRR72J1-RhZnKFC6ErApCWrhOyw',
+  'toid' => '2',
+)
+[ info ] [ CACHE ] INIT File
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-07-28T18:27:55+08:00 ] 127.0.0.1 127.0.0.1 POST /chat/needSend?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9hcGkueXNqaWFuemh1LmNvbSIsImF1ZCI6Imh0dHA6XC9cL3poYW9waW4ueXNqaWFuemh1LmNvbSIsImlhdCI6MTUwMTIzNzUwOCwiZXhwIjoxNTAxMzU3NTA4LCJuYmYiOiIiLCJ1dWlkIjoiNGIwZTA2M2EtMDE0NS0yNzZkLTlmYzUtMjk5MWMyZWE1OGNlIn0.1wuy58KOrU1O5Di9As9weQP9bhAcipohZNn7OOS030c
+[ log ] api.yushan.com/chat/needSend?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9hcGkueXNqaWFuemh1LmNvbSIsImF1ZCI6Imh0dHA6XC9cL3poYW9waW4ueXNqaWFuemh1LmNvbSIsImlhdCI6MTUwMTIzNzUwOCwiZXhwIjoxNTAxMzU3NTA4LCJuYmYiOiIiLCJ1dWlkIjoiNGIwZTA2M2EtMDE0NS0yNzZkLTlmYzUtMjk5MWMyZWE1OGNlIn0.1wuy58KOrU1O5Di9As9weQP9bhAcipohZNn7OOS030c [运行时间：0.036257s][吞吐率：27.58req/s] [内存消耗：1,584.26kb] [文件加载：47]
+[ info ] [ LANG ] D:\ys\api.yushan.com\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'chat',
+    2 => 'needSend',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://zhaopin.yushan.com/main.html',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/60.0.3112.78 Safari/537.36',
+  'origin' => 'http://zhaopin.yushan.com',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'content-length' => '6',
+  'connection' => 'close',
+  'host' => 'api.yushan.com',
+)
+[ info ] [ PARAM ] array (
+  'token' => 'eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9hcGkueXNqaWFuemh1LmNvbSIsImF1ZCI6Imh0dHA6XC9cL3poYW9waW4ueXNqaWFuemh1LmNvbSIsImlhdCI6MTUwMTIzNzUwOCwiZXhwIjoxNTAxMzU3NTA4LCJuYmYiOiIiLCJ1dWlkIjoiNGIwZTA2M2EtMDE0NS0yNzZkLTlmYzUtMjk5MWMyZWE1OGNlIn0.1wuy58KOrU1O5Di9As9weQP9bhAcipohZNn7OOS030c',
+  'toid' => '1',
+)
+[ info ] [ CACHE ] INIT File
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-07-28T18:28:01+08:00 ] 127.0.0.1 127.0.0.1 POST /chat/needSend?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9hcGkueXNqaWFuemh1LmNvbSIsImF1ZCI6Imh0dHA6XC9cL3poYW9waW4ueXNqaWFuemh1LmNvbSIsImlhdCI6MTUwMTIzNzYxNywiZXhwIjoxNTAxMzU3NjE3LCJuYmYiOiIiLCJ1dWlkIjoiNTNmMmMyNGYtNDlhNS1hNDk2LTg2MzktZjgzM2MwMTJjZWQ1In0.m9zh2SW_jJgd38bKsRR72J1-RhZnKFC6ErApCWrhOyw
+[ log ] api.yushan.com/chat/needSend?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9hcGkueXNqaWFuemh1LmNvbSIsImF1ZCI6Imh0dHA6XC9cL3poYW9waW4ueXNqaWFuemh1LmNvbSIsImlhdCI6MTUwMTIzNzYxNywiZXhwIjoxNTAxMzU3NjE3LCJuYmYiOiIiLCJ1dWlkIjoiNTNmMmMyNGYtNDlhNS1hNDk2LTg2MzktZjgzM2MwMTJjZWQ1In0.m9zh2SW_jJgd38bKsRR72J1-RhZnKFC6ErApCWrhOyw [运行时间：0.032990s][吞吐率：30.31req/s] [内存消耗：1,584.30kb] [文件加载：47]
+[ info ] [ LANG ] D:\ys\api.yushan.com\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'chat',
+    2 => 'needSend',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cache-control' => 'no-cache',
+  'connection' => 'close',
+  'content-length' => '6',
+  'host' => 'api.yushan.com',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64; Trident/7.0; rv:11.0) like Gecko',
+  'accept-encoding' => 'gzip, deflate',
+  'origin' => 'http://zhaopin.yushan.com',
+  'accept-language' => 'zh-CN',
+  'referer' => 'http://zhaopin.yushan.com/main.html',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+)
+[ info ] [ PARAM ] array (
+  'token' => 'eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9hcGkueXNqaWFuemh1LmNvbSIsImF1ZCI6Imh0dHA6XC9cL3poYW9waW4ueXNqaWFuemh1LmNvbSIsImlhdCI6MTUwMTIzNzYxNywiZXhwIjoxNTAxMzU3NjE3LCJuYmYiOiIiLCJ1dWlkIjoiNTNmMmMyNGYtNDlhNS1hNDk2LTg2MzktZjgzM2MwMTJjZWQ1In0.m9zh2SW_jJgd38bKsRR72J1-RhZnKFC6ErApCWrhOyw',
+  'toid' => '2',
+)
+[ info ] [ CACHE ] INIT File
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-07-28T18:28:03+08:00 ] 127.0.0.1 127.0.0.1 POST /chat/needSend?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9hcGkueXNqaWFuemh1LmNvbSIsImF1ZCI6Imh0dHA6XC9cL3poYW9waW4ueXNqaWFuemh1LmNvbSIsImlhdCI6MTUwMTIzNzYxNywiZXhwIjoxNTAxMzU3NjE3LCJuYmYiOiIiLCJ1dWlkIjoiNTNmMmMyNGYtNDlhNS1hNDk2LTg2MzktZjgzM2MwMTJjZWQ1In0.m9zh2SW_jJgd38bKsRR72J1-RhZnKFC6ErApCWrhOyw
+[ log ] api.yushan.com/chat/needSend?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9hcGkueXNqaWFuemh1LmNvbSIsImF1ZCI6Imh0dHA6XC9cL3poYW9waW4ueXNqaWFuemh1LmNvbSIsImlhdCI6MTUwMTIzNzYxNywiZXhwIjoxNTAxMzU3NjE3LCJuYmYiOiIiLCJ1dWlkIjoiNTNmMmMyNGYtNDlhNS1hNDk2LTg2MzktZjgzM2MwMTJjZWQ1In0.m9zh2SW_jJgd38bKsRR72J1-RhZnKFC6ErApCWrhOyw [运行时间：0.030352s][吞吐率：32.95req/s] [内存消耗：1,584.30kb] [文件加载：47]
+[ info ] [ LANG ] D:\ys\api.yushan.com\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'chat',
+    2 => 'needSend',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cache-control' => 'no-cache',
+  'connection' => 'close',
+  'content-length' => '6',
+  'host' => 'api.yushan.com',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64; Trident/7.0; rv:11.0) like Gecko',
+  'accept-encoding' => 'gzip, deflate',
+  'origin' => 'http://zhaopin.yushan.com',
+  'accept-language' => 'zh-CN',
+  'referer' => 'http://zhaopin.yushan.com/main.html',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+)
+[ info ] [ PARAM ] array (
+  'token' => 'eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9hcGkueXNqaWFuemh1LmNvbSIsImF1ZCI6Imh0dHA6XC9cL3poYW9waW4ueXNqaWFuemh1LmNvbSIsImlhdCI6MTUwMTIzNzYxNywiZXhwIjoxNTAxMzU3NjE3LCJuYmYiOiIiLCJ1dWlkIjoiNTNmMmMyNGYtNDlhNS1hNDk2LTg2MzktZjgzM2MwMTJjZWQ1In0.m9zh2SW_jJgd38bKsRR72J1-RhZnKFC6ErApCWrhOyw',
+  'toid' => '2',
+)
+[ info ] [ CACHE ] INIT File
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-07-28T18:28:07+08:00 ] 127.0.0.1 127.0.0.1 POST /chat/needSend?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9hcGkueXNqaWFuemh1LmNvbSIsImF1ZCI6Imh0dHA6XC9cL3poYW9waW4ueXNqaWFuemh1LmNvbSIsImlhdCI6MTUwMTIzNzUwOCwiZXhwIjoxNTAxMzU3NTA4LCJuYmYiOiIiLCJ1dWlkIjoiNGIwZTA2M2EtMDE0NS0yNzZkLTlmYzUtMjk5MWMyZWE1OGNlIn0.1wuy58KOrU1O5Di9As9weQP9bhAcipohZNn7OOS030c
+[ log ] api.yushan.com/chat/needSend?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9hcGkueXNqaWFuemh1LmNvbSIsImF1ZCI6Imh0dHA6XC9cL3poYW9waW4ueXNqaWFuemh1LmNvbSIsImlhdCI6MTUwMTIzNzUwOCwiZXhwIjoxNTAxMzU3NTA4LCJuYmYiOiIiLCJ1dWlkIjoiNGIwZTA2M2EtMDE0NS0yNzZkLTlmYzUtMjk5MWMyZWE1OGNlIn0.1wuy58KOrU1O5Di9As9weQP9bhAcipohZNn7OOS030c [运行时间：0.028280s][吞吐率：35.36req/s] [内存消耗：1,584.26kb] [文件加载：47]
+[ info ] [ LANG ] D:\ys\api.yushan.com\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'chat',
+    2 => 'needSend',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://zhaopin.yushan.com/main.html',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/60.0.3112.78 Safari/537.36',
+  'origin' => 'http://zhaopin.yushan.com',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'content-length' => '6',
+  'connection' => 'close',
+  'host' => 'api.yushan.com',
+)
+[ info ] [ PARAM ] array (
+  'token' => 'eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9hcGkueXNqaWFuemh1LmNvbSIsImF1ZCI6Imh0dHA6XC9cL3poYW9waW4ueXNqaWFuemh1LmNvbSIsImlhdCI6MTUwMTIzNzUwOCwiZXhwIjoxNTAxMzU3NTA4LCJuYmYiOiIiLCJ1dWlkIjoiNGIwZTA2M2EtMDE0NS0yNzZkLTlmYzUtMjk5MWMyZWE1OGNlIn0.1wuy58KOrU1O5Di9As9weQP9bhAcipohZNn7OOS030c',
+  'toid' => '1',
+)
+[ info ] [ CACHE ] INIT File
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-07-28T18:28:31+08:00 ] 127.0.0.1 127.0.0.1 POST /chat/needSend?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9hcGkueXNqaWFuemh1LmNvbSIsImF1ZCI6Imh0dHA6XC9cL3poYW9waW4ueXNqaWFuemh1LmNvbSIsImlhdCI6MTUwMTIzNzUwOCwiZXhwIjoxNTAxMzU3NTA4LCJuYmYiOiIiLCJ1dWlkIjoiNGIwZTA2M2EtMDE0NS0yNzZkLTlmYzUtMjk5MWMyZWE1OGNlIn0.1wuy58KOrU1O5Di9As9weQP9bhAcipohZNn7OOS030c
+[ log ] api.yushan.com/chat/needSend?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9hcGkueXNqaWFuemh1LmNvbSIsImF1ZCI6Imh0dHA6XC9cL3poYW9waW4ueXNqaWFuemh1LmNvbSIsImlhdCI6MTUwMTIzNzUwOCwiZXhwIjoxNTAxMzU3NTA4LCJuYmYiOiIiLCJ1dWlkIjoiNGIwZTA2M2EtMDE0NS0yNzZkLTlmYzUtMjk5MWMyZWE1OGNlIn0.1wuy58KOrU1O5Di9As9weQP9bhAcipohZNn7OOS030c [运行时间：0.028333s][吞吐率：35.29req/s] [内存消耗：1,584.26kb] [文件加载：47]
+[ info ] [ LANG ] D:\ys\api.yushan.com\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'chat',
+    2 => 'needSend',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://zhaopin.yushan.com/main.html',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/60.0.3112.78 Safari/537.36',
+  'origin' => 'http://zhaopin.yushan.com',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'content-length' => '6',
+  'connection' => 'close',
+  'host' => 'api.yushan.com',
+)
+[ info ] [ PARAM ] array (
+  'token' => 'eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9hcGkueXNqaWFuemh1LmNvbSIsImF1ZCI6Imh0dHA6XC9cL3poYW9waW4ueXNqaWFuemh1LmNvbSIsImlhdCI6MTUwMTIzNzUwOCwiZXhwIjoxNTAxMzU3NTA4LCJuYmYiOiIiLCJ1dWlkIjoiNGIwZTA2M2EtMDE0NS0yNzZkLTlmYzUtMjk5MWMyZWE1OGNlIn0.1wuy58KOrU1O5Di9As9weQP9bhAcipohZNn7OOS030c',
+  'toid' => '1',
+)
+[ info ] [ CACHE ] INIT File
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-07-28T18:28:32+08:00 ] 127.0.0.1 127.0.0.1 POST /chat/needSend?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9hcGkueXNqaWFuemh1LmNvbSIsImF1ZCI6Imh0dHA6XC9cL3poYW9waW4ueXNqaWFuemh1LmNvbSIsImlhdCI6MTUwMTIzNzUwOCwiZXhwIjoxNTAxMzU3NTA4LCJuYmYiOiIiLCJ1dWlkIjoiNGIwZTA2M2EtMDE0NS0yNzZkLTlmYzUtMjk5MWMyZWE1OGNlIn0.1wuy58KOrU1O5Di9As9weQP9bhAcipohZNn7OOS030c
+[ log ] api.yushan.com/chat/needSend?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9hcGkueXNqaWFuemh1LmNvbSIsImF1ZCI6Imh0dHA6XC9cL3poYW9waW4ueXNqaWFuemh1LmNvbSIsImlhdCI6MTUwMTIzNzUwOCwiZXhwIjoxNTAxMzU3NTA4LCJuYmYiOiIiLCJ1dWlkIjoiNGIwZTA2M2EtMDE0NS0yNzZkLTlmYzUtMjk5MWMyZWE1OGNlIn0.1wuy58KOrU1O5Di9As9weQP9bhAcipohZNn7OOS030c [运行时间：0.027767s][吞吐率：36.01req/s] [内存消耗：1,584.26kb] [文件加载：47]
+[ info ] [ LANG ] D:\ys\api.yushan.com\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'chat',
+    2 => 'needSend',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://zhaopin.yushan.com/main.html',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/60.0.3112.78 Safari/537.36',
+  'origin' => 'http://zhaopin.yushan.com',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'content-length' => '6',
+  'connection' => 'close',
+  'host' => 'api.yushan.com',
+)
+[ info ] [ PARAM ] array (
+  'token' => 'eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9hcGkueXNqaWFuemh1LmNvbSIsImF1ZCI6Imh0dHA6XC9cL3poYW9waW4ueXNqaWFuemh1LmNvbSIsImlhdCI6MTUwMTIzNzUwOCwiZXhwIjoxNTAxMzU3NTA4LCJuYmYiOiIiLCJ1dWlkIjoiNGIwZTA2M2EtMDE0NS0yNzZkLTlmYzUtMjk5MWMyZWE1OGNlIn0.1wuy58KOrU1O5Di9As9weQP9bhAcipohZNn7OOS030c',
+  'toid' => '1',
+)
+[ info ] [ CACHE ] INIT File
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-07-28T18:28:47+08:00 ] 127.0.0.1 127.0.0.1 POST /chat/needSend?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9hcGkueXNqaWFuemh1LmNvbSIsImF1ZCI6Imh0dHA6XC9cL3poYW9waW4ueXNqaWFuemh1LmNvbSIsImlhdCI6MTUwMTIzNzUwOCwiZXhwIjoxNTAxMzU3NTA4LCJuYmYiOiIiLCJ1dWlkIjoiNGIwZTA2M2EtMDE0NS0yNzZkLTlmYzUtMjk5MWMyZWE1OGNlIn0.1wuy58KOrU1O5Di9As9weQP9bhAcipohZNn7OOS030c
+[ log ] api.yushan.com/chat/needSend?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9hcGkueXNqaWFuemh1LmNvbSIsImF1ZCI6Imh0dHA6XC9cL3poYW9waW4ueXNqaWFuemh1LmNvbSIsImlhdCI6MTUwMTIzNzUwOCwiZXhwIjoxNTAxMzU3NTA4LCJuYmYiOiIiLCJ1dWlkIjoiNGIwZTA2M2EtMDE0NS0yNzZkLTlmYzUtMjk5MWMyZWE1OGNlIn0.1wuy58KOrU1O5Di9As9weQP9bhAcipohZNn7OOS030c [运行时间：0.028321s][吞吐率：35.31req/s] [内存消耗：1,584.26kb] [文件加载：47]
+[ info ] [ LANG ] D:\ys\api.yushan.com\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'chat',
+    2 => 'needSend',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://zhaopin.yushan.com/main.html',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/60.0.3112.78 Safari/537.36',
+  'origin' => 'http://zhaopin.yushan.com',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'content-length' => '6',
+  'connection' => 'close',
+  'host' => 'api.yushan.com',
+)
+[ info ] [ PARAM ] array (
+  'token' => 'eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9hcGkueXNqaWFuemh1LmNvbSIsImF1ZCI6Imh0dHA6XC9cL3poYW9waW4ueXNqaWFuemh1LmNvbSIsImlhdCI6MTUwMTIzNzUwOCwiZXhwIjoxNTAxMzU3NTA4LCJuYmYiOiIiLCJ1dWlkIjoiNGIwZTA2M2EtMDE0NS0yNzZkLTlmYzUtMjk5MWMyZWE1OGNlIn0.1wuy58KOrU1O5Di9As9weQP9bhAcipohZNn7OOS030c',
+  'toid' => '1',
+)
+[ info ] [ CACHE ] INIT File
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-07-28T18:28:48+08:00 ] 127.0.0.1 127.0.0.1 POST /chat/needSend?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9hcGkueXNqaWFuemh1LmNvbSIsImF1ZCI6Imh0dHA6XC9cL3poYW9waW4ueXNqaWFuemh1LmNvbSIsImlhdCI6MTUwMTIzNzUwOCwiZXhwIjoxNTAxMzU3NTA4LCJuYmYiOiIiLCJ1dWlkIjoiNGIwZTA2M2EtMDE0NS0yNzZkLTlmYzUtMjk5MWMyZWE1OGNlIn0.1wuy58KOrU1O5Di9As9weQP9bhAcipohZNn7OOS030c
+[ log ] api.yushan.com/chat/needSend?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9hcGkueXNqaWFuemh1LmNvbSIsImF1ZCI6Imh0dHA6XC9cL3poYW9waW4ueXNqaWFuemh1LmNvbSIsImlhdCI6MTUwMTIzNzUwOCwiZXhwIjoxNTAxMzU3NTA4LCJuYmYiOiIiLCJ1dWlkIjoiNGIwZTA2M2EtMDE0NS0yNzZkLTlmYzUtMjk5MWMyZWE1OGNlIn0.1wuy58KOrU1O5Di9As9weQP9bhAcipohZNn7OOS030c [运行时间：0.028401s][吞吐率：35.21req/s] [内存消耗：1,584.26kb] [文件加载：47]
+[ info ] [ LANG ] D:\ys\api.yushan.com\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'chat',
+    2 => 'needSend',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://zhaopin.yushan.com/main.html',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/60.0.3112.78 Safari/537.36',
+  'origin' => 'http://zhaopin.yushan.com',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'content-length' => '6',
+  'connection' => 'close',
+  'host' => 'api.yushan.com',
+)
+[ info ] [ PARAM ] array (
+  'token' => 'eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9hcGkueXNqaWFuemh1LmNvbSIsImF1ZCI6Imh0dHA6XC9cL3poYW9waW4ueXNqaWFuemh1LmNvbSIsImlhdCI6MTUwMTIzNzUwOCwiZXhwIjoxNTAxMzU3NTA4LCJuYmYiOiIiLCJ1dWlkIjoiNGIwZTA2M2EtMDE0NS0yNzZkLTlmYzUtMjk5MWMyZWE1OGNlIn0.1wuy58KOrU1O5Di9As9weQP9bhAcipohZNn7OOS030c',
+  'toid' => '1',
+)
+[ info ] [ CACHE ] INIT File
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-07-28T18:29:31+08:00 ] 127.0.0.1 127.0.0.1 POST /chat/needSend?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9hcGkueXNqaWFuemh1LmNvbSIsImF1ZCI6Imh0dHA6XC9cL3poYW9waW4ueXNqaWFuemh1LmNvbSIsImlhdCI6MTUwMTIzNzUwOCwiZXhwIjoxNTAxMzU3NTA4LCJuYmYiOiIiLCJ1dWlkIjoiNGIwZTA2M2EtMDE0NS0yNzZkLTlmYzUtMjk5MWMyZWE1OGNlIn0.1wuy58KOrU1O5Di9As9weQP9bhAcipohZNn7OOS030c
+[ log ] api.yushan.com/chat/needSend?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9hcGkueXNqaWFuemh1LmNvbSIsImF1ZCI6Imh0dHA6XC9cL3poYW9waW4ueXNqaWFuemh1LmNvbSIsImlhdCI6MTUwMTIzNzUwOCwiZXhwIjoxNTAxMzU3NTA4LCJuYmYiOiIiLCJ1dWlkIjoiNGIwZTA2M2EtMDE0NS0yNzZkLTlmYzUtMjk5MWMyZWE1OGNlIn0.1wuy58KOrU1O5Di9As9weQP9bhAcipohZNn7OOS030c [运行时间：0.029804s][吞吐率：33.55req/s] [内存消耗：1,584.26kb] [文件加载：47]
+[ info ] [ LANG ] D:\ys\api.yushan.com\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'chat',
+    2 => 'needSend',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://zhaopin.yushan.com/main.html',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/60.0.3112.78 Safari/537.36',
+  'origin' => 'http://zhaopin.yushan.com',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'content-length' => '6',
+  'connection' => 'close',
+  'host' => 'api.yushan.com',
+)
+[ info ] [ PARAM ] array (
+  'token' => 'eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9hcGkueXNqaWFuemh1LmNvbSIsImF1ZCI6Imh0dHA6XC9cL3poYW9waW4ueXNqaWFuemh1LmNvbSIsImlhdCI6MTUwMTIzNzUwOCwiZXhwIjoxNTAxMzU3NTA4LCJuYmYiOiIiLCJ1dWlkIjoiNGIwZTA2M2EtMDE0NS0yNzZkLTlmYzUtMjk5MWMyZWE1OGNlIn0.1wuy58KOrU1O5Di9As9weQP9bhAcipohZNn7OOS030c',
+  'toid' => '1',
+)
+[ info ] [ CACHE ] INIT File
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-07-28T18:30:06+08:00 ] 127.0.0.1 127.0.0.1 POST /chat/needSend?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9hcGkueXNqaWFuemh1LmNvbSIsImF1ZCI6Imh0dHA6XC9cL3poYW9waW4ueXNqaWFuemh1LmNvbSIsImlhdCI6MTUwMTIzNzUwOCwiZXhwIjoxNTAxMzU3NTA4LCJuYmYiOiIiLCJ1dWlkIjoiNGIwZTA2M2EtMDE0NS0yNzZkLTlmYzUtMjk5MWMyZWE1OGNlIn0.1wuy58KOrU1O5Di9As9weQP9bhAcipohZNn7OOS030c
+[ log ] api.yushan.com/chat/needSend?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9hcGkueXNqaWFuemh1LmNvbSIsImF1ZCI6Imh0dHA6XC9cL3poYW9waW4ueXNqaWFuemh1LmNvbSIsImlhdCI6MTUwMTIzNzUwOCwiZXhwIjoxNTAxMzU3NTA4LCJuYmYiOiIiLCJ1dWlkIjoiNGIwZTA2M2EtMDE0NS0yNzZkLTlmYzUtMjk5MWMyZWE1OGNlIn0.1wuy58KOrU1O5Di9As9weQP9bhAcipohZNn7OOS030c [运行时间：0.031996s][吞吐率：31.25req/s] [内存消耗：1,584.26kb] [文件加载：47]
+[ info ] [ LANG ] D:\ys\api.yushan.com\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'chat',
+    2 => 'needSend',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://zhaopin.yushan.com/main.html',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/60.0.3112.78 Safari/537.36',
+  'origin' => 'http://zhaopin.yushan.com',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'content-length' => '6',
+  'connection' => 'close',
+  'host' => 'api.yushan.com',
+)
+[ info ] [ PARAM ] array (
+  'token' => 'eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9hcGkueXNqaWFuemh1LmNvbSIsImF1ZCI6Imh0dHA6XC9cL3poYW9waW4ueXNqaWFuemh1LmNvbSIsImlhdCI6MTUwMTIzNzUwOCwiZXhwIjoxNTAxMzU3NTA4LCJuYmYiOiIiLCJ1dWlkIjoiNGIwZTA2M2EtMDE0NS0yNzZkLTlmYzUtMjk5MWMyZWE1OGNlIn0.1wuy58KOrU1O5Di9As9weQP9bhAcipohZNn7OOS030c',
+  'toid' => '1',
+)
+[ info ] [ CACHE ] INIT File
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-07-28T18:30:10+08:00 ] 127.0.0.1 127.0.0.1 POST /chat/needSend?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9hcGkueXNqaWFuemh1LmNvbSIsImF1ZCI6Imh0dHA6XC9cL3poYW9waW4ueXNqaWFuemh1LmNvbSIsImlhdCI6MTUwMTIzNzUwOCwiZXhwIjoxNTAxMzU3NTA4LCJuYmYiOiIiLCJ1dWlkIjoiNGIwZTA2M2EtMDE0NS0yNzZkLTlmYzUtMjk5MWMyZWE1OGNlIn0.1wuy58KOrU1O5Di9As9weQP9bhAcipohZNn7OOS030c
+[ log ] api.yushan.com/chat/needSend?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9hcGkueXNqaWFuemh1LmNvbSIsImF1ZCI6Imh0dHA6XC9cL3poYW9waW4ueXNqaWFuemh1LmNvbSIsImlhdCI6MTUwMTIzNzUwOCwiZXhwIjoxNTAxMzU3NTA4LCJuYmYiOiIiLCJ1dWlkIjoiNGIwZTA2M2EtMDE0NS0yNzZkLTlmYzUtMjk5MWMyZWE1OGNlIn0.1wuy58KOrU1O5Di9As9weQP9bhAcipohZNn7OOS030c [运行时间：0.029272s][吞吐率：34.16req/s] [内存消耗：1,584.26kb] [文件加载：47]
+[ info ] [ LANG ] D:\ys\api.yushan.com\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'chat',
+    2 => 'needSend',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://zhaopin.yushan.com/main.html',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/60.0.3112.78 Safari/537.36',
+  'origin' => 'http://zhaopin.yushan.com',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'content-length' => '6',
+  'connection' => 'close',
+  'host' => 'api.yushan.com',
+)
+[ info ] [ PARAM ] array (
+  'token' => 'eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9hcGkueXNqaWFuemh1LmNvbSIsImF1ZCI6Imh0dHA6XC9cL3poYW9waW4ueXNqaWFuemh1LmNvbSIsImlhdCI6MTUwMTIzNzUwOCwiZXhwIjoxNTAxMzU3NTA4LCJuYmYiOiIiLCJ1dWlkIjoiNGIwZTA2M2EtMDE0NS0yNzZkLTlmYzUtMjk5MWMyZWE1OGNlIn0.1wuy58KOrU1O5Di9As9weQP9bhAcipohZNn7OOS030c',
+  'toid' => '1',
+)
+[ info ] [ CACHE ] INIT File
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------

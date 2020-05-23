@@ -1,0 +1,718 @@
+[ 2018-01-25T15:27:43+08:00 ] 127.0.0.1 127.0.0.1 GET /index.php/Base/verify?timestamp=%27+Date.parse(new%20Date())
+[ log ] wms.chenchen.cn/index.php/Base/verify?timestamp=%27+Date.parse(new%20Date()) [运行时间：0.244205s][吞吐率：4.09req/s] [内存消耗：1,573.81kb] [文件加载：44]
+[ info ] [ LANG ] D:\textgulp\chenchen.wms.cn\php\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'Base',
+    2 => 'verify',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://wms.chenchen.cn/login.html',
+  'accept' => 'image/webp,image/apng,image/*,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3322.4 Safari/537.36',
+  'connection' => 'close',
+  'host' => 'wms.chenchen.cn',
+)
+[ info ] [ PARAM ] array (
+  'timestamp' => '\' Date.parse(new Date())',
+)
+[ info ] [ RUN ] app\api\controller\Base->verify[ D:\textgulp\chenchen.wms.cn\php\application\api\controller\Base.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2018-01-25T15:27:45+08:00 ] 127.0.0.1 127.0.0.1 GET /index.php/Base/verify?timestamp=1516865265000
+[ log ] wms.chenchen.cn/index.php/Base/verify?timestamp=1516865265000 [运行时间：0.072469s][吞吐率：13.80req/s] [内存消耗：1,573.84kb] [文件加载：44]
+[ info ] [ LANG ] D:\textgulp\chenchen.wms.cn\php\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'Base',
+    2 => 'verify',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=pij1f9upd0ceftdg146uhvpuu2',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://wms.chenchen.cn/login.html',
+  'accept' => 'image/webp,image/apng,image/*,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3322.4 Safari/537.36',
+  'connection' => 'close',
+  'host' => 'wms.chenchen.cn',
+)
+[ info ] [ PARAM ] array (
+  'timestamp' => '1516865265000',
+)
+[ info ] [ RUN ] app\api\controller\Base->verify[ D:\textgulp\chenchen.wms.cn\php\application\api\controller\Base.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2018-01-25T15:27:51+08:00 ] 127.0.0.1 127.0.0.1 POST /index.php/Base/login
+[ log ] wms.chenchen.cn/index.php/Base/login [运行时间：0.560662s][吞吐率：1.78req/s] [内存消耗：2,253.60kb] [文件加载：56]
+[ info ] [ LANG ] D:\textgulp\chenchen.wms.cn\php\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'Base',
+    2 => 'login',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=pij1f9upd0ceftdg146uhvpuu2',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://wms.chenchen.cn/login.html',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3322.4 Safari/537.36',
+  'x-requested-with' => 'XMLHttpRequest',
+  'origin' => 'http://wms.chenchen.cn',
+  'accept' => '*/*',
+  'content-length' => '43',
+  'connection' => 'close',
+  'host' => 'wms.chenchen.cn',
+)
+[ info ] [ PARAM ] array (
+  'username' => 'admin',
+  'password' => '123456',
+  'captcha' => 'jrhm',
+)
+[ info ] [ RUN ] app\api\controller\Base->login[ D:\textgulp\chenchen.wms.cn\php\application\api\controller\Base.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ CACHE ] INIT File
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.072061s ] mysql:dbname=xiaochen;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ys_admin_user` [ RunTime:0.311183s ]
+[ sql ] [ SQL ] SELECT * FROM `ys_admin_user` WHERE  (  username='admin' ) LIMIT 1 [ RunTime:0.045030s ]
+[ sql ] [ SQL ] SELECT `id`,`password`,`encrypt` FROM `ys_admin_user` WHERE  (  id=2 ) LIMIT 1 [ RunTime:0.013023s ]
+[ sql ] [ SQL ] UPDATE `ys_admin_user`  SET `login_count`=login_count+1  WHERE  (  id=2 ) [ RunTime:0.020650s ]
+
+---------------------------------------------------------------
+[ 2018-01-25T15:27:51+08:00 ] 127.0.0.1 127.0.0.1 GET /index.php/Base/verify?timestamp=1516865271000
+[ log ] wms.chenchen.cn/index.php/Base/verify?timestamp=1516865271000 [运行时间：0.129102s][吞吐率：7.75req/s] [内存消耗：1,573.84kb] [文件加载：44]
+[ info ] [ LANG ] D:\textgulp\chenchen.wms.cn\php\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'Base',
+    2 => 'verify',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=pij1f9upd0ceftdg146uhvpuu2',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://wms.chenchen.cn/login.html',
+  'accept' => 'image/webp,image/apng,image/*,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3322.4 Safari/537.36',
+  'connection' => 'close',
+  'host' => 'wms.chenchen.cn',
+)
+[ info ] [ PARAM ] array (
+  'timestamp' => '1516865271000',
+)
+[ info ] [ RUN ] app\api\controller\Base->verify[ D:\textgulp\chenchen.wms.cn\php\application\api\controller\Base.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2018-01-25T15:27:54+08:00 ] 127.0.0.1 127.0.0.1 POST /index.php/open/menutree_select?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9hcGkueXNqaWFuemh1LmNvbSIsImF1ZCI6Imh0dHA6XC9cL3poYW9waW4ueXNqaWFuemh1LmNvbSIsImlhdCI6MTUxNjg2NTI3MSwiZXhwIjoxNTE2OTg1MjcxLCJuYmYiOiIiLCJ1dWlkIjoiZDc1OTdkZDktNTcxYS1kYmYxLTUwMzAtNTk3YjQ4YzFhODE1In0.VLaJr7ndKGM8DS8F-SafTmOZ_5hGBv4UHWQ78XawWy0
+[ log ] wms.chenchen.cn/index.php/open/menutree_select?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9hcGkueXNqaWFuemh1LmNvbSIsImF1ZCI6Imh0dHA6XC9cL3poYW9waW4ueXNqaWFuemh1LmNvbSIsImlhdCI6MTUxNjg2NTI3MSwiZXhwIjoxNTE2OTg1MjcxLCJuYmYiOiIiLCJ1dWlkIjoiZDc1OTdkZDktNTcxYS1kYmYxLTUwMzAtNTk3YjQ4YzFhODE1In0.VLaJr7ndKGM8DS8F-SafTmOZ_5hGBv4UHWQ78XawWy0 [运行时间：0.212584s][吞吐率：4.70req/s] [内存消耗：2,254.92kb] [文件加载：52]
+[ info ] [ LANG ] D:\textgulp\chenchen.wms.cn\php\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'open',
+    2 => 'menutree_select',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=pij1f9upd0ceftdg146uhvpuu2',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://wms.chenchen.cn/main.html',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3322.4 Safari/537.36',
+  'x-requested-with' => 'XMLHttpRequest',
+  'origin' => 'http://wms.chenchen.cn',
+  'accept' => '*/*',
+  'content-length' => '7',
+  'connection' => 'close',
+  'host' => 'wms.chenchen.cn',
+)
+[ info ] [ PARAM ] array (
+  'token' => 'eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9hcGkueXNqaWFuemh1LmNvbSIsImF1ZCI6Imh0dHA6XC9cL3poYW9waW4ueXNqaWFuemh1LmNvbSIsImlhdCI6MTUxNjg2NTI3MSwiZXhwIjoxNTE2OTg1MjcxLCJuYmYiOiIiLCJ1dWlkIjoiZDc1OTdkZDktNTcxYS1kYmYxLTUwMzAtNTk3YjQ4YzFhODE1In0.VLaJr7ndKGM8DS8F-SafTmOZ_5hGBv4UHWQ78XawWy0',
+  'debug' => '0',
+)
+[ info ] [ RUN ] app\api\controller\Open->menutree_select[ D:\textgulp\chenchen.wms.cn\php\application\api\controller\Open.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000941s ] mysql:dbname=xiaochen;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ys_system_conf` [ RunTime:0.085419s ]
+[ sql ] [ SQL ] SELECT * FROM `ys_system_conf` WHERE  `isdel` = 0 [ RunTime:0.026834s ]
+
+---------------------------------------------------------------
+[ 2018-01-25T15:27:54+08:00 ] 127.0.0.1 127.0.0.1 POST /index.php/open/islogin?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9hcGkueXNqaWFuemh1LmNvbSIsImF1ZCI6Imh0dHA6XC9cL3poYW9waW4ueXNqaWFuemh1LmNvbSIsImlhdCI6MTUxNjg2NTI3MSwiZXhwIjoxNTE2OTg1MjcxLCJuYmYiOiIiLCJ1dWlkIjoiZDc1OTdkZDktNTcxYS1kYmYxLTUwMzAtNTk3YjQ4YzFhODE1In0.VLaJr7ndKGM8DS8F-SafTmOZ_5hGBv4UHWQ78XawWy0
+[ log ] wms.chenchen.cn/index.php/open/islogin?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9hcGkueXNqaWFuemh1LmNvbSIsImF1ZCI6Imh0dHA6XC9cL3poYW9waW4ueXNqaWFuemh1LmNvbSIsImlhdCI6MTUxNjg2NTI3MSwiZXhwIjoxNTE2OTg1MjcxLCJuYmYiOiIiLCJ1dWlkIjoiZDc1OTdkZDktNTcxYS1kYmYxLTUwMzAtNTk3YjQ4YzFhODE1In0.VLaJr7ndKGM8DS8F-SafTmOZ_5hGBv4UHWQ78XawWy0 [运行时间：0.031868s][吞吐率：31.38req/s] [内存消耗：1,784.10kb] [文件加载：49]
+[ info ] [ LANG ] D:\textgulp\chenchen.wms.cn\php\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'open',
+    2 => 'islogin',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=pij1f9upd0ceftdg146uhvpuu2',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://wms.chenchen.cn/main.html',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3322.4 Safari/537.36',
+  'x-requested-with' => 'XMLHttpRequest',
+  'origin' => 'http://wms.chenchen.cn',
+  'accept' => '*/*',
+  'content-length' => '0',
+  'connection' => 'close',
+  'host' => 'wms.chenchen.cn',
+)
+[ info ] [ PARAM ] array (
+  'token' => 'eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9hcGkueXNqaWFuemh1LmNvbSIsImF1ZCI6Imh0dHA6XC9cL3poYW9waW4ueXNqaWFuemh1LmNvbSIsImlhdCI6MTUxNjg2NTI3MSwiZXhwIjoxNTE2OTg1MjcxLCJuYmYiOiIiLCJ1dWlkIjoiZDc1OTdkZDktNTcxYS1kYmYxLTUwMzAtNTk3YjQ4YzFhODE1In0.VLaJr7ndKGM8DS8F-SafTmOZ_5hGBv4UHWQ78XawWy0',
+)
+[ info ] [ RUN ] app\api\controller\Open->islogin[ D:\textgulp\chenchen.wms.cn\php\application\api\controller\Open.php ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2018-01-25T15:27:55+08:00 ] 127.0.0.1 127.0.0.1 POST /index.php/auth/com_list?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9hcGkueXNqaWFuemh1LmNvbSIsImF1ZCI6Imh0dHA6XC9cL3poYW9waW4ueXNqaWFuemh1LmNvbSIsImlhdCI6MTUxNjg2NTI3MSwiZXhwIjoxNTE2OTg1MjcxLCJuYmYiOiIiLCJ1dWlkIjoiZDc1OTdkZDktNTcxYS1kYmYxLTUwMzAtNTk3YjQ4YzFhODE1In0.VLaJr7ndKGM8DS8F-SafTmOZ_5hGBv4UHWQ78XawWy0
+[ log ] wms.chenchen.cn/index.php/auth/com_list?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9hcGkueXNqaWFuemh1LmNvbSIsImF1ZCI6Imh0dHA6XC9cL3poYW9waW4ueXNqaWFuemh1LmNvbSIsImlhdCI6MTUxNjg2NTI3MSwiZXhwIjoxNTE2OTg1MjcxLCJuYmYiOiIiLCJ1dWlkIjoiZDc1OTdkZDktNTcxYS1kYmYxLTUwMzAtNTk3YjQ4YzFhODE1In0.VLaJr7ndKGM8DS8F-SafTmOZ_5hGBv4UHWQ78XawWy0 [运行时间：0.328159s][吞吐率：3.05req/s] [内存消耗：2,499.16kb] [文件加载：56]
+[ info ] [ LANG ] D:\textgulp\chenchen.wms.cn\php\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'auth',
+    2 => 'com_list',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=pij1f9upd0ceftdg146uhvpuu2',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://wms.chenchen.cn/main.html',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3322.4 Safari/537.36',
+  'origin' => 'http://wms.chenchen.cn',
+  'accept' => 'application/json, text/plain, */*',
+  'content-length' => '52',
+  'connection' => 'close',
+  'host' => 'wms.chenchen.cn',
+)
+[ info ] [ PARAM ] array (
+  'token' => 'eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9hcGkueXNqaWFuemh1LmNvbSIsImF1ZCI6Imh0dHA6XC9cL3poYW9waW4ueXNqaWFuemh1LmNvbSIsImlhdCI6MTUxNjg2NTI3MSwiZXhwIjoxNTE2OTg1MjcxLCJuYmYiOiIiLCJ1dWlkIjoiZDc1OTdkZDktNTcxYS1kYmYxLTUwMzAtNTk3YjQ4YzFhODE1In0.VLaJr7ndKGM8DS8F-SafTmOZ_5hGBv4UHWQ78XawWy0',
+  'codeid' => 'CPZRbILQrvzniQ',
+  'diarytype' => '1',
+  'top' => '3',
+  'orderstrid' => '2',
+)
+[ info ] [ CACHE ] INIT File
+[ info ] [ RUN ] app\api\controller\Auth->com_list[ D:\textgulp\chenchen.wms.cn\php\application\api\controller\Auth.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000757s ] mysql:dbname=xiaochen;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ys_system_conf` [ RunTime:0.029633s ]
+[ sql ] [ SQL ] SELECT * FROM `ys_system_conf` WHERE  `tbnum` = 1  AND `isdel` = 0 LIMIT 1 [ RunTime:0.000524s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ys_article` [ RunTime:0.223910s ]
+[ sql ] [ SQL ] SELECT * FROM `ys_article` WHERE  `diarytype` = 1  AND `isdel` = 0 ORDER BY createtime desc LIMIT 3 [ RunTime:0.016130s ]
+[ sql ] [ SQL ] SELECT * FROM `ys_system_conf` WHERE  `tbnum` = 1  AND `isdel` = 0 LIMIT 1 [ RunTime:0.000462s ]
+
+---------------------------------------------------------------
+[ 2018-01-25T15:27:56+08:00 ] 127.0.0.1 127.0.0.1 POST /index.php/auth/com_list?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9hcGkueXNqaWFuemh1LmNvbSIsImF1ZCI6Imh0dHA6XC9cL3poYW9waW4ueXNqaWFuemh1LmNvbSIsImlhdCI6MTUxNjg2NTI3MSwiZXhwIjoxNTE2OTg1MjcxLCJuYmYiOiIiLCJ1dWlkIjoiZDc1OTdkZDktNTcxYS1kYmYxLTUwMzAtNTk3YjQ4YzFhODE1In0.VLaJr7ndKGM8DS8F-SafTmOZ_5hGBv4UHWQ78XawWy0
+[ log ] wms.chenchen.cn/index.php/auth/com_list?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9hcGkueXNqaWFuemh1LmNvbSIsImF1ZCI6Imh0dHA6XC9cL3poYW9waW4ueXNqaWFuemh1LmNvbSIsImlhdCI6MTUxNjg2NTI3MSwiZXhwIjoxNTE2OTg1MjcxLCJuYmYiOiIiLCJ1dWlkIjoiZDc1OTdkZDktNTcxYS1kYmYxLTUwMzAtNTk3YjQ4YzFhODE1In0.VLaJr7ndKGM8DS8F-SafTmOZ_5hGBv4UHWQ78XawWy0 [运行时间：0.084091s][吞吐率：11.89req/s] [内存消耗：2,498.70kb] [文件加载：56]
+[ info ] [ LANG ] D:\textgulp\chenchen.wms.cn\php\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'auth',
+    2 => 'com_list',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=pij1f9upd0ceftdg146uhvpuu2',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://wms.chenchen.cn/main.html',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3322.4 Safari/537.36',
+  'origin' => 'http://wms.chenchen.cn',
+  'accept' => 'application/json, text/plain, */*',
+  'content-length' => '52',
+  'connection' => 'close',
+  'host' => 'wms.chenchen.cn',
+)
+[ info ] [ PARAM ] array (
+  'token' => 'eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9hcGkueXNqaWFuemh1LmNvbSIsImF1ZCI6Imh0dHA6XC9cL3poYW9waW4ueXNqaWFuemh1LmNvbSIsImlhdCI6MTUxNjg2NTI3MSwiZXhwIjoxNTE2OTg1MjcxLCJuYmYiOiIiLCJ1dWlkIjoiZDc1OTdkZDktNTcxYS1kYmYxLTUwMzAtNTk3YjQ4YzFhODE1In0.VLaJr7ndKGM8DS8F-SafTmOZ_5hGBv4UHWQ78XawWy0',
+  'codeid' => 'CPZRbILQrvzniQ',
+  'diarytype' => '2',
+  'top' => '3',
+  'orderstrid' => '2',
+)
+[ info ] [ CACHE ] INIT File
+[ info ] [ RUN ] app\api\controller\Auth->com_list[ D:\textgulp\chenchen.wms.cn\php\application\api\controller\Auth.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000951s ] mysql:dbname=xiaochen;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ys_system_conf` [ RunTime:0.013323s ]
+[ sql ] [ SQL ] SELECT * FROM `ys_system_conf` WHERE  `tbnum` = 1  AND `isdel` = 0 LIMIT 1 [ RunTime:0.000656s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ys_article` [ RunTime:0.013414s ]
+[ sql ] [ SQL ] SELECT * FROM `ys_article` WHERE  `diarytype` = 2  AND `isdel` = 0 ORDER BY createtime desc LIMIT 3 [ RunTime:0.000879s ]
+[ sql ] [ SQL ] SELECT * FROM `ys_system_conf` WHERE  `tbnum` = 1  AND `isdel` = 0 LIMIT 1 [ RunTime:0.000635s ]
+
+---------------------------------------------------------------
+[ 2018-01-25T15:27:56+08:00 ] 127.0.0.1 127.0.0.1 POST /index.php/auth/com_list?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9hcGkueXNqaWFuemh1LmNvbSIsImF1ZCI6Imh0dHA6XC9cL3poYW9waW4ueXNqaWFuemh1LmNvbSIsImlhdCI6MTUxNjg2NTI3MSwiZXhwIjoxNTE2OTg1MjcxLCJuYmYiOiIiLCJ1dWlkIjoiZDc1OTdkZDktNTcxYS1kYmYxLTUwMzAtNTk3YjQ4YzFhODE1In0.VLaJr7ndKGM8DS8F-SafTmOZ_5hGBv4UHWQ78XawWy0
+[ log ] wms.chenchen.cn/index.php/auth/com_list?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9hcGkueXNqaWFuemh1LmNvbSIsImF1ZCI6Imh0dHA6XC9cL3poYW9waW4ueXNqaWFuemh1LmNvbSIsImlhdCI6MTUxNjg2NTI3MSwiZXhwIjoxNTE2OTg1MjcxLCJuYmYiOiIiLCJ1dWlkIjoiZDc1OTdkZDktNTcxYS1kYmYxLTUwMzAtNTk3YjQ4YzFhODE1In0.VLaJr7ndKGM8DS8F-SafTmOZ_5hGBv4UHWQ78XawWy0 [运行时间：0.266647s][吞吐率：3.75req/s] [内存消耗：2,497.54kb] [文件加载：56]
+[ info ] [ LANG ] D:\textgulp\chenchen.wms.cn\php\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'auth',
+    2 => 'com_list',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=pij1f9upd0ceftdg146uhvpuu2',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://wms.chenchen.cn/main.html',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3322.4 Safari/537.36',
+  'origin' => 'http://wms.chenchen.cn',
+  'accept' => 'application/json, text/plain, */*',
+  'content-length' => '52',
+  'connection' => 'close',
+  'host' => 'wms.chenchen.cn',
+)
+[ info ] [ PARAM ] array (
+  'token' => 'eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9hcGkueXNqaWFuemh1LmNvbSIsImF1ZCI6Imh0dHA6XC9cL3poYW9waW4ueXNqaWFuemh1LmNvbSIsImlhdCI6MTUxNjg2NTI3MSwiZXhwIjoxNTE2OTg1MjcxLCJuYmYiOiIiLCJ1dWlkIjoiZDc1OTdkZDktNTcxYS1kYmYxLTUwMzAtNTk3YjQ4YzFhODE1In0.VLaJr7ndKGM8DS8F-SafTmOZ_5hGBv4UHWQ78XawWy0',
+  'codeid' => 'CqNdN9bS_aPvjiQ',
+  'c_alias' => 'QS_diary',
+  'orderstrid' => '3',
+)
+[ info ] [ CACHE ] INIT File
+[ info ] [ RUN ] app\api\controller\Auth->com_list[ D:\textgulp\chenchen.wms.cn\php\application\api\controller\Auth.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.003417s ] mysql:dbname=xiaochen;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ys_system_conf` [ RunTime:0.012442s ]
+[ sql ] [ SQL ] SELECT * FROM `ys_system_conf` WHERE  `tbnum` = 5  AND `isdel` = 0 LIMIT 1 [ RunTime:0.000714s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ys_dict` [ RunTime:0.110991s ]
+[ sql ] [ SQL ] SELECT * FROM `ys_dict` WHERE  `c_alias` = 'QS_diary'  AND `isdel` = 0 ORDER BY createtime asc [ RunTime:0.073928s ]
+[ sql ] [ SQL ] SELECT * FROM `ys_system_conf` WHERE  `tbnum` = 5  AND `isdel` = 0 LIMIT 1 [ RunTime:0.000540s ]
+
+---------------------------------------------------------------
+[ 2018-01-25T15:27:56+08:00 ] 127.0.0.1 127.0.0.1 POST /index.php/auth/com_list?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9hcGkueXNqaWFuemh1LmNvbSIsImF1ZCI6Imh0dHA6XC9cL3poYW9waW4ueXNqaWFuemh1LmNvbSIsImlhdCI6MTUxNjg2NTI3MSwiZXhwIjoxNTE2OTg1MjcxLCJuYmYiOiIiLCJ1dWlkIjoiZDc1OTdkZDktNTcxYS1kYmYxLTUwMzAtNTk3YjQ4YzFhODE1In0.VLaJr7ndKGM8DS8F-SafTmOZ_5hGBv4UHWQ78XawWy0
+[ log ] wms.chenchen.cn/index.php/auth/com_list?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9hcGkueXNqaWFuemh1LmNvbSIsImF1ZCI6Imh0dHA6XC9cL3poYW9waW4ueXNqaWFuemh1LmNvbSIsImlhdCI6MTUxNjg2NTI3MSwiZXhwIjoxNTE2OTg1MjcxLCJuYmYiOiIiLCJ1dWlkIjoiZDc1OTdkZDktNTcxYS1kYmYxLTUwMzAtNTk3YjQ4YzFhODE1In0.VLaJr7ndKGM8DS8F-SafTmOZ_5hGBv4UHWQ78XawWy0 [运行时间：0.305991s][吞吐率：3.27req/s] [内存消耗：2,498.70kb] [文件加载：56]
+[ info ] [ LANG ] D:\textgulp\chenchen.wms.cn\php\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'auth',
+    2 => 'com_list',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=pij1f9upd0ceftdg146uhvpuu2',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://wms.chenchen.cn/main.html',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3322.4 Safari/537.36',
+  'origin' => 'http://wms.chenchen.cn',
+  'accept' => 'application/json, text/plain, */*',
+  'content-length' => '52',
+  'connection' => 'close',
+  'host' => 'wms.chenchen.cn',
+)
+[ info ] [ PARAM ] array (
+  'token' => 'eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9hcGkueXNqaWFuemh1LmNvbSIsImF1ZCI6Imh0dHA6XC9cL3poYW9waW4ueXNqaWFuemh1LmNvbSIsImlhdCI6MTUxNjg2NTI3MSwiZXhwIjoxNTE2OTg1MjcxLCJuYmYiOiIiLCJ1dWlkIjoiZDc1OTdkZDktNTcxYS1kYmYxLTUwMzAtNTk3YjQ4YzFhODE1In0.VLaJr7ndKGM8DS8F-SafTmOZ_5hGBv4UHWQ78XawWy0',
+  'codeid' => 'CPZRbILQrvzniQ',
+  'diarytype' => '3',
+  'top' => '3',
+  'orderstrid' => '2',
+)
+[ info ] [ CACHE ] INIT File
+[ info ] [ RUN ] app\api\controller\Auth->com_list[ D:\textgulp\chenchen.wms.cn\php\application\api\controller\Auth.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.003919s ] mysql:dbname=xiaochen;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ys_system_conf` [ RunTime:0.010093s ]
+[ sql ] [ SQL ] SELECT * FROM `ys_system_conf` WHERE  `tbnum` = 1  AND `isdel` = 0 LIMIT 1 [ RunTime:0.000744s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ys_article` [ RunTime:0.010100s ]
+[ sql ] [ SQL ] SELECT * FROM `ys_article` WHERE  `diarytype` = 3  AND `isdel` = 0 ORDER BY createtime desc LIMIT 3 [ RunTime:0.000776s ]
+[ sql ] [ SQL ] SELECT * FROM `ys_system_conf` WHERE  `tbnum` = 1  AND `isdel` = 0 LIMIT 1 [ RunTime:0.000553s ]
+
+---------------------------------------------------------------
+[ 2018-01-25T15:27:56+08:00 ] 127.0.0.1 127.0.0.1 POST /index.php/auth/beijing_detail?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9hcGkueXNqaWFuemh1LmNvbSIsImF1ZCI6Imh0dHA6XC9cL3poYW9waW4ueXNqaWFuemh1LmNvbSIsImlhdCI6MTUxNjg2NTI3MSwiZXhwIjoxNTE2OTg1MjcxLCJuYmYiOiIiLCJ1dWlkIjoiZDc1OTdkZDktNTcxYS1kYmYxLTUwMzAtNTk3YjQ4YzFhODE1In0.VLaJr7ndKGM8DS8F-SafTmOZ_5hGBv4UHWQ78XawWy0
+[ log ] wms.chenchen.cn/index.php/auth/beijing_detail?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9hcGkueXNqaWFuemh1LmNvbSIsImF1ZCI6Imh0dHA6XC9cL3poYW9waW4ueXNqaWFuemh1LmNvbSIsImlhdCI6MTUxNjg2NTI3MSwiZXhwIjoxNTE2OTg1MjcxLCJuYmYiOiIiLCJ1dWlkIjoiZDc1OTdkZDktNTcxYS1kYmYxLTUwMzAtNTk3YjQ4YzFhODE1In0.VLaJr7ndKGM8DS8F-SafTmOZ_5hGBv4UHWQ78XawWy0 [运行时间：0.342536s][吞吐率：2.92req/s] [内存消耗：2,507.48kb] [文件加载：56]
+[ info ] [ LANG ] D:\textgulp\chenchen.wms.cn\php\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'auth',
+    2 => 'beijing_detail',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=pij1f9upd0ceftdg146uhvpuu2',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://wms.chenchen.cn/main.html',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3322.4 Safari/537.36',
+  'origin' => 'http://wms.chenchen.cn',
+  'accept' => 'application/json, text/plain, */*',
+  'content-length' => '21',
+  'connection' => 'close',
+  'host' => 'wms.chenchen.cn',
+)
+[ info ] [ PARAM ] array (
+  'token' => 'eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9hcGkueXNqaWFuemh1LmNvbSIsImF1ZCI6Imh0dHA6XC9cL3poYW9waW4ueXNqaWFuemh1LmNvbSIsImlhdCI6MTUxNjg2NTI3MSwiZXhwIjoxNTE2OTg1MjcxLCJuYmYiOiIiLCJ1dWlkIjoiZDc1OTdkZDktNTcxYS1kYmYxLTUwMzAtNTk3YjQ4YzFhODE1In0.VLaJr7ndKGM8DS8F-SafTmOZ_5hGBv4UHWQ78XawWy0',
+  'codeid' => 'CPZRbILQrvzniQ',
+)
+[ info ] [ CACHE ] INIT File
+[ info ] [ RUN ] app\api\controller\Auth->beijing_detail[ D:\textgulp\chenchen.wms.cn\php\application\api\controller\Auth.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.004721s ] mysql:dbname=xiaochen;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ys_system_conf` [ RunTime:0.013910s ]
+[ sql ] [ SQL ] SELECT * FROM `ys_system_conf` WHERE  `tbnum` = 1  AND `isdel` = 0 LIMIT 1 [ RunTime:0.000672s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ys_admin_user` [ RunTime:0.011614s ]
+[ sql ] [ SQL ] SELECT * FROM `ys_admin_user` WHERE  `uuid` = 'd7597dd9-571a-dbf1-5030-597b48c1a815' LIMIT 1 [ RunTime:0.000493s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ys_article` [ RunTime:0.010592s ]
+[ sql ] [ SQL ] SELECT * FROM `ys_article` WHERE  `format` = 4  AND `status` = 1  AND `uid` = 2  AND `isdel` = 0 [ RunTime:0.000615s ]
+[ sql ] [ SQL ] SELECT * FROM `ys_system_conf` WHERE  `tbnum` = 1  AND `isdel` = 0 LIMIT 1 [ RunTime:0.000301s ]
+
+---------------------------------------------------------------
+[ 2018-01-25T15:28:01+08:00 ] 127.0.0.1 127.0.0.1 POST /index.php/open/menutree_select?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9hcGkueXNqaWFuemh1LmNvbSIsImF1ZCI6Imh0dHA6XC9cL3poYW9waW4ueXNqaWFuemh1LmNvbSIsImlhdCI6MTUxNjg2NTI3MSwiZXhwIjoxNTE2OTg1MjcxLCJuYmYiOiIiLCJ1dWlkIjoiZDc1OTdkZDktNTcxYS1kYmYxLTUwMzAtNTk3YjQ4YzFhODE1In0.VLaJr7ndKGM8DS8F-SafTmOZ_5hGBv4UHWQ78XawWy0
+[ log ] wms.chenchen.cn/index.php/open/menutree_select?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9hcGkueXNqaWFuemh1LmNvbSIsImF1ZCI6Imh0dHA6XC9cL3poYW9waW4ueXNqaWFuemh1LmNvbSIsImlhdCI6MTUxNjg2NTI3MSwiZXhwIjoxNTE2OTg1MjcxLCJuYmYiOiIiLCJ1dWlkIjoiZDc1OTdkZDktNTcxYS1kYmYxLTUwMzAtNTk3YjQ4YzFhODE1In0.VLaJr7ndKGM8DS8F-SafTmOZ_5hGBv4UHWQ78XawWy0 [运行时间：0.048380s][吞吐率：20.67req/s] [内存消耗：2,254.92kb] [文件加载：52]
+[ info ] [ LANG ] D:\textgulp\chenchen.wms.cn\php\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'open',
+    2 => 'menutree_select',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=pij1f9upd0ceftdg146uhvpuu2',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://wms.chenchen.cn/main.html',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3322.4 Safari/537.36',
+  'x-requested-with' => 'XMLHttpRequest',
+  'origin' => 'http://wms.chenchen.cn',
+  'accept' => '*/*',
+  'content-length' => '7',
+  'connection' => 'close',
+  'host' => 'wms.chenchen.cn',
+)
+[ info ] [ PARAM ] array (
+  'token' => 'eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9hcGkueXNqaWFuemh1LmNvbSIsImF1ZCI6Imh0dHA6XC9cL3poYW9waW4ueXNqaWFuemh1LmNvbSIsImlhdCI6MTUxNjg2NTI3MSwiZXhwIjoxNTE2OTg1MjcxLCJuYmYiOiIiLCJ1dWlkIjoiZDc1OTdkZDktNTcxYS1kYmYxLTUwMzAtNTk3YjQ4YzFhODE1In0.VLaJr7ndKGM8DS8F-SafTmOZ_5hGBv4UHWQ78XawWy0',
+  'debug' => '0',
+)
+[ info ] [ RUN ] app\api\controller\Open->menutree_select[ D:\textgulp\chenchen.wms.cn\php\application\api\controller\Open.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001008s ] mysql:dbname=xiaochen;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ys_system_conf` [ RunTime:0.009092s ]
+[ sql ] [ SQL ] SELECT * FROM `ys_system_conf` WHERE  `isdel` = 0 [ RunTime:0.000600s ]
+
+---------------------------------------------------------------
+[ 2018-01-25T15:28:01+08:00 ] 127.0.0.1 127.0.0.1 POST /index.php/open/islogin?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9hcGkueXNqaWFuemh1LmNvbSIsImF1ZCI6Imh0dHA6XC9cL3poYW9waW4ueXNqaWFuemh1LmNvbSIsImlhdCI6MTUxNjg2NTI3MSwiZXhwIjoxNTE2OTg1MjcxLCJuYmYiOiIiLCJ1dWlkIjoiZDc1OTdkZDktNTcxYS1kYmYxLTUwMzAtNTk3YjQ4YzFhODE1In0.VLaJr7ndKGM8DS8F-SafTmOZ_5hGBv4UHWQ78XawWy0
+[ log ] wms.chenchen.cn/index.php/open/islogin?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9hcGkueXNqaWFuemh1LmNvbSIsImF1ZCI6Imh0dHA6XC9cL3poYW9waW4ueXNqaWFuemh1LmNvbSIsImlhdCI6MTUxNjg2NTI3MSwiZXhwIjoxNTE2OTg1MjcxLCJuYmYiOiIiLCJ1dWlkIjoiZDc1OTdkZDktNTcxYS1kYmYxLTUwMzAtNTk3YjQ4YzFhODE1In0.VLaJr7ndKGM8DS8F-SafTmOZ_5hGBv4UHWQ78XawWy0 [运行时间：0.044246s][吞吐率：22.60req/s] [内存消耗：1,784.10kb] [文件加载：49]
+[ info ] [ LANG ] D:\textgulp\chenchen.wms.cn\php\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'open',
+    2 => 'islogin',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=pij1f9upd0ceftdg146uhvpuu2',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://wms.chenchen.cn/main.html',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3322.4 Safari/537.36',
+  'x-requested-with' => 'XMLHttpRequest',
+  'origin' => 'http://wms.chenchen.cn',
+  'accept' => '*/*',
+  'content-length' => '0',
+  'connection' => 'close',
+  'host' => 'wms.chenchen.cn',
+)
+[ info ] [ PARAM ] array (
+  'token' => 'eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9hcGkueXNqaWFuemh1LmNvbSIsImF1ZCI6Imh0dHA6XC9cL3poYW9waW4ueXNqaWFuemh1LmNvbSIsImlhdCI6MTUxNjg2NTI3MSwiZXhwIjoxNTE2OTg1MjcxLCJuYmYiOiIiLCJ1dWlkIjoiZDc1OTdkZDktNTcxYS1kYmYxLTUwMzAtNTk3YjQ4YzFhODE1In0.VLaJr7ndKGM8DS8F-SafTmOZ_5hGBv4UHWQ78XawWy0',
+)
+[ info ] [ RUN ] app\api\controller\Open->islogin[ D:\textgulp\chenchen.wms.cn\php\application\api\controller\Open.php ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2018-01-25T15:28:01+08:00 ] 127.0.0.1 127.0.0.1 POST /index.php/auth/album_list1?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9hcGkueXNqaWFuemh1LmNvbSIsImF1ZCI6Imh0dHA6XC9cL3poYW9waW4ueXNqaWFuemh1LmNvbSIsImlhdCI6MTUxNjg2NTI3MSwiZXhwIjoxNTE2OTg1MjcxLCJuYmYiOiIiLCJ1dWlkIjoiZDc1OTdkZDktNTcxYS1kYmYxLTUwMzAtNTk3YjQ4YzFhODE1In0.VLaJr7ndKGM8DS8F-SafTmOZ_5hGBv4UHWQ78XawWy0
+[ log ] wms.chenchen.cn/index.php/auth/album_list1?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9hcGkueXNqaWFuemh1LmNvbSIsImF1ZCI6Imh0dHA6XC9cL3poYW9waW4ueXNqaWFuemh1LmNvbSIsImlhdCI6MTUxNjg2NTI3MSwiZXhwIjoxNTE2OTg1MjcxLCJuYmYiOiIiLCJ1dWlkIjoiZDc1OTdkZDktNTcxYS1kYmYxLTUwMzAtNTk3YjQ4YzFhODE1In0.VLaJr7ndKGM8DS8F-SafTmOZ_5hGBv4UHWQ78XawWy0 [运行时间：0.340727s][吞吐率：2.93req/s] [内存消耗：2,508.97kb] [文件加载：56]
+[ info ] [ LANG ] D:\textgulp\chenchen.wms.cn\php\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'auth',
+    2 => 'album_list1',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=pij1f9upd0ceftdg146uhvpuu2',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://wms.chenchen.cn/main.html',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3322.4 Safari/537.36',
+  'origin' => 'http://wms.chenchen.cn',
+  'accept' => 'application/json, text/plain, */*',
+  'content-length' => '34',
+  'connection' => 'close',
+  'host' => 'wms.chenchen.cn',
+)
+[ info ] [ PARAM ] array (
+  'token' => 'eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9hcGkueXNqaWFuemh1LmNvbSIsImF1ZCI6Imh0dHA6XC9cL3poYW9waW4ueXNqaWFuemh1LmNvbSIsImlhdCI6MTUxNjg2NTI3MSwiZXhwIjoxNTE2OTg1MjcxLCJuYmYiOiIiLCJ1dWlkIjoiZDc1OTdkZDktNTcxYS1kYmYxLTUwMzAtNTk3YjQ4YzFhODE1In0.VLaJr7ndKGM8DS8F-SafTmOZ_5hGBv4UHWQ78XawWy0',
+  'codeid' => 'W6JSaYSDqfjviQ',
+  'orderstrid' => '3',
+)
+[ info ] [ CACHE ] INIT File
+[ info ] [ RUN ] app\api\controller\Auth->album_list1[ D:\textgulp\chenchen.wms.cn\php\application\api\controller\Auth.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000861s ] mysql:dbname=xiaochen;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ys_system_conf` [ RunTime:0.067910s ]
+[ sql ] [ SQL ] SELECT * FROM `ys_system_conf` WHERE  `tbnum` = 9  AND `isdel` = 0 LIMIT 1 [ RunTime:0.001310s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ys_admin_user` [ RunTime:0.012080s ]
+[ sql ] [ SQL ] SELECT * FROM `ys_admin_user` WHERE  `uuid` = 'd7597dd9-571a-dbf1-5030-597b48c1a815' LIMIT 1 [ RunTime:0.001301s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ys_photogroup` [ RunTime:0.084088s ]
+[ sql ] [ SQL ] SELECT * FROM `ys_photogroup` WHERE  `uid` = 2  AND `isdel` = 0 ORDER BY createtime asc [ RunTime:0.000502s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ys_photo` [ RunTime:0.104417s ]
+[ sql ] [ SQL ] SELECT * FROM `ys_photo` WHERE  `uid` = 2  AND `isdel` = 0 [ RunTime:0.000868s ]
+[ sql ] [ SQL ] SELECT * FROM `ys_system_conf` WHERE  `tbnum` = 9  AND `isdel` = 0 LIMIT 1 [ RunTime:0.000481s ]
+
+---------------------------------------------------------------
+[ 2018-01-25T15:28:01+08:00 ] 127.0.0.1 127.0.0.1 POST /index.php/auth/mycom_list?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9hcGkueXNqaWFuemh1LmNvbSIsImF1ZCI6Imh0dHA6XC9cL3poYW9waW4ueXNqaWFuemh1LmNvbSIsImlhdCI6MTUxNjg2NTI3MSwiZXhwIjoxNTE2OTg1MjcxLCJuYmYiOiIiLCJ1dWlkIjoiZDc1OTdkZDktNTcxYS1kYmYxLTUwMzAtNTk3YjQ4YzFhODE1In0.VLaJr7ndKGM8DS8F-SafTmOZ_5hGBv4UHWQ78XawWy0
+[ log ] wms.chenchen.cn/index.php/auth/mycom_list?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9hcGkueXNqaWFuemh1LmNvbSIsImF1ZCI6Imh0dHA6XC9cL3poYW9waW4ueXNqaWFuemh1LmNvbSIsImlhdCI6MTUxNjg2NTI3MSwiZXhwIjoxNTE2OTg1MjcxLCJuYmYiOiIiLCJ1dWlkIjoiZDc1OTdkZDktNTcxYS1kYmYxLTUwMzAtNTk3YjQ4YzFhODE1In0.VLaJr7ndKGM8DS8F-SafTmOZ_5hGBv4UHWQ78XawWy0 [运行时间：0.077535s][吞吐率：12.90req/s] [内存消耗：2,506.38kb] [文件加载：56]
+[ info ] [ LANG ] D:\textgulp\chenchen.wms.cn\php\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'auth',
+    2 => 'mycom_list',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=pij1f9upd0ceftdg146uhvpuu2',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://wms.chenchen.cn/main.html',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3322.4 Safari/537.36',
+  'origin' => 'http://wms.chenchen.cn',
+  'accept' => 'application/json, text/plain, */*',
+  'content-length' => '41',
+  'connection' => 'close',
+  'host' => 'wms.chenchen.cn',
+)
+[ info ] [ PARAM ] array (
+  'token' => 'eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9hcGkueXNqaWFuemh1LmNvbSIsImF1ZCI6Imh0dHA6XC9cL3poYW9waW4ueXNqaWFuemh1LmNvbSIsImlhdCI6MTUxNjg2NTI3MSwiZXhwIjoxNTE2OTg1MjcxLCJuYmYiOiIiLCJ1dWlkIjoiZDc1OTdkZDktNTcxYS1kYmYxLTUwMzAtNTk3YjQ4YzFhODE1In0.VLaJr7ndKGM8DS8F-SafTmOZ_5hGBv4UHWQ78XawWy0',
+  'codeid' => 'DvRcPovRra3uiQ',
+  'pid' => '24',
+  'orderstrid' => '2',
+)
+[ info ] [ CACHE ] INIT File
+[ info ] [ RUN ] app\api\controller\Auth->mycom_list[ D:\textgulp\chenchen.wms.cn\php\application\api\controller\Auth.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000695s ] mysql:dbname=xiaochen;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ys_system_conf` [ RunTime:0.008313s ]
+[ sql ] [ SQL ] SELECT * FROM `ys_system_conf` WHERE  `tbnum` = 8  AND `isdel` = 0 LIMIT 1 [ RunTime:0.000423s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ys_admin_user` [ RunTime:0.010791s ]
+[ sql ] [ SQL ] SELECT * FROM `ys_admin_user` WHERE  `uuid` = 'd7597dd9-571a-dbf1-5030-597b48c1a815' LIMIT 1 [ RunTime:0.000445s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ys_photo` [ RunTime:0.010674s ]
+[ sql ] [ SQL ] SELECT * FROM `ys_photo` WHERE  `pid` = 24  AND `uid` = 2  AND `isdel` = 0 ORDER BY createtime desc [ RunTime:0.000487s ]
+[ sql ] [ SQL ] SELECT * FROM `ys_system_conf` WHERE  `tbnum` = 8  AND `isdel` = 0 LIMIT 1 [ RunTime:0.000368s ]
+
+---------------------------------------------------------------
+[ 2018-01-25T15:28:04+08:00 ] 127.0.0.1 127.0.0.1 POST /index.php/auth/com_detail?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9hcGkueXNqaWFuemh1LmNvbSIsImF1ZCI6Imh0dHA6XC9cL3poYW9waW4ueXNqaWFuemh1LmNvbSIsImlhdCI6MTUxNjg2NTI3MSwiZXhwIjoxNTE2OTg1MjcxLCJuYmYiOiIiLCJ1dWlkIjoiZDc1OTdkZDktNTcxYS1kYmYxLTUwMzAtNTk3YjQ4YzFhODE1In0.VLaJr7ndKGM8DS8F-SafTmOZ_5hGBv4UHWQ78XawWy0
+[ log ] wms.chenchen.cn/index.php/auth/com_detail?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9hcGkueXNqaWFuemh1LmNvbSIsImF1ZCI6Imh0dHA6XC9cL3poYW9waW4ueXNqaWFuemh1LmNvbSIsImlhdCI6MTUxNjg2NTI3MSwiZXhwIjoxNTE2OTg1MjcxLCJuYmYiOiIiLCJ1dWlkIjoiZDc1OTdkZDktNTcxYS1kYmYxLTUwMzAtNTk3YjQ4YzFhODE1In0.VLaJr7ndKGM8DS8F-SafTmOZ_5hGBv4UHWQ78XawWy0 [运行时间：1.585291s][吞吐率：0.63req/s] [内存消耗：2,496.52kb] [文件加载：56]
+[ info ] [ LANG ] D:\textgulp\chenchen.wms.cn\php\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'auth',
+    2 => 'com_detail',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=pij1f9upd0ceftdg146uhvpuu2',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://wms.chenchen.cn/main.html',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3322.4 Safari/537.36',
+  'origin' => 'http://wms.chenchen.cn',
+  'accept' => 'application/json, text/plain, */*',
+  'content-length' => '23',
+  'connection' => 'close',
+  'host' => 'wms.chenchen.cn',
+)
+[ info ] [ PARAM ] array (
+  'token' => 'eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9hcGkueXNqaWFuemh1LmNvbSIsImF1ZCI6Imh0dHA6XC9cL3poYW9waW4ueXNqaWFuemh1LmNvbSIsImlhdCI6MTUxNjg2NTI3MSwiZXhwIjoxNTE2OTg1MjcxLCJuYmYiOiIiLCJ1dWlkIjoiZDc1OTdkZDktNTcxYS1kYmYxLTUwMzAtNTk3YjQ4YzFhODE1In0.VLaJr7ndKGM8DS8F-SafTmOZ_5hGBv4UHWQ78XawWy0',
+  'codeid' => 'C_acHatXU9a3uiQQ',
+)
+[ info ] [ CACHE ] INIT File
+[ info ] [ RUN ] app\api\controller\Auth->com_detail[ D:\textgulp\chenchen.wms.cn\php\application\api\controller\Auth.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000838s ] mysql:dbname=xiaochen;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ys_system_conf` [ RunTime:0.057473s ]
+[ sql ] [ SQL ] SELECT * FROM `ys_system_conf` WHERE  `tbnum` = 8  AND `isdel` = 0 LIMIT 1 [ RunTime:0.000512s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ys_photo` [ RunTime:0.008732s ]
+[ sql ] [ SQL ] SELECT * FROM `ys_photo` WHERE  `id` = 5  AND `isdel` = 0 LIMIT 1 [ RunTime:0.000566s ]
+[ sql ] [ SQL ] SELECT * FROM `ys_system_conf` WHERE  `tbnum` = 8  AND `isdel` = 0 LIMIT 1 [ RunTime:0.000471s ]
+
+---------------------------------------------------------------

@@ -1,0 +1,343 @@
+<script src="/js/myjs.js"></script>
+<section class="section-wrap" ng-controller="com_ctrl">
+	<div class="section section-1">
+		<div class="backauto back1 pr">
+			<div class="fl">
+				<h3 class="f_12 ml_23 mt_8">CHENCHEN</h3>
+				<h1 class="f_14 ml_23">Private Space</h1>
+			</div>
+			<nav class="fl ml_83 w_550 h_46" style="width: 443px;">
+				<ul>
+					<li class="ml_23"><a href="/main.html#chen" style="text-decoration:none;">个人主页</a></li>
+					<li><a href="/main.html#diary">日记</a></li>
+					<li><a href="/main.html#album">精彩瞬间</a></li>
+					<li><a href="/main.html#video">视频</a></li>
+					<li><a href="javascript:;">说说</a></li>
+					<li><a href="javascript:;">留言板</a></li>
+					<li><a href="/main.html#schedule">活动日程</a></li>
+					<li><a href="/main.html#music"><img src="/images/f.png" alt="音乐"></a></li>
+					<li><a href="/main.html#games"><img src="/images/ge2.png" alt="游戏"></a></li>
+					<li><a><img src="/images/kong.png" alt="分享"></a></li>
+				</ul>
+			</nav>
+			<div class="fl lanmu1">
+				<ul>
+					<li lgout><a><img src="/images/logout.png">登出</a></li>
+				</ul>
+			</div>
+			<div ng-repeat="(key, value) in com_detail.data" class="pt_11">
+                <audio controls class="audio2">
+                    <source src="{{value.content}}" type="audio/mp3">
+                </audio>
+            </div>
+			<div>
+				<a href="javascript:;" title="">
+					<div class="pa" style="z-index:100;top:397px;left:344px;width:158px;height: 1px;">
+				        <h6 class="fl ml_25 mt_11 cl_2">READ&nbsp;ARTICLE</h6>
+				        <img class="fl mt_5 ml_10" src="/images/jiantou2.png">
+					</div>
+					<img src="/images/web6tu5.png" class="pa curhover2" style="z-index:99;top:397px;left:344px;width:158px;height: 34px;">
+				</a>
+			</div>
+			<div class="curhover">
+				<a id="a">
+					<img src="/images/web6tu2.png" class="pa" style="z-index:99;top:467px;left:144px;width:187px;height: 171px;">
+					<div class="pa" style="z-index:100;top:522px;left:204px;">
+			        	<h5 class="fs_1">Detailed</h5>
+			        	<h6 class="fs_2 ml_8">详细资料</h6>
+			        	<img src="/images/app.png" alt="" class="mt_16 ml_22">
+			        </div>
+				</a>
+		        <a id="b">
+		        	<img src="/images/web6tu3.png" class="pa" style="z-index:99;top:467px;left:331px;width:187px;height: 171px;">
+		        	<div class="pa" style="z-index:100;top:521px;left:384px;">
+			        	<h5 class="fs_1 ml_20">Edit</h5>
+				        <h6 class="ml_4 fs_2 ml_12">编辑信息</h6>
+			        	<img src="/images/shopping1.png" alt="" class="mt_16 ml_22 box_1">
+			        </div>
+		        </a>
+		        <a id="c">
+		        	<img src="/images/web6tu4.png" class="pa" style="z-index:99;top:467px;left:518px;width:187px;height: 171px;">
+			        <div class="pa" style="z-index:100;top:520px;left:580px;">
+			        	<h5 class="fs_1">Contacts</h5>
+				        <h6 class="fs_2 ml_16">联系人</h6>
+			        	<img src="/images/app.png" alt="" class="mt_18 ml_22">
+			        </div>
+		        </a>
+			</div>
+		</div>
+	</div>
+	<div class="section section-2">
+		<div class="backauto back2 pr" style="">
+			<div>
+				<img src="/images/web7di2.png" class="pa curhover2" style="z-index:99;left:146px;width:185px;height: 142px;">
+				<div class="pa" style="z-index:100;top:11px;left:172px;">
+					<div class="paiban1">
+						<h5 class="cl_3">个人日记</h5>
+					</div>
+			        <div class="lanmu3 mt_7">
+						<ul class="lanmu3ul">
+							<li ng-repeat="(key, value) in com_list.data"><a class="cl_4" href="/main.html#diary"  setstore="codeid1={{value.codeid}}&?!!?$content1={{value.content}}&?!!?$diarystyle1={{value.diarystyle}}" key="guanjian">{{value.content}}</a></li>
+						</ul>
+					</div>
+		        	<img src="/images/dikuai1.png" alt="" class="ml_130 box_1">
+		        </div>
+		        <img src="/images/web7di3.png" class="pa curhover2" style="z-index:99;left:331px;width:187px;height: 142px;">
+		        <div class="pa" style="z-index:100;top:11px;left:357px;">
+					<div class="paiban1">
+						<h5 class="cl_3">时光故事</h5>
+					</div>
+			        <div class="lanmu3 mt_7">
+						<ul class="lanmu3ul">
+							<li ng-repeat="(key, value) in com_list2.data"><a class="cl_4" href="/main.html#diary"  setstore="codeid1={{value.codeid}}&?!!?$content1={{value.content}}&?!!?$diarystyle1={{value.diarystyle}}" key="guanjian">{{value.content}}</a></li>
+						</ul>
+					</div>
+		        	<img src="/images/dikuai1.png" alt="" class="ml_130 box_1">
+		        </div>
+		        <img src="/images/web7di4.png" class="pa curhover2" style="z-index:99;left:518px;width:185px;height: 142px;">
+		        <div class="pa" style="z-index:100;top:11px;left:544px;">
+					<div class="paiban1" style="">
+						<h5 class="cl_3">知识百科</h5>
+					</div>
+			        <div class="lanmu3 mt_7">
+						<ul class="lanmu3ul">
+							<li ng-repeat="(key, value) in com_list3.data"><a class="cl_4" href="/main.html#diary"  setstore="codeid1={{value.codeid}}&?!!?$content1={{value.content}}&?!!?$diarystyle1={{value.diarystyle}}" key="guanjian">{{value.content}}</a></li>
+						</ul>
+					</div>
+		        	<img src="/images/dikuai1.png" alt="" class="ml_130 box_1">
+		        </div>
+				<img src="/images/bianji.png" class="pa" style="z-index:98;top:188px;left:348px;">
+				<h6 class="pa" style="z-index:98;top:188px;left:370px;">Interest&nbsp;Categories</h6>
+			</div>
+			<div class="swiper-container">
+		        <div class="swiper-wrapper">
+		            <div class="swiper-slide" ng-repeat="(key, value) in tArray">
+						<div class="diarystyle">
+				        	<a href="/main.html#diary" setstore="diarystyle2={{val.c_id}}&?!!?$" key="guanjian" title="" ng-repeat="(k, val) in tArray[key]">
+					        <div class="diarystylediv">
+					        	<img src="/images/web7di1.png" class="curhover2">
+					        	<img ng-src="{{val.c_img}}">
+						        <div class="myh5">
+						        	<h5 class="cl_5">{{val.c_name}}</h5>
+						        	<h6 class="cl_4">{{val.c_note}}</h6>
+						        </div>
+					        </div>
+					        </a>
+						</div>
+		            </div>
+		        </div>
+		        <!-- Add Pagination -->
+		        <div class="swiper-pagination"></div>
+		        <!-- Add Pagination -->
+		        <div class="swiper-button-next"></div>
+		        <div class="swiper-button-prev"></div>
+		    </div>
+			<div>
+				<a href="/main.html#diary" title="">
+					<div class="pa" style="z-index:100;top:589px;left:345px;width:158px;height: 1px;">
+				        <h6 class="fl ml_25 mt_11 cl_2">READ&nbsp;ARTICLE</h6>
+				        <img class="fl mt_5 ml_10" src="/images/jiantou2.png">
+					</div>
+					<img src="/images/web6tu5.png" class="pa curhover2" style="z-index:99;top:591px;left:344px;width:161px;height: 29px;">
+				</a>
+			</div>
+		</div>
+	</div>
+	<div class="section section-3">
+		<div class="backauto back3 pr" style="">
+			<div class="pa" style="z-index:100;top:40px;left:345px;width:224px;height: 50px;">
+				<img class="fl mt_4" src="/images/yingyong.png">
+		        <h6 class="fl ml_25 cl_5">NEWS&nbsp;&&nbsp;FEATURES</h6>
+			</div>
+			<div class="pa" style="z-index:100;top:131px;left:203px;width:70px;">	
+				<h5 class="myh5">15th</h5>
+				<h5 class="myh5">JAR</h5>
+			</div>
+			<div class="pa" style="z-index:100;top:316px;left:203px;width:70px;">	
+				<h5 class="myh5">22th</h5>
+				<h5 class="myh5">DEC</h5>
+			</div>
+			<div class="pa" style="z-index:100;top:500px;left:203px;width:70px;">	
+				<h5 class="myh5">15th</h5>
+				<h5 class="myh5">DEC</h5>
+			</div>
+			<div class="pa" style="z-index:100;top:98px;left:315px;width:500px;">	
+				<h5 style="font-size:14px;">This is the title of a blog post</h5>
+				<P class="mt_7">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin euismod tellus eu orci imperdiet nec rutrum lacus blandit. Cras enim nibh, sodales ultricies elementum vel, fermentum id tellus. Proin metus odio, ultricies eu pharetra dictum, laoreet id odio. </P>
+				<div class="pa" style="z-index:100;top:108px;left:343px;width:138px;height: 1px;">
+			        <h6 class="fl mt_7 cl_5">READ&nbsp;ARTICLE</h6>
+			        <img class="fl mt_12 ml_5" src="/images/jiantou3.png">
+				</div>
+			</div>
+			<div class="pa" style="z-index:100;top:283px;left:315px;width:500px;">	
+				<h5 style="font-size:14px;">This is the title of a blog post</h5>
+				<P class="mt_7">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin euismod tellus eu orci imperdiet nec rutrum lacus blandit. Cras enim nibh, sodales ultricies elementum vel, fermentum id tellus. Proin metus odio, ultricies eu pharetra dictum, laoreet id odio. </P>
+				<div class="pa" style="z-index:100;top:108px;left:343px;width:138px;height: 1px;">
+			        <h6 class="fl mt_7 cl_5">READ&nbsp;ARTICLE</h6>
+			        <img class="fl mt_12 ml_5" src="/images/jiantou3.png">
+				</div>
+			</div>
+			<div class="pa" style="z-index:100;top:467px;left:315px;width:500px;">	
+				<h5 style="font-size:14px;">This is the title of a blog post</h5>
+				<P class="mt_7">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin euismod tellus eu orci imperdiet nec rutrum lacus blandit. Cras enim nibh, sodales ultricies elementum vel, fermentum id tellus. Proin metus odio, ultricies eu pharetra dictum, laoreet id odio. </P>
+				<div class="pa" style="z-index:100;top:108px;left:343px;width:138px;height: 1px;">
+			        <h6 class="fl mt_7 cl_5">READ&nbsp;ARTICLE</h6>
+			        <img class="fl mt_12 ml_5" src="/images/jiantou3.png">
+				</div>
+			</div>
+			<img src="/images/web8di1.png" class="pa curhover2" style="z-index:99;top:105px;left:197px;width:80px;height: 90px;border-radius:50%;">
+			<img src="/images/web8di1.png" class="pa curhover2" style="z-index:99;top:290px;left:197px;width:80px;height: 90px;border-radius:50%;">
+			<img src="/images/web8di1.png" class="pa curhover2" style="z-index:99;top:474px;left:197px;width:80px;height: 90px;border-radius:50%;">
+		</div>
+	</div>
+	<div class="section section-4">
+		<div class="backauto back4 pr" style="">
+			<div class="pa" style="z-index:100;top:16px;left:345px;width:224px;height: 50px;">
+				<img class="fl mt_1" src="/images/lifang.png">
+		        <h6 class="fl ml_8 cl_5">ART FOR&nbsp;&&nbsp;ART'S SAKE</h6>
+			</div>
+			<div>
+				<a href="" title="">
+					<img src="/images/web9di1.png" class="pa curhover2" style="z-index:99;top:53px;left:144px;width:186px;height: 125px;">
+				</a>
+		        <a href="/main.html#album" title="">
+		        	<img src="/images/web9di2.png" class="pa curhover2" style="z-index:99;top:53px;left:330px;width:186px;height: 125px;">
+		        	<div class="pa" style="z-index:100;top:72px;left:0;right:0;">
+			        	<h5 class="fs_1 myh5 li_he20">Memory&nbsp;Time</h5>
+				        <h5 class="fs_2 myh5 li_he20">相册</h5>
+			        	<img src="/images/app.png" alt="" class="ps_t50 box_1">
+			        </div>
+		        </a>
+		        <a href="" title="">
+		        	<img src="/images/web9di3.png" class="pa curhover2" style="z-index:99;top:53px;left:516px;width:186px;height: 125px;">
+		        </a>
+		        <a href="/main.html#music" title="">
+		        	<img src="/images/web9di4.png" class="pa curhover2" style="z-index:99;top:178px;left:144px;width:186px;height: 125px;">
+		        	<div class="pa" style="z-index:100;top:196px;left:214px;">
+			        	<h5 class="fs_1 myh5">Music</h5>
+				        <h5 class="fs_2 myh5">音乐</h5>
+			        	<img src="/images/app.png" alt="" class="ps_t50 box_1">
+			        </div>
+				</a>
+		        <a href="" title="">
+		        	<img src="/images/web9di5.png" class="pa curhover2" style="z-index:99;top:178px;left:330px;width:186px;height: 125px;">
+		        </a>
+		        <a href="/main.html#video" title="">
+		        	<img src="/images/web9di6.png" class="pa curhover2" style="z-index:99;top:178px;left:516px;width:186px;height: 125px;">
+		        	<div class="pa" style="z-index:100;top:196px;left:563px;">
+			        	<h5 class="fs_1 myh5">Video&nbsp;player</h5>
+				        <h5 class="fs_2 myh5" style="margin: 2px 0 -2px -9px;">视频</h5>
+			        	<img src="/images/app.png" alt="" class="ps_t50 box_1">
+			        </div>
+		        </a>
+		        <a href="" title="">
+		        	<img src="/images/web9di7.png" class="pa curhover2" style="z-index:99;top:303px;left:144px;width:186px;height: 125px;">
+				</a>
+		        <a href="/main.html#games" title="">
+		        	<img src="/images/web9di8.png" class="pa curhover2" style="z-index:99;top:303px;left:330px;width:186px;height: 125px;">
+		        	<div class="pa" style="z-index:100;top:320px;left:0;right: 0;">
+			        	<h5 class="fs_1 myh5">Pastimes</h5>
+				        <h5 class="fs_2 myh5">游戏</h5>
+			        	<img src="/images/app.png" alt="" class="ps_t50 box_1">
+			        </div>
+		        </a>
+		        <a href="" title="">
+		        	<img src="/images/web9di9.png" class="pa curhover2" style="z-index:99;top:303px;left:516px;width:186px;height: 125px;">
+		        </a>
+		        <a href="/main.html#schedule" title="">
+		        	<img src="/images/web9di10.png" class="pa curhover2" style="z-index:99;top:427px;left:144px;width:186px;height: 125px;">
+					<div class="pa" style="z-index:100;top:444px;left:172px;">
+			        	<h5 class="fs_1 myh5">Activity&nbsp;schedule</h5>
+				        <h5 class="fs_2 myh5">活动日程</h5>
+			        	<img src="/images/app.png" alt="" class="ps_t50 box_1">
+			        </div>
+				</a>
+		        <a href="" title="">
+		        	<img src="/images/web9di11.png" class="pa curhover2" style="z-index:99;top:427px;left:330px;width:186px;height: 125px;">
+		        </a>
+		        <a href="" title="">
+		        	<img src="/images/web9di12.png" class="pa curhover2" style="z-index:99;top:427px;left:516px;width:186px;height: 125px;">
+			        <div class="pa" style="z-index:100;top:444px;left:592px;">
+			        	<h5 class="fs_1 myh5">Chat</h5>
+				        <h5 class="fs_2 myh5">聊天</h5>
+			        	<img src="/images/app.png" alt="" class="ps_t50 box_1">
+			        </div>
+		        </a>
+			</div>
+		</div>
+	</div>
+	<div class="section section-5">
+		<div class="backauto back5 pr" style="">
+			<div class="pa" style="z-index:100;top:16px;left:345px;width:224px;height: 50px;">
+				<img class="fl mt_4" src="/images/bird.png">
+		        <h6 class="fl ml_25 cl_5">TWITTER&nbsp;&&nbsp;POOL</h6>
+			</div>
+			<div class="pa" style="z-index:100;top:76px;left:315px;width:500px;">	
+				<h5 style="font-size:14px;">@Advanced Photoshop</h5>
+				<P class="mt_7">Check out Part 2 of our after free Adobe Photoshop tuaofial on creating japanese<br><b class='fw_9 cl_6'>Adfbhttp://sb.cn.kIIOAIIF</b></P>
+			</div>
+			<div class="pa" style="z-index:100;top:176px;left:315px;width:500px;">	
+				<h5 style="font-size:14px;">@JohnGoldblum></h5>
+				<P class="mt_7">Our #Photoshop wizard jamas Godden is reateid in the seris issue of @Advancedphoo which is out now!#Graphlalfjla><b class='fw_9 cl_6'>Adfbhttp://sb.cn.kIIOAIIF</b></P>
+			</div>
+			<div class="pa" style="z-index:100;top:276px;left:315px;width:500px;">	
+				<h5 style="font-size:14px;">@SrarahiTown</h5>
+				<P class="mt_7">Aray #sharock ekf out where?check put this great Photoshop by jose Readeriguslrj<b class='fw_9 cl_6'>Adfbhttp://sb.cn.kIIOAIIF</b></P>
+			</div>
+			<img src="/images/web10di1.png" class="pa curhover2" style="z-index:99;top:73px;left:227px;width:51px;height: 45px;border-radius:50%;">
+			<img src="/images/web10di2.png" class="pa curhover2" style="z-index:99;top:172px;left:227px;width:51px;height: 45px;border-radius:50%;">
+			<img src="/images/web10di3.png" class="pa curhover2" style="z-index:99;top:272px;left:227px;width:51px;height: 45px;border-radius:50%;">
+			<div class="pa" style="z-index:100;top:396px;left:360px;width:1px;height:230px;border-right:1px solid #2c2d31;">
+			</div>
+			<div class="pa" style="z-index:100;top:396px;left:600px;width:1px;height:230px;border-right:1px solid #2c2d31;">
+			</div>
+			<img src="/images/ysshare.jpg" class="pa curhover2" style="z-index:99;top:398px;left:107px;width:34px;height: 32px;border-radius:1px;">
+			<div class="pa" style="z-index:100;top:430px;left:107px;width:70px;">	
+				<span class="myh5 cl_8">IMAGIG</span>
+				<span class="myh5 cl_4">PUBLIS</span>
+			</div>
+			<div class="pa" style="z-index:100;top:602px;left:107px;width:70px;">	
+				<span class="myh5 cl_8">+44029009@6200</span>
+				<span class="myh5"><b class='fw_9 cl_6'>Adfbhttp://sb.cn.kIIOAIIF</b></span>
+			</div>
+			<div class="pa" style="z-index:100;top:470px;left:107px;">
+				<div class="paiban2">
+					<h5 class="cl_7">Image&nbsp;Publishied</h5>
+				</div>
+		        <div class="lanmu4 mt_f9">
+					<ul class="mg_auto">
+						<li style="" class="cl_4">Richmond&nbsp;Herda</li>
+					</ul>
+				</div>
+	        </div>
+			<div class="pa" style="z-index:100;top:390px;left:428px;">
+				<div class="paiban1">
+					<h5 class="cl_3">About&nbsp;Imagine</h5>
+				</div>
+		        <div class="lanmu5 mt_7">
+					<ul>
+						<li style="list-style-type:disc;color:#fff;"><a class="cl_4">About&nbsp;Us</a></li>
+					</ul>
+				</div>
+	        </div>
+			<div class="pa" style="z-index:100;top:390px;left:668px;">
+				<div class="paiban1">
+					<h5 class="cl_3">Technology</h5>
+				</div>
+		        <div class="lanmu5 mt_7">
+					<ul>
+						<li style="list-style-type:disc;color:#fff;"><a class="cl_4">3D&nbsp;Artics</a></li>
+					</ul>
+				</div>
+	        </div>
+		</div>
+	</div>
+</section>
+<ul class="section-btn">
+  <li class="on"></li>
+  <li></li>
+  <li></li>
+  <li></li>
+  <li></li>
+</ul>
+<div class="arrow">&laquo;</div>

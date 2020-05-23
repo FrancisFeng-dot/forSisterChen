@@ -1,0 +1,123 @@
+<style>
+    ::-webkit-scrollbar-track {background-color: #ffffff;} /* 滚动条的滑轨背景颜色 */
+    ::-webkit-scrollbar-thumb {background-color: rgba(0, 0, 0, 0); } /* 滑块颜色 */
+    ::-webkit-scrollbar-button {background-color: #ffffff;} /* 滑轨两头的监听按钮颜色 */
+    ::-webkit-scrollbar-corner {background-color: #ffffff;} /* 横向滚动条和纵向滚动条相交处尖角的颜色 */
+</style>
+<div class="gray-bg" ng-controller="com_ctrl">
+    <a href="/main.html#index"><img src="/images/shouye.png" alt="" class="fr"></a>
+    <div class="w_936" ng-if="toggshow==0">
+        <div class="pt_49">
+            <div class="mod_conts min_hei400">
+                <div class="entry_wrap">
+                    <div class="mod_entry show_in_owner" id="blog-top-nav">
+                        <div class="exact_entry" id="write-ordinaryblog" yseditadd="com_editadd" toggshowupload='1' savekey="com_editadd.params" more="99">
+                            <a rel="write-blog-link" class="text gb_bt2"><span class="inner_wrap" rel="write-blog-link">
+                                <img src="/images/kongjiant1.png" alt="" class="mt_f4">
+                            上传音乐</span></a>
+                        </div>
+                    </div>
+                    <div class="list_toolbar" id="list-toolbar">
+                        <span class="mt_8 fl" ng-if="mk1==0" mkshow="mk1"><a id="batchEditHref" href="javascript:;" rel="switch-batch-mode">批量管理</a></span>
+                        <span class="mt_8 fl" ng-if="mk1==1" mkshow="mk1"><a id="batchEditHref" href="javascript:;" rel="switch-batch-mode">退出批量管理</a></span>
+                    </div>
+                    <div class="mod_search bor2 bg search1">
+                        <label for="search">搜索</label>
+                        <input type="text" name="search" class="c_tx3" id="blog_search_text" value="" placeholder="请输入关键字" clickinput moveinput ng-model="com_list_page.params.keyword">
+                        <a href="javascript:;" id="blog_search_btn" class="icon_search" comtime="com_list_page">搜索</a>
+                    </div>
+                </div>
+                <!-- 排序菜单 -->
+                <div class="h_487">
+                    <div class="tbor2 group_edit" id="batch-op-bar" ng-if="mk1==1">
+                        <input type="checkbox" name="ckeckAll" id="ckeckAll" rel="batch-check-all"><label for="ckeckAll">全选</label>
+                        <a class="btn-batch-delete" href="javascript:;" rel="batch-delete-link" comtime="com_del2">批量删除</a>
+                    </div>
+                    <div ng-if="total==0">
+                        <div class="empty_cont">
+                            <p>您还没有音乐，快去<a href="javascript:;" yseditadd="com_editadd" toggshowupload='1' savekey="com_editadd.params" more="99">上传音乐</a>吧</p>
+                        </div>
+                    </div>
+                    <div id="listArea2" class="mod_list tbor2 musiclist">
+                    <ul id="listAreaul">
+                    <li class="bg3_hover h_39" ng-if="value.isdel==0" ng-repeat="(key, value) in com_list_page.data.datalist" name="incode">
+                    <div class="list_tit" rel="list-row" style="width:50%;height: 22px;">
+                        <input type="checkbox" rel="batch-blog-select" ng-if="mk1==1" value="{{value.codeid}}" name="incode2">
+                        <span class="article">
+                            <a href="javascript:;" class="c_tx2">
+                                <span ng-bind="value.title"></span>
+                            </a>
+                            <span rel="blog-detail-link" title=""></span>
+                        </span>
+                    </div>
+                    <div class="list_op c_tx3 ml_12">
+                        <span>{{value.createtime}}</span>&nbsp;
+                        <span>
+                            <a href="javascript:;" title="编辑" class="c_tx" rel="blog-edit-link"></a>
+                            <a href="javascript:;" class="arr_wrap">
+                                <span class="mod_arr" title="更多操作"></span>
+                            </a>
+                        </span>
+                        <div class="mod_drop_op bg beijing1">
+                            <ul class="bor2">
+                                <li><a href="javascript:;" title="删除该音乐" class="bg3_hover" theid='codeid' comdelone="com_del">删除音乐</a></li>
+                                <li name="e"><a href="javascript:;" title="修改音乐分类" class="bg3_hover" value={{value.codeid}} selectrun="com_editadd.params.codeid">设置为背景音乐</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <audio controls class="audio1">
+                        <source src="{{value.content}}" type="audio/mp3">
+                    </audio>
+                    <div class="qz_mask qz_mask2"></div>
+                    </li>
+                    </ul>
+                    <div id="page" class="t_c" style="text-align: center;margin-top: 11px;"></div>
+                    </div>
+                </div>
+            </div>
+        </div>                      
+    </div>
+    <div class="w_936" ng-if="toggshow==1">
+        <div class="mode_gb">
+            <div class="mode_gb_title bg2 bd_2">
+                <h3 class="li_he35"><span id="topBar">上传音乐</span></h3>
+                <div class="mode_gb_other">
+                    <a href="javascript:void(0)" class="c_tx" onclick="return false;" id="returnListArea" togg='0' toggshowrun="com_list_page">返回音乐列表</a>
+                </div>
+            </div>
+            <div id="pageHintArea" class="mt_f1"></div>
+            <div class="wd_936">
+                <div class="in-content">
+                    <div class="in-body">
+                        <div class="row pt_36">
+                            <div class="account col-xs-2">
+                                <p class="text-right">音乐</p>
+                            </div>
+                            <div class="col-xs-9 ml_f38">
+                                <ul class="jbimg-box2 pr">
+                                    <li class="pr" ng-repeat="(key, value) in com_editadd.params.contentarr" style="width: 222px;height: 36px;">
+                                        <audio controls class="audio1">
+                                            <source src="{{value}}" type="audio/mp3">
+                                        </audio>
+                                        <div delimg3="com_editadd.params.content" delkey="title" class="videoimg3">
+                                            <img src="/images/close-circled.png" alt="" class="deleteimg">
+                                        </div>
+                                    </li>
+                                    <li class="jb-upload-img3 mlimpor_4" name="picker" setstore="list=#fileList2&more=99&key=content&namefile=title" key="upimg" pickerrun>
+                                       <input type="file">点击选择音乐
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row btn_row">
+                    <div class="fl ml_166">
+                        <button comtime="com_editadd" class="save_btn">保存</button>
+                        <button togg='0' toggshowrun="com_list_page" class="save_btn">返回</button>
+                    </div>
+                </div>
+            </div>
+        </div>     
+    </div>
+</div>

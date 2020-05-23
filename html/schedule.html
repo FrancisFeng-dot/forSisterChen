@@ -1,0 +1,54 @@
+<style>
+    ::-webkit-scrollbar-track {background-color: #ffffff;} /* 滚动条的滑轨背景颜色 */
+    ::-webkit-scrollbar-thumb {background-color: rgba(0, 0, 0, 0); } /* 滑块颜色 */
+    ::-webkit-scrollbar-button {background-color: #ffffff;} /* 滑轨两头的监听按钮颜色 */
+    ::-webkit-scrollbar-corner {background-color: #ffffff;} /* 横向滚动条和纵向滚动条相交处尖角的颜色 */
+</style>
+<div class="gray-bg" ng-controller="com_ctrl">
+    <div class="wrapper pd_28">
+        <a href="/main.html#index"><img src="/images/shouye.png" alt="" class="fr mt_f26 mr_f28"></a>
+        <div class="row animated fadeInDown">
+            <div class="col-sm-3">
+                <div class="ibox float-e-margins">
+                    <div class="ibox-title">
+                        <h5>Draggable Events</h5>
+                        <div class="fr fw_4" mkshow="mk1" id="xinzeng">
+                            <a href="javascript:;" class="c_tx" title="管理分类">新增</a>
+                        </div>
+                    </div>
+                    <div class="ibox-content">
+                        <div id='external-events' ng-if="mk1==0">
+                            <p>可拖动的活动</p>
+                            <div class='external-event navy-bg' ng-repeat="(key, value) in schedulearray">{{value.title}}</div>
+                            <p class="m-t">
+                                <input type='checkbox' id='drop-remove' class="i-checks" checked />
+                                <label for='drop-remove'>移动后删除</label>
+                            </p>
+                        </div>
+                        <div ng-if="mk1==1">
+                            <h4>日程内容</h4>
+                            <div class="mod_search bor2 mt_4">
+                                <input type="text" name="search" class="c_tx3 w_b100" id="blog_search_text" value="" placeholder="请输入关键字" clickinput moveinput>
+                            </div>
+                            <h4>天数</h4>
+                            <div class="mod_search bor2 mt_4">
+                                <input type="text" name="search" class="c_tx3 w_b100" id="blog_search_text2" value="" placeholder="请输入数字时长天数,1天可不填,如2" clickinput moveinput>
+                            </div>
+                            <button class="diarybutton">确定</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-9">
+                <div class="ibox float-e-margins" style="position: relative;height: 610px;">
+                    <div class="ibox-title">
+                        <h5>日程列表</h5>
+                    </div>
+                    <div class="ibox-content" style="position: absolute;overflow-y: scroll;height: 566px;width: 100%;">
+                        <div id="calendar"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
